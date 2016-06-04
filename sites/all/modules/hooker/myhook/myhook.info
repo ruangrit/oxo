@@ -1,0 +1,6 @@
+name = My hook 
+description = myhook
+core = 7.x
+
+
+

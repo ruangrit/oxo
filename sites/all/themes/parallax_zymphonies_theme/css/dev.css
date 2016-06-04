@@ -1,0 +1,44 @@
+.article-headline-main {
+	text-indent: -9999px;
+	background-repeat: no-repeat;
+	height: 221px;
+	width: 172px;
+	background: url('../images/logo_icon.png');
+}
+.slider-arrows-header {
+	display: none;
+}
+.navigator {
+	display: none;
+}
+.menu-wrap {
+	z-index: 99999 !important;
+	font-family: gothamMedium !important;
+}
+
+@font-face {
+    font-family: gothamLight;
+    src: url('../fonts/GOTHAM-LIGHT.TTF');
+}
+@font-face {
+    font-family: gothamMedium;
+    src: url('../fonts/GOTHAM-MEDIUM.TTF');
+}
+
+body {
+	font-family: gothamLight !important;
+
+}
+
+.description-main {
+	height: 280px;
+	padding: 50px;
+}
+.description-rooms{
+	height: 280px;
+	padding: 50px;
+}
+.description-find_us{
+	height: 280px;
+	padding: 50px;
+}

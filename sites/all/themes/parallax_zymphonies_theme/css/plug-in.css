@@ -1,0 +1,65 @@
+.site-footer.border-waves:before, .border-waves-top.border-waves-top--dark:before {
+	background-image:url("data:image/svg+xml;utf8,<svg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 19 14' width='19' height='14' enable-background='new 0 0 19 14' xml:space='preserve' preserveAspectRatio='none slice'><g><path fill='#121212' d='M0,0c4,0,6.5,5.9,9.5,5.9S15,0,19,0v7H0V0z'/><path fill='#121212' d='M19,14c-4,0-6.5-5.9-9.5-5.9S4,14,0,14l0-7h19V14z'/></g></svg>")
+}
+.shop-menu-item, .woocommerce .menu-item-235 {
+	display:none !important
+}
+.woocommerce-page .shop-menu-item {
+	display:inline-block !important
+}
+.input-group {
+	max-width:250px
+}
+.footer-widget-area .sidebar {
+	text-align:center
+}
+.animate i:after{-webkit-transition:all 1000ms;-moz-transition:all 1000ms;-o-transition:all 1000ms;transition:all 1000ms}
+h1, h2, h3, h4, h5, h6, hgroup, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,
+blockquote, .tabs__nav, .popular-posts__time, .pagination li a, .pagination li
+span,.headline__primary.font-1{font-family:Source Sans Pro!important;}
+.headline__secondary{font-family: 'Alegreya Sans', sans-serif;}.headline__secondary{font-weight:100;}.navigation
+a{font-family:Cabin}.navigation
+a{font-weight:normal}html,.wp-caption-text,.small-link,.post-nav-link__label,.author__social-link,.comment__links,.score__desc{font-family:Cabin}
+.recentcomments
+a{display:inline !important;padding:0
+!important;margin:0
+!important}
+.site-header, .site-header.headroom--not-top, .sub-menu, .headroom--not-top .sub-menu{background-color:#fff}.site-title--image
+img{/*max-height:100px*/}.page .article__content, .up-link, html, .menu-list__item-title .item_title,.menu-list__item-price,.desc__content{background-color:#fff}.container, .search__container, .site-header__container, .header--sticky .site-header__container{max-width:1250px}.headline__secondary{margin-bottom:-38px}.headline__secondary .first-letter{top:9px}.navigation a, .menu-booking{font-size:13px}.navigation
+a{letter-spacing:1px}.nav--main>.menu-item>a{text-transform:uppercase}.nav--main>.menu-item>a{text-decoration:none}body{font-size:16px}body{line-height:1.7}a, a:hover, .nav--main a:hover, .headline__secondary, .separator--line-flower,
+.tabs__nav a.current, .tabs__nav a:hover, .btn.btn--text, .btn--text.comments_add-comment,
+.comments_add-comment.read-more-button, .form-submit .btn--text#comment-submit,
+.form-submit #comment-submit.read-more-button, .btn--text.wpcf7-form-control.wpcf7-submit,
+.wpcf7-form-control.wpcf7-submit.read-more-button, .btn--text.otreservations-submit,
+.otreservations-submit.read-more-button, .widget_tag_cloud a.btn--text, .widget_tag_cloud a.read-more-button, .btn.read-more-button,
+a:hover > .pixcode--icon, .widget a:hover, blockquote, .meta-list a.btn:hover,
+.meta-list a.comments_add-comment:hover, .meta-list .form-submit a#comment-submit:hover,
+.form-submit .meta-list a#comment-submit:hover, .meta-list a.wpcf7-form-control.wpcf7-submit:hover,
+.meta-list a.otreservations-submit:hover, .meta-list .widget_tag_cloud a:hover, .widget_tag_cloud .meta-list a:hover, .btn.btn--text:hover,
+.article__content a:not([class]), .article__content a:hover:not([class]):hover,
+.article__header .article__headline .headline__description .star, .read-more-button, .read-more-button:hover, .shop-categories a.active,
+body.woocommerce ul.products li.product .product__button, body.woocommerce ul.products li.product .added_to_cart,
+body.woocommerce ul.products li.product a.added_to_cart, body.woocommerce ul.products li.product .price ins,
+.single-product .entry-summary .price span, body.woocommerce .star-rating span:before,.comment-reply-link{color:#c59d5f;}.btn--primary, .shop-menu-item .shop-items-number, .comments_add-comment, .form-submit #comment-submit, .btn:hover, .wpcf7-form-control.wpcf7-submit:hover,
+.pagination li a:hover, form.shipping_calculator button.button:hover,.otreservations-submit:hover,.pixcode--icon.square:hover,.pixcode--icon.circle:hover,.sidebar--footer__accent,.copyright-area.copyright-area__accent,.menu-list__item-highlight-title{background-color:#c59d5f}body.woocommerce button.button.alt:hover, body.woocommerce-page #respond input#submit:hover,
+body.woocommerce div.woocommerce-message .button:hover, td.actions input.button:hover, body.woocommerce-page input.button:hover,
+body.woocommerce-page input.button.alt:hover,a:hover>.pixcode--icon.circle,a:hover>.pixcode--icon.square{background:#c59d5f}.tabs__nav a.current, .tabs__nav a:hover, .btn.btn--text, .btn--text.comments_add-comment, .comments_add-comment.read-more-button,
+.form-submit .btn--text#comment-submit, .form-submit #comment-submit.read-more-button,
+.btn--text.wpcf7-form-control.wpcf7-submit, .wpcf7-form-control.wpcf7-submit.read-more-button,
+.btn--text.otreservations-submit, .otreservations-submit, .read-more-button,
+.widget_tag_cloud a.btn--text, .widget_tag_cloud a.read-more-button, .btn.read-more-button, blockquote, .article__content a:not([class]), .shop-categories a.active,
+body.woocommerce ul.products li.product .product__button, body.woocommerce ul.products li.product .added_to_cart,.menu-list__item-highlight-wrapper:before{border-color:#c59d5f}select:focus,textarea:focus,input[type="text"]:focus,input[type="password"]:focus,input[type="datetime"]:focus,input[type="datetime-local"]:focus,input[type="date"]:focus,input[type="month"]:focus,input[type="time"]:focus,input[type="week"]:focus,input[type="number"]:focus,input[type="email"]:focus,input[type="url"]:focus,input[type="search"]:focus,input[type="tel"]:focus,input[type="color"]:focus,.form-control:focus{outline-color:#c59d5f}.copyright-area.copyright-area__accent svg
+path{fill:#c59d5f}body,.up-link{color:#515150}.up-link:before{border-color:#515150}h1, h2, h3, h4, h5, h6, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, .article-archive .article__title a, .article-archive .article__title a:hover{color:#262526}.article__header .article__headline .headline__primary,
+.article__header .article__headline .headline__description
+*{}
+@media  screen and (min-width: 900px){
+.site-header{border-right-width:12px}.nav--main>.menu-item>a{padding-left:24px}body .navigator, body .covers{margin-right:0px}
+.site-header{padding-bottom:0px}.nav--main>.menu-item>a{padding-right:24px}body .site-footer{border-bottom-width:12px}
+#page{margin-top:0px}body .site-header{border-top-width:0px}
+#page{top:0px}body .site-header{border-left-width:0px}
+body{border-width:12px}
+body .site-header{border-right-width:12px}
+body.covers{margin-left:0px}
+	.page .type-page.article__content{padding-bottom:78px}.page-content.has-sidebar:after{right:300px}
+	.sidebar--main{width:300px}
+	.page-content.has-sidebar .page-content__wrapper{margin-right:300px}.page-content.has-sidebar{margin-right:-300px}}.navigator{ display:none;}

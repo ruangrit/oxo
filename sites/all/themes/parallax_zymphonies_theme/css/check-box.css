@@ -1,0 +1,141 @@
+.check-box {position: absolute;
+    right: 0;
+    display: none;
+    width: 210px !important;
+    background: #F3F3F3;
+    padding: 12px; font-size:12px; transition: all 0.8s ease 0s;
+    box-sizing: content-box;}
+/*.menu-booking:hover .check-box {display: block;transition: all 0.8s ease 0s;}*/
+
+.check-box h4 {
+    margin: 0;
+    background: #DEDEDE;
+    padding: 5px;
+}
+.set.cal {
+    margin-bottom: 10px;
+}
+.set.pro-code {
+    width: 100%;
+    clear: both;
+    padding: 5px 0;
+}
+.select-set, .pro-code {
+    color: #333;
+}
+.menu-booking{ cursor:pointer; color:#FFFFFF;}
+.menu-top{ position:relative;}
+.res-box fieldset {
+    border: none;
+    padding: 0;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+.sub-menu{position: absolute;}
+li.sub:hover ul a {color: #000;text-transform: uppercase;}
+.sub:hover ul.sub-menu { display: block; background: #FFF; padding: 0 10px; top: 60%;}
+li.sub:hover ul a:hover { color: #c59d5f;}
+.menu-booking:hover iframe.check-box { display: block;}
+.select-room, .select-adult, .select-child {
+    width: 22%;
+    float: left;
+    margin-right: 8%; position:relative;
+}
+[class^="select-"] span.small {
+    width: 100%;
+    overflow: hidden;
+    display: block;
+    text-overflow: ellipsis;
+    overflow-wrap: normal;
+}
+input#promocode {
+    margin-bottom: 10px;
+}
+select#rooms, select#adults,select#child {
+    border: 0;
+    -webkit-appearance: inherit;
+     -moz-appearance: none;
+     appearance: none;
+    background: transparent;
+    outline: none;
+    box-sizing: inherit;
+    padding: 0 0 10px 0;
+    width: 50%;
+    margin: auto;
+}
+.datepicker {
+		display:none;
+    position: absolute;
+    background: #FFF;
+    padding: 10px;
+}
+.set.cal-in {
+    background: url(/images/icon-cal-in.png) no-repeat top right;
+}
+.set.cal-out {
+    background: url(/images/icon-cal-out.png) no-repeat top right;
+}
+input#checkout, input#checkin {
+    width: 100%;
+    padding: 5px 10px 0;
+    background: transparent;
+    border-color: #A9A9A9;
+    border-style: solid;
+    border-width: 0 0 1px 0;
+}
+.select-room:before, .select-adult:before, .select-child:before {content: '';border-width: 4px;border-style: solid;border-color: #808080 transparent transparent;width: 0;position: absolute;top: 58%;right: 30%;outline: none;}
+.select-set.set {
+    margin-top: 9px;}
+td.day.disabled {
+    color: #DEDEDE;}
+td.day.active {
+    background: #333;
+    color: #C59D5F;
+    background-image: url(/images/active-right.png);
+    background-repeat: no-repeat;
+    background-position: right;}
+.button.datepicker-close.small {
+    display: none;}
+.set.bottom.rsv-btn button.btn {
+    outline: none;
+}
+i.fa.fa-chevron-left,i.fa.fa-chevron-right { cursor:pointer;width: 10px;display: block;height: 10px;}
+i.fa.fa-chevron-right {
+    border-bottom: 2px solid #333;
+    border-right: 2px solid #333;
+    transform: rotate(-45deg);
+		float:right;
+}
+i.fa.fa-chevron-left {
+    border-bottom: 2px solid #333;
+    border-left: 2px solid #333;
+    transform: rotate(45deg);
+		float:left;
+}
+.date-switch {
+    cursor: pointer;
+}
+.datepicker-months .month,.datepicker-years .year {
+    width: 25%;
+    display: inline-block;
+}
+td.day,.month,.year {
+    cursor: pointer;
+    text-align: center;
+    line-height: 1em;
+}
+td.day:hover {
+    background: #F1F1F1;
+}
+.datepicker-days .table-condensed,.datepicker-months .table-condensed,.datepicker-years .table-condensed {
+    margin-bottom: inherit;
+}
+@media screen and (min-width: 900px) and (max-width: 1300px){
+	.datepicker{left:70% !important;}
+	}
+@media screen and (max-width: 899px){
+.check-box {width: initial !important; top:50%;}
+.datepicker.datepicker-dropdown.dropdown-menu {z-index: 100 !important;top:20% !important;}
+.menu-booking {font-size: 1.125em !important; padding: 12px 0 !important;color:#CCCCCC !important;text-transform: capitalize;}
+li.sub:hover ul a{color:#FFFFFF; text-transform: inherit;}
+}

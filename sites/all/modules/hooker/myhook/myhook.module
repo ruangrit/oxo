@@ -1,0 +1,24 @@
+<?php
+
+function myhook_menu () {
+   $items['font_page'] = array(
+    'page callback' => 'fron_page',
+    'access arguments' => array('access content'),
+  );
+
+  return $items;
+}
+
+function fron_page() {
+  return theme('font_page_template');
+}
+
+function myhook_theme() {
+  $themes = array(
+    'font_page_template' => array(
+      'template' => 'fontpage',
+      'arguments' => array('xxx' => 'ddd'),
+    ),
+  );
+  return $themes;
+}
