@@ -146,13 +146,44 @@ Aliquam eu nunc. Aliquam erat volutpat. Nam pretium turpis et arcu. Integer tinc
 	<div class="facilities-content">
 		<div class="ct-wrapper">
 			<div class="inner">
-				<h3 class="desc-header -capital">Facilities</h3>
-				<p>Pellentesque dapibus hendrerit tortor. Pellentesque posuere. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. Sed hendrerit. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla.</p>
-				
-				<h3 class="desc-header -capital">Free Amenities & Service</h3>	
-				<p>Sed augue ipsum, egestas nec, vestibulum et, malesuada adipiscing, dui. Maecenas malesuada. Morbi mattis ullamcorper velit. Etiam sollicitudin, ipsum eu pulvinar rutrum, tellus ipsum laoreet sapien, quis venenatis ante odio sit amet eros. Suspendisse eu ligula.</p>
-
-				
+			<div class="faciimg-wrapper">
+				<div class="faciimg">
+					<img src="/sites/all/themes/parallax_zymphonies_theme/images/faci-01.png" alt="hanger"/>
+				</div>
+				<div class="faciimg">
+					<img src="/sites/all/themes/parallax_zymphonies_theme/images/faci-02.png" alt="hanger"/>
+				</div>
+				<div class="faciimg">
+					<img src="/sites/all/themes/parallax_zymphonies_theme/images/faci-03.png" alt="hanger"/>
+				</div>
+				<div class="faciimg">
+					<img src="/sites/all/themes/parallax_zymphonies_theme/images/faci-04.png" alt="hanger"/>
+				</div>
+				<div class="faciimg">
+					<img src="/sites/all/themes/parallax_zymphonies_theme/images/faci-05.png" alt="hanger"/>
+				</div>
+				<div class="faciimg">
+					<img src="/sites/all/themes/parallax_zymphonies_theme/images/faci-06.png" alt="hanger"/>
+				</div>
+				<div class="faciimg">
+					<img src="/sites/all/themes/parallax_zymphonies_theme/images/faci-07.png" alt="hanger"/>
+				</div>
+				<div class="faciimg">
+					<img src="/sites/all/themes/parallax_zymphonies_theme/images/faci-08.png" alt="hanger"/>
+				</div>
+				<div class="faciimg">
+					<img src="/sites/all/themes/parallax_zymphonies_theme/images/faci-09.png" alt="hanger"/>
+				</div>
+				<div class="faciimg">
+					<img src="/sites/all/themes/parallax_zymphonies_theme/images/faci-10.png" alt="hanger"/>
+				</div>
+				<div class="faciimg">
+					<img src="/sites/all/themes/parallax_zymphonies_theme/images/faci-11.png" alt="hanger"/>
+				</div>
+				<div class="faciimg">
+					<img src="/sites/all/themes/parallax_zymphonies_theme/images/faci-12.png" alt="hanger"/>
+				</div>
+			</div>
 			</div>
 			<div class="inner _text-grey">
 				<h3 class="desc-header _capital _text-grey">Facilities</h3>
