@@ -9,6 +9,7 @@ stylesheets[all][] = css/style.css
 stylesheets[all][] = css/media.css
 stylesheets[all][] = css/zoxo.css
 scripts[] = js/jquery-ui.min.js
+scripts[] = js/custom.js
 
 regions[home_banner_text]     = Home page banner text
 
