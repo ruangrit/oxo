@@ -10,6 +10,7 @@
 	drupal_add_css($theme_path.'/css/style1.css');
 	drupal_add_css($theme_path.'/css/dev.css');
 	drupal_add_css($theme_path.'/css/lightslider.css');
+	drupal_add_css($theme_path.'/css/bootstrap.min.css');
 	$main_image_node = node_load(2);
 	$rooms_image_node = node_load(3);
 	$exterior_image_node = node_load(4);
@@ -21,6 +22,7 @@
 <script type="text/javascript" src="<?php print $abs_theme_path;?>/js/main.js"></script>
 <script type="text/javascript" src="<?php print $abs_theme_path;?>/js/modernizr.min.js"></script>
 <script type="text/javascript" src="<?php print $abs_theme_path;?>/js/lightslider.js"></script>
+<script type="text/javascript" src="<?php print $abs_theme_path;?>/js/bootstrap.min.js"></script>
 
 <div class="menu-wrap">
   
@@ -261,49 +263,46 @@ Aliquam eu nunc. Aliquam erat volutpat. Nam pretium turpis et arcu. Integer tinc
 </div>
 
 <!-- Button trigger modal -->
-<!--
-<a class="btn btn-primary btn-lg" href="#myModal1" style="display:none">Launch demo modal</a>
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  Launch demo modal
+</button>
 
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body" style="height:300px">
 
-<div id="myModal1" class="modal" style="display:none">
+					<ul class="lightSlider">
+					  <li>
+					      <h3>First Slide</h3>
+			           		<img src="http://localhost/wordpress2/wp-content/uploads/2016/04/exterior-hero-shot-2.jpg" width="500">
+					      <p>Lorem ipsum Cupidatat quis pariatur anim.</p>
+					  </li>
+					  <li>
+					      <h3>Second Slide</h3>
+			           		<img src="http://localhost/wordpress2/wp-content/uploads/2016/04/exterior-hero-shot-2.jpg" width="500">
+					      <p>Lorem ipsum Excepteur amet adipisicing fugiat velit nisi.</p>
+					  </li>
+					</ul>
 
-    <div class="modal-body">
-   		This is the body of a modal...
-		<ul id="lightSlider">
-		  <li>
-		      <h3>First Slide</h3>
-           		<img src="http://localhost/wordpress2/wp-content/uploads/2016/04/exterior-hero-shot-2.jpg" width="500">
-		      <p>Lorem ipsum Cupidatat quis pariatur anim.</p>
-		  </li>
-		  <li>
-		      <h3>Second Slide</h3>
-           		<img src="http://localhost/wordpress2/wp-content/uploads/2016/04/exterior-hero-shot-2.jpg" width="500">
-		      <p>Lorem ipsum Excepteur amet adipisicing fugiat velit nisi.</p>
-		  </li>
-		</ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
     </div>
-    <div class="modal-footer">This is the footer of a modal...</div>
-    </div>
-
+  </div>
 </div>
-<a id="various2" href="#inline2">Inline - modal window</a>
-<div id="inline2">
-	<p>
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. &nbsp;&nbsp; <a href="javascript:;" onclick="$.fancybox.close();">Close</a>
-	</p>
-</div>
--->
 
-<script type="text/javascript">
-	$ = jQuery;	
-	$(document).ready(function() {
-		$("#various2").fancybox();
-	});
-</script>
 <script type="text/javascript">
   	$ = jQuery;	
   	$(document).ready(function() {
-    	$("#lightSlider").lightSlider({
+    	$(".lightSlider").lightSlider({
     		item: 1,
     		auto: false,
     		controls: true,
