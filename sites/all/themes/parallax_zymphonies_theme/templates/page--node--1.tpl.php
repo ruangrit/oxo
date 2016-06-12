@@ -74,7 +74,11 @@
                    </hgroup>
             	</div>
             </hgroup>
-        </div>
+        	<div class="headline__description -since text-imgsection">
+        		HOSTEL • GARDEN • CAFE<br/>
+        		<span class="small-text">oxotel hostel chiangmai thailand @ since 2015</span>
+        	</div>  
+        </div>  
     </div>
 
     <div class="article__parallax">
