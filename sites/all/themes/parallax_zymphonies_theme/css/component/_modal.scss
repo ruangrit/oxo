@@ -1,0 +1,14 @@
+.modal-content {
+	background-color: #333;
+	border-radius: 0;
+
+	color: $text-grey;
+
+	button.close {
+		color: $text-grey;
+		opacity: 1;
+		&:hover {
+			background-color: transparent;
+		}
+	}
+}

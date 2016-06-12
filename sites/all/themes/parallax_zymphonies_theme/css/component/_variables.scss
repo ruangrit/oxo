@@ -4,6 +4,9 @@ $text-imgsection: #666;
 .small-text {
 	font-size: 0.8em;
 }
+.text-huge {
+	font-size: 3em;
+}
 
 .text-imgsection {
 	color: $text-imgsection;
@@ -11,4 +14,8 @@ $text-imgsection: #666;
 
 .text-left {
 	text-align: left;
+}
+
+.text-floatmiddle {
+	line-height: 5em;
 }

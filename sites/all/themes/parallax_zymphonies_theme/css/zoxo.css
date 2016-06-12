@@ -1,11 +1,17 @@
 .small-text {
   font-size: 0.8em; }
 
+.text-huge {
+  font-size: 3em; }
+
 .text-imgsection {
   color: #666; }
 
 .text-left {
   text-align: left; }
+
+.text-floatmiddle {
+  line-height: 5em; }
 
 ._text-grey {
   color: #999999; }
@@ -123,6 +129,16 @@ ul.list-unstyled {
     color: #888; }
   .footer-list ul > li a {
     color: #aaa; }
+
+.modal-content {
+  background-color: #333;
+  border-radius: 0;
+  color: #999999; }
+  .modal-content button.close {
+    color: #999999;
+    opacity: 1; }
+    .modal-content button.close:hover {
+      background-color: transparent; }
 
 .article__header.article__header--page.two-thirds-height {
   margin-top: -50px; }
