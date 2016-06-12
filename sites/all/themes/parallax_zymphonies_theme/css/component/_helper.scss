@@ -1,6 +1,9 @@
 // helper
 ._text-grey {
 	color: $text-grey;
+	&:hover {
+		color: $text-grey;
+	}
 }
 ._capital {
 	text-transform: uppercase;
