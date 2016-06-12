@@ -416,10 +416,10 @@
 					?>
       				<?php 
 						$i = 1;
-						$style_slide = '';
 						foreach($rooms_modal_node as $room){
-							if ($i != 1) {
-								$style_slide = "style='display:none'";
+							// Hard code break for only one content
+							if ($i == 2) {
+								break;
 							}
 							?>
 
@@ -436,6 +436,10 @@
 							}
 							?>
 							</ul>
+							<div class="description">
+								<?php print $room->body['und'][0]['value']; ?>
+								<a class="btn btn-transparent _capital">Booking</a>
+							</div>
 
 							<?php
 
