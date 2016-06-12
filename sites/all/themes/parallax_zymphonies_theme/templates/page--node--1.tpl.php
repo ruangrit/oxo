@@ -251,7 +251,7 @@
 					<h3 class="desc-header _capital _text-grey">Free Amenities & Service</h3>	
 					<p>Sed augue ipsum, egestas nec, vestibulum et, malesuada adipiscing, dui. Maecenas malesuada. Morbi mattis ullamcorper velit. Etiam sollicitudin, ipsum eu pulvinar rutrum, tellus ipsum laoreet sapien, quis venenatis ante odio sit amet eros. Suspendisse eu ligula.</p>
 
-					<a class="btn btn-transparent _capital" type="button"  data-toggle="modal" data-target="modalFacilities">Explore</a>
+					<!-- ไม่เอาแล้ว เพราะใช้ tootip icon อธิบายแทน<a class="btn btn-transparent _capital" type="button"  data-toggle="modal" data-target="modalFacilities">Explore</a>-->
 				</div>
 			</div>
 		</div>
@@ -359,8 +359,8 @@
 						Our hostel is 2.00 kilometer from Chiangmai international airport<br />
 						and just only 10 minutes walk to Chiangmai gate
  					</p>
- 					<a class="btn btn-transparent _capital">Map</a>
- 					<a class="btn btn-transparent _capital">Mail us</a>
+ 					<a class="btn btn-transparent _capital"  data-toggle="modal" data-target="#mapModal">Map</a>
+ 					<a class="btn btn-transparent _capital" data-toggle="modal" data-target="#contactModal">Mail us</a>
  				</div>
  			</div>
 		</div>
@@ -548,6 +548,39 @@
 	      				</div>
 	      			</li>
 	      		</ul>
+	      	</div>
+	    </div>
+	</div>
+</div>
+
+<!-- About Modal -->
+<div class="modal fade" id="mapModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	<div class="modal-dialog modal-lg" role="document">
+	    <div class="modal-content">
+		    <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="/sites/all/themes/parallax_zymphonies_theme/images/close.svg" /></span></button>
+	        <!-- <h4 class="modal-title text-modal" id="myModalLabel">Rooms</h4> -->
+	      	</div>
+	      	<div class="modal-body text-modal">
+	      	<iframe src="https://www.google.com/maps/d/embed?mid=11idAtyrUxD9qZCA6gGRayP18KsA" width="640" height="480"></iframe>
+	      	</div>
+	    </div>
+	</div>
+</div>
+
+<!-- Contact Modal -->
+<div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	<div class="modal-dialog modal-lg" role="document">
+	    <div class="modal-content">
+		    <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="/sites/all/themes/parallax_zymphonies_theme/images/close.svg" /></span></button>
+	        <!-- <h4 class="modal-title text-modal" id="myModalLabel">Rooms</h4> -->
+	      	</div>
+	      	<div class="modal-body text-modal">
+	 			<?php
+					module_load_include('inc', 'contact', 'contact.pages');
+				 	echo drupal_render(drupal_get_form('contact_site_form'));
+				?>
 	      	</div>
 	    </div>
 	</div>
