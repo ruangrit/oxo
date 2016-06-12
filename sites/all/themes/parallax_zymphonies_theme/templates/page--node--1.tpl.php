@@ -17,7 +17,7 @@
 	$cafe_image_node = node_load(5);
 
 	$rooms_modal_node = node_load_multiple(array(), array('type' => 'rooms')); 
-	$cafe_modal_node = node_load_multiple(array(), array('type' => 'cafe')); 
+	$cafe_modal_node = node_load(11); 
 
 ?>
 
@@ -164,7 +164,7 @@
 			            	faucibus non, euismod id, nulla.
 			            </p>
 			            <div>
-				          	<button  id="modal_click_rooms" class="btn btn-transparent -darkbg _capital" type="button"  data-toggle="modal" data-target="#myModal">
+				          	<button  id="modal_click_rooms" class="btn btn-transparent -darkbg _capital" type="button"  data-toggle="modal" data-target="#roomsModal">
 								DETAILS	
 							</button>
 			            </div>
@@ -303,7 +303,7 @@
 			            </p>
 			            <div>
 
-				          	<button class="btn btn-transparent -darkbg _capital" type="button"  data-toggle="modal" data-target="#myModal">
+				          	<button id="modal_click_cafe" class="btn btn-transparent -darkbg _capital" type="button"  data-toggle="modal" data-target="#cafeModal">
 								Explore
 							</button>
 			            </div>
@@ -403,8 +403,8 @@
 </div>
 
 
-<!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<!-- Rooms Modal -->
+<div class="modal fade" id="roomsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -428,7 +428,7 @@
 							}
 							?>
 
-							<ul class="lightSlider">
+							<ul class="lightSliderRooms">
 							<?php
 							foreach($room->field_slide_image['und'] as $image){
 								?>
@@ -454,27 +454,80 @@
 
 
       </div>
-<!--       <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div> -->
     </div>
   </div>
 </div>
 
+<!-- Cafe Modal -->
+<div class="modal fade" id="cafeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="/sites/all/themes/parallax_zymphonies_theme/images/close.svg" /></span></button>
+        <!-- <h4 class="modal-title text-modal" id="myModalLabel">Rooms</h4> -->
+      </div>
+      <div class="modal-body text-modal">
+
+      		<div class="title">
+      			<?php print $cafe_modal_node->title;?>
+      		</div>
+			<ul class="lightSliderCafe">
+			<?php
+			foreach($cafe_modal_node->field_slide_image['und'] as $image){
+				?>
+				  <li>
+		           		<img src="<?php print file_create_url($image['uri']);?>" width="500">
+				  </li>
+
+				<?php
+
+			}
+			?>
+			</ul>
+			<div class="modal-description">
+
+				<?php print $cafe_modal_node->body['und'][0]['value']; ?>
+			</div>
+
+
+      </div>
+    </div>
+  </div>
+</div>
 <script type="text/javascript">
   	$ = jQuery;	
   	$(document).ready(function() {
-
+  		var is_slice_rooms = false;
     	$('#modal_click_rooms').click(function () {
-    		setTimeout(function(){
-		    	$(".lightSlider").lightSlider({
-		    		item: 1,
-		    		auto: false,
-		    		controls: true,
-		    	}); 
 
-    		}, 1000);	
+			if (!is_slice_rooms) {
+	    		setTimeout(function(){
+			    	$(".lightSliderRooms").lightSlider({
+			    		item: 1,
+			    		auto: false,
+			    		controls: true,
+			    	}); 
+		    		is_slice_rooms = true;
+
+	    		}, 200);	
+			}
     	});
+    	// =============================
+  		var is_slice_cafe = false;
+    	$('#modal_click_cafe').click(function () {
+
+			if (!is_slice_cafe) {
+	    		setTimeout(function(){
+			    	$(".lightSliderCafe").lightSlider({
+			    		item: 1,
+			    		auto: false,
+			    		controls: true,
+			    	}); 
+		    		is_slice_cafe = true;
+
+	    		}, 200);	
+			}
+    	});
+
   	});
 </script>
