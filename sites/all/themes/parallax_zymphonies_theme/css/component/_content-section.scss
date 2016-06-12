@@ -1,0 +1,95 @@
+// ct-wrapper
+.ct-wrapper {
+	// display: table;
+
+	> .inner {
+		width: 50%;
+		@media (max-width: 768px) {
+			width: 100%;
+		}
+	}
+	> .inner.-center {
+		width: 100%;
+	}
+	> .inner.-left {
+		float: left;
+		@media (min-width: 769px) {
+			padding-right: 25px;
+		}
+	}	
+	> .inner.-right {
+		float: right;
+		@media (min-width: 769px) {
+			padding-left: 25px;
+		}
+	}
+	> .inner > h3 {
+		margin-bottom: 20px;
+	}
+	> .inner > p {
+		margin-bottom: 30px;
+	}
+}
+.inner-wrapper {
+	display: inline-block;
+}
+
+// desc-section
+.desc-section {
+	display: block;
+    overflow: hidden;
+	margin-top: -50px;
+	&.-facilities {
+		height: 800px;
+	}
+	&.-reservation {
+		height: 700px;
+	}
+}
+
+// facities-content
+.facilities-content {
+	display: block;
+	box-sizing: border-box;
+	border: 5px solid #CCCCCC;
+	max-width: 1200px;
+	margin: 50px auto;
+	overflow: hidden;
+	@media (min-width: 521px) and (max-width: 1200px) {
+		margin: 50px;
+	}
+	@media (max-width: 520px) {
+		margin: 50px 15px;
+	}
+
+	padding: 50px;
+	@media (max-width: 768px) {
+		padding: 50px 25px;
+	} 
+	@media (min-width: 992px) {
+		padding: (30px / 700px * 100%) (60px / 700px * 100%);
+	}
+	@media (max-width: 520px) {
+		padding: 25px 0;
+	}
+}
+.faciimg-wrapper {
+	@media (min-width: 769px) {
+		max-width: 400px;
+	}
+
+	.faciimg {
+		width: 33.33%;
+		height: 120px;
+		text-align: center;
+		vertical-align: middle;
+		float: left;
+		> img {
+			display: inline-block;
+		}
+	}
+}
+
+.reservation-content {
+
+}

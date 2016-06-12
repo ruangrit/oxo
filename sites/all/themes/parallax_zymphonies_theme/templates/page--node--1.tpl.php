@@ -104,12 +104,28 @@
 </header>
 
 
-<div id="rooms" class="description-main"> 
- Pellentesque dapibus hendrerit tortor. Pellentesque posuere. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. Sed hendrerit. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla.
-
-Sed augue ipsum, egestas nec, vestibulum et, malesuada adipiscing, dui. Maecenas malesuada. Morbi mattis ullamcorper velit. Etiam sollicitudin, ipsum eu pulvinar rutrum, tellus ipsum laoreet sapien, quis venenatis ante odio sit amet eros. Suspendisse eu ligula.
-
-Aliquam eu nunc. Aliquam erat volutpat. Nam pretium turpis et arcu. Integer tincidunt. Fusce commodo aliquam arcu.
+<div id="rooms" class="description-main desc-section -reservation"> 
+	<div class="reservation-content">
+		<div class="ct-wrapper">
+			<div class="inner -left _text-right">
+				<div class="inner-wrapper _text-grey">
+					<h3 class="desc-header _capital _text-grey">OXOTEL</h3>
+ 					<p>Pellentesque dapibus hendrerit tortor.<br />Pellentesque posuere. Vestibulum ante ipsum primis in faucibus<br />orci luctus et ultrices posuere cubilia Curae;</p>
+ 					<a class="btn btn-transparent _capital">Explore</a>
+ 				</div>
+ 			</div>
+ 			<div class="inner -right">
+				<div class="inner-wrapper _text-grey">
+					<h3 class="desc-header _capital _text-grey">Reservation</h3>
+ 					<p>Pellentesque dapibus hendrerit tortor. Pellentesque posuere.<br />Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;<br />faucibus non, euismod id, nulla.</p>
+ 					<p>Pellentesque dapibus hendrerit tortor. Pellentesque posuere.<br />In ac dui quis mi consectetuer lacinia. Sed hendrerit. Donec orci lectus, aliquam ut<br />faucibus non, euismod id, nulla.</p>
+ 					<p>Pellentesque dapibus hendrerit tortor. Pellentesque posuere.<br />Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;<br />faucibus non, euismod id, nulla.</p>
+ 					<a class="btn btn-transparent _capital">Condition</a>
+ 					<a class="btn btn-transparent _capital">Booking</a>
+ 				</div>
+ 			</div>
+		</div>
+	</div>
 </div>
 
 
@@ -147,54 +163,58 @@ Aliquam eu nunc. Aliquam erat volutpat. Nam pretium turpis et arcu. Integer tinc
 <div id="facilities" class="desc-section -facilities"> 
 	<div class="facilities-content">
 		<div class="ct-wrapper">
-			<div class="inner">
-			<div class="faciimg-wrapper">
-				<div class="faciimg">
-					<img src="/sites/all/themes/parallax_zymphonies_theme/images/faci-01.png" alt="hanger"/>
-				</div>
-				<div class="faciimg">
-					<img src="/sites/all/themes/parallax_zymphonies_theme/images/faci-02.png" alt="hanger"/>
-				</div>
-				<div class="faciimg">
-					<img src="/sites/all/themes/parallax_zymphonies_theme/images/faci-03.png" alt="hanger"/>
-				</div>
-				<div class="faciimg">
-					<img src="/sites/all/themes/parallax_zymphonies_theme/images/faci-04.png" alt="hanger"/>
-				</div>
-				<div class="faciimg">
-					<img src="/sites/all/themes/parallax_zymphonies_theme/images/faci-05.png" alt="hanger"/>
-				</div>
-				<div class="faciimg">
-					<img src="/sites/all/themes/parallax_zymphonies_theme/images/faci-06.png" alt="hanger"/>
-				</div>
-				<div class="faciimg">
-					<img src="/sites/all/themes/parallax_zymphonies_theme/images/faci-07.png" alt="hanger"/>
-				</div>
-				<div class="faciimg">
-					<img src="/sites/all/themes/parallax_zymphonies_theme/images/faci-08.png" alt="hanger"/>
-				</div>
-				<div class="faciimg">
-					<img src="/sites/all/themes/parallax_zymphonies_theme/images/faci-09.png" alt="hanger"/>
-				</div>
-				<div class="faciimg">
-					<img src="/sites/all/themes/parallax_zymphonies_theme/images/faci-10.png" alt="hanger"/>
-				</div>
-				<div class="faciimg">
-					<img src="/sites/all/themes/parallax_zymphonies_theme/images/faci-11.png" alt="hanger"/>
-				</div>
-				<div class="faciimg">
-					<img src="/sites/all/themes/parallax_zymphonies_theme/images/faci-12.png" alt="hanger"/>
+			<div class="inner -left _text-right">
+				<div class="inner-wrapper">
+					<div class="faciimg-wrapper">
+						<div class="faciimg">
+							<img src="/sites/default/files/front-page/faci-01.png" alt="hanger"/>
+						</div>
+						<div class="faciimg">
+							<img src="/sites/default/files/front-page/faci-02.png" alt="hanger"/>
+						</div>
+						<div class="faciimg">
+							<img src="/sites/default/files/front-page/faci-03.png" alt="hanger"/>
+						</div>
+						<div class="faciimg">
+							<img src="/sites/default/files/front-page/faci-04.png" alt="hanger"/>
+						</div>
+						<div class="faciimg">
+							<img src="/sites/default/files/front-page/faci-05.png" alt="hanger"/>
+						</div>
+						<div class="faciimg">
+							<img src="/sites/default/files/front-page/faci-06.png" alt="hanger"/>
+						</div>
+						<div class="faciimg">
+							<img src="/sites/default/files/front-page/faci-07.png" alt="hanger"/>
+						</div>
+						<div class="faciimg">
+							<img src="/sites/default/files/front-page/faci-08.png" alt="hanger"/>
+						</div>
+						<div class="faciimg">
+							<img src="/sites/default/files/front-page/faci-09.png" alt="hanger"/>
+						</div>
+						<div class="faciimg">
+							<img src="/sites/default/files/front-page/faci-10.png" alt="hanger"/>
+						</div>
+						<div class="faciimg">
+							<img src="/sites/default/files/front-page/faci-11.png" alt="hanger"/>
+						</div>
+						<div class="faciimg">
+							<img src="/sites/default/files/front-page/faci-12.png" alt="hanger"/>
+						</div>
+					</div>					
 				</div>
 			</div>
-			</div>
-			<div class="inner _text-grey">
-				<h3 class="desc-header _capital _text-grey">Facilities</h3>
-				<p>Pellentesque dapibus hendrerit tortor. Pellentesque posuere. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. Sed hendrerit. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla.</p>
-				
-				<h3 class="desc-header _capital _text-grey">Free Amenities & Service</h3>	
-				<p>Sed augue ipsum, egestas nec, vestibulum et, malesuada adipiscing, dui. Maecenas malesuada. Morbi mattis ullamcorper velit. Etiam sollicitudin, ipsum eu pulvinar rutrum, tellus ipsum laoreet sapien, quis venenatis ante odio sit amet eros. Suspendisse eu ligula.</p>
+			<div class="inner -right _text-grey">
+				<div class="inner-wrapper _textcenter-768px">
+					<h3 class="desc-header _capital _text-grey">Facilities</h3>
+					<p>Pellentesque dapibus hendrerit tortor. Pellentesque posuere. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. Sed hendrerit. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla.</p>
+					
+					<h3 class="desc-header _capital _text-grey">Free Amenities & Service</h3>	
+					<p>Sed augue ipsum, egestas nec, vestibulum et, malesuada adipiscing, dui. Maecenas malesuada. Morbi mattis ullamcorper velit. Etiam sollicitudin, ipsum eu pulvinar rutrum, tellus ipsum laoreet sapien, quis venenatis ante odio sit amet eros. Suspendisse eu ligula.</p>
 
-				<a class="btn btn-transparent _capital">Explore</a>
+					<a class="btn btn-transparent _capital">Explore</a>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -254,12 +274,67 @@ Aliquam eu nunc. Aliquam erat volutpat. Nam pretium turpis et arcu. Integer tinc
 	</div>
 </header>
 
-<div class="description-find_us"> 
- Pellentesque dapibus hendrerit tortor. Pellentesque posuere. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. Sed hendrerit. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla.
+<div class="desc-section description-find_us"> 
+	<div class="findus-content">
+		<div class="ct-wrapper">
+			<div class="inner -center _text-center">
+				<div class="inner-wrapper _text-grey">
+					<h3 class="desc-header _capital _text-grey">Find Us</h3>
+ 					<p>
+ 						Oxotel is 2.00 kilometer from Chiangmai international airport and just only 10 minutes <br />
+ 						walk to Chiangmai gate (South-gate), one of the important antique gate of the old city area. <br />
+ 						At Chiangmai gate, there is a local fresh market that you can experience the northern people, <br />
+ 						local culture and life style. Public local transportation (yellow - cars) station to Jomthong <br />
+ 						and Hod for Doi Inthanon destination is around Chiangmai gate as well.
+ 					</p>
+ 					<p>
+ 						Tel. +66 (0)52 085 334<br />
+ 						149-153 Wua lai rd., T.hai ya, A.muang 50100<br />
+						Our hostel is 2.00 kilometer from Chiangmai international airport<br />
+						and just only 10 minutes walk to Chiangmai gate
+ 					</p>
+ 					<a class="btn btn-transparent _capital">Map</a>
+ 					<a class="btn btn-transparent _capital">Mail us</a>
+ 				</div>
+ 			</div>
+		</div>
+	</div>
+</div>
 
-Sed augue ipsum, egestas nec, vestibulum et, malesuada adipiscing, dui. Maecenas malesuada. Morbi mattis ullamcorper velit. Etiam sollicitudin, ipsum eu pulvinar rutrum, tellus ipsum laoreet sapien, quis venenatis ante odio sit amet eros. Suspendisse eu ligula.
-
-Aliquam eu nunc. Aliquam erat volutpat. Nam pretium turpis et arcu. Integer tincidunt. Fusce commodo aliquam arcu.
+<div class="footer">
+	<div class="footer-list">
+		<h4>Hostel</h4>
+		<ul class="list-unstyled">
+			<li><a href="#">About</a></li>
+			<li><a href="#">Facilities</a></li>
+			<li><a href="#">Artisan cafe</a></li>
+			<li><a href="#">Find us</a></li>
+		</ul>
+	</div>
+	<div class="footer-list">
+		<h4>Others</h4>
+		<ul class="list-unstyled">
+			<li><a href="#">Booking</a></li>
+			<li><a href="#">Rooms</a></li>
+			<li><a href="#">Email us</a></li>
+		</ul>
+	</div>
+	<div class="footer-list">
+		<h4>Social</h4>
+		<ul class="list-unstyled">
+			<li><a href="#">Instagram</a></li>
+			<li><a href="#">Twitter</a></li>
+			<li><a href="#">Google+</a></li>
+		</ul>
+	</div>
+	<div class="footer-list">
+		<h4>Site</h4>
+		<ul class="list-unstyled">
+			<li><a href="#">Agoda</a></li>
+			<li><a href="#">Booking.com</a></li>
+			<li><a href="#">Hostel world</a></li>
+		</ul>
+	</div>
 </div>
 
 <!-- Button trigger modal -->

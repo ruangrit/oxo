@@ -1,0 +1,31 @@
+.footer {
+	background-color: #666;
+	border-bottom: 30px solid #555;
+	padding: 50px 0;
+
+	text-align: center;
+}
+
+ul.list-unstyled {
+	list-style-type: none;
+    margin-left: 0;
+    margin-bottom: 0;
+}
+
+.footer-list {
+	display: inline-block;
+	vertical-align: top;
+	padding: 0 30px;
+
+	h4,
+	ul > li {
+		text-align: left;
+	}
+
+	h4 {
+		color: #888;
+	}
+	ul > li a {
+		color: #aaa;
+	}
+}
