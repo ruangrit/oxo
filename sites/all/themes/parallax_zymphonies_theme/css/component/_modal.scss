@@ -4,6 +4,7 @@
 
 .modal-content {
 	background-color: $color-6;
+	background-color: rgba(39, 39, 39, .93);
 	border-radius: 0;
 
 	color: $color-1;
@@ -21,6 +22,7 @@
 	.btn-transparent {
 		display: block;
 		margin-top: 15px;
+		max-width: 175px;
 	}
 
 	.title {

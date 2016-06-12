@@ -168,6 +168,7 @@ ul.list-unstyled {
 
 .modal-content {
   background-color: #272727;
+  background-color: rgba(39, 39, 39, 0.93);
   border-radius: 0;
   color: #3E3E3E;
   overflow: hidden; }
@@ -178,7 +179,8 @@ ul.list-unstyled {
       background-color: transparent; }
   .modal-content .btn-transparent {
     display: block;
-    margin-top: 15px; }
+    margin-top: 15px;
+    max-width: 175px; }
   .modal-content .title {
     display: none; }
 
