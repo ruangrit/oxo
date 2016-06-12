@@ -1,0 +1,20 @@
+// helper
+._text-grey {
+	color: $text-grey;
+}
+._capital {
+	text-transform: uppercase;
+}
+._text-center {
+	text-align: center;
+}
+._text-right {
+	@media (min-width: 769px) {
+		text-align: right;
+	}
+}
+._textcenter-768px {
+	@media (max-width: 768px) {
+		text-align: center;
+	}
+}
