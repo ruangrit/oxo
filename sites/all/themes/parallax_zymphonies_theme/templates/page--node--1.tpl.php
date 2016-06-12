@@ -164,7 +164,7 @@
 			            </p>
 			            <div>
 
-				          	<button class="btn btn-transparent _capital" type="button"  data-toggle="modal" data-target="#myModal">
+				          	<button id="modal_click_rooms" class="btn btn-transparent _capital" type="button"  data-toggle="modal" data-target="#myModal">
 								DETAILS	
 							</button>
 			            </div>
@@ -520,10 +520,16 @@
 <script type="text/javascript">
   	$ = jQuery;	
   	$(document).ready(function() {
-    	$(".lightSlider").lightSlider({
-    		item: 1,
-    		auto: false,
-    		controls: true,
-    	}); 
+
+    	$('#modal_click_rooms').click(function () {
+    		setTimeout(function(){
+		    	$(".lightSlider").lightSlider({
+		    		item: 1,
+		    		auto: false,
+		    		controls: true,
+		    	}); 
+
+    		}, 1000);	
+    	});
   	});
 </script>
