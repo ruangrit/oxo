@@ -16,6 +16,9 @@
 	$exterior_image_node = node_load(4);
 	$cafe_image_node = node_load(5);
 
+	$rooms_modal_node = node_load_multiple(array(), array('type' => 'rooms')); 
+	$cafe_modal_node = node_load_multiple(array(), array('type' => 'cafe')); 
+
 ?>
 
 <script type="text/javascript" src="<?php print $abs_theme_path;?>/js/plugins.js"></script>
@@ -409,19 +412,42 @@
         <h4 class="modal-title" id="myModalLabel">Modal title</h4>
       </div>
       <div class="modal-body">
+      				<?php
+						foreach($rooms_modal_node as $room){
+							?>
+								<div class="title"><?php print $room->title;?></div>
+							<?php
+						}
+					?>
+      				<?php 
+						$i = 1;
+						$style_slide = '';
+						foreach($rooms_modal_node as $room){
+							if ($i != 1) {
+								$style_slide = "style='display:none'";
+							}
+							?>
 
-					<ul class="lightSlider">
-					  <li>
-					      <h3>First Slide</h3>
-			           		<img src="sites/default/files/rooms_01.jpg" width="500">
-					      <p>Lorem ipsum Cupidatat quis pariatur anim.</p>
-					  </li>
-					  <li>
-					      <h3>Second Slide</h3>
-			           		<img src="sites/default/files/04_0.jpg" width="500">
-					      <p>Lorem ipsum Excepteur amet adipisicing fugiat velit nisi.</p>
-					  </li>
-					</ul>
+							<ul class="lightSlider">
+							<?php
+							foreach($room->field_slide_image['und'] as $image){
+								?>
+								  <li>
+						           		<img src="<?php print file_create_url($image['uri']);?>" width="500">
+								  </li>
+
+								<?php
+
+							}
+							?>
+							</ul>
+
+							<?php
+
+							$i++;
+						}
+					?>
+
 
       </div>
       <div class="modal-footer">
