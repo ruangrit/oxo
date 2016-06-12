@@ -69,7 +69,7 @@
 <header id="post-205-title" class="article__header  article__header--page full-height">
     <div class="covers"></div>
     <div class="flexbox">
-        <div class="flexbox__item">
+        <div class="flexbox__item -bottom">
             <hgroup class="article__headline article-headline-main">
  	           <h1 class="headline__primary">OXOTEL</h1>
  	           <div class="headline__description">
@@ -405,13 +405,13 @@
 
 <!-- Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
+  <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="/sites/all/themes/parallax_zymphonies_theme/images/close.svg" /></span></button>
-        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+        <!-- <h4 class="modal-title text-modal" id="myModalLabel">Rooms</h4> -->
       </div>
-      <div class="modal-body">
+      <div class="modal-body text-modal">
       				<?php
 						foreach($rooms_modal_node as $room){
 							?>
@@ -441,9 +441,9 @@
 							}
 							?>
 							</ul>
-							<div class="description">
+							<div class="modal-description">
 								<?php print $room->body['und'][0]['value']; ?>
-								<a class="btn btn-transparent _capital">Booking</a>
+								<a class="btn btn-transparent -orange _invert _capital">Booking</a>
 							</div>
 
 							<?php
@@ -454,10 +454,10 @@
 
 
       </div>
-      <div class="modal-footer">
+<!--       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
+      </div> -->
     </div>
   </div>
 </div>

@@ -1,8 +1,14 @@
+.modal-header {
+	border-bottom: 0;
+}
+
 .modal-content {
 	background-color: $color-6;
 	border-radius: 0;
 
 	color: $color-1;
+
+	overflow: hidden;
 
 	button.close {
 		color: $color-1;
@@ -10,5 +16,34 @@
 		&:hover {
 			background-color: transparent;
 		}
+	}
+
+	.btn-transparent {
+		display: block;
+		margin-top: 15px;
+	}
+}
+
+.lSSlideOuter {
+	@media (max-width: 768px) {
+		margin-bottom: 30px;
+	}
+	@media (min-width: 769px) {
+		width: 50%;
+		float: left;
+		padding-right: 15px;
+	}
+
+	li > img {
+		width: 100%;
+	}
+
+}
+
+.modal-description {
+	@media (min-width: 769px) {
+		width: 50%;
+		float: right;
+		padding-left: 15px;
 	}
 }

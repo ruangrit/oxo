@@ -16,6 +16,9 @@
 .text-floatmiddle {
   line-height: 5em; }
 
+.text-modal {
+  color: #AEAFB5; }
+
 .text-bright {
   color: #E1E2E5; }
 
@@ -160,15 +163,39 @@ ul.list-unstyled {
   .footer-list ul > li a {
     color: #aaa; }
 
+.modal-header {
+  border-bottom: 0; }
+
 .modal-content {
   background-color: #272727;
   border-radius: 0;
-  color: #3E3E3E; }
+  color: #3E3E3E;
+  overflow: hidden; }
   .modal-content button.close {
     color: #3E3E3E;
     opacity: 1; }
     .modal-content button.close:hover {
       background-color: transparent; }
+  .modal-content .btn-transparent {
+    display: block;
+    margin-top: 15px; }
+
+@media (max-width: 768px) {
+  .lSSlideOuter {
+    margin-bottom: 30px; } }
+@media (min-width: 769px) {
+  .lSSlideOuter {
+    width: 50%;
+    float: left;
+    padding-right: 15px; } }
+.lSSlideOuter li > img {
+  width: 100%; }
+
+@media (min-width: 769px) {
+  .modal-description {
+    width: 50%;
+    float: right;
+    padding-left: 15px; } }
 
 body {
   color: #3E3E3E; }
@@ -179,7 +206,8 @@ body {
 .menu-wrap {
   background-color: transparent;
   border-bottom: 0;
-  text-align: center; }
+  text-align: center;
+  top: 13%; }
 
 #main-menu {
   float: none; }
@@ -191,7 +219,11 @@ body {
   border-right: 0; }
 
 .headline__description.-since {
-  margin-top: 200px; }
+  margin-top: 150px;
+  margin-bottom: 80px; }
+
+.flexbox__item.-bottom {
+  vertical-align: bottom; }
 
 .btn.btn-transparent {
   background-color: transparent;
