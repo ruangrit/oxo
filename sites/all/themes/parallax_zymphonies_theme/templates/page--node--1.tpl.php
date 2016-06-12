@@ -164,8 +164,7 @@
 			            	faucibus non, euismod id, nulla.
 			            </p>
 			            <div>
-
-				          	<button class="btn btn-transparent -darkbg _capital" type="button"  data-toggle="modal" data-target="#myModal">
+				          	<button  id="modal_click_rooms" class="btn btn-transparent -darkbg _capital" type="button"  data-toggle="modal" data-target="#myModal">
 								DETAILS	
 							</button>
 			            </div>
@@ -422,10 +421,10 @@
 					?>
       				<?php 
 						$i = 1;
-						$style_slide = '';
 						foreach($rooms_modal_node as $room){
-							if ($i != 1) {
-								$style_slide = "style='display:none'";
+							// Hard code break for only one content
+							if ($i == 2) {
+								break;
 							}
 							?>
 
@@ -442,6 +441,10 @@
 							}
 							?>
 							</ul>
+							<div class="description">
+								<?php print $room->body['und'][0]['value']; ?>
+								<a class="btn btn-transparent _capital">Booking</a>
+							</div>
 
 							<?php
 
@@ -462,10 +465,16 @@
 <script type="text/javascript">
   	$ = jQuery;	
   	$(document).ready(function() {
-    	$(".lightSlider").lightSlider({
-    		item: 1,
-    		auto: false,
-    		controls: true,
-    	}); 
+
+    	$('#modal_click_rooms').click(function () {
+    		setTimeout(function(){
+		    	$(".lightSlider").lightSlider({
+		    		item: 1,
+		    		auto: false,
+		    		controls: true,
+		    	}); 
+
+    		}, 1000);	
+    	});
   	});
 </script>
