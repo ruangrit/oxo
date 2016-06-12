@@ -247,7 +247,7 @@
 					<h3 class="desc-header _capital _text-grey">Free Amenities & Service</h3>	
 					<p>Sed augue ipsum, egestas nec, vestibulum et, malesuada adipiscing, dui. Maecenas malesuada. Morbi mattis ullamcorper velit. Etiam sollicitudin, ipsum eu pulvinar rutrum, tellus ipsum laoreet sapien, quis venenatis ante odio sit amet eros. Suspendisse eu ligula.</p>
 
-					<a class="btn btn-transparent _capital">Explore</a>
+					<a class="btn btn-transparent _capital" type="button"  data-toggle="modal" data-target="modalFacilities">Explore</a>
 				</div>
 			</div>
 		</div>
@@ -304,6 +304,11 @@
 								Explore
 							</button>
 			            </div>
+					</div>
+				</div>
+				<div class="inner -right _text-grey">
+					<div class="inner-wrapper">
+			            <h2 class="text-huge text-floatmiddle"><a class="_text-grey" href="#">Artisan</a></h2>
 					</div>
 				</div>
 			</div>
@@ -400,7 +405,7 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="/sites/all/themes/parallax_zymphonies_theme/images/close.svg" /></span></button>
         <h4 class="modal-title" id="myModalLabel">Modal title</h4>
       </div>
       <div class="modal-body">
@@ -417,6 +422,61 @@
 					      <p>Lorem ipsum Excepteur amet adipisicing fugiat velit nisi.</p>
 					  </li>
 					</ul>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="modalFacilities" tabindex="-1" role="dialog" aria-labelledby="modalFacilities">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="/sites/all/themes/parallax_zymphonies_theme/images/close.svg" /></span></button>
+        <!-- <h4 class="modal-title" id="myModalLabel">Modal title</h4> -->
+      </div>
+      <div class="modal-body">
+
+					<ul class="lightSlider">
+					  <li>
+					      <h3>First Slide</h3>
+			           		<img src="sites/default/files/rooms_01.jpg" width="500">
+					      <p>Lorem ipsum Cupidatat quis pariatur anim.</p>
+					  </li>
+					  <li>
+					      <h3>Second Slide</h3>
+			           		<img src="sites/default/files/04_0.jpg" width="500">
+					      <p>Lorem ipsum Excepteur amet adipisicing fugiat velit nisi.</p>
+					  </li>
+					</ul>
+
+		<h3>Booking & Payment</h3>
+        <p>
+        	Pellentesque dapibus hendrerit tortor. Pellentesque posuere. <br />
+        	Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; <br />
+        	faucibus non, euismod id, nulla.
+        </p>
+        <p>
+        	Pellentesque dapibus hendrerit tortor. Pellentesque posuere. <br />
+        	Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; <br />
+        	faucibus non, euismod id, nulla.
+        </p>
+        <p>
+        	Pellentesque dapibus hendrerit tortor. Pellentesque posuere. <br />
+        	Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; <br />
+        	faucibus non, euismod id, nulla.
+        </p>
+        <p>
+        	Pellentesque dapibus hendrerit tortor. Pellentesque posuere. <br />
+        	Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; <br />
+        	faucibus non, euismod id, nulla.
+        </p>
+        <button type="button" class="btn btn-transparent _capital">Reservation</button>
 
       </div>
       <div class="modal-footer">
