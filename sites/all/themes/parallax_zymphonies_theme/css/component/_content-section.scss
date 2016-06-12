@@ -1,28 +1,37 @@
 // ct-wrapper
 .ct-wrapper {
-	// display: table;
+	display: table;
+	width: 100%;
 
 	> .inner {
-		width: 50%;
-		@media (max-width: 768px) {
-			width: 100%;
+		margin-bottom: 30px;
+		@media (min-width: 768px) {
+			display: table-cell;
+			width: 50%;
+			position: relative;
+			vertical-align: top;		
+		}
+	}
+	> .inner.-left {
+		@media (max-width: 767px) {
+			float: left;
+		}
+		@media (min-width: 768px) {
+			padding-right: 25px;
+		}
+	}	
+	> .inner.-right {
+		@media (max-width: 767px) {
+			float: left;
+		}
+		@media (min-width: 768px) {
+			padding-left: 25px;
 		}
 	}
 	> .inner.-center {
 		width: 100%;
 	}
-	> .inner.-left {
-		float: left;
-		@media (min-width: 769px) {
-			padding-right: 25px;
-		}
-	}	
-	> .inner.-right {
-		float: right;
-		@media (min-width: 769px) {
-			padding-left: 25px;
-		}
-	}
+
 	> .inner > h3 {
 		margin-bottom: 20px;
 	}
@@ -30,8 +39,22 @@
 		margin-bottom: 30px;
 	}
 }
+
 .inner-wrapper {
-	display: inline-block;
+
+	> .btn.-keepright {
+		@media (min-width: 768px) {
+			position: absolute;
+    		bottom: 0;
+    		right: 25px;
+    	}
+	}
+
+	> .btn.-keepleft {
+		position: absolute;
+    	bottom: 0;
+    	left: 25px;
+	}
 }
 
 // desc-section
@@ -98,7 +121,7 @@
 }
 
 .reservation-content {
-
+	display: block;
 }
 
 .findus-content {

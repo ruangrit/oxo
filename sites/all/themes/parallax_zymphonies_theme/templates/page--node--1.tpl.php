@@ -118,7 +118,7 @@
 				<div class="inner-wrapper _text-grey">
 					<h3 class="desc-header _capital _text-grey">OXOTEL</h3>
  					<p>Pellentesque dapibus hendrerit tortor.<br />Pellentesque posuere. Vestibulum ante ipsum primis in faucibus<br />orci luctus et ultrices posuere cubilia Curae;</p>
- 					<a class="btn btn-transparent _capital">Explore</a>
+ 					<a class="btn btn-transparent -keepright _capital">Explore</a>
  				</div>
  			</div>
  			<div class="inner -right">
@@ -149,6 +149,7 @@
 	        </hgroup> -->
 
 			<div class="ct-wrapper">
+				<div class="inner -left -emptycell"></div>
 				<div class="inner -right text-left text-bright">
 					<div class="inner-wrapper">
 			            <h2><a class="text-bright" href="#">Rooms</a></h2>
