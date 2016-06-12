@@ -15,6 +15,7 @@
 	$rooms_image_node = node_load(3);
 	$exterior_image_node = node_load(4);
 	$cafe_image_node = node_load(5);
+	$about_node = node_load(14);
 
 	$rooms_modal_node = node_load_multiple(array(), array('type' => 'rooms')); 
 	$cafe_modal_node = node_load(11); 
@@ -118,7 +119,7 @@
 				<div class="inner-wrapper _text-grey">
 					<h3 class="desc-header _capital _text-grey">OXOTEL</h3>
  					<p>Pellentesque dapibus hendrerit tortor.<br />Pellentesque posuere. Vestibulum ante ipsum primis in faucibus<br />orci luctus et ultrices posuere cubilia Curae;</p>
- 					<a class="btn btn-transparent -keepright _capital">Explore</a>
+ 					<a class="btn btn-transparent -keepright _capital" data-toggle="modal" data-target="#aboutModal">Explore</a>
  				</div>
  			</div>
  			<div class="inner -right">
@@ -127,7 +128,7 @@
  					<p>Pellentesque dapibus hendrerit tortor. Pellentesque posuere.<br />Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;<br />faucibus non, euismod id, nulla.</p>
  					<p>Pellentesque dapibus hendrerit tortor. Pellentesque posuere.<br />In ac dui quis mi consectetuer lacinia. Sed hendrerit. Donec orci lectus, aliquam ut<br />faucibus non, euismod id, nulla.</p>
  					<p>Pellentesque dapibus hendrerit tortor. Pellentesque posuere.<br />Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;<br />faucibus non, euismod id, nulla.</p>
- 					<a class="btn btn-transparent _capital">Condition</a>
+ 					<a id="modal_click_condition" class="btn btn-transparent _capital" data-toggle="modal" data-target="#conditionModal">Condition</a>
  					<a class="btn btn-transparent -orange _capital">Booking</a>
  				</div>
  			</div>
@@ -494,9 +495,67 @@
     </div>
   </div>
 </div>
+
+<!-- About Modal -->
+<div class="modal fade" id="aboutModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="/sites/all/themes/parallax_zymphonies_theme/images/close.svg" /></span></button>
+        <!-- <h4 class="modal-title text-modal" id="myModalLabel">Rooms</h4> -->
+      </div>
+      <div class="modal-body text-modal">
+      		<div>ABOUT OXOTEL</div>
+      		<div>OXOTEL</div>
+      		<div><?php print $about_node->body['und'][0]['value'];?></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Term and condition Modal -->
+<div class="modal fade" id="conditionModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	<div class="modal-dialog modal-lg" role="document">
+	    <div class="modal-content">
+		    <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="/sites/all/themes/parallax_zymphonies_theme/images/close.svg" /></span></button>
+	        <!-- <h4 class="modal-title text-modal" id="myModalLabel">Rooms</h4> -->
+	      	</div>
+	      	<div class="modal-body text-modal">
+	      		<ul class="lightSliderCondition">
+	      			<li>
+	      				<div>reservation</div>	
+	      				<div>Term and condition</div>
+	      				<div>
+		      				Praesent egestas neque eu enim. Vivamus laoreet. Aenean massa. Morbi nec metus. Maecenas 
+		      				malesuada. <br />
+
+							Sed fringilla mauris sit amet nibh. Vestibulum suscipit nulla quis orci. Phasellus volutpat, <br />
+							metus eget egestas mollis, lacus lacus blandit dui, id egestas quam mauris ut lacus. Nam adipiscing.
+							Cras ultricies mi eu turpis hendrerit fringilla.
+	      				</div>
+	      			</li>
+	      			<li>
+	      				<div>Reservation policy</div>	
+	      				<div>
+		      				Praesent egestas neque eu enim. Vivamus laoreet. Aenean massa. Morbi nec metus. Maecenas 
+		      				malesuada. <br />
+
+							Sed fringilla mauris sit amet nibh. Vestibulum suscipit nulla quis orci. Phasellus volutpat, <br />
+							metus eget egestas mollis, lacus lacus blandit dui, id egestas quam mauris ut lacus. Nam adipiscing.
+							Cras ultricies mi eu turpis hendrerit fringilla.
+	      				</div>
+	      			</li>
+	      		</ul>
+	      	</div>
+	    </div>
+	</div>
+</div>
 <script type="text/javascript">
   	$ = jQuery;	
   	$(document).ready(function() {
+
   		var is_slice_rooms = false;
     	$('#modal_click_rooms').click(function () {
 
@@ -524,6 +583,22 @@
 			    		controls: true,
 			    	}); 
 		    		is_slice_cafe = true;
+
+	    		}, 200);	
+			}
+    	});
+    	// =============================
+  		var is_slice_condition = false;
+    	$('#modal_click_condition').click(function () {
+
+			if (!is_slice_condition) {
+	    		setTimeout(function(){
+			    	$(".lightSliderCondition").lightSlider({
+			    		item: 1,
+			    		auto: false,
+			    		controls: true,
+			    	}); 
+		    		is_slice_condition = true;
 
 	    		}, 200);	
 			}
