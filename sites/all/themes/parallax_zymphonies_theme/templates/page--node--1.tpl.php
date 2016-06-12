@@ -77,7 +77,11 @@
                    </hgroup>
             	</div>
             </hgroup>
-        </div>
+        	<div class="headline__description -since text-imgsection">
+        		HOSTEL • GARDEN • CAFE<br/>
+        		<span class="small-text">oxotel hostel chiangmai thailand @ since 2015</span>
+        	</div>  
+        </div>  
     </div>
 
     <div class="article__parallax">
@@ -135,14 +139,39 @@
 <header id="post-740-title" class="article__header  article__header--page two-thirds-height">
  	<div class="flexbox">
       	<div class="flexbox__item">
-	        <hgroup class="article__headline">
+<!-- 	        <hgroup class="article__headline">
 	            <h1 class="headline__primary"><a href="#" style="color:#FFFFFF">Rooms</a></h1>
 	            <div>
 		          	<button type="button"  data-toggle="modal" data-target="#myModal">
 						DETAILS	
 					</button>
 	            </div>
-	        </hgroup>
+	        </hgroup> -->
+
+			<div class="ct-wrapper">
+				<div class="inner -right text-left _text-grey">
+					<div class="inner-wrapper">
+			            <h2><a class="_text-grey" href="#">Rooms</a></h2>
+			            <p>
+			            	Pellentesque dapibus hendrerit tortor. Pellentesque posuere. <br />
+			            	Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; <br />
+			            	faucibus non, euismod id, nulla.
+			            </p>
+			            <p>
+			            	Pellentesque dapibus hendrerit tortor. Pellentesque posuere. <br />
+			            	Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; <br />
+			            	faucibus non, euismod id, nulla.
+			            </p>
+			            <div>
+
+				          	<button class="btn btn-transparent _capital" type="button"  data-toggle="modal" data-target="#myModal">
+								DETAILS	
+							</button>
+			            </div>
+					</div>
+				</div>
+			</div>
+
         </div>
   	</div>
   	<div class="article__parallax">
@@ -255,9 +284,32 @@
 <header id="post-740-title" class="article__header  article__header--page two-thirds-height">
  	<div class="flexbox">
       	<div class="flexbox__item">
-	        <hgroup class="article__headline">
+<!-- 	        <hgroup class="article__headline">
 	          <h1 class="headline__primary"><a href="#" style="color:#FFFFFF">CAFE</a></h1>
-	        </hgroup>
+	        </hgroup> -->
+			<div class="ct-wrapper">
+				<div class="inner -left _text-right _text-grey">
+					<div class="inner-wrapper">
+			            <h2><a class="_text-grey" href="#">Cafe</a></h2>
+			            <p>
+			            	Pellentesque dapibus hendrerit tortor. Pellentesque posuere. <br />
+			            	Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; <br />
+			            	faucibus non, euismod id, nulla.
+			            </p>
+			            <p>
+			            	Pellentesque dapibus hendrerit tortor. Pellentesque posuere. <br />
+			            	Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; <br />
+			            	faucibus non, euismod id, nulla.
+			            </p>
+			            <div>
+
+				          	<button class="btn btn-transparent _capital" type="button"  data-toggle="modal" data-target="#myModal">
+								Explore
+							</button>
+			            </div>
+					</div>
+				</div>
+			</div>
         </div>
   	</div>
     <div class="article__parallax">
@@ -282,7 +334,7 @@
 	</div>
 </header>
 
-<div class="desc-section description-find_us"> 
+<div class="desc-section -findus description-find_us"> 
 	<div class="findus-content">
 		<div class="ct-wrapper">
 			<div class="inner -center _text-center">

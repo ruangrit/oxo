@@ -1,5 +1,16 @@
+.small-text {
+  font-size: 0.8em; }
+
+.text-imgsection {
+  color: #666; }
+
+.text-left {
+  text-align: left; }
+
 ._text-grey {
   color: #999999; }
+  ._text-grey:hover {
+    color: #999999; }
 
 ._capital {
   text-transform: uppercase; }
@@ -47,7 +58,12 @@
   .desc-section.-facilities {
     height: 800px; }
   .desc-section.-reservation {
-    height: 700px; }
+    height: 700px;
+    background: url(../images/keys.png) transparent no-repeat left center;
+    background-size: auto 300px; }
+  .desc-section.-findus {
+    background: url(../images/clock.png) transparent no-repeat left center;
+    background-size: auto 456px; }
 
 .facilities-content {
   display: block;
@@ -124,6 +140,9 @@ ul.list-unstyled {
 .article__parallax {
   border-left: 0;
   border-right: 0; }
+
+.headline__description.-since {
+  margin-top: 200px; }
 
 .btn.btn-transparent {
   background-color: transparent;
