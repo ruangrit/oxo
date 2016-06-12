@@ -117,7 +117,12 @@ Aliquam eu nunc. Aliquam erat volutpat. Nam pretium turpis et arcu. Integer tinc
  	<div class="flexbox">
       	<div class="flexbox__item">
 	        <hgroup class="article__headline">
-	          <h1 class="headline__primary"><a href="#" style="color:#FFFFFF">Rooms</a></h1>
+	            <h1 class="headline__primary"><a href="#" style="color:#FFFFFF">Rooms</a></h1>
+	            <div>
+		          	<button type="button"  data-toggle="modal" data-target="#myModal">
+						DETAILS	
+					</button>
+	            </div>
 	        </hgroup>
         </div>
   	</div>
@@ -262,10 +267,6 @@ Sed augue ipsum, egestas nec, vestibulum et, malesuada adipiscing, dui. Maecenas
 Aliquam eu nunc. Aliquam erat volutpat. Nam pretium turpis et arcu. Integer tincidunt. Fusce commodo aliquam arcu.
 </div>
 
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-  Launch demo modal
-</button>
 
 <!-- Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -275,17 +276,17 @@ Aliquam eu nunc. Aliquam erat volutpat. Nam pretium turpis et arcu. Integer tinc
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="myModalLabel">Modal title</h4>
       </div>
-      <div class="modal-body" style="height:300px">
+      <div class="modal-body">
 
 					<ul class="lightSlider">
 					  <li>
 					      <h3>First Slide</h3>
-			           		<img src="http://localhost/wordpress2/wp-content/uploads/2016/04/exterior-hero-shot-2.jpg" width="500">
+			           		<img src="sites/default/files/rooms_01.jpg" width="500">
 					      <p>Lorem ipsum Cupidatat quis pariatur anim.</p>
 					  </li>
 					  <li>
 					      <h3>Second Slide</h3>
-			           		<img src="http://localhost/wordpress2/wp-content/uploads/2016/04/exterior-hero-shot-2.jpg" width="500">
+			           		<img src="sites/default/files/04_0.jpg" width="500">
 					      <p>Lorem ipsum Excepteur amet adipisicing fugiat velit nisi.</p>
 					  </li>
 					</ul>
