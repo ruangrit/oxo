@@ -1,3 +1,6 @@
+/************************\
+	Color Template
+\************************/
 .small-text {
   font-size: 0.8em; }
 
@@ -13,10 +16,18 @@
 .text-floatmiddle {
   line-height: 5em; }
 
+.text-bright {
+  color: #E1E2E5; }
+
 ._text-grey {
-  color: #999999; }
+  color: #3E3E3E; }
   ._text-grey:hover {
-    color: #999999; }
+    color: #3E3E3E; }
+
+.text-bright {
+  color: #E1E2E5; }
+  .text-bright:hover {
+    color: #E1E2E5; }
 
 ._capital {
   text-transform: uppercase; }
@@ -68,6 +79,7 @@
     background: url(../images/keys.png) transparent no-repeat left center;
     background-size: auto 300px; }
   .desc-section.-findus {
+    height: 400px;
     background: url(../images/clock.png) transparent no-repeat left center;
     background-size: auto 456px; }
 
@@ -131,14 +143,17 @@ ul.list-unstyled {
     color: #aaa; }
 
 .modal-content {
-  background-color: #333;
+  background-color: #272727;
   border-radius: 0;
-  color: #999999; }
+  color: #3E3E3E; }
   .modal-content button.close {
-    color: #999999;
+    color: #3E3E3E;
     opacity: 1; }
     .modal-content button.close:hover {
       background-color: transparent; }
+
+body {
+  color: #3E3E3E; }
 
 .article__header.article__header--page.two-thirds-height {
   margin-top: -50px; }
@@ -162,11 +177,28 @@ ul.list-unstyled {
 
 .btn.btn-transparent {
   background-color: transparent;
-  border: 1px solid #CCCCCC;
+  border: 1px solid #B4B4B4;
   border-radius: 0;
   padding: 8px 15px 5px 15px;
-  color: #999999; }
+  color: #3E3E3E; }
   .btn.btn-transparent:hover, .btn.btn-transparent:active, .btn.btn-transparent:focus {
-    background-color: #f1f1f1; }
+    background-color: #B4B4B4; }
+  .btn.btn-transparent.-darkbg {
+    border: 1px solid #B4B4B4;
+    color: #E1E2E5; }
+    .btn.btn-transparent.-darkbg:hover, .btn.btn-transparent.-darkbg:active, .btn.btn-transparent.-darkbg:focus {
+      color: #2B2A2F;
+      background-color: #B4B4B4; }
+  .btn.btn-transparent.-orange {
+    border: 1px solid #ED932D;
+    color: #3E3E3E; }
+    .btn.btn-transparent.-orange:hover, .btn.btn-transparent.-orange:active, .btn.btn-transparent.-orange:focus {
+      color: #2B2A2F;
+      background-color: #ED932D; }
+  .btn.btn-transparent.-orange._invert {
+    color: #AEAFB5; }
+    .btn.btn-transparent.-orange._invert:hover, .btn.btn-transparent.-orange._invert:active, .btn.btn-transparent.-orange._invert:focus {
+      color: #2B2A2F;
+      background-color: #ED932D; }
 
 /*# sourceMappingURL=zoxo.css.map */

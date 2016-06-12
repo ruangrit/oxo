@@ -1,8 +1,14 @@
 // helper
 ._text-grey {
-	color: $text-grey;
+	color: $color-1;
 	&:hover {
-		color: $text-grey;
+		color: $color-1;
+	}
+}
+.text-bright {
+	color: $color-4;
+	&:hover {
+		color: $color-4;
 	}
 }
 ._capital {

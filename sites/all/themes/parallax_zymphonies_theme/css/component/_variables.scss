@@ -1,5 +1,31 @@
-$text-grey: #999999;
+/************************\
+	Color Template
+\************************/
+// text dark on white background
+// btn border on dark background
+$color-1: #3E3E3E;
+
+// btn border on white background
+// btn hover background on white background 
+$color-2: #B4B4B4;
+
+// orange color
+$color-3: #ED932D;
+
+// btn text on dark background
+// text color on dark background
+$color-4: #E1E2E5;
+
+// btn orange text on dark background
+$color-5: #AEAFB5;
+
+// modal background
+$color-6: #272727;
+
+$color-7: #2B2A2F;
+
 $text-imgsection: #666;
+
 
 .small-text {
 	font-size: 0.8em;
@@ -18,4 +44,8 @@ $text-imgsection: #666;
 
 .text-floatmiddle {
 	line-height: 5em;
+}
+
+.text-bright {
+	color: $color-4;
 }

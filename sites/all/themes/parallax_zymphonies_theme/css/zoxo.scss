@@ -5,6 +5,10 @@
 @import "component/footer.scss";
 @import "component/modal.scss";
 
+body {
+	color: $color-1;
+}
+
 // overwrite style1.css
 .article__header.article__header--page.two-thirds-height {
     margin-top: -50px;
@@ -42,13 +46,44 @@
 // btn
 .btn.btn-transparent {
 	background-color: transparent;
-	border: 1px solid #CCCCCC;
+	border: 1px solid $color-2;
 	border-radius: 0;
 	padding: 8px 15px 5px 15px;
-	color: $text-grey;
+	color: $color-1;
 	&:hover, 
 	&:active, 
 	&:focus {
-		background-color: #f1f1f1;
+		background-color: $color-2;
+	}
+
+	&.-darkbg {
+		border: 1px solid $color-2;
+		color: $color-4;
+		&:hover,
+		&:active,
+		&:focus {
+			color: $color-7;
+			background-color: $color-2;
+		}
+	}
+
+	&.-orange {
+		border: 1px solid $color-3;
+		color: $color-1;
+		&:hover,
+		&:active,
+		&:focus {
+			color: $color-7;
+			background-color: $color-3;
+		}
+	}
+	&.-orange._invert {
+		color: $color-5;
+		&:hover,
+		&:active,
+		&:focus {
+			color: $color-7;
+			background-color: $color-3;
+		}		
 	}
 }
