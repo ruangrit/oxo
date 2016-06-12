@@ -179,6 +179,8 @@ ul.list-unstyled {
   .modal-content .btn-transparent {
     display: block;
     margin-top: 15px; }
+  .modal-content .title {
+    display: none; }
 
 @media (max-width: 768px) {
   .lSSlideOuter {
