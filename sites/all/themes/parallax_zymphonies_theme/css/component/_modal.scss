@@ -30,6 +30,30 @@
 	
 	overflow: hidden;
 }
+.textSlide-modal {
+	.lSSlideWrapper {
+		padding-bottom: 30px;
+		@media (max-width: 768px) {
+			padding-bottom: 15px;
+		}
+	}
+	.lSAction {
+		width: 250px;
+    	position: absolute;
+    	right: 0;
+    	bottom: 0;
+	}
+	.lSPager {
+		float: right;
+		width: 250px;
+	}
+	.btn.btn-transparent {
+		@media (min-width: 769px) {
+			margin-top: -38px;
+		}
+		margin-top: 15px;
+	}
+}
 .modal-content {
 	background-color: $color-6;
 	background-color: rgba(39, 39, 39, .93);
@@ -102,6 +126,7 @@
 .lSSlideOuter .lSPager.lSpg {
 	line-height: 30px;
 }
+
 .lSAction > a {
 	top: auto;
 	margin-top: 0;
@@ -110,7 +135,8 @@
 .lSSlideOuter .lSPager.lSpg > li a {
 	background-color: $color-1;
 }
-.lSSlideOuter .lSPager.lSpg > li.active a {
+.lSSlideOuter .lSPager.lSpg > li.active a,
+.lSSlideOuter .lSPager.lSpg > li:hover a {
 	background-color: $color-4;
 }
 

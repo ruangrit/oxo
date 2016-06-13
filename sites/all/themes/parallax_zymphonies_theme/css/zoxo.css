@@ -185,6 +185,25 @@ ul.list-unstyled {
   .modal-body > .modal-label {
     margin-bottom: 100px; }
 
+.textSlide-modal .lSSlideWrapper {
+  padding-bottom: 30px; }
+  @media (max-width: 768px) {
+    .textSlide-modal .lSSlideWrapper {
+      padding-bottom: 15px; } }
+.textSlide-modal .lSAction {
+  width: 250px;
+  position: absolute;
+  right: 0;
+  bottom: 0; }
+.textSlide-modal .lSPager {
+  float: right;
+  width: 250px; }
+.textSlide-modal .btn.btn-transparent {
+  margin-top: 15px; }
+  @media (min-width: 769px) {
+    .textSlide-modal .btn.btn-transparent {
+      margin-top: -38px; } }
+
 .modal-content {
   background-color: #272727;
   background-color: rgba(39, 39, 39, 0.93);
@@ -238,7 +257,8 @@ ul.list-unstyled {
 .lSSlideOuter .lSPager.lSpg > li a {
   background-color: #3E3E3E; }
 
-.lSSlideOuter .lSPager.lSpg > li.active a {
+.lSSlideOuter .lSPager.lSpg > li.active a,
+.lSSlideOuter .lSPager.lSpg > li:hover a {
   background-color: #E1E2E5; }
 
 .title-outsideSlider {
