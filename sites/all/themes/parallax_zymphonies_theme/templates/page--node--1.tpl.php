@@ -457,7 +457,7 @@
 					      					$j = 0;
 											foreach($rooms_modal_node as $room2){
 												?>
-													<div class="btn btn-transparent _modaltitle modal-title title-rooms" onclick="showGroupSlide(<?php print $j;?>)"><?php print $room2->title;?></div>
+													<div class="btn btn-transparent _modaltitle title-rooms" onclick="showGroupSlide(<?php print $j;?>)"><?php print $room2->title;?></div>
 												<?php
 												$j++;
 											}
