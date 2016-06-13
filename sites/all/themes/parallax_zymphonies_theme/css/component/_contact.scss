@@ -5,6 +5,9 @@
 		background-color: $color-1;
 		border-radius: 0;
 	}
+	textarea.form-textarea {
+		min-height: 300px;
+	}
 
 	.form-actions {
 		width: 100%;

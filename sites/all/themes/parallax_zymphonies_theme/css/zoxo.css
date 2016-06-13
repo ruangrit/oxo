@@ -278,6 +278,8 @@ ul.list-unstyled {
   border-color: #3E3E3E;
   background-color: #3E3E3E;
   border-radius: 0; }
+.modal-content textarea.form-textarea {
+  min-height: 300px; }
 .modal-content .form-actions {
   width: 100%;
   overflow: hidden;
