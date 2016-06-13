@@ -602,6 +602,7 @@
 	        <!-- <h4 class="modal-title text-modal" id="myModalLabel">Rooms</h4> -->
 	      	</div>
 	      	<div class="modal-body text-modal">
+	      		<h2 class="text-modal">ARK US</h2>
 	 			<?php
 					module_load_include('inc', 'contact', 'contact.pages');
 				 	echo drupal_render(drupal_get_form('contact_site_form'));
