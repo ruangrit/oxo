@@ -36,6 +36,8 @@
    		$('.group-slide .modal-description:eq(' + gid + ')').show();
    		// Fixed bug when change slide
    		$(window).trigger('resize');
+   		$('.group-slide .modal-description').find('.modaltitle-wrapper .title-rooms').removeClass('active');
+   		$('.group-slide .modal-description').find('.modaltitle-wrapper .title-rooms:eq(' + gid + ')').addClass('active');
    	}
 
 </script>
@@ -453,9 +455,9 @@
 									<div class="modaltitle-wrapper">
 					      				<?php
 					      					$j = 0;
-											foreach($rooms_modal_node as $room){
+											foreach($rooms_modal_node as $room2){
 												?>
-													<div class="btn btn-transparent _modaltitle title-rooms" onclick="showGroupSlide(<?php print $j;?>)"><?php print $room->title;?></div>
+													<div class="btn btn-transparent _modaltitle title-rooms" onclick="showGroupSlide(<?php print $j;?>)"><?php print $room2->title;?></div>
 												<?php
 												$j++;
 											}
