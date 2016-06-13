@@ -27,7 +27,18 @@
 <script type="text/javascript" src="<?php print $abs_theme_path;?>/js/modernizr.min.js"></script>
 <script type="text/javascript" src="<?php print $abs_theme_path;?>/js/lightslider.js"></script>
 <script type="text/javascript" src="<?php print $abs_theme_path;?>/js/bootstrap.min.js"></script>
+<script>
+   	var showGroupSlide = function (gid) {
+   		$('.group-slide .lSSlideOuter').hide();
+   		$('.group-slide .lSSlideOuter:eq(' + gid + ')').show();
 
+   		$('.group-slide .modal-description').hide();
+   		$('.group-slide .modal-description:eq(' + gid + ')').show();
+   		// Fixed bug when change slide
+   		$(window).trigger('resize');
+   	}
+
+</script>
 <div class="menu-wrap">
   
   	<div class="full-wrap clearfix">
@@ -412,46 +423,51 @@
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="/sites/all/themes/parallax_zymphonies_theme/images/close.svg" /></span></button>
         <!-- <h4 class="modal-title text-modal" id="myModalLabel">Rooms</h4> -->
       </div>
-      <div class="modal-body text-modal">
+      <div class="modal-body text-modal" style="height:400px">
       				<?php
+      					$j = 0;
 						foreach($rooms_modal_node as $room){
 							?>
-								<div class="title"><?php print $room->title;?></div>
+								<div class="title-rooms" onclick="showGroupSlide(<?php print $j;?>)"><?php print $room->title;?></div>
 							<?php
+							$j++;
 						}
 					?>
-      				<?php 
-						$i = 1;
-						foreach($rooms_modal_node as $room){
-							// Hard code break for only one content
-							if ($i == 2) {
-								break;
-							}
-							?>
-
-							<ul class="lightSliderRooms">
-							<?php
-							foreach($room->field_slide_image['und'] as $image){
+		      		<div class="group-slide">
+	      				<?php 
+							$i = 1;
+							foreach($rooms_modal_node as $room){
+								// Hard code break for only one content
+								if ($i == 2) {
+									//break;
+								}
 								?>
-								  <li>
-						           		<img src="<?php print file_create_url($image['uri']);?>" width="500">
-								  </li>
+
+								<ul class="lightSliderRooms">
+								<?php
+								foreach($room->field_slide_image['und'] as $image){
+									?>
+									  <li>
+							           		<img src="<?php print file_create_url($image['uri']);?>" width="500">
+									  </li>
+
+									<?php
+
+								}
+								?>
+								</ul>
+								<div class="modal-description">
+									<?php print $room->body['und'][0]['value']; ?>
+									<a class="btn btn-transparent -orange _invert _capital">Booking</a>
+								</div>
 
 								<?php
 
+								$i++;
 							}
-							?>
-							</ul>
-							<div class="modal-description">
-								<?php print $room->body['und'][0]['value']; ?>
-								<a class="btn btn-transparent -orange _invert _capital">Booking</a>
-							</div>
-
-							<?php
-
-							$i++;
-						}
-					?>
+						?>
+		      			
+		      		</div>
 
 
       </div>
@@ -562,7 +578,9 @@
 	        <!-- <h4 class="modal-title text-modal" id="myModalLabel">Rooms</h4> -->
 	      	</div>
 	      	<div class="modal-body text-modal">
+	      	<!--
 	      	<iframe src="https://www.google.com/maps/d/embed?mid=11idAtyrUxD9qZCA6gGRayP18KsA" width="640" height="480"></iframe>
+	      	-->
 	      	</div>
 	    </div>
 	</div>
@@ -600,6 +618,8 @@
 			    		controls: true,
 			    	}); 
 		    		is_slice_rooms = true;
+		    		showGroupSlide(0);
+		    		refreshGlobal();
 
 	    		}, 200);	
 			}
