@@ -490,9 +490,9 @@
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="/sites/all/themes/parallax_zymphonies_theme/images/close.svg" /></span></button>
         <!-- <h4 class="modal-title text-modal" id="myModalLabel">Rooms</h4> -->
       </div>
-      <div class="modal-body text-modal">
+      <div class="modal-body slide-modal">
 
-      		<div class="title">
+      		<div class="title-outsideSlider">
       			<?php print $cafe_modal_node->title;?>
       		</div>
 			<ul class="lightSliderCafe">
@@ -509,7 +509,6 @@
 			?>
 			</ul>
 			<div class="modal-description">
-
 				<?php print $cafe_modal_node->body['und'][0]['value']; ?>
 			</div>
 
@@ -528,9 +527,9 @@
         <!-- <h4 class="modal-title text-modal" id="myModalLabel">Rooms</h4> -->
       </div>
       <div class="modal-body text-modal">
-      		<div>ABOUT OXOTEL</div>
-      		<div>OXOTEL</div>
-      		<div><?php print $about_node->body['und'][0]['value'];?></div>
+      		<div class="modal-label">ABOUT OXOTEL</div>
+      		<h3 class="text-center text-modal">OXOTEL</h3>
+      		<div class="text-center"><?php print $about_node->body['und'][0]['value'];?></div>
       </div>
     </div>
   </div>
@@ -545,11 +544,11 @@
 	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="/sites/all/themes/parallax_zymphonies_theme/images/close.svg" /></span></button>
 	        <!-- <h4 class="modal-title text-modal" id="myModalLabel">Rooms</h4> -->
 	      	</div>
-	      	<div class="modal-body text-modal">
+	      	<div class="modal-body textSlide-modal">
 	      		<ul class="lightSliderCondition">
 	      			<li>
 	      				<div>reservation</div>	
-	      				<div>Term and condition</div>
+	      				<h2 class="text-modal">Term and condition</h2>
 	      				<div>
 		      				Praesent egestas neque eu enim. Vivamus laoreet. Aenean massa. Morbi nec metus. Maecenas 
 		      				malesuada. <br />
@@ -560,7 +559,7 @@
 	      				</div>
 	      			</li>
 	      			<li>
-	      				<div>Reservation policy</div>	
+	      				<h2 class="text-modal">Reservation policy</h2>	
 	      				<div>
 		      				Praesent egestas neque eu enim. Vivamus laoreet. Aenean massa. Morbi nec metus. Maecenas 
 		      				malesuada. <br />
@@ -571,6 +570,7 @@
 	      				</div>
 	      			</li>
 	      		</ul>
+	      		<a class="btn btn-transparent -orange _invert _capital">Booking</a>
 	      	</div>
 	    </div>
 	</div>
