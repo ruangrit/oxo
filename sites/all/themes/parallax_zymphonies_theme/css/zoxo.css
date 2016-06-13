@@ -167,14 +167,17 @@ ul.list-unstyled {
   border-bottom: 0; }
 
 .modal-body {
-  padding: 15px 15px 30px 0;
+  padding: 15px;
   overflow: hidden; }
+  @media (min-width: 768px) {
+    .modal-body {
+      padding: 15px 15px 30px 0; } }
 
 .modal-content {
   background-color: #272727;
   background-color: rgba(39, 39, 39, 0.93);
   border-radius: 0;
-  color: #3E3E3E;
+  color: #AEAFB5;
   overflow: hidden; }
   .modal-content button.close {
     color: #3E3E3E;
@@ -190,7 +193,7 @@ ul.list-unstyled {
   margin-bottom: 10px; }
 
 .btn.btn-transparent._modaltitle {
-  color: #E1E2E5;
+  color: #AEAFB5;
   max-width: 250px;
   margin-top: 0px;
   margin-bottom: 5px; }
@@ -205,16 +208,32 @@ ul.list-unstyled {
 @media (min-width: 769px) {
   .lSSlideOuter {
     width: 50%;
-    float: left;
-    padding-right: 15px; } }
+    float: left; } }
 .lSSlideOuter li > img {
   width: 100%; }
+
+.lSSlideWrapper {
+  overflow: visible; }
+
+.lSSlideOuter .lSPager.lSpg {
+  line-height: 30px; }
+
+.lSAction > a {
+  top: auto;
+  margin-top: 0;
+  background-image: url("../img/controls.svg"); }
+
+.lSSlideOuter .lSPager.lSpg > li a {
+  background-color: #3E3E3E; }
+
+.lSSlideOuter .lSPager.lSpg > li.active a {
+  background-color: #E1E2E5; }
 
 @media (min-width: 769px) {
   .modal-description {
     width: 50%;
     float: right;
-    padding-left: 15px; } }
+    padding-left: 30px; } }
 
 body {
   color: #3E3E3E; }

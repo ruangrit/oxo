@@ -2,7 +2,10 @@
 	border-bottom: 0;
 }
 .modal-body {
-	padding: 15px 15px 30px 0;
+	@media (min-width: 768px) {
+		padding: 15px 15px 30px 0;	
+	}
+	padding: 15px;
 	overflow: hidden;
 }
 .modal-content {
@@ -10,7 +13,7 @@
 	background-color: rgba(39, 39, 39, .93);
 	border-radius: 0;
 
-	color: $color-1;
+	color: $color-5;
 
 	overflow: hidden;
 
@@ -32,7 +35,7 @@
 	margin-bottom: 10px;
 }
 .btn.btn-transparent._modaltitle {
-	color: $color-4;
+	color: $color-5;
 	max-width: 250px;
 	margin-top: 0px;
 	margin-bottom: 5px;
@@ -53,19 +56,38 @@
 	@media (min-width: 769px) {
 		width: 50%;
 		float: left;
-		padding-right: 15px;
+		//padding-right: 15px;
 	}
 
 	li > img {
 		width: 100%;
 	}
-
+}
+.lSSlideWrapper {
+	overflow: visible;
+	.lslide {
+		//margin-right: 0 !important;
+	}
+}
+.lSSlideOuter .lSPager.lSpg {
+	line-height: 30px;
+}
+.lSAction > a {
+	top: auto;
+	margin-top: 0;
+	background-image: url('../img/controls.svg');
+}
+.lSSlideOuter .lSPager.lSpg > li a {
+	background-color: $color-1;
+}
+.lSSlideOuter .lSPager.lSpg > li.active a {
+	background-color: $color-4;
 }
 
 .modal-description {
 	@media (min-width: 769px) {
 		width: 50%;
 		float: right;
-		padding-left: 15px;
+		padding-left: 30px;
 	}
 }
