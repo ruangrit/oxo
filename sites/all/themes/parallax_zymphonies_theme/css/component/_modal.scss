@@ -1,7 +1,10 @@
 .modal-header {
 	border-bottom: 0;
 }
-
+.modal-body {
+	padding: 15px 15px 30px 0;
+	overflow: hidden;
+}
 .modal-content {
 	background-color: $color-6;
 	background-color: rgba(39, 39, 39, .93);
@@ -24,10 +27,27 @@
 		margin-top: 15px;
 		max-width: 175px;
 	}
+}
 
-	.title {
-		display: none;
-	}
+.modal-title {
+			
+}
+.modaltitle-wrapper {
+	margin-bottom: 10px;
+}
+.btn.btn-transparent._modaltitle {
+	color: $color-4;
+	max-width: 250px;
+	margin-top: 0px;
+	margin-bottom: 5px;
+	&:hover,
+	&:active,
+	&:focus,
+	&.active {
+		color: #FFFFFF;
+		background-color: transparent;
+		border: 1px solid $color-3;
+	}	
 }
 
 .lSSlideOuter {

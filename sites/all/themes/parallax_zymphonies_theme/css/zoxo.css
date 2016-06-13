@@ -166,6 +166,10 @@ ul.list-unstyled {
 .modal-header {
   border-bottom: 0; }
 
+.modal-body {
+  padding: 15px 15px 30px 0;
+  overflow: hidden; }
+
 .modal-content {
   background-color: #272727;
   background-color: rgba(39, 39, 39, 0.93);
@@ -181,8 +185,19 @@ ul.list-unstyled {
     display: block;
     margin-top: 15px;
     max-width: 175px; }
-  .modal-content .title {
-    display: none; }
+
+.modaltitle-wrapper {
+  margin-bottom: 10px; }
+
+.btn.btn-transparent._modaltitle {
+  color: #E1E2E5;
+  max-width: 250px;
+  margin-top: 0px;
+  margin-bottom: 5px; }
+  .btn.btn-transparent._modaltitle:hover, .btn.btn-transparent._modaltitle:active, .btn.btn-transparent._modaltitle:focus, .btn.btn-transparent._modaltitle.active {
+    color: #FFFFFF;
+    background-color: transparent;
+    border: 1px solid #ED932D; }
 
 @media (max-width: 768px) {
   .lSSlideOuter {

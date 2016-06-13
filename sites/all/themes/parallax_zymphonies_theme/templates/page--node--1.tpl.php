@@ -421,19 +421,12 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="/sites/all/themes/parallax_zymphonies_theme/images/close.svg" /></span></button>
-        <!-- <h4 class="modal-title text-modal" id="myModalLabel">Rooms</h4> -->
+        <h4 class="modal-title text-modal" id="myModalLabel">Rooms</h4>
       </div>
-      <div class="modal-body text-modal" style="height:400px">
-      				<?php
-      					$j = 0;
-						foreach($rooms_modal_node as $room){
-							?>
-								<div class="title-rooms" onclick="showGroupSlide(<?php print $j;?>)"><?php print $room->title;?></div>
-							<?php
-							$j++;
-						}
-					?>
+      <div class="modal-body text-modal">
+
 		      		<div class="group-slide">
+
 	      				<?php 
 							$i = 1;
 							foreach($rooms_modal_node as $room){
@@ -457,6 +450,18 @@
 								?>
 								</ul>
 								<div class="modal-description">
+									<div class="modaltitle-wrapper">
+					      				<?php
+					      					$j = 0;
+											foreach($rooms_modal_node as $room){
+												?>
+													<div class="btn btn-transparent _modaltitle modal-title title-rooms" onclick="showGroupSlide(<?php print $j;?>)"><?php print $room->title;?></div>
+												<?php
+												$j++;
+											}
+										?>
+									</div>
+
 									<?php print $room->body['und'][0]['value']; ?>
 									<a class="btn btn-transparent -orange _invert _capital">Booking</a>
 								</div>
