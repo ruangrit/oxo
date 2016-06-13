@@ -1,3 +1,4 @@
+var refreshGlobal;
 (function ($, undefined) {
     'use strict';
     var defaults = {
@@ -954,6 +955,7 @@
                 }
             }
         };
+        refreshGlobal = refresh.init;
         $el.goToPrevSlide = function () {
             if (scene > 0) {
                 settings.onBeforePrevSlide.call(this, $el, scene);

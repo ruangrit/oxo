@@ -15,9 +15,10 @@
 	$rooms_image_node = node_load(3);
 	$exterior_image_node = node_load(4);
 	$cafe_image_node = node_load(5);
+	$about_node = node_load(14);
 
 	$rooms_modal_node = node_load_multiple(array(), array('type' => 'rooms')); 
-	$cafe_modal_node = node_load_multiple(array(), array('type' => 'cafe')); 
+	$cafe_modal_node = node_load(11); 
 
 ?>
 
@@ -26,7 +27,18 @@
 <script type="text/javascript" src="<?php print $abs_theme_path;?>/js/modernizr.min.js"></script>
 <script type="text/javascript" src="<?php print $abs_theme_path;?>/js/lightslider.js"></script>
 <script type="text/javascript" src="<?php print $abs_theme_path;?>/js/bootstrap.min.js"></script>
+<script>
+   	var showGroupSlide = function (gid) {
+   		$('.group-slide .lSSlideOuter').hide();
+   		$('.group-slide .lSSlideOuter:eq(' + gid + ')').show();
 
+   		$('.group-slide .modal-description').hide();
+   		$('.group-slide .modal-description:eq(' + gid + ')').show();
+   		// Fixed bug when change slide
+   		$(window).trigger('resize');
+   	}
+
+</script>
 <div class="menu-wrap">
   
   	<div class="full-wrap clearfix">
@@ -118,7 +130,7 @@
 				<div class="inner-wrapper _text-grey">
 					<h3 class="desc-header _capital _text-grey">OXOTEL</h3>
  					<p>Pellentesque dapibus hendrerit tortor.<br />Pellentesque posuere. Vestibulum ante ipsum primis in faucibus<br />orci luctus et ultrices posuere cubilia Curae;</p>
- 					<a class="btn btn-transparent -keepright _capital">Explore</a>
+ 					<a class="btn btn-transparent -keepright _capital" data-toggle="modal" data-target="#aboutModal">Explore</a>
  				</div>
  			</div>
  			<div class="inner -right">
@@ -127,7 +139,7 @@
  					<p>Pellentesque dapibus hendrerit tortor. Pellentesque posuere.<br />Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;<br />faucibus non, euismod id, nulla.</p>
  					<p>Pellentesque dapibus hendrerit tortor. Pellentesque posuere.<br />In ac dui quis mi consectetuer lacinia. Sed hendrerit. Donec orci lectus, aliquam ut<br />faucibus non, euismod id, nulla.</p>
  					<p>Pellentesque dapibus hendrerit tortor. Pellentesque posuere.<br />Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;<br />faucibus non, euismod id, nulla.</p>
- 					<a class="btn btn-transparent _capital">Condition</a>
+ 					<a id="modal_click_condition" class="btn btn-transparent _capital" data-toggle="modal" data-target="#conditionModal">Condition</a>
  					<a class="btn btn-transparent -orange _capital">Booking</a>
  				</div>
  			</div>
@@ -164,7 +176,7 @@
 			            	faucibus non, euismod id, nulla.
 			            </p>
 			            <div>
-				          	<button  id="modal_click_rooms" class="btn btn-transparent -darkbg _capital" type="button"  data-toggle="modal" data-target="#myModal">
+				          	<button  id="modal_click_rooms" class="btn btn-transparent -darkbg _capital" type="button"  data-toggle="modal" data-target="#roomsModal">
 								DETAILS	
 							</button>
 			            </div>
@@ -250,7 +262,7 @@
 					<h3 class="desc-header _capital _text-grey">Free Amenities & Service</h3>	
 					<p>Sed augue ipsum, egestas nec, vestibulum et, malesuada adipiscing, dui. Maecenas malesuada. Morbi mattis ullamcorper velit. Etiam sollicitudin, ipsum eu pulvinar rutrum, tellus ipsum laoreet sapien, quis venenatis ante odio sit amet eros. Suspendisse eu ligula.</p>
 
-					<a class="btn btn-transparent _capital" type="button"  data-toggle="modal" data-target="modalFacilities">Explore</a>
+					<!-- ไม่เอาแล้ว เพราะใช้ tootip icon อธิบายแทน<a class="btn btn-transparent _capital" type="button"  data-toggle="modal" data-target="modalFacilities">Explore</a>-->
 				</div>
 			</div>
 		</div>
@@ -303,7 +315,7 @@
 			            </p>
 			            <div>
 
-				          	<button class="btn btn-transparent -darkbg _capital" type="button"  data-toggle="modal" data-target="#myModal">
+				          	<button id="modal_click_cafe" class="btn btn-transparent -darkbg _capital" type="button"  data-toggle="modal" data-target="#cafeModal">
 								Explore
 							</button>
 			            </div>
@@ -358,8 +370,8 @@
 						Our hostel is 2.00 kilometer from Chiangmai international airport<br />
 						and just only 10 minutes walk to Chiangmai gate
  					</p>
- 					<a class="btn btn-transparent _capital">Map</a>
- 					<a class="btn btn-transparent _capital">Mail us</a>
+ 					<a class="btn btn-transparent _capital"  data-toggle="modal" data-target="#mapModal">Map</a>
+ 					<a class="btn btn-transparent _capital" data-toggle="modal" data-target="#contactModal">Mail us</a>
  				</div>
  			</div>
 		</div>
@@ -403,8 +415,68 @@
 </div>
 
 
-<!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<!-- Rooms Modal -->
+<div class="modal fade" id="roomsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="/sites/all/themes/parallax_zymphonies_theme/images/close.svg" /></span></button>
+        <!-- <h4 class="modal-title text-modal" id="myModalLabel">Rooms</h4> -->
+      </div>
+      <div class="modal-body text-modal" style="height:400px">
+      				<?php
+      					$j = 0;
+						foreach($rooms_modal_node as $room){
+							?>
+								<div class="title-rooms" onclick="showGroupSlide(<?php print $j;?>)"><?php print $room->title;?></div>
+							<?php
+							$j++;
+						}
+					?>
+		      		<div class="group-slide">
+	      				<?php 
+							$i = 1;
+							foreach($rooms_modal_node as $room){
+								// Hard code break for only one content
+								if ($i == 2) {
+									//break;
+								}
+								?>
+
+								<ul class="lightSliderRooms">
+								<?php
+								foreach($room->field_slide_image['und'] as $image){
+									?>
+									  <li>
+							           		<img src="<?php print file_create_url($image['uri']);?>" width="500">
+									  </li>
+
+									<?php
+
+								}
+								?>
+								</ul>
+								<div class="modal-description">
+									<?php print $room->body['und'][0]['value']; ?>
+									<a class="btn btn-transparent -orange _invert _capital">Booking</a>
+								</div>
+
+								<?php
+
+								$i++;
+							}
+						?>
+		      			
+		      		</div>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Cafe Modal -->
+<div class="modal fade" id="cafeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -412,69 +484,178 @@
         <!-- <h4 class="modal-title text-modal" id="myModalLabel">Rooms</h4> -->
       </div>
       <div class="modal-body text-modal">
-      				<?php
-						foreach($rooms_modal_node as $room){
-							?>
-								<div class="title"><?php print $room->title;?></div>
-							<?php
-						}
-					?>
-      				<?php 
-						$i = 1;
-						foreach($rooms_modal_node as $room){
-							// Hard code break for only one content
-							if ($i == 2) {
-								break;
-							}
-							?>
 
-							<ul class="lightSlider">
-							<?php
-							foreach($room->field_slide_image['und'] as $image){
-								?>
-								  <li>
-						           		<img src="<?php print file_create_url($image['uri']);?>" width="500">
-								  </li>
+      		<div class="title">
+      			<?php print $cafe_modal_node->title;?>
+      		</div>
+			<ul class="lightSliderCafe">
+			<?php
+			foreach($cafe_modal_node->field_slide_image['und'] as $image){
+				?>
+				  <li>
+		           		<img src="<?php print file_create_url($image['uri']);?>" width="500">
+				  </li>
 
-								<?php
+				<?php
 
-							}
-							?>
-							</ul>
-							<div class="modal-description">
-								<?php print $room->body['und'][0]['value']; ?>
-								<a class="btn btn-transparent -orange _invert _capital">Booking</a>
-							</div>
+			}
+			?>
+			</ul>
+			<div class="modal-description">
 
-							<?php
-
-							$i++;
-						}
-					?>
+				<?php print $cafe_modal_node->body['und'][0]['value']; ?>
+			</div>
 
 
       </div>
-<!--       <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div> -->
     </div>
   </div>
 </div>
 
+<!-- About Modal -->
+<div class="modal fade" id="aboutModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="/sites/all/themes/parallax_zymphonies_theme/images/close.svg" /></span></button>
+        <!-- <h4 class="modal-title text-modal" id="myModalLabel">Rooms</h4> -->
+      </div>
+      <div class="modal-body text-modal">
+      		<div>ABOUT OXOTEL</div>
+      		<div>OXOTEL</div>
+      		<div><?php print $about_node->body['und'][0]['value'];?></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Term and condition Modal -->
+<div class="modal fade" id="conditionModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	<div class="modal-dialog modal-lg" role="document">
+	    <div class="modal-content">
+		    <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="/sites/all/themes/parallax_zymphonies_theme/images/close.svg" /></span></button>
+	        <!-- <h4 class="modal-title text-modal" id="myModalLabel">Rooms</h4> -->
+	      	</div>
+	      	<div class="modal-body text-modal">
+	      		<ul class="lightSliderCondition">
+	      			<li>
+	      				<div>reservation</div>	
+	      				<div>Term and condition</div>
+	      				<div>
+		      				Praesent egestas neque eu enim. Vivamus laoreet. Aenean massa. Morbi nec metus. Maecenas 
+		      				malesuada. <br />
+
+							Sed fringilla mauris sit amet nibh. Vestibulum suscipit nulla quis orci. Phasellus volutpat, <br />
+							metus eget egestas mollis, lacus lacus blandit dui, id egestas quam mauris ut lacus. Nam adipiscing.
+							Cras ultricies mi eu turpis hendrerit fringilla.
+	      				</div>
+	      			</li>
+	      			<li>
+	      				<div>Reservation policy</div>	
+	      				<div>
+		      				Praesent egestas neque eu enim. Vivamus laoreet. Aenean massa. Morbi nec metus. Maecenas 
+		      				malesuada. <br />
+
+							Sed fringilla mauris sit amet nibh. Vestibulum suscipit nulla quis orci. Phasellus volutpat, <br />
+							metus eget egestas mollis, lacus lacus blandit dui, id egestas quam mauris ut lacus. Nam adipiscing.
+							Cras ultricies mi eu turpis hendrerit fringilla.
+	      				</div>
+	      			</li>
+	      		</ul>
+	      	</div>
+	    </div>
+	</div>
+</div>
+
+<!-- About Modal -->
+<div class="modal fade" id="mapModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	<div class="modal-dialog modal-lg" role="document">
+	    <div class="modal-content">
+		    <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="/sites/all/themes/parallax_zymphonies_theme/images/close.svg" /></span></button>
+	        <!-- <h4 class="modal-title text-modal" id="myModalLabel">Rooms</h4> -->
+	      	</div>
+	      	<div class="modal-body text-modal">
+	      	<!--
+	      	<iframe src="https://www.google.com/maps/d/embed?mid=11idAtyrUxD9qZCA6gGRayP18KsA" width="640" height="480"></iframe>
+	      	-->
+	      	</div>
+	    </div>
+	</div>
+</div>
+
+<!-- Contact Modal -->
+<div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	<div class="modal-dialog modal-lg" role="document">
+	    <div class="modal-content">
+		    <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="/sites/all/themes/parallax_zymphonies_theme/images/close.svg" /></span></button>
+	        <!-- <h4 class="modal-title text-modal" id="myModalLabel">Rooms</h4> -->
+	      	</div>
+	      	<div class="modal-body text-modal">
+	 			<?php
+					module_load_include('inc', 'contact', 'contact.pages');
+				 	echo drupal_render(drupal_get_form('contact_site_form'));
+				?>
+	      	</div>
+	    </div>
+	</div>
+</div>
 <script type="text/javascript">
   	$ = jQuery;	
   	$(document).ready(function() {
 
+  		var is_slice_rooms = false;
     	$('#modal_click_rooms').click(function () {
-    		setTimeout(function(){
-		    	$(".lightSlider").lightSlider({
-		    		item: 1,
-		    		auto: false,
-		    		controls: true,
-		    	}); 
 
-    		}, 1000);	
+			if (!is_slice_rooms) {
+	    		setTimeout(function(){
+			    	$(".lightSliderRooms").lightSlider({
+			    		item: 1,
+			    		auto: false,
+			    		controls: true,
+			    	}); 
+		    		is_slice_rooms = true;
+		    		showGroupSlide(0);
+		    		refreshGlobal();
+
+	    		}, 200);	
+			}
     	});
+    	// =============================
+  		var is_slice_cafe = false;
+    	$('#modal_click_cafe').click(function () {
+
+			if (!is_slice_cafe) {
+	    		setTimeout(function(){
+			    	$(".lightSliderCafe").lightSlider({
+			    		item: 1,
+			    		auto: false,
+			    		controls: true,
+			    	}); 
+		    		is_slice_cafe = true;
+
+	    		}, 200);	
+			}
+    	});
+    	// =============================
+  		var is_slice_condition = false;
+    	$('#modal_click_condition').click(function () {
+
+			if (!is_slice_condition) {
+	    		setTimeout(function(){
+			    	$(".lightSliderCondition").lightSlider({
+			    		item: 1,
+			    		auto: false,
+			    		controls: true,
+			    	}); 
+		    		is_slice_condition = true;
+
+	    		}, 200);	
+			}
+    	});
+
   	});
 </script>
