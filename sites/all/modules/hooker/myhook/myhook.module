@@ -22,3 +22,8 @@ function myhook_theme() {
   );
   return $themes;
 }
+
+function myhook_form_contact_site_form_alter(&$form, $form_state) {
+    $form['subject']['#access'] = FALSE;
+    $form['name']['#access'] = FALSE;
+}
