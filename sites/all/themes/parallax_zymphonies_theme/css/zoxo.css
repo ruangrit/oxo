@@ -273,6 +273,26 @@ ul.list-unstyled {
     float: right;
     padding-left: 30px; } }
 
+input.form-text,
+textarea.form-textarea {
+  border-color: #3E3E3E;
+  background-color: #3E3E3E;
+  border-radius: 0; }
+
+.form-submit,
+input[type="submit"] {
+  background-color: #B4B4B4;
+  border: 1px solid #B4B4B4;
+  color: #2B2A2F;
+  border-radius: 0;
+  padding: 8px 15px 5px 15px; }
+  .form-submit:hover, .form-submit:active, .form-submit:focus,
+  input[type="submit"]:hover,
+  input[type="submit"]:active,
+  input[type="submit"]:focus {
+    color: #2B2A2F;
+    background-color: #8e8e8e; }
+
 body {
   color: #3E3E3E; }
 

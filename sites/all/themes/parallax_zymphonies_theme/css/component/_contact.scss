@@ -1,0 +1,22 @@
+input.form-text,
+textarea.form-textarea {
+	border-color: $color-1;
+	background-color: $color-1;
+	border-radius: 0;
+}
+
+.form-submit,
+input[type="submit"] {
+	
+	background-color: $color-2;
+	border: 1px solid $color-2;
+	color: $color-7;
+	border-radius: 0;
+	padding: 8px 15px 5px 15px;
+	&:hover,
+	&:active,
+	&:focus {
+		color: $color-7;
+		background-color: darken($color-2, 15%);
+	}
+}
