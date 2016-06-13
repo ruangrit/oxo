@@ -216,40 +216,40 @@
 				<div class="inner-wrapper">
 					<div class="faciimg-wrapper">
 						<div class="faciimg">
-							<img src="/sites/default/files/front-page/faci-01.png" alt="hanger"/>
+							<img title="Donec mollis hendrerit" src="/sites/default/files/front-page/faci-01.png" alt="hanger"/>
 						</div>
 						<div class="faciimg">
-							<img src="/sites/default/files/front-page/faci-02.png" alt="hanger"/>
+							<img title="Duis arcu tortor" src="/sites/default/files/front-page/faci-02.png" alt="hanger"/>
 						</div>
 						<div class="faciimg">
-							<img src="/sites/default/files/front-page/faci-03.png" alt="hanger"/>
+							<img title="Nulla sit amet est"  src="/sites/default/files/front-page/faci-03.png" alt="hanger"/>
 						</div>
 						<div class="faciimg">
-							<img src="/sites/default/files/front-page/faci-04.png" alt="hanger"/>
+							<img title="Donec mollis hendrerit" src="/sites/default/files/front-page/faci-04.png" alt="hanger"/>
 						</div>
 						<div class="faciimg">
-							<img src="/sites/default/files/front-page/faci-05.png" alt="hanger"/>
+							<img title="Donec mollis hendrerit" src="/sites/default/files/front-page/faci-05.png" alt="hanger"/>
 						</div>
 						<div class="faciimg">
-							<img src="/sites/default/files/front-page/faci-06.png" alt="hanger"/>
+							<img title="Donec mollis hendrerit" src="/sites/default/files/front-page/faci-06.png" alt="hanger"/>
 						</div>
 						<div class="faciimg">
-							<img src="/sites/default/files/front-page/faci-07.png" alt="hanger"/>
+							<img title="Donec mollis hendrerit" src="/sites/default/files/front-page/faci-07.png" alt="hanger"/>
 						</div>
 						<div class="faciimg">
-							<img src="/sites/default/files/front-page/faci-08.png" alt="hanger"/>
+							<img title="Donec mollis hendrerit" src="/sites/default/files/front-page/faci-08.png" alt="hanger"/>
 						</div>
 						<div class="faciimg">
-							<img src="/sites/default/files/front-page/faci-09.png" alt="hanger"/>
+							<img title="Donec mollis hendrerit" src="/sites/default/files/front-page/faci-09.png" alt="hanger"/>
 						</div>
 						<div class="faciimg">
-							<img src="/sites/default/files/front-page/faci-10.png" alt="hanger"/>
+							<img title="Donec mollis hendrerit" src="/sites/default/files/front-page/faci-10.png" alt="hanger"/>
 						</div>
 						<div class="faciimg">
-							<img src="/sites/default/files/front-page/faci-11.png" alt="hanger"/>
+							<img title="Donec mollis hendrerit" src="/sites/default/files/front-page/faci-11.png" alt="hanger"/>
 						</div>
 						<div class="faciimg">
-							<img src="/sites/default/files/front-page/faci-12.png" alt="hanger"/>
+							<img title="Donec mollis hendrerit" src="/sites/default/files/front-page/faci-12.png" alt="hanger"/>
 						</div>
 					</div>					
 				</div>
@@ -661,6 +661,8 @@
 	    		}, 200);	
 			}
     	});
+
+    	$('.faciimg img').tooltip();
 
   	});
 </script>
