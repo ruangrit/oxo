@@ -423,7 +423,7 @@
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="/sites/all/themes/parallax_zymphonies_theme/images/close.svg" /></span></button>
         <h4 class="modal-title text-modal" id="myModalLabel">Rooms</h4>
       </div>
-      <div class="modal-body text-modal">
+      <div class="modal-body slide-modal">
 
 		      		<div class="group-slide">
 
