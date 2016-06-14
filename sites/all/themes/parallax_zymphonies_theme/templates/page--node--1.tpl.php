@@ -719,7 +719,6 @@
 			}
     	});
 
-    	$('.faciimg img').tooltip();
 
   	});
 </script>
