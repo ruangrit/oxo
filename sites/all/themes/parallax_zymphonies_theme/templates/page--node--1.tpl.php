@@ -133,7 +133,9 @@
 					<h3 class="desc-header _capital _text-grey">OXOTEL</h3>
 
 					<div class="overflow-box">
- 						<p>Pellentesque dapibus hendrerit tortor.<br />Pellentesque posuere. Vestibulum ante ipsum primis in faucibus<br />orci luctus et ultrices posuere cubilia Curae;</p>
+						<p>
+							Oxotel is a brand new design hostel in Chiangmai. It's been open on November 2015with our 6 types of room. The hostel is very close to Chiangmai international airport and also the city center. It is located on Wualai road, where the local experience on 'Walking Street Market' every Saturday is. Comfy and cozy style that can change a hotel images on your mind. You can spend you relaxing vacation at our stylish space and carry a beautiful travel memory back home. Hope you enjoy your stay with us 
+						</p>
  					</div>
  					
  					<a class="btn btn-transparent -keepright _capital" data-toggle="modal" data-target="#aboutModal">Explore</a>
@@ -144,6 +146,28 @@
 					<h3 class="desc-header _capital _text-grey">Reservation</h3>
 
 					<div class="overflow-box">
+						<p>
+							Agoda.com & Expedia.com: Your credit card has been charged already. Cancellation and modification are upon cancellation policy on each reservation 
+						</p>
+						<p>
+							Booking.com: Valid credit card details are required to book online. Your credit card is not charged before your arrival.  We just keep your credit card details for security reasons. You need to pay the total room balance directly to Oxotel Hostel on arrival either cash or credit card.  
+						</p>
+						<p>
+							HostelWorld.com: You will be charged 10% deposit. This is automatically taken by the booking engine not by Oxotel Hostel. The deposit is non – refundable and non – transferable. You need to pay the due balance directly to Oxotel Hostel on arrival either cash or credit card.
+						</p>
+						<p>
+							Reservation by Phone: Reservation directly by phone call +66 52 085 334 or +66 95 674 1442. For your standard booking through email or phone reservation, we accept payment by bank transfer only. Your room will blocked until 12.00 pm. noon of the next day. It is only confirmed wh en we have received the payment from you before due. Otherwise your booking will be cancelled
+						</p>
+						<p>
+							Cancellation policy Oxotel is a small property with only 12 rooms. Because of that we are significantly affected by cancellations. The cancellati on will only be considered final when the Oxotel hostel has received written notification and acknowledged this. The following cancellation charges apply;
+						</p>
+
+						<p>
+						- Cancellations received more than 14 days prior to your arrival: there is no charge. <br />
+						- Cancellations received in writing between 7-14 days prior to your arrival will be charged 50% of the full value of the reservation (incl. tax) <br />
+						- Cancellations received in writing less than 7 days will be charged 100% of the full value of the reservation (incl. tax) <br />
+						- When guests don't arrive and haven't cancelled their reservation - a 'no-show' - we will charge the equivalent to your entire stay 
+						</p>
 						<p>Pellentesque dapibus hendrerit tortor. Pellentesque posuere.<br />Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;<br />faucibus non, euismod id, nulla.</p>
  						<p>Pellentesque dapibus hendrerit tortor. Pellentesque posuere.<br />In ac dui quis mi consectetuer lacinia. Sed hendrerit. Donec orci lectus, aliquam ut<br />faucibus non, euismod id, nulla.</p>
  						<p>Pellentesque dapibus hendrerit tortor. Pellentesque posuere.<br />Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;<br />faucibus non, euismod id, nulla.</p>
