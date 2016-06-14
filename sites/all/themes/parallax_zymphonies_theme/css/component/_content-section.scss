@@ -19,6 +19,9 @@
 		@media (min-width: 768px) {
 			padding-right: 25px;
 		}
+		@media (min-width: 992px) {
+			padding-left: 200px;
+		}
 	}	
 	> .inner.-right {
 		@media (max-width: 767px) {
@@ -26,6 +29,9 @@
 		}
 		@media (min-width: 768px) {
 			padding-left: 25px;
+		}
+		@media (min-width: 992px) {
+			padding-right: 200px;
 		}
 	}
 	> .inner.-center {
@@ -108,16 +114,6 @@
 
 .reservation-content {
 	display: block;
-	.inner.-left {
-		@media (min-width: 992px) {
-			padding-left: 120px;
-		}
-	}
-	.inner.-right {
-		@media (min-width: 992px) {
-			padding-right: 120px;
-		}
-	}
 }
 
 .findus-content {
