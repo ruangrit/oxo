@@ -70,7 +70,7 @@
     .ct-wrapper > .inner.-left {
       padding-right: 25px; } }
   @media (min-width: 992px) {
-    .ct-wrapper > .inner.-left {
+    .ct-wrapper > .inner.-left p {
       padding-left: 200px; } }
   @media (max-width: 767px) {
     .ct-wrapper > .inner.-right {
@@ -79,7 +79,7 @@
     .ct-wrapper > .inner.-right {
       padding-left: 25px; } }
   @media (min-width: 992px) {
-    .ct-wrapper > .inner.-right {
+    .ct-wrapper > .inner.-right p {
       padding-right: 200px; } }
   .ct-wrapper > .inner.-center {
     width: 100%; }
