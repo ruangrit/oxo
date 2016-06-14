@@ -26,4 +26,13 @@ function myhook_theme() {
 function myhook_form_contact_site_form_alter(&$form, $form_state) {
     $form['subject']['#access'] = FALSE;
     $form['name']['#access'] = FALSE;
+    /*
+    $form['actions']['submit']['#ajax'] = array (
+      'callback' => '_handle_form_submit',
+      'effect' => 'fade',
+    );
+    */
+}
+function _handle_form_submit ($form, $form_state) {
+
 }
