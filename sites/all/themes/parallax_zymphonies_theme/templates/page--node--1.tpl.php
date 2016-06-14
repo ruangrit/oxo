@@ -400,7 +400,11 @@
 		<div class="ct-wrapper">
 			<div class="inner -center _text-center">
 				<div class="inner-wrapper _text-grey">
-					<h3 class="desc-header _capital _text-grey">Find Us</h3>
+					<ul class="list-unstyled social-gang">
+						<li><a class="fb" href="#" target="_blank">Facebook</a></li>
+						<li><a class="ig" href="#" target="_blank">Instagram</a></li>
+						<li><a class="tw" href="#" target="_blank">Twitter</a></li>
+					</ul>
  					<p>
  						Oxotel is 2.00 kilometer from Chiangmai international airport and just only 10 minutes <br />
  						walk to Chiangmai gate (South-gate), one of the important antique gate of the old city area. <br />

@@ -97,3 +97,36 @@ body {
 		}		
 	}
 }
+
+.social-gang {
+	margin-bottom: 30px !important;
+	> li {
+		display: inline-block;
+		padding: 0 10px;
+	}
+	> li > a {
+		display: block;
+		width: 52px;
+		height: 52px;
+		text-indent: -999em;
+		overflow: hidden;
+	}
+	> li > a.fb {
+		background: url(#{$path}/fb.png) transparent no-repeat center;
+		&:hover {
+			background: url(#{$path}/fb-hover.png) transparent no-repeat center;
+		}
+	}
+	> li > a.ig {
+		background: url(#{$path}/ig.png) transparent no-repeat center;
+		&:hover {
+			background: url(#{$path}/ig-hover.png) transparent no-repeat center;
+		}		
+	}
+	> li > a.tw {
+		background: url(#{$path}/tw.png) transparent no-repeat center;
+		&:hover {
+			background: url(#{$path}/tw-hover.png) transparent no-repeat center;
+		}		
+	}
+}
