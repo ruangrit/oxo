@@ -5,10 +5,12 @@
 @import "component/footer.scss";
 @import "component/modal.scss";
 @import "component/contact.scss";
+@import "component/font.scss";
 
 body {
 	color: $color-1;
 	font-size: 13px;
+	font-family: 'gotham_lightregular';
 }
 
 .menu-wrap {
