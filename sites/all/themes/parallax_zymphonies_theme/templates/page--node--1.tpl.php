@@ -231,51 +231,51 @@
 					<div class="faciimg-wrapper">
 						<div class="faciimg -img01">
 							<!-- <img title="Duis arcu tortor" src="/sites/default/files/front-page/faci-02.png" alt="hanger"/> -->
-							<span class="text-tooltip">Duis arcu tortor</span> 
+							<span class="text-tooltip">Towell & Bed sheet</span> 
 						</div>
 						<div class="faciimg -img02">
 							<!-- <img title="Nulla sit amet est"  src="/sites/default/files/front-page/faci-03.png" alt="hanger"/> -->
-							<span class="text-tooltip">Nulla sit amet est</span>
+							<span class="text-tooltip">Soap & Shampoo</span>
 						</div>
 						<div class="faciimg -img03">
 							<!-- <img title="Donec mollis hendrerit" src="/sites/default/files/front-page/faci-04.png" alt="hanger"/> -->
-							<span class="text-tooltip">Donec mollis hendrerit</span>
+							<span class="text-tooltip">Hair Dryer</span>
 						</div>
 						<div class="faciimg -img04">
 							<!-- <img title="Donec mollis hendrerit" src="/sites/default/files/front-page/faci-05.png" alt="hanger"/> -->
-							<span class="text-tooltip">Donec mollis hendrerit</span>
+							<span class="text-tooltip">Washing Machine</span>
 						</div>
 						<div class="faciimg -img05">
 							<!-- <img title="Donec mollis hendrerit" src="/sites/default/files/front-page/faci-06.png" alt="hanger"/> -->
-							<span class="text-tooltip">Donec mollis hendrerit</span>
+							<span class="text-tooltip">Shower Box</span>
 						</div>
 						<div class="faciimg -img06">
 							<!-- <img title="Donec mollis hendrerit" src="/sites/default/files/front-page/faci-07.png" alt="hanger"/> -->
-							<span class="text-tooltip">Donec mollis hendrerit</span>
+							<span class="text-tooltip">We service Wi-Fi All area</span>
 						</div>
 						<div class="faciimg -img07">
 							<!-- <img title="Donec mollis hendrerit" src="/sites/default/files/front-page/faci-08.png" alt="hanger"/> -->
-							<span class="text-tooltip">Donec mollis hendrerit</span>
+							<span class="text-tooltip">Internet Wireless</span>
 						</div>
 						<div class="faciimg -img08">
 							<!-- <img title="Donec mollis hendrerit" src="/sites/default/files/front-page/faci-09.png" alt="hanger"/> -->
-							<span class="text-tooltip">Donec mollis hendrerit</span>
+							<span class="text-tooltip">Map & Transportation</span>
 						</div>
 						<div class="faciimg -img09">
 							<!-- <img title="Donec mollis hendrerit" src="/sites/default/files/front-page/faci-10.png" alt="hanger"/> -->
-							<span class="text-tooltip">Donec mollis hendrerit</span>
+							<span class="text-tooltip">Luggage Storage</span>
 						</div>
 						<div class="faciimg -img10">
 							<!-- <img title="Donec mollis hendrerit" src="/sites/default/files/front-page/faci-11.png" alt="hanger"/> -->
-							<span class="text-tooltip">Donec mollis hendrerit</span>
+							<span class="text-tooltip">Closed-Circuit Television</span>
 						</div>
 						<div class="faciimg -img11">
 							<!-- <img title="Donec mollis hendrerit" src="/sites/default/files/front-page/faci-12.png" alt="hanger"/> -->
-							<span class="text-tooltip">Donec mollis hendrerit</span>
+							<span class="text-tooltip">Keycard System</span>
 						</div>
 						<div class="faciimg -img12">
 							<!-- <img title="Donec mollis hendrerit" src="/sites/default/files/front-page/faci-12.png" alt="hanger"/> -->
-							<span class="text-tooltip">Donec mollis hendrerit</span>
+							<span class="text-tooltip">Emergency Call</span>
 						</div>
 					</div>					
 				</div>
