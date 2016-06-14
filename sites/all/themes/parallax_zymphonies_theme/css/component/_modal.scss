@@ -37,6 +37,12 @@
 	&.textSlide-modal > h2 {
 		margin-bottom: 15px;
 	}
+	&.map-modal {
+		@media (min-width: 769px) {
+			padding: 100px 100px 100px 100px;	
+		}	
+		padding: 60px 15px 15px 15px;	
+	}
 
 	> .modal-label {
 		margin-bottom: 100px;

@@ -225,6 +225,11 @@ ul.list-unstyled {
         padding: 100px 100px 100px 100px; } }
   .modal-body.textSlide-modal > h2 {
     margin-bottom: 15px; }
+  .modal-body.map-modal {
+    padding: 60px 15px 15px 15px; }
+    @media (min-width: 769px) {
+      .modal-body.map-modal {
+        padding: 100px 100px 100px 100px; } }
   .modal-body > .modal-label {
     margin-bottom: 100px; }
 
