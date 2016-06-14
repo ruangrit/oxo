@@ -64,10 +64,10 @@
 		      			<a href="#facilities">FACILITIES</a>
 		      		</li>
 		      		<li>
-		      			<a href="#">CAFE</a>
+		      			<a href="#cafe">CAFE</a>
 		      		</li>
 		      		<li>
-		      			<a href="#">FIND US</a>
+		      			<a href="#findus">FIND US</a>
 		      		</li>
 
 		       	</ul>
@@ -125,7 +125,7 @@
 </header>
 
 
-<div id="rooms" class="description-main desc-section -reservation"> 
+<div  class="description-main desc-section -reservation"> 
 	<div class="reservation-content">
 		<div class="ct-wrapper">
 			<div class="inner -left _text-right">
@@ -200,7 +200,7 @@
 
         </div>
   	</div>
-  	<div class="article__parallax">
+  	<div id="rooms" class="article__parallax">
    
 	    <div class="article__parallax__slider  header--slideshow  js-pixslider" data-imagealigncenter="" data-imagescale="fill" data-slidertransition="fade" data-customarrows="true" data-sliderautoplay="" data-sliderdelay="2000">
 	        <?php
@@ -314,7 +314,7 @@
         </div>
   	</div>
 
-    <div class="article__parallax">   
+    <div  class="article__parallax">   
 	    <div class="article__parallax__slider  header--slideshow  js-pixslider" data-imagealigncenter="" data-imagescale="fill" data-slidertransition="fade" data-customarrows="true" data-sliderautoplay="" data-sliderdelay="2000">
 	        <?php
 	        	foreach($exterior_image_node->field_slide_image['und'] as $key => $value) {
@@ -373,7 +373,7 @@
 			</div>
         </div>
   	</div>
-    <div class="article__parallax">
+    <div id="cafe" class="article__parallax">
 	    <div class="article__parallax__slider  header--slideshow  js-pixslider" data-imagealigncenter="" data-imagescale="fill" data-slidertransition="fade" data-customarrows="true" data-sliderautoplay="" data-sliderdelay="2000">
 	        <?php
 	        	foreach($cafe_image_node->field_slide_image['und'] as $key => $value) {
@@ -395,7 +395,7 @@
 	</div>
 </header>
 
-<div class="desc-section -findus description-find_us"> 
+<div id="findus" class="desc-section -findus description-find_us"> 
 	<div class="findus-content">
 		<div class="ct-wrapper">
 			<div class="inner -center _text-center">
