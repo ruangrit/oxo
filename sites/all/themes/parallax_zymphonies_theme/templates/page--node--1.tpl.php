@@ -402,8 +402,8 @@
 				<div class="inner-wrapper _text-grey">
 					<ul class="list-unstyled social-gang">
 						<li><a class="fb" href="#" target="_blank">Facebook</a></li>
-						<li><a class="ig" href="#" target="_blank">Instagram</a></li>
-						<li><a class="tw" href="#" target="_blank">Twitter</a></li>
+						<li><a class="ig" href="https://www.instagram.com/oxotelchiangmai/" target="_blank">Instagram</a></li>
+						<li><a class="tw" href="https://www.facebook.com/oxotelhostel/" target="_blank">Twitter</a></li>
 					</ul>
  					<p>
  						Oxotel is 2.00 kilometer from Chiangmai international airport and just only 10 minutes <br />
@@ -441,7 +441,7 @@
 	<div class="footer-list">
 		<h4>Others</h4>
 		<ul class="list-unstyled">
-			<li><a href="#">Booking</a></li>
+			<li><a href="http://l.facebook.com/l.php?u=http%3A%2F%2Fwww.booking.com%2Fhotel%2Fth%2Foxotel.th.html%3Flabel%3Dgen173nr-1FCAEoggJCAlhYSDNiBW5vcmVmaN0BiAEBmAEmwgEDYWJuyAEM2AEB6AEB-AELqAIE%253Bsid&h=MAQFxiyvL" target="_blank">Booking</a></li>
 			<li><a href="#">Rooms</a></li>
 			<li><a href="#">Email us</a></li>
 		</ul>
@@ -449,7 +449,7 @@
 	<div class="footer-list">
 		<h4>Social</h4>
 		<ul class="list-unstyled">
-			<li><a href="#">Instagram</a></li>
+			<li><a href="https://www.instagram.com/oxotelchiangmai/">Instagram</a></li>
 			<li><a href="#">Twitter</a></li>
 			<li><a href="#">Google+</a></li>
 		</ul>
@@ -457,9 +457,9 @@
 	<div class="footer-list">
 		<h4>Site</h4>
 		<ul class="list-unstyled">
-			<li><a href="#">Agoda</a></li>
+			<li><a href="http://l.facebook.com/l.php?u=http%3A%2F%2Fwww.agoda.com%2Foxotel-hostel%2Fhotel%2Fchiang-mai-th.html%3Fasq%3Du2qcKLxwzRU5NDuxJ0kOF8%252BzmLRvZQXVHFy2wHSdGKIFSKDtD0xR6njQwBLdDP7xerWduBIJ6k4cf5HcWilYNBLdZHzbs772XCoPWdSgD%252FTz17U3ZgWLnEdNzxKxNx92DsFKOYv4cKN%252BraPqz4f%252FLYprVp2TwP6wstUVR8FJRF%252BfkDX3uHFMuWTqeVL9h7qQKil0Kd5NpRQf1zGe1xDr05pxj%252FA%252BylTfAGs1qJCjm9k0V1AMDQx7njgkgAhn4vUi%26tick%3D636015089081%26pagetypeid%3D1%26origin%3DTH%26cid%3D-1%26htmlLanguage%3Den-us%26checkIn%3D2016-6-15%26checkout%3D2016-6-16%26los%3D1%26rooms%3D1%26adults%3D2%26childs%3D0%26isFromSearchBox%3Dtrue&h=MAQFxiyvL" target="_blank">Agoda</a></li>
 			<li><a href="#">Booking.com</a></li>
-			<li><a href="#">Hostel world</a></li>
+			<li><a href="http://l.facebook.com/l.php?u=http%3A%2F%2Fwww.hostelworld.com%2Fhosteldetails.php%2FOxotel-Hostel%2FChiang-Mai%2F101918&h=MAQFxiyvL" target="_blank">Hostel world</a></li>
 		</ul>
 	</div>
 	<p>
