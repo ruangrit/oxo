@@ -28,4 +28,7 @@ ul.list-unstyled {
 	ul > li a {
 		color: #aaa;
 	}
+	ul > li a:hover {
+		color: $color-3;
+	}
 }

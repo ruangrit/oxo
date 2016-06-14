@@ -131,16 +131,24 @@
 			<div class="inner -left _text-right">
 				<div class="inner-wrapper _text-grey">
 					<h3 class="desc-header _capital _text-grey">OXOTEL</h3>
- 					<p>Pellentesque dapibus hendrerit tortor.<br />Pellentesque posuere. Vestibulum ante ipsum primis in faucibus<br />orci luctus et ultrices posuere cubilia Curae;</p>
+
+					<div class="overflow-box">
+ 						<p>Pellentesque dapibus hendrerit tortor.<br />Pellentesque posuere. Vestibulum ante ipsum primis in faucibus<br />orci luctus et ultrices posuere cubilia Curae;</p>
+ 					</div>
+ 					
  					<a class="btn btn-transparent -keepright _capital" data-toggle="modal" data-target="#aboutModal">Explore</a>
  				</div>
  			</div>
  			<div class="inner -right">
 				<div class="inner-wrapper _text-grey">
 					<h3 class="desc-header _capital _text-grey">Reservation</h3>
- 					<p>Pellentesque dapibus hendrerit tortor. Pellentesque posuere.<br />Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;<br />faucibus non, euismod id, nulla.</p>
- 					<p>Pellentesque dapibus hendrerit tortor. Pellentesque posuere.<br />In ac dui quis mi consectetuer lacinia. Sed hendrerit. Donec orci lectus, aliquam ut<br />faucibus non, euismod id, nulla.</p>
- 					<p>Pellentesque dapibus hendrerit tortor. Pellentesque posuere.<br />Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;<br />faucibus non, euismod id, nulla.</p>
+
+					<div class="overflow-box">
+						<p>Pellentesque dapibus hendrerit tortor. Pellentesque posuere.<br />Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;<br />faucibus non, euismod id, nulla.</p>
+ 						<p>Pellentesque dapibus hendrerit tortor. Pellentesque posuere.<br />In ac dui quis mi consectetuer lacinia. Sed hendrerit. Donec orci lectus, aliquam ut<br />faucibus non, euismod id, nulla.</p>
+ 						<p>Pellentesque dapibus hendrerit tortor. Pellentesque posuere.<br />Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;<br />faucibus non, euismod id, nulla.</p>
+					</div>
+ 					
  					<a id="modal_click_condition" class="btn btn-transparent _capital" data-toggle="modal" data-target="#conditionModal">Condition</a>
  					<a class="btn btn-transparent -orange _capital">Booking</a>
  				</div>
@@ -150,7 +158,7 @@
 </div>
 
 
-<header id="post-740-title" class="article__header  article__header--page two-thirds-height">
+<header id="post-740-title" class="article__header -rooms  article__header--page two-thirds-height">
  	<div class="flexbox">
       	<div class="flexbox__item">
 <!-- 	        <hgroup class="article__headline">
@@ -166,17 +174,21 @@
 				<div class="inner -left -emptycell"></div>
 				<div class="inner -right text-left text-bright">
 					<div class="inner-wrapper">
-			            <h2><a class="text-bright" href="#">Rooms</a></h2>
-			            <p>
-			            	Pellentesque dapibus hendrerit tortor. Pellentesque posuere. <br />
-			            	Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; <br />
-			            	faucibus non, euismod id, nulla.
-			            </p>
-			            <p>
-			            	Pellentesque dapibus hendrerit tortor. Pellentesque posuere. <br />
-			            	Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; <br />
-			            	faucibus non, euismod id, nulla.
-			            </p>
+			            <h3><a class="text-bright" href="#">Rooms</a></h3>
+			            <div class="overflow-box">
+				            <p>
+				            	Pellentesque dapibus hendrerit tortor. Pellentesque posuere. <br />
+				            	Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; <br />
+				            	faucibus non, euismod id, nulla.
+				            </p>
+				            <p>
+				            	Pellentesque dapibus hendrerit tortor. Pellentesque posuere. <br />
+				            	Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; <br />
+				            	faucibus non, euismod id, nulla.
+				            </p>			            	
+
+			            </div>
+
 			            <div>
 				          	<button  id="modal_click_rooms" class="btn btn-transparent -darkbg _capital" type="button"  data-toggle="modal" data-target="#roomsModal">
 								DETAILS	
@@ -259,12 +271,15 @@
 			<div class="inner -right _text-grey">
 				<div class="inner-wrapper _textcenter-768px">
 					<h3 class="desc-header _capital _text-grey">Facilities</h3>
-					<p>Pellentesque dapibus hendrerit tortor. Pellentesque posuere. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. Sed hendrerit. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla.</p>
-					
+					<div class="overflow-box">
+						<p>Pellentesque dapibus hendrerit tortor. Pellentesque posuere. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. Sed hendrerit. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla.</p>
+						<p>Pellentesque dapibus hendrerit tortor. Pellentesque posuere. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. Sed hendrerit. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla.</p>
+					</div>
 					<h3 class="desc-header _capital _text-grey">Free Amenities & Service</h3>	
-					<p>Sed augue ipsum, egestas nec, vestibulum et, malesuada adipiscing, dui. Maecenas malesuada. Morbi mattis ullamcorper velit. Etiam sollicitudin, ipsum eu pulvinar rutrum, tellus ipsum laoreet sapien, quis venenatis ante odio sit amet eros. Suspendisse eu ligula.</p>
-
-					<!-- ไม่เอาแล้ว เพราะใช้ tootip icon อธิบายแทน<a class="btn btn-transparent _capital" type="button"  data-toggle="modal" data-target="modalFacilities">Explore</a>-->
+					<div class="overflow-box">
+						<p>Sed augue ipsum, egestas nec, vestibulum et, malesuada adipiscing, dui. Maecenas malesuada. Morbi mattis ullamcorper velit. Etiam sollicitudin, ipsum eu pulvinar rutrum, tellus ipsum laoreet sapien, quis venenatis ante odio sit amet eros. Suspendisse eu ligula.</p>
+						<p>Pellentesque dapibus hendrerit tortor. Pellentesque posuere. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. Sed hendrerit. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla.</p>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -304,19 +319,20 @@
 			<div class="ct-wrapper">
 				<div class="inner -left _text-right text-bright">
 					<div class="inner-wrapper">
-			            <h2><a class="text-bright" href="#">Cafe</a></h2>
-			            <p>
-			            	Pellentesque dapibus hendrerit tortor. Pellentesque posuere. <br />
-			            	Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; <br />
-			            	faucibus non, euismod id, nulla.
-			            </p>
-			            <p>
-			            	Pellentesque dapibus hendrerit tortor. Pellentesque posuere. <br />
-			            	Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; <br />
-			            	faucibus non, euismod id, nulla.
-			            </p>
+			            <h3><a class="text-bright" href="#">Cafe</a></h3>
+			            <div class="overflow-box">
+				            <p>
+				            	Pellentesque dapibus hendrerit tortor. Pellentesque posuere. <br />
+				            	Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; <br />
+				            	faucibus non, euismod id, nulla.
+				            </p>
+				            <p>
+				            	Pellentesque dapibus hendrerit tortor. Pellentesque posuere. <br />
+				            	Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; <br />
+				            	faucibus non, euismod id, nulla.
+				            </p>
+			            </div>
 			            <div>
-
 				          	<button id="modal_click_cafe" class="btn btn-transparent -darkbg _capital" type="button"  data-toggle="modal" data-target="#cafeModal">
 								Explore
 							</button>
@@ -372,8 +388,10 @@
 						Our hostel is 2.00 kilometer from Chiangmai international airport<br />
 						and just only 10 minutes walk to Chiangmai gate
  					</p>
- 					<a id="modal_click_map" class="btn btn-transparent _capital"  data-toggle="modal" data-target="#mapModal">Map</a>
- 					<a class="btn btn-transparent _capital" data-toggle="modal" data-target="#contactModal">Mail us</a>
+ 					<div class="button-box">
+ 						<a id="modal_click_map" class="btn btn-transparent _capital"  data-toggle="modal" data-target="#mapModal">Map</a>
+ 						<a class="btn btn-transparent _capital" data-toggle="modal" data-target="#contactModal">Mail us</a>
+ 					</div>
  				</div>
  			</div>
 		</div>
@@ -585,7 +603,7 @@
 	        <!-- <h4 class="modal-title text-modal" id="myModalLabel">Rooms</h4> -->
 	      	</div>
 	      	<div class="modal-body text-modal">
-	      		<iframe src="https://www.google.com/maps/d/embed?mid=11idAtyrUxD9qZCA6gGRayP18KsA&z=14&ll=18.7758, 98.98203" width="640" height="480"></iframe>
+	      		<!-- <iframe src="https://www.google.com/maps/d/embed?mid=11idAtyrUxD9qZCA6gGRayP18KsA&z=14&ll=18.7758, 98.98203" width="640" height="480"></iframe> -->
 	      	</div>
 	    </div>
 	</div>

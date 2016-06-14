@@ -374,7 +374,7 @@ b {
   background: #fff;
   padding: 8px 0;
   border-bottom: 1px solid #E2E2E2;
-  position: fixed;
+  position: absolute;
   top: 0;
   z-index: 9;
   right: 0;
