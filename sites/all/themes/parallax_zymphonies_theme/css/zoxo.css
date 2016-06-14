@@ -222,7 +222,7 @@ ul.list-unstyled {
     padding: 60px 15px 15px 15px; }
     @media (min-width: 769px) {
       .modal-body.textSlide-modal {
-        padding: 60px 100px 100px 100px; } }
+        padding: 100px 100px 100px 100px; } }
   .modal-body.textSlide-modal > h2 {
     margin-bottom: 15px; }
   .modal-body > .modal-label {
