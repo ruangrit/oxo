@@ -693,7 +693,6 @@
 			}
     	});
 
-    	$('.faciimg img').tooltip();
 
   	});
 </script>
