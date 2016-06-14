@@ -126,18 +126,6 @@
     .facilities-content {
       padding: 25px 0; } }
 
-@media (min-width: 769px) {
-  .faciimg-wrapper {
-    max-width: 400px; } }
-.faciimg-wrapper .faciimg {
-  width: 33.33%;
-  height: 120px;
-  text-align: center;
-  vertical-align: middle;
-  float: left; }
-  .faciimg-wrapper .faciimg > img {
-    display: inline-block; }
-
 .reservation-content {
   display: block; }
 
@@ -412,6 +400,85 @@ ul.list-unstyled {
   src: url("/sites/all/themes/parallax_zymphonies_theme/fonts/gotham-medium-webfont.woff2") format("woff2"), url("/sites/all/themes/parallax_zymphonies_theme/fonts/gotham-medium-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
+@media (min-width: 769px) {
+  .faciimg-wrapper {
+    max-width: 400px; } }
+.faciimg-wrapper .faciimg {
+  width: 33.33%;
+  height: 120px;
+  text-align: center;
+  vertical-align: middle;
+  float: left; }
+  .faciimg-wrapper .faciimg > img {
+    display: inline-block; }
+
+.faciimg {
+  position: relative;
+  margin-bottom: 8px; }
+  .faciimg .text-tooltip {
+    display: none;
+    position: absolute;
+    bottom: 7px;
+    width: 120px;
+    left: 50%;
+    margin-left: -60px; }
+  .faciimg:hover {
+    cursor: pointer; }
+  .faciimg:hover .text-tooltip {
+    display: block; }
+  .faciimg.-img01 {
+    background: url(/sites/all/themes/parallax_zymphonies_theme/images/faci-01.png) transparent no-repeat center top; }
+  .faciimg.-img01:hover {
+    background: url(/sites/all/themes/parallax_zymphonies_theme/images/faci-01-hover.png) transparent no-repeat center top; }
+  .faciimg.-img02 {
+    background: url(/sites/all/themes/parallax_zymphonies_theme/images/faci-02.png) transparent no-repeat center top; }
+  .faciimg.-img02:hover {
+    background: url(/sites/all/themes/parallax_zymphonies_theme/images/faci-02-hover.png) transparent no-repeat center top; }
+  .faciimg.-img03 {
+    background: url(/sites/all/themes/parallax_zymphonies_theme/images/faci-03.png) transparent no-repeat center 13px; }
+  .faciimg.-img03:hover {
+    background: url(/sites/all/themes/parallax_zymphonies_theme/images/faci-03-hover.png) transparent no-repeat center 13px; }
+  .faciimg.-img04 {
+    background: url(/sites/all/themes/parallax_zymphonies_theme/images/faci-04.png) transparent no-repeat center top; }
+  .faciimg.-img04:hover {
+    background: url(/sites/all/themes/parallax_zymphonies_theme/images/faci-04-hover.png) transparent no-repeat center top; }
+  .faciimg.-img05 {
+    background: url(/sites/all/themes/parallax_zymphonies_theme/images/faci-05.png) transparent no-repeat center top; }
+  .faciimg.-img05:hover {
+    background: url(/sites/all/themes/parallax_zymphonies_theme/images/faci-05-hover.png) transparent no-repeat center top; }
+  .faciimg.-img06 {
+    background: url(/sites/all/themes/parallax_zymphonies_theme/images/faci-06.png) transparent no-repeat center top; }
+  .faciimg.-img06:hover {
+    background: url(/sites/all/themes/parallax_zymphonies_theme/images/faci-06-hover.png) transparent no-repeat center top; }
+  .faciimg.-img06 {
+    background: url(/sites/all/themes/parallax_zymphonies_theme/images/faci-06.png) transparent no-repeat center top; }
+  .faciimg.-img06:hover {
+    background: url(/sites/all/themes/parallax_zymphonies_theme/images/faci-06-hover.png) transparent no-repeat center top; }
+  .faciimg.-img07 {
+    background: url(/sites/all/themes/parallax_zymphonies_theme/images/faci-07.png) transparent no-repeat center 15px; }
+  .faciimg.-img07:hover {
+    background: url(/sites/all/themes/parallax_zymphonies_theme/images/faci-07-hover.png) transparent no-repeat center 15px; }
+  .faciimg.-img08 {
+    background: url(/sites/all/themes/parallax_zymphonies_theme/images/faci-08.png) transparent no-repeat center 12px; }
+  .faciimg.-img08:hover {
+    background: url(/sites/all/themes/parallax_zymphonies_theme/images/faci-08-hover.png) transparent no-repeat center 12px; }
+  .faciimg.-img09 {
+    background: url(/sites/all/themes/parallax_zymphonies_theme/images/faci-09.png) transparent no-repeat center top; }
+  .faciimg.-img09:hover {
+    background: url(/sites/all/themes/parallax_zymphonies_theme/images/faci-09-hover.png) transparent no-repeat center top; }
+  .faciimg.-img10 {
+    background: url(/sites/all/themes/parallax_zymphonies_theme/images/faci-10.png) transparent no-repeat center top; }
+  .faciimg.-img10:hover {
+    background: url(/sites/all/themes/parallax_zymphonies_theme/images/faci-10-hover.png) transparent no-repeat center top; }
+  .faciimg.-img11 {
+    background: url(/sites/all/themes/parallax_zymphonies_theme/images/faci-11.png) transparent no-repeat center top; }
+  .faciimg.-img11:hover {
+    background: url(/sites/all/themes/parallax_zymphonies_theme/images/faci-11-hover.png) transparent no-repeat center top; }
+  .faciimg.-img12 {
+    background: url(/sites/all/themes/parallax_zymphonies_theme/images/faci-12.png) transparent no-repeat center top; }
+  .faciimg.-img12:hover {
+    background: url(/sites/all/themes/parallax_zymphonies_theme/images/faci-12-hover.png) transparent no-repeat center top; }
+
 body {
   color: #3E3E3E;
   font-size: 13px;

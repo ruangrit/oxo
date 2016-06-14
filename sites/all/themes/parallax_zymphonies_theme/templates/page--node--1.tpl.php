@@ -229,41 +229,53 @@
 			<div class="inner -left _text-right">
 				<div class="inner-wrapper">
 					<div class="faciimg-wrapper">
-						<div class="faciimg">
-							<img title="Donec mollis hendrerit" src="/sites/default/files/front-page/faci-01.png" alt="hanger"/>
+						<div class="faciimg -img01">
+							<!-- <img title="Duis arcu tortor" src="/sites/default/files/front-page/faci-02.png" alt="hanger"/> -->
+							<span class="text-tooltip">Duis arcu tortor</span> 
 						</div>
-						<div class="faciimg">
-							<img title="Duis arcu tortor" src="/sites/default/files/front-page/faci-02.png" alt="hanger"/>
+						<div class="faciimg -img02">
+							<!-- <img title="Nulla sit amet est"  src="/sites/default/files/front-page/faci-03.png" alt="hanger"/> -->
+							<span class="text-tooltip">Nulla sit amet est</span>
 						</div>
-						<div class="faciimg">
-							<img title="Nulla sit amet est"  src="/sites/default/files/front-page/faci-03.png" alt="hanger"/>
+						<div class="faciimg -img03">
+							<!-- <img title="Donec mollis hendrerit" src="/sites/default/files/front-page/faci-04.png" alt="hanger"/> -->
+							<span class="text-tooltip">Donec mollis hendrerit</span>
 						</div>
-						<div class="faciimg">
-							<img title="Donec mollis hendrerit" src="/sites/default/files/front-page/faci-04.png" alt="hanger"/>
+						<div class="faciimg -img04">
+							<!-- <img title="Donec mollis hendrerit" src="/sites/default/files/front-page/faci-05.png" alt="hanger"/> -->
+							<span class="text-tooltip">Donec mollis hendrerit</span>
 						</div>
-						<div class="faciimg">
-							<img title="Donec mollis hendrerit" src="/sites/default/files/front-page/faci-05.png" alt="hanger"/>
+						<div class="faciimg -img05">
+							<!-- <img title="Donec mollis hendrerit" src="/sites/default/files/front-page/faci-06.png" alt="hanger"/> -->
+							<span class="text-tooltip">Donec mollis hendrerit</span>
 						</div>
-						<div class="faciimg">
-							<img title="Donec mollis hendrerit" src="/sites/default/files/front-page/faci-06.png" alt="hanger"/>
+						<div class="faciimg -img06">
+							<!-- <img title="Donec mollis hendrerit" src="/sites/default/files/front-page/faci-07.png" alt="hanger"/> -->
+							<span class="text-tooltip">Donec mollis hendrerit</span>
 						</div>
-						<div class="faciimg">
-							<img title="Donec mollis hendrerit" src="/sites/default/files/front-page/faci-07.png" alt="hanger"/>
+						<div class="faciimg -img07">
+							<!-- <img title="Donec mollis hendrerit" src="/sites/default/files/front-page/faci-08.png" alt="hanger"/> -->
+							<span class="text-tooltip">Donec mollis hendrerit</span>
 						</div>
-						<div class="faciimg">
-							<img title="Donec mollis hendrerit" src="/sites/default/files/front-page/faci-08.png" alt="hanger"/>
+						<div class="faciimg -img08">
+							<!-- <img title="Donec mollis hendrerit" src="/sites/default/files/front-page/faci-09.png" alt="hanger"/> -->
+							<span class="text-tooltip">Donec mollis hendrerit</span>
 						</div>
-						<div class="faciimg">
-							<img title="Donec mollis hendrerit" src="/sites/default/files/front-page/faci-09.png" alt="hanger"/>
+						<div class="faciimg -img09">
+							<!-- <img title="Donec mollis hendrerit" src="/sites/default/files/front-page/faci-10.png" alt="hanger"/> -->
+							<span class="text-tooltip">Donec mollis hendrerit</span>
 						</div>
-						<div class="faciimg">
-							<img title="Donec mollis hendrerit" src="/sites/default/files/front-page/faci-10.png" alt="hanger"/>
+						<div class="faciimg -img10">
+							<!-- <img title="Donec mollis hendrerit" src="/sites/default/files/front-page/faci-11.png" alt="hanger"/> -->
+							<span class="text-tooltip">Donec mollis hendrerit</span>
 						</div>
-						<div class="faciimg">
-							<img title="Donec mollis hendrerit" src="/sites/default/files/front-page/faci-11.png" alt="hanger"/>
+						<div class="faciimg -img11">
+							<!-- <img title="Donec mollis hendrerit" src="/sites/default/files/front-page/faci-12.png" alt="hanger"/> -->
+							<span class="text-tooltip">Donec mollis hendrerit</span>
 						</div>
-						<div class="faciimg">
-							<img title="Donec mollis hendrerit" src="/sites/default/files/front-page/faci-12.png" alt="hanger"/>
+						<div class="faciimg -img12">
+							<!-- <img title="Donec mollis hendrerit" src="/sites/default/files/front-page/faci-12.png" alt="hanger"/> -->
+							<span class="text-tooltip">Donec mollis hendrerit</span>
 						</div>
 					</div>					
 				</div>
@@ -287,8 +299,22 @@
 </div>
 
 <header id="post-740-title" class="article__header  article__header--page two-thirds-height">
-    <div class="article__parallax">
-   
+ 	<div class="flexbox">
+      	<div class="flexbox__item">
+<!-- 	        <hgroup class="article__headline">
+	          <h1 class="headline__primary"><a href="#" style="color:#FFFFFF">CAFE</a></h1>
+	        </hgroup> -->
+			<div class="ct-wrapper">
+				<div class="inner -center">
+					<div class="inner-wrapper">
+			            <h2 class="text-huge text-floatmiddle"><a class="text-bright" href="#">HOSTEL GARDEN CAFE</a></h2>
+					</div>
+				</div>
+			</div>
+        </div>
+  	</div>
+
+    <div class="article__parallax">   
 	    <div class="article__parallax__slider  header--slideshow  js-pixslider" data-imagealigncenter="" data-imagescale="fill" data-slidertransition="fade" data-customarrows="true" data-sliderautoplay="" data-sliderdelay="2000">
 	        <?php
 	        	foreach($exterior_image_node->field_slide_image['und'] as $key => $value) {

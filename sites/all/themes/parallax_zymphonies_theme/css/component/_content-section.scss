@@ -105,22 +105,6 @@
 		padding: 25px 0;
 	}
 }
-.faciimg-wrapper {
-	@media (min-width: 769px) {
-		max-width: 400px;
-	}
-
-	.faciimg {
-		width: 33.33%;
-		height: 120px;
-		text-align: center;
-		vertical-align: middle;
-		float: left;
-		> img {
-			display: inline-block;
-		}
-	}
-}
 
 .reservation-content {
 	display: block;
