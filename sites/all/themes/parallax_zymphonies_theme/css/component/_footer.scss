@@ -1,9 +1,22 @@
 .footer {
-	background-color: #666;
-	border-bottom: 30px solid #555;
+	background-color: $color-6;
+	border-top: 30px solid $color-2;
 	padding: 50px 0;
 
 	text-align: center;
+
+	p {
+		color: #aaa;
+		margin-top: 30px;
+		margin-bottom: 0;
+	}
+
+	a {
+		color: #aaa;
+	}
+	a:hover {
+		color: $color-3;
+	}
 }
 
 ul.list-unstyled {

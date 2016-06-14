@@ -108,6 +108,16 @@
 
 .reservation-content {
 	display: block;
+	.inner.-left {
+		@media (min-width: 992px) {
+			padding-left: 120px;
+		}
+	}
+	.inner.-right {
+		@media (min-width: 992px) {
+			padding-right: 120px;
+		}
+	}
 }
 
 .findus-content {

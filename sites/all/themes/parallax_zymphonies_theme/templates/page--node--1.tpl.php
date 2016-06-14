@@ -462,6 +462,10 @@
 			<li><a href="#">Hostel world</a></li>
 		</ul>
 	</div>
+	<p>
+		OXOTEL @ 2016 all right reserved. Designed and Developed by BGxMINT.co<br />
+		<a href="http://www.bgxmint.co/" target="_blank">www.bgxmint.co</a>
+	</p>
 </div>
 
 
