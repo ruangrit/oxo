@@ -372,7 +372,7 @@
 						Our hostel is 2.00 kilometer from Chiangmai international airport<br />
 						and just only 10 minutes walk to Chiangmai gate
  					</p>
- 					<a class="btn btn-transparent _capital"  data-toggle="modal" data-target="#mapModal">Map</a>
+ 					<a id="modal_click_map" class="btn btn-transparent _capital"  data-toggle="modal" data-target="#mapModal">Map</a>
  					<a class="btn btn-transparent _capital" data-toggle="modal" data-target="#contactModal">Mail us</a>
  				</div>
  			</div>
@@ -585,9 +585,7 @@
 	        <!-- <h4 class="modal-title text-modal" id="myModalLabel">Rooms</h4> -->
 	      	</div>
 	      	<div class="modal-body text-modal">
-	      	<!--
-	      	<iframe src="https://www.google.com/maps/d/embed?mid=11idAtyrUxD9qZCA6gGRayP18KsA" width="640" height="480"></iframe>
-	      	-->
+	      		<iframe src="https://www.google.com/maps/d/embed?mid=11idAtyrUxD9qZCA6gGRayP18KsA&z=14&ll=18.7758, 98.98203" width="640" height="480"></iframe>
 	      	</div>
 	    </div>
 	</div>
@@ -614,6 +612,12 @@
 <script type="text/javascript">
   	$ = jQuery;	
   	$(document).ready(function() {
+
+    	$('#modal_click_map').click(function () {
+	   		setTimeout(function(){
+	    		$(window).trigger('resize');
+	   		}, 200);
+    	});
 
   		var is_slice_rooms = false;
     	$('#modal_click_rooms').click(function () {
