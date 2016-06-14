@@ -502,15 +502,12 @@
 <div class="modal fade" id="cafeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="/sites/all/themes/parallax_zymphonies_theme/images/close.svg" /></span></button>
-        <!-- <h4 class="modal-title text-modal" id="myModalLabel">Rooms</h4> -->
-      </div>
       <div class="modal-body slide-modal">
 
-      		<div class="title-outsideSlider">
+      		<h4 class="modal-title text-modal">
       			<?php print $cafe_modal_node->title;?>
-      		</div>
+      		</h4>
+        	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="/sites/all/themes/parallax_zymphonies_theme/images/close.svg" /></span></button>
 			<ul class="lightSliderCafe">
 			<?php
 			foreach($cafe_modal_node->field_slide_image['und'] as $image){
@@ -524,7 +521,13 @@
 			}
 			?>
 			</ul>
-			<div class="modal-description">
+			<div class="modal-description -cafe">
+				<h2 class="text-bright">ARTISAN</h2>
+				<p>
+					Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+				</p>
+			</div>
+			<div class="modal-description overflow-box -modal">
 				<?php print $cafe_modal_node->body['und'][0]['value']; ?>
 			</div>
 
@@ -536,19 +539,16 @@
 
 <!-- About Modal -->
 <div class="modal fade" id="aboutModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="/sites/all/themes/parallax_zymphonies_theme/images/close.svg" /></span></button>
-        <!-- <h4 class="modal-title text-modal" id="myModalLabel">Rooms</h4> -->
-      </div>
-      <div class="modal-body text-modal">
-      		<div class="modal-label">ABOUT OXOTEL</div>
-      		<h3 class="text-center text-modal">OXOTEL</h3>
-      		<div class="text-center"><?php print $about_node->body['und'][0]['value'];?></div>
-      </div>
-    </div>
-  </div>
+  	<div class="modal-dialog modal-lg" role="document">
+    	<div class="modal-content text-modal">
+      		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="/sites/all/themes/parallax_zymphonies_theme/images/close.svg" /></span></button>
+      		<div class="modal-body text-modal">
+      			<div class="modal-label">ABOUT OXOTEL</div>
+      			<h3 class="text-center text-modal">OXOTEL</h3>
+      			<div class="text-center"><?php print $about_node->body['und'][0]['value'];?></div>
+      		</div>
+    	</div>
+  	</div>
 </div>
 
 
@@ -565,24 +565,41 @@
 	      			<li>
 	      				<div>reservation</div>	
 	      				<h2 class="text-modal">Term and condition</h2>
-	      				<div>
-		      				Praesent egestas neque eu enim. Vivamus laoreet. Aenean massa. Morbi nec metus. Maecenas 
-		      				malesuada. <br />
-
-							Sed fringilla mauris sit amet nibh. Vestibulum suscipit nulla quis orci. Phasellus volutpat, <br />
-							metus eget egestas mollis, lacus lacus blandit dui, id egestas quam mauris ut lacus. Nam adipiscing.
-							Cras ultricies mi eu turpis hendrerit fringilla.
+	      				<div class="overflow-box _300px">
+		      				<p>
+		      					<strong class="text-bright">Praesent egestas</strong><br />
+			      				Praesent egestas neque eu enim. Vivamus laoreet. Aenean massa. Morbi nec metus. Maecenas 
+			      				malesuada. Sed fringilla mauris sit amet nibh. Vestibulum suscipit nulla quis orci. Phasellus volutpat, metus eget egestas mollis, lacus lacus blandit dui, id egestas quam mauris ut lacus. Nam adipiscing.
+			      			</p>
+			      			<p>
+		      					<strong class="text-bright">Praesent egestas</strong><br />
+			      				Praesent egestas neque eu enim. Vivamus laoreet. Aenean massa. Morbi nec metus. Maecenas 
+			      				malesuada. Sed fringilla mauris sit amet nibh. Vestibulum suscipit nulla quis orci. Phasellus volutpat, metus eget egestas mollis, lacus lacus blandit dui, id egestas quam mauris ut lacus. Nam adipiscing.
+			      			</p>
+			      			<p>
+		      					<strong class="text-bright">Praesent egestas</strong><br />
+			      				Praesent egestas neque eu enim. Vivamus laoreet. Aenean massa. Morbi nec metus. Maecenas 
+			      				malesuada. Sed fringilla mauris sit amet nibh. Vestibulum suscipit nulla quis orci. Phasellus volutpat, metus eget egestas mollis, lacus lacus blandit dui, id egestas quam mauris ut lacus. Nam adipiscing.
+			      			</p>
+			      			<p>
+		      					<strong class="text-bright">Praesent egestas</strong><br />
+			      				Praesent egestas neque eu enim. Vivamus laoreet. Aenean massa. Morbi nec metus. Maecenas 
+			      				malesuada. Sed fringilla mauris sit amet nibh. Vestibulum suscipit nulla quis orci. Phasellus volutpat, metus eget egestas mollis, lacus lacus blandit dui, id egestas quam mauris ut lacus. Nam adipiscing.
+			      			</p>
+			      			<p>
+		      					<strong class="text-bright">Praesent egestas</strong><br />
+			      				Praesent egestas neque eu enim. Vivamus laoreet. Aenean massa. Morbi nec metus. Maecenas 
+			      				malesuada. Sed fringilla mauris sit amet nibh. Vestibulum suscipit nulla quis orci. Phasellus volutpat, metus eget egestas mollis, lacus lacus blandit dui, id egestas quam mauris ut lacus. Nam adipiscing.
+		      				</p>
 	      				</div>
 	      			</li>
 	      			<li>
 	      				<h2 class="text-modal">Reservation policy</h2>	
-	      				<div>
+	      				<div class="overflow-box _300px">
+		      			<p>
 		      				Praesent egestas neque eu enim. Vivamus laoreet. Aenean massa. Morbi nec metus. Maecenas 
-		      				malesuada. <br />
-
-							Sed fringilla mauris sit amet nibh. Vestibulum suscipit nulla quis orci. Phasellus volutpat, <br />
-							metus eget egestas mollis, lacus lacus blandit dui, id egestas quam mauris ut lacus. Nam adipiscing.
-							Cras ultricies mi eu turpis hendrerit fringilla.
+		      				malesuada. <br />Sed fringilla mauris sit amet nibh. Vestibulum suscipit nulla quis orci. Phasellus volutpat, <br />metus eget egestas mollis, lacus lacus blandit dui, id egestas quam mauris ut lacus. Nam adipiscing.<br />Sed fringilla mauris sit amet nibh. Vestibulum suscipit nulla quis orci. Phasellus volutpat, <br />Sed fringilla mauris sit amet nibh. Vestibulum suscipit nulla quis orci. Phasellus volutpat, <br />Cras ultricies mi eu turpis hendrerit fringilla.<br />metus eget egestas mollis, lacus lacus blandit dui, id egestas quam mauris ut lacus. Nam adipiscing.<br />Sed fringilla mauris sit amet nibh. Vestibulum suscipit nulla quis orci. Phasellus volutpat, <br />Sed fringilla mauris sit amet nibh. Vestibulum suscipit nulla quis orci. Phasellus volutpat, <br />Cras ultricies mi eu turpis hendrerit fringilla.
+	      				</p>
 	      				</div>
 	      			</li>
 	      		</ul>

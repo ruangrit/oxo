@@ -96,7 +96,6 @@
   display: block;
   overflow: hidden;
   padding: 100px 50px;
-  margin-top: -50px;
   margin-bottom: 50px; }
   .desc-section.-facilities {
     height: auto; }
@@ -152,6 +151,11 @@
   @media (min-width: 769px) {
     .overflow-box {
       height: 130px; } }
+  .overflow-box.-modal {
+    height: 190px; }
+  .overflow-box._300px {
+    height: 300px;
+    margin-bottom: 0; }
 
 .button-box {
   text-align: justify;
@@ -189,6 +193,14 @@ ul.list-unstyled {
   .footer-list ul > li a:hover {
     color: #ED932D; }
 
+.modal-content {
+  border: 1px solid #3E3E3E; }
+  .modal-content .close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    z-index: 999; }
+
 .modal-header {
   border-bottom: 0; }
 
@@ -198,23 +210,24 @@ ul.list-unstyled {
     padding: 60px 15px 15px 15px; }
     @media (min-width: 769px) {
       .modal-body.slide-modal {
-        padding: 60px 15px 80px 0; } }
-  .modal-body.text-modal, .modal-body.textSlide-modal {
-    padding: 15px; }
+        padding: 60px 30px 80px 0; } }
+  .modal-body.text-modal {
+    padding: 60px 15px 15px 15px; }
     @media (min-width: 769px) {
-      .modal-body.text-modal, .modal-body.textSlide-modal {
-        padding: 15px 100px 100px 100px; } }
+      .modal-body.text-modal {
+        padding: 60px 100px 200px 100px; } }
   .modal-body.text-modal > h3 {
     margin-bottom: 15px; }
+  .modal-body.textSlide-modal {
+    padding: 60px 15px 15px 15px; }
+    @media (min-width: 769px) {
+      .modal-body.textSlide-modal {
+        padding: 60px 100px 100px 100px; } }
   .modal-body.textSlide-modal > h2 {
     margin-bottom: 15px; }
   .modal-body > .modal-label {
     margin-bottom: 100px; }
 
-.slide-modal .close {
-  position: absolute;
-  top: 30px;
-  right: 30px; }
 .slide-modal .modal-title {
   margin-bottom: 30px; }
   @media (min-width: 769px) {
@@ -277,7 +290,10 @@ ul.list-unstyled {
     width: 50%;
     float: left; } }
 .slide-modal .lSSlideOuter li > img {
-  width: 100%; }
+  width: 100%;
+  border-right: 1px solid #3E3E3E;
+  border-top: 1px solid #3E3E3E;
+  border-bottom: 1px solid #3E3E3E; }
 
 .lSSlideWrapper {
   overflow: visible; }
@@ -300,10 +316,9 @@ ul.list-unstyled {
 .lSSlideOuter .lSPager.lSpg > li:hover a {
   background-color: #E1E2E5; }
 
-.lSAction > .lSNext {
+.slide-modal .lSAction > .lSNext {
   right: 120px; }
-
-.lSAction > .lSPrev {
+.slide-modal .lSAction > .lSPrev {
   left: 120px; }
 
 .title-outsideSlider {
@@ -312,11 +327,15 @@ ul.list-unstyled {
     .title-outsideSlider {
       padding-left: 100px; } }
 
-@media (min-width: 769px) {
-  .modal-description {
-    width: 50%;
-    float: right;
-    padding-left: 30px; } }
+.modal-description {
+  margin-top: 30px; }
+  @media (min-width: 769px) {
+    .modal-description {
+      width: 50%;
+      float: right;
+      padding-left: 30px; } }
+  .modal-description .-cafe {
+    margin-bottom: 60px; }
 
 .modal-content input.form-text,
 .modal-content textarea.form-textarea {
