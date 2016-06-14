@@ -5,9 +5,9 @@
 
 	&.slide-modal {
 		@media (min-width: 769px) {
-			padding: 15px 15px 30px 0;	
+			padding: 60px 15px 80px 0;	
 		}	
-		padding: 15px;	
+		padding: 60px 15px 15px 15px;	
 	}
 
 	&.text-modal,
@@ -29,6 +29,19 @@
 	}
 	
 	overflow: hidden;
+}
+.slide-modal {
+	.close {
+		position: absolute;
+    	top: 30px;
+    	right: 30px;
+	}
+	.modal-title {
+		@media (min-width: 769px) {
+			margin-left: 100px;
+		}
+		margin-bottom: 30px;
+	}
 }
 .textSlide-modal {
 	.lSSlideWrapper {
@@ -132,12 +145,22 @@
 	margin-top: 0;
 	background-image: url('../img/controls.svg');
 }
+
+.lSSlideOuter .lSPager.lSpg > li {
+	padding: 0 10px;
+}
 .lSSlideOuter .lSPager.lSpg > li a {
 	background-color: $color-1;
 }
 .lSSlideOuter .lSPager.lSpg > li.active a,
 .lSSlideOuter .lSPager.lSpg > li:hover a {
 	background-color: $color-4;
+}
+.lSAction > .lSNext {
+	right: 120px;
+}
+.lSAction > .lSPrev {
+	left: 120px;
 }
 
 .title-outsideSlider {
