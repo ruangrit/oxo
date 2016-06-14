@@ -535,4 +535,28 @@ body {
       color: #2B2A2F;
       background-color: #ED932D; }
 
+.social-gang {
+  margin-bottom: 30px !important; }
+  .social-gang > li {
+    display: inline-block;
+    padding: 0 10px; }
+  .social-gang > li > a {
+    display: block;
+    width: 52px;
+    height: 52px;
+    text-indent: -999em;
+    overflow: hidden; }
+  .social-gang > li > a.fb {
+    background: url(/sites/all/themes/parallax_zymphonies_theme/images/fb.png) transparent no-repeat center; }
+    .social-gang > li > a.fb:hover {
+      background: url(/sites/all/themes/parallax_zymphonies_theme/images/fb-hover.png) transparent no-repeat center; }
+  .social-gang > li > a.ig {
+    background: url(/sites/all/themes/parallax_zymphonies_theme/images/ig.png) transparent no-repeat center; }
+    .social-gang > li > a.ig:hover {
+      background: url(/sites/all/themes/parallax_zymphonies_theme/images/ig-hover.png) transparent no-repeat center; }
+  .social-gang > li > a.tw {
+    background: url(/sites/all/themes/parallax_zymphonies_theme/images/tw.png) transparent no-repeat center; }
+    .social-gang > li > a.tw:hover {
+      background: url(/sites/all/themes/parallax_zymphonies_theme/images/tw-hover.png) transparent no-repeat center; }
+
 /*# sourceMappingURL=zoxo.css.map */
