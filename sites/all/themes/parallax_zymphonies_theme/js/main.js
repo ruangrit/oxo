@@ -641,7 +641,13 @@ var windowWidth = window.innerWidth,
                             fast: .75,
                             fixed: 1
                         };
-                    w.top -= 50;
+                    if (c.parent()[0].id == 'post-205-title') {
+                        w.top -= 50;
+                    }
+                    else {
+                        w.top -= 15;
+
+                    }
                     c.removeAttr("style"), u.data("source", c).appendTo(".covers").show(), u.css("height", v), "undefined" != typeof parallax_speeds && e.each(S, function(e, t) {
                         "undefined" != typeof parallax_speeds[e] && p.is(parallax_speeds[e]) && (T = t)
                     }), o = windowWidth / x, n = (v + (windowHeight - v) * T) / _, s = Math.max(o, n), l = parseInt(x * s), d = (windowHeight - v) * T, b.css("height", v + d), h.css({
