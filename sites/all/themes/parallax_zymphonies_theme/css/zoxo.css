@@ -218,6 +218,13 @@ ul.list-unstyled {
       margin-bottom: 20px; }
     .modal-body.slide-modal .btn.btn-transparent {
       margin-top: 0; }
+    .modal-body.slide-modal .btn.btn-transparent._booking {
+      width: 115px;
+      height: 27px;
+      padding: 0;
+      line-height: 27px;
+      font-size: 14px;
+      margin-top: 30px; }
   .modal-body.text-modal {
     padding: 60px 15px 15px 15px; }
     @media (min-width: 769px) {
@@ -237,6 +244,11 @@ ul.list-unstyled {
     @media (min-width: 769px) {
       .modal-body.map-modal {
         padding: 100px 100px 100px 100px; } }
+  .modal-body.form-modal {
+    padding: 60px 15px 15px 15px; }
+    @media (min-width: 769px) {
+      .modal-body.form-modal {
+        padding: 60px 100px 100px 100px; } }
   .modal-body > .modal-label {
     margin-bottom: 100px; }
 

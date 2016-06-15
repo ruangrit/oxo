@@ -25,6 +25,14 @@
 		.btn.btn-transparent {
 			margin-top: 0;
 		}
+		.btn.btn-transparent._booking {
+			width: 115px;
+			height: 27px;
+			padding: 0;
+			line-height: 27px;
+			font-size: 14px;
+			margin-top: 30px;
+		}
 	}
 	&.text-modal {
 		@media (min-width: 769px) {
@@ -47,6 +55,12 @@
 	&.map-modal {
 		@media (min-width: 769px) {
 			padding: 100px 100px 100px 100px;	
+		}	
+		padding: 60px 15px 15px 15px;	
+	}
+	&.form-modal {
+		@media (min-width: 769px) {
+			padding: 60px 100px 100px 100px;	
 		}	
 		padding: 60px 15px 15px 15px;	
 	}
