@@ -72,21 +72,22 @@
 	display: block;
     overflow: hidden;
     padding: 100px 50px;
-	// margin-top: -50px;
 	margin-bottom: 50px;
 	&.-facilities {
 		height: auto;
-		padding: 100px 50px 50px 50px;
+		@media (min-width: 769px) {
+			padding: 100px 50px 50px 50px;	
+		}
+		padding: 0 15px;
 	}
 	&.-reservation {
 		height: auto;
-		// background: url(../images/keys.png) transparent no-repeat left center;
-		// background-size: auto 300px;
+		@media (max-width: 768px) {
+			padding: 0 15px;
+		}
 	}
 	&.-findus {
 		height: auto;
-		// background: url(../images/clock.png) transparent no-repeat left center;
-		// background-size: auto 456px;
 	}
 }
 
@@ -128,9 +129,9 @@
 }
 
 .overflow-box {
-	@media (min-width: 769px) {
+	// @media (min-width: 769px) {
 		height: 130px;	
-	}
+	// }
 	overflow-y: scroll;
 	margin-top: 25px;
 	margin-bottom: 30px;

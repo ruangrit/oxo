@@ -297,7 +297,7 @@
 				</div>
 			</div>
 			<div class="inner -right _text-grey">
-				<div class="inner-wrapper _textcenter-768px">
+				<div class="inner-wrapper">
 					<h3 class="desc-header _capital _text-grey">Facilities</h3>
 					<div class="overflow-box">
 						<p>- All rooms are fitted with a shared bathroom</p>
