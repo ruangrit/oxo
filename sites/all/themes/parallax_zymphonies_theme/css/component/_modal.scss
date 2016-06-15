@@ -17,7 +17,14 @@
 		@media (min-width: 769px) {
 			padding: 60px 30px 80px 0;	
 		}	
-		padding: 60px 15px 15px 15px;	
+		padding: 60px 15px 15px 15px;
+
+		.overflow-box {
+			margin-bottom: 20px;
+		}
+		.btn.btn-transparent {
+			margin-top: 0;
+		}
 	}
 	&.text-modal {
 		@media (min-width: 769px) {
@@ -106,21 +113,24 @@
 		max-width: 175px;
 	}
 }
-.modaltitle-wrapper {
-	margin-bottom: 10px;
+.modal-description {
+	margin-top: 25px;
+	@media (min-width: 769px) {
+		width: 45%;
+		float: right;
+		padding-left: 30px;
+	}
+	.-cafe {
+		margin-bottom: 60px;
+	}
 }
-.btn.btn-transparent._modaltitle {
-	color: $color-5;
-	max-width: 250px;
-	margin-top: 0px;
-	margin-bottom: 5px;
-	&:hover,
-	&:active,
-	&:focus,
-	&.active {
-		color: #FFFFFF;
-		background-color: transparent;
-		border: 1px solid $color-3;
+
+.slide-modal {
+	.lSAction > .lSNext {
+		right: 120px;
+	}
+	.lSAction > .lSPrev {
+		left: 120px;
 	}	
 }
 
@@ -129,7 +139,7 @@
 		margin-bottom: 30px;
 	}
 	@media (min-width: 769px) {
-		width: 50%;
+		width: 55%;
 		float: left;
 	}
 
@@ -143,9 +153,6 @@
 
 .lSSlideWrapper {
 	overflow: visible;
-	.lslide {
-		//margin-right: 0 !important;
-	}
 }
 .lSSlideOuter .lSPager.lSpg {
 	line-height: 30px;
@@ -162,18 +169,12 @@
 }
 .lSSlideOuter .lSPager.lSpg > li a {
 	background-color: $color-1;
+	width: 12px;
+	height: 12px;
 }
 .lSSlideOuter .lSPager.lSpg > li.active a,
 .lSSlideOuter .lSPager.lSpg > li:hover a {
 	background-color: $color-4;
-}
-.slide-modal {
-	.lSAction > .lSNext {
-		right: 120px;
-	}
-	.lSAction > .lSPrev {
-		left: 120px;
-	}	
 }
 
 .title-outsideSlider {
@@ -183,14 +184,20 @@
 	}
 }
 
-.modal-description {
-	margin-top: 30px;
-	@media (min-width: 769px) {
-		width: 50%;
-		float: right;
-		padding-left: 30px;
-	}
-	.-cafe {
-		margin-bottom: 60px;
-	}
+.btn.btn-transparent._modaltitle {
+	color: $color-5;
+	max-width: 200px;
+	margin-top: 0px;
+	margin-bottom: 5px;
+
+	font-size: 0.8em;
+	padding: 5px 15px 2px 15px;
+	&:hover,
+	&:active,
+	&:focus,
+	&.active {
+		color: #FFFFFF;
+		background-color: transparent;
+		border: 1px solid $color-3;
+	}	
 }
