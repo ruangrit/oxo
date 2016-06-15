@@ -670,7 +670,8 @@
 	    <div class="modal-content">
 	      	<div class="modal-body map-modal">
 	        	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="/sites/all/themes/parallax_zymphonies_theme/images/close.svg" /></span></button>
-	      		<iframe src="https://www.google.com/maps/d/embed?mid=11idAtyrUxD9qZCA6gGRayP18KsA&z=14&ll=18.7758, 98.98203" width="640" height="480"></iframe>
+	        	<div id="iframe_map"></div>
+	      		<!--<iframe src="https://www.google.com/maps/d/embed?mid=11idAtyrUxD9qZCA6gGRayP18KsA&z=14&ll=18.7758, 98.98203" width="640" height="480"></iframe>-->
 	      	</div>
 	    </div>
 	</div>
@@ -696,6 +697,10 @@
   	$(document).ready(function() {
 
     	$('#modal_click_map').click(function () {
+    		if ($('#mapModal').find('#iframe_map').html() == "") {
+	    		$('#mapModal').find('#iframe_map').html('<iframe src="https://www.google.com/maps/d/embed?mid=11idAtyrUxD9qZCA6gGRayP18KsA&z=14&ll=18.7758, 98.98203" width="640" height="480"></iframe>');
+
+    		}
 	   		setTimeout(function(){
 	    		$(window).trigger('resize');
 	   		}, 200);
