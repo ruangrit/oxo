@@ -168,9 +168,6 @@
 						- Cancellations received in writing less than 7 days will be charged 100% of the full value of the reservation (incl. tax) <br />
 						- When guests don't arrive and haven't cancelled their reservation - a 'no-show' - we will charge the equivalent to your entire stay 
 						</p>
-						<p>Pellentesque dapibus hendrerit tortor. Pellentesque posuere.<br />Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;<br />faucibus non, euismod id, nulla.</p>
- 						<p>Pellentesque dapibus hendrerit tortor. Pellentesque posuere.<br />In ac dui quis mi consectetuer lacinia. Sed hendrerit. Donec orci lectus, aliquam ut<br />faucibus non, euismod id, nulla.</p>
- 						<p>Pellentesque dapibus hendrerit tortor. Pellentesque posuere.<br />Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;<br />faucibus non, euismod id, nulla.</p>
 					</div>
  					
  					<a id="modal_click_condition" class="btn btn-transparent _capital" data-toggle="modal" data-target="#conditionModal">Condition</a>
@@ -200,16 +197,11 @@
 					<div class="inner-wrapper">
 			            <h3><a class="text-bright" href="#">Rooms</a></h3>
 			            <div class="overflow-box">
-				            <p>
-				            	Pellentesque dapibus hendrerit tortor. Pellentesque posuere. <br />
-				            	Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; <br />
-				            	faucibus non, euismod id, nulla.
-				            </p>
-				            <p>
-				            	Pellentesque dapibus hendrerit tortor. Pellentesque posuere. <br />
-				            	Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; <br />
-				            	faucibus non, euismod id, nulla.
-				            </p>			            	
+			            	<p>
+			            		With our 6 type’s rooms. Every dormitory bed has his/her locker,
+			            		reading lamp and power socket. The private rooms have their wash basin.
+			            		All our 6 types of room with shared bathroom on the 2nd floor 
+			            	</p>
 
 			            </div>
 
@@ -308,13 +300,31 @@
 				<div class="inner-wrapper _textcenter-768px">
 					<h3 class="desc-header _capital _text-grey">Facilities</h3>
 					<div class="overflow-box">
-						<p>Pellentesque dapibus hendrerit tortor. Pellentesque posuere. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. Sed hendrerit. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla.</p>
-						<p>Pellentesque dapibus hendrerit tortor. Pellentesque posuere. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. Sed hendrerit. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla.</p>
+						<p>- All rooms are fitted with a shared bathroom</p>
+						<p>- Guest kitchen areaprovides dishes, mug, glasses, utensils, oven, microwave and a fridge</p>
+						<p>- Up to 3 common areas, two on 2nd floor and one on 3rd floor- Wide screen TV in kitchen</p>
+						<p>- Luggage storage after check-out on the same day</p>
+						<p>- Free parking on site (Reservation is needed)</p>
+						<p>- ARTISAN Coffee café opens everyday from 9.00 am. to 7.00 pm.</p>
+
+						<!--- All rooms are fitted with a shared bathroom <br />
+						- Guest kitchen areaprovides dishes, mug, glasses, utensils, oven, microwave and a fridge <br />
+						- Up to 3 common areas, two on 2nd floor and one on 3rd floor- Wide screen TV in kitchen <br />
+						- Luggage storage after check-out on the same day <br />
+						- Free parking on site (Reservation is needed)<br />
+						- ARTISAN Coffee café opens everyday from 9.00 am. to 7.00 pm.-->
+
+
 					</div>
-					<h3 class="desc-header _capital _text-grey">Free Amenities & Service</h3>	
+					<h3 class="desc-header _capital _text-grey">Sell staffs & services</h3>	
 					<div class="overflow-box">
-						<p>Sed augue ipsum, egestas nec, vestibulum et, malesuada adipiscing, dui. Maecenas malesuada. Morbi mattis ullamcorper velit. Etiam sollicitudin, ipsum eu pulvinar rutrum, tellus ipsum laoreet sapien, quis venenatis ante odio sit amet eros. Suspendisse eu ligula.</p>
-						<p>Pellentesque dapibus hendrerit tortor. Pellentesque posuere. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. Sed hendrerit. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla.</p>
+
+							<p>-Toothbrush 15 THB</p>
+							<p>- Toothpaste 15 THB </p>
+							<p>- Universal adaptor 60 THB </p>
+							<p>- Ears plug 15 THB </p>
+							<p>- Sanitary pad 20 THB </p>
+							<p>- Locked 60 THB </p>
 					</div>
 				</div>
 			</div>
@@ -371,16 +381,23 @@
 					<div class="inner-wrapper">
 			            <h3><a class="text-bright" href="#">Cafe</a></h3>
 			            <div class="overflow-box">
-				            <p>
-				            	Pellentesque dapibus hendrerit tortor. Pellentesque posuere. <br />
-				            	Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; <br />
-				            	faucibus non, euismod id, nulla.
-				            </p>
-				            <p>
-				            	Pellentesque dapibus hendrerit tortor. Pellentesque posuere. <br />
-				            	Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; <br />
-				            	faucibus non, euismod id, nulla.
-				            </p>
+			            	<p>
+			            		<strong class="class="text-bright"">Coffee/Hot/Iced/Frappe</strong><br />
+			            		Ristretto/Doppio, Espresso/Doppio, Americano, Latte, Cappuchino, Mocha 
+			            	</p>
+			            	<p>
+			            		<strong class="class="text-bright"">Artisan Thai Style </strong><br />
+			            		Caramel Macciato, Flat White, Picolo Latte, Marrochino 
+			            	</p>
+			            	<p>
+			            		<strong class="class="text-bright"">Cocoa</strong><br />
+			            		Green Tea Latte, Thai Tea Latte 
+			            	</p>
+			            	<p>
+			            		<strong class="class="text-bright"">ETC.</strong><br />
+			            		Pink Ocean, Morning Glory Mango, Sunshine Rose, Big Apple, Strawberry, Mix Berry, Kiwi, Mango  
+			            		
+			            	</p>
 			            </div>
 			            <div>
 				          	<button id="modal_click_cafe" class="btn btn-transparent -darkbg _capital" type="button"  data-toggle="modal" data-target="#cafeModal">
@@ -622,38 +639,150 @@
 	      				<h2 class="text-modal">Term and condition</h2>
 	      				<div class="overflow-box _300px">
 		      				<p>
-		      					<strong class="text-bright">Praesent egestas</strong><br />
-			      				Praesent egestas neque eu enim. Vivamus laoreet. Aenean massa. Morbi nec metus. Maecenas 
-			      				malesuada. Sed fringilla mauris sit amet nibh. Vestibulum suscipit nulla quis orci. Phasellus volutpat, metus eget egestas mollis, lacus lacus blandit dui, id egestas quam mauris ut lacus. Nam adipiscing.
+		      					<strong class="text-bright">CHECK –IN</strong><br />
+		      					- Check – in time from 2.00 pm. Leave your luggage is available at reception before check <br />
+		      					– in-Arrivals between 12.00 AM midnight and 7.00 AM will be considered as the previous night and will require payment<br />
+		      					- Please pay the total of your room balance on arrival. We accept either cash or credit card<br />
+		      					- Passport or ID card is strictly required for check <br />
+		      					– in. However all of your personal data will be kept privately
 			      			</p>
 			      			<p>
-		      					<strong class="text-bright">Praesent egestas</strong><br />
-			      				Praesent egestas neque eu enim. Vivamus laoreet. Aenean massa. Morbi nec metus. Maecenas 
-			      				malesuada. Sed fringilla mauris sit amet nibh. Vestibulum suscipit nulla quis orci. Phasellus volutpat, metus eget egestas mollis, lacus lacus blandit dui, id egestas quam mauris ut lacus. Nam adipiscing.
+		      					<strong class="text-bright">CHECK – OUT</strong><br />
+		      					- Check – out time before 12.00 PM. Let us know if you’re early bird and would like to check 
+		      					– out earlier 
+		      					-Noon late check 
+		      					– out between 12.00 PM 
+		      					– 6.00 PM is half day charge and after 6.00 PM is full day charge 
+		      					- If you have not checked 
+		      					– out of the room by noon and you do not have a reservation for the next night, Oxotel hostel may have to pack your <br />
+		      					belonging to be placed in the luggage area so the room can be cleaned for the new arrivals  
+		      					-You can leave your luggage with us with free of charge after check – out
 			      			</p>
 			      			<p>
-		      					<strong class="text-bright">Praesent egestas</strong><br />
-			      				Praesent egestas neque eu enim. Vivamus laoreet. Aenean massa. Morbi nec metus. Maecenas 
-			      				malesuada. Sed fringilla mauris sit amet nibh. Vestibulum suscipit nulla quis orci. Phasellus volutpat, metus eget egestas mollis, lacus lacus blandit dui, id egestas quam mauris ut lacus. Nam adipiscing.
+		      					<strong class="text-bright">KEY CARD</strong><br />
+		      					- Guest will get a personal key card to enter their room <br />
+		      					- Key card deposit is 100 THB and paid by cash only. The deposit will be returned upon return of card <br />
 			      			</p>
 			      			<p>
-		      					<strong class="text-bright">Praesent egestas</strong><br />
-			      				Praesent egestas neque eu enim. Vivamus laoreet. Aenean massa. Morbi nec metus. Maecenas 
-			      				malesuada. Sed fringilla mauris sit amet nibh. Vestibulum suscipit nulla quis orci. Phasellus volutpat, metus eget egestas mollis, lacus lacus blandit dui, id egestas quam mauris ut lacus. Nam adipiscing.
+		      					<strong class="text-bright">RECEPTION</strong><br />
+		      					- Reception operating time 24 hours service 
 			      			</p>
 			      			<p>
-		      					<strong class="text-bright">Praesent egestas</strong><br />
-			      				Praesent egestas neque eu enim. Vivamus laoreet. Aenean massa. Morbi nec metus. Maecenas 
-			      				malesuada. Sed fringilla mauris sit amet nibh. Vestibulum suscipit nulla quis orci. Phasellus volutpat, metus eget egestas mollis, lacus lacus blandit dui, id egestas quam mauris ut lacus. Nam adipiscing.
+		      					<strong class="text-bright">AGE RESTRICTIONS</strong><br />
+		      					- To preserve and maintain our laid<br /> 
+		      					– back & smooth atmosphere we do not allow persons under 15 year of age 
 		      				</p>
+			      			<p>
+		      					<strong class="text-bright">NO CURFEW</strong><br />
+									- After 10.00 PM the main gate will be closed. When you go out or in after that please use your key card entering the main gate
+		      				</p>
+			      			<p>
+		      					<strong class="text-bright">BREAKFAST</strong><br />
+									- Breakfast buffet start from 7.00 AM until 10.00 AM at the breakfast area. It is not permitted to take any food away from there
+		      				</p>
+			      			<p>
+		      					<strong class="text-bright">EATING & DRINKING AREA</strong><br />
+									- Eating and drinking (except water) is forbidden in the room. You can only consume your own food and drink in the common area. <br /> 
+									It is forbidden to bring any type of food or drink (except water) into your room
+							</p>
+			      			<p>
+		      					<strong class="text-bright">QUIET TIME </strong><br />
+									- Please keep the noise level down in the entire of hostel from 10.00 PM until an early morning hours to avoid disturbing other  guests.<br />
+									 Please be generally mindful of their presence as you move around the building
+							</p>
+							<p>
+		      					<strong class="text-bright">RESPECT</strong><br />
+		      						- Do not put your personal item on the other bed. Do not pick up the other blanket, pillow or towel from the other bed <br />
+		      						- Travelers are expected to respect other guests, staffs and property 
+								
+							</p>
+							<p>
+		      					<strong class="text-bright">SAFETY & SECURITY </strong><br />
+		      					- The reception, lobby and common areas are under 24 hours CCTV surveillance for your own safety  <br />
+		      					- Hostel area and rooms are accessed by key card <br />
+		      					- Any guest who in the opinion of our staffs, compromise the comfort, safety or security of other<br /> 
+		      					guests or staffs will  be asked to leave the hostel and will not be offered any of refund
+								
+							</p>
+							<p>
+		      					<strong class="text-bright">NON – SMOKING</strong><br />
+		      					- Oxotel hostel is a non – smoking hostel. A 2,000 THB will be charged to anyone who smokes in the public area according to Thai laws.<br />
+		      					 You can have your cigarette only at the end of the rear backyard
+								
+							</p>
+							<p>
+		      					<strong class="text-bright">NO DRUGS</strong><br />
+		      					- Any type of drugs is forbidden throughout the whole poperty  
+								
+							</p>
+							<p>
+		      					<strong class="text-bright">VISITOR RULES</strong><br />
+		      					- Outsiders or visitors are only allowed in the lobby area and garden are, not in the guest room <br />
+		      					- No visitors are allowed inside the hostel after 10.00  PM
+							</p>
+							<p>
+		      					<strong class="text-bright">PET RULES</strong><br />
+		      					- Pets are not allowed in the hostel 
+
+							</p>
+							<p>
+		      					<strong class="text-bright">LAUNDRY</strong><br />
+		      					- Oxotel hostel have a laundry service and we provide a washing machine on the 2nd floor. Please dry them in the washing area only <br />
+		      					- Any clothes hanging or left in the public areas will be removed by the staffs 
+
+							</p>
+							<p>
+		      					<strong class="text-bright">KITCHEN</strong><br />
+		      						- After use, please wash your dirty cups and dishes and please keep the kitchen clean and tidy<br />
+		      						- When placing food in the fridge, please write your name and your check – out date on it 
+								
+							</p>
+							<p>
+		      					<strong class="text-bright">CLEANLINESS</strong><br />
+		      						- Please keep your room and common areas of the hostel clean and tidy to help us maintain the cozy and friendly atmosphere, we are dedicated to welcome all our guests with <br />
+		      						- If you are staying in the dormitory room for multiple days and would like to have your bed cleaned, please inform our staffs  before 12.00 noon, beds are cleaned upon request 
+								
+							</p>
+							<p>
+		      					<strong class="text-bright">DAMAGES</strong><br />
+		      						- If you lose or damage any property belonging to Oxotel hostel, we will have to charge you for it. The compensation must be pa id immediately and in cash.<br /> 
+		      						There is a 100 THB charged for missing the towel 
+								
+							</p>
+							<p>
+		      					<strong class="text-bright">CONSERVATION </strong><br />
+		      						- For conservation reasons, please turn off the lights, air – condition before leaving your room 
+								
+							</p>
+							<p>
+		      					<strong class="text-bright">PERSONAL BELONGINGS</strong><br />
+		      					- You can put your luggage in our luggage area  <br />
+		      					- Valued articles should be stored in your room <br />
+		      					- Oxotel hostel is not responsible for any case of lost, damage or theft 
+								
+							</p>
+							<p>
+		      					<strong class="text-bright">PERSONAL BELONGINGS</strong><br />
+		      					- f you wish to extend your stay, you must do so, it is subject to availability. Please inform us before your check – out date and with full payment in advance
+								
+							</p>
 	      				</div>
 	      			</li>
 	      			<li>
 	      				<h2 class="text-modal">Reservation policy</h2>	
 	      				<div class="overflow-box _300px">
 		      			<p>
-		      				Praesent egestas neque eu enim. Vivamus laoreet. Aenean massa. Morbi nec metus. Maecenas 
-		      				malesuada. <br />Sed fringilla mauris sit amet nibh. Vestibulum suscipit nulla quis orci. Phasellus volutpat, <br />metus eget egestas mollis, lacus lacus blandit dui, id egestas quam mauris ut lacus. Nam adipiscing.<br />Sed fringilla mauris sit amet nibh. Vestibulum suscipit nulla quis orci. Phasellus volutpat, <br />Sed fringilla mauris sit amet nibh. Vestibulum suscipit nulla quis orci. Phasellus volutpat, <br />Cras ultricies mi eu turpis hendrerit fringilla.<br />metus eget egestas mollis, lacus lacus blandit dui, id egestas quam mauris ut lacus. Nam adipiscing.<br />Sed fringilla mauris sit amet nibh. Vestibulum suscipit nulla quis orci. Phasellus volutpat, <br />Sed fringilla mauris sit amet nibh. Vestibulum suscipit nulla quis orci. Phasellus volutpat, <br />Cras ultricies mi eu turpis hendrerit fringilla.
+		      			    <strong class="text-bright">Agoda.com & Expedia.com: </strong>Your credit card has been charged already. Cancellation and modification are upon cancellation policy on each reservation <br />
+		      			    <strong class="text-bright">Booking.com:  </strong>Valid credit card details are required to book online.Your credit card is not charged before your arrival.  We just keep your credit card details  for security reasons. You need to pay the total room balance directly to Oxotel Hostel on arrival either cash or credit card. <br />
+		      			    <strong class="text-bright">HostelWorld.com:</strong> You will be charged 10% deposit. This is automatically taken by the booking engine not by Oxotel Hostel.The deposit is non – refundable and non – transferable.You need to pay the due balance directly to Oxotel Hostel on arrival either cash or credit card. <br />
+		      			    <strong class="text-bright"> Reservation by Phone:</strong> Reservation directly by phone call +66 52 085 334 or +66 95 674 1442. For your standard booking through email or phone reservation, we accept payment by bank transfer only. Your room will blocked until 12.00 pm. noon of the next day. It is only confirmed wh en we have received the payment from you before due. Otherwise your booking will be cancelled <br />
+		      			    <strong class="text-bright">Cancellation policy </strong> Oxotel is a small property with only 12 rooms. Because of that we are significantly affected by cancellations. The cancellati on will only be considered final when the Oxotel hostel has received written notification and acknowledged this. The following cancellation charges apply;<br />
+
+		      			    - Cancellations received more than 14 days prior to your arrival: there is no charge. <br />
+		      			    - Cancellations received in writing between 7-14 days prior to your arrival will be charged 50% of the full value of the reservation (incl. tax)  <br />
+		      			    - Cancellations received in writing less than 7 days will be charged 100% of the full value of the reservation (incl. tax)  <br />
+		      			    - When guests don't arrive and haven't cancelled their reservation - a 'no-show' - we will charge the equivalent to your entire stay
+
 	      				</p>
 	      				</div>
 	      			</li>
