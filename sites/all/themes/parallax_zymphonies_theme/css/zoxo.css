@@ -104,7 +104,8 @@
   padding: 100px 50px;
   margin-bottom: 50px; }
   .desc-section.-facilities {
-    height: auto; }
+    height: auto;
+    padding: 100px 50px 50px 50px; }
   .desc-section.-reservation {
     height: auto; }
   .desc-section.-findus {
