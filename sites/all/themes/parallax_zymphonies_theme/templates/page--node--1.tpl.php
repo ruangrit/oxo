@@ -403,10 +403,15 @@
 	          <h1 class="headline__primary"><a href="#" style="color:#FFFFFF">CAFE</a></h1>
 	        </hgroup> -->
 			<div class="ct-wrapper">
-				<div class="inner -middle -left _text-right text-bright">
+				<div class="inner -middle -center text-center text-bright">
+					<div class="inner-wrapper">
+						<h2 class="text-huge text-floatmiddle"><a class="text-bright" href="#">Comming Soon...</a></h2>
+					</div>
+				</div>
+<!-- 				<div class="inner -middle -left _text-right text-bright">
 					<div class="inner-wrapper">
 			            <h3><a class="text-bright" href="#">Cafe</a></h3>
-<!-- 			            <div class="overflow-box">
+			            <div class="overflow-box">
 			            	<p>
 			            		<strong class="class="text-bright"">Coffee/Hot/Iced/Frappe</strong><br />
 			            		Ristretto/Doppio, Espresso/Doppio, Americano, Latte, Cappuchino, Mocha 
@@ -424,7 +429,7 @@
 			            		Pink Ocean, Morning Glory Mango, Sunshine Rose, Big Apple, Strawberry, Mix Berry, Kiwi, Mango  
 			            		
 			            	</p>
-			            </div> -->
+			            </div>
 			            <div>
 				          	<button id="modal_click_cafe" class="btn btn-transparent -darkbg _capital" type="button"  data-toggle="modal" data-target="#cafeModal">
 								Explore
@@ -436,7 +441,7 @@
 					<div class="inner-wrapper">
 			            <h2 class="text-huge text-floatmiddle"><a class="text-bright" href="#">Artisan</a></h2>
 					</div>
-				</div>
+				</div> -->
 			</div>
         </div>
   	</div>
@@ -485,7 +490,7 @@
 						and just only 10 minutes walk to Chiangmai gate
  					</p>
  					<div class="button-box">
- 						<a id="modal_click_map" class="btn btn-transparent _capital"  data-toggle="modal" data-target="#mapModal">Map</a>
+ 						<a id="modal_click_map" class="btn btn-transparent _capital" data-toggle="modal" data-target="#mapModal">Map</a>
  						<a class="btn btn-transparent _capital" data-toggle="modal" data-target="#contactModal">Mail us</a>
  					</div>
  				</div>
@@ -525,8 +530,8 @@
 		<div class="footer-list">
 			<h4>Social</h4>
 			<ul class="list-unstyled">
-				<li><a href="https://www.instagram.com/oxotelchiangmai/">Instagram</a></li>
-				<li><a href="https://www.facebook.com/oxotelhostel">Facebook</a></li>
+				<li><a href="https://www.instagram.com/oxotelchiangmai/" target="_blank">Instagram</a></li>
+				<li><a href="https://www.facebook.com/oxotelhostel" target="_blank">Facebook</a></li>
 			</ul>
 		</div>
 		<div class="footer-list">
