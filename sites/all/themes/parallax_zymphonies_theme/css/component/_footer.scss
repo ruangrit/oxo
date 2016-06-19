@@ -25,10 +25,20 @@ ul.list-unstyled {
     margin-bottom: 0;
 }
 
+.footer-listwrapper {
+	display: block;
+	max-width: 625px;
+	width: 100%;
+	margin: 0 auto;
+    overflow: hidden;
+}
+
 .footer-list {
-	display: inline-block;
+	display: block;
 	vertical-align: top;
 	padding: 0 30px;
+	float: left;
+	width: 25%;
 
 	h4,
 	ul > li {
@@ -43,5 +53,42 @@ ul.list-unstyled {
 	}
 	ul > li a:hover {
 		color: $color-3;
+	}
+}
+.booking-link {
+	display: block;
+	max-width: 660px;
+	width: 100%;
+	margin: 0 auto 30px auto;
+
+	ul > li {
+		display: inline-block;
+		// width: 33.33%;
+		margin: 0 40px;
+	}
+	ul > li > a {
+		display: block;
+		overflow: hidden;
+		text-indent: -999em;
+		// background: url(../images/Booking.png) transparent no-repeat center;
+		// background-size: contain;
+	}
+	ul > li.booking > a {
+		background: url(../images/Booking.png) transparent no-repeat center;
+		background-size: contain;
+		width: 137px;
+		height: 48px;
+	}
+	ul > li.agoda > a {
+		background: url(../images/Agoda.png) transparent no-repeat center;
+		background-size: contain;
+		width: 95px;
+		height: 48px;
+	}
+	ul > li.hostelworld > a {
+		background: url(../images/Hostelworld.png) transparent no-repeat center;
+		background-size: contain;
+		width: 165px;
+		height: 48px;
 	}
 }
