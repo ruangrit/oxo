@@ -118,6 +118,7 @@
     margin: 0;
     border: none;
     box-shadow: none;
+    background-color: transparent;
 
 	&.-show {
 		display: block;
@@ -135,6 +136,9 @@
 			font-family: 'gotham_mediumregular';
 			font-size: 0.9em;
 			margin-bottom: -2px;
+		}
+		&.-modal._subbutton {
+			padding: 3px 15px 2px 15px;
 		}
 	}	
 }

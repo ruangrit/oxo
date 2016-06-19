@@ -604,7 +604,8 @@ ul.list-unstyled {
   padding: 0;
   margin: 0;
   border: none;
-  box-shadow: none; }
+  box-shadow: none;
+  background-color: transparent; }
   .subbtn-group.-show {
     display: block; }
   .subbtn-group.-hide {
@@ -617,6 +618,8 @@ ul.list-unstyled {
       font-family: 'gotham_mediumregular';
       font-size: 0.9em;
       margin-bottom: -2px; }
+    .subbtn-group .btn.btn-transparent.-orange.-modal._subbutton {
+      padding: 3px 15px 2px 15px; }
 
 @media (min-width: 769px) {
   .subbtn-group.-modal {

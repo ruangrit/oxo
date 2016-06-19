@@ -602,17 +602,18 @@
 					 					-->
 
 					 					<div class="dropdown">
-					 						<a class="btn btn-transparent -modal -booking -orange _invert _capital" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" target="_blank" href="#">Booking</a>
+					 						<a class="btn btn-transparent -modal -booking -orange _invert _capital" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" target="_blank" href="#">Booking
+					 						</a>
 
 											<ul class="dropdown-menu subbtn-group" aria-labelledby="dLabel">
 											  	<li>
-							 						<a class="btn btn-transparent -orange _capital _subbutton" target="_blank" href="http://goo.gl/fxf5fk">Agoda</a>
+							 						<a class="btn btn-transparent -modal -orange _invert _capital _subbutton" target="_blank" href="http://goo.gl/fxf5fk">Agoda</a>
 											  	</li>
 											  	<li>
-							 						<a class="btn btn-transparent -orange _capital _subbutton" target="_blank" href="http://goo.gl/owzdZ2">Booking.com</a>
+							 						<a class="btn btn-transparent -modal -orange _invert _capital _subbutton" target="_blank" href="http://goo.gl/owzdZ2">Booking.com</a>
 											  	</li>
 											  	<li>
-							 						<a class="btn btn-transparent -orange _capital _subbutton" target="_blank" href="http://goo.gl/4DuHOk">Hostel world</a>
+							 						<a class="btn btn-transparent -modal -orange _invert _capital _subbutton" target="_blank" href="http://goo.gl/4DuHOk">Hostel world</a>
 											  	</li>
 											</ul>
 										</div>
@@ -862,13 +863,13 @@
 
 						<ul class="dropdown-menu subbtn-group" aria-labelledby="dLabel">
 					  		<li>
-	 							<a class="btn btn-transparent -orange _capital _subbutton" target="_blank" href="http://goo.gl/fxf5fk">Agoda</a>
+	 							<a class="btn btn-transparent -modal -orange _invert _capital _subbutton" target="_blank" href="http://goo.gl/fxf5fk">Agoda</a>
 					  		</li>
 					  		<li>
-	 							<a class="btn btn-transparent -orange _capital _subbutton" target="_blank" href="http://goo.gl/owzdZ2">Booking.com</a>
+	 							<a class="btn btn-transparent -modal -orange _invert _capital _subbutton" target="_blank" href="http://goo.gl/owzdZ2">Booking.com</a>
 					  		</li>
 					  		<li>
-	 							<a class="btn btn-transparent -orange _capital _subbutton" target="_blank" href="http://goo.gl/4DuHOk">Hostel world</a>
+	 							<a class="btn btn-transparent -modal -orange _invert _capital _subbutton" target="_blank" href="http://goo.gl/4DuHOk">Hostel world</a>
 					  		</li>
 					    </ul>
 					</div>
