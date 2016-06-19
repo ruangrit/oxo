@@ -630,8 +630,7 @@ ul.list-unstyled {
   height: 130px;
   overflow-y: scroll;
   margin-top: 25px;
-  margin-bottom: 30px;
-  padding-right: 5px; }
+  margin-bottom: 30px; }
   .overflow-box.-modalrooms {
     margin-top: 15px;
     margin-bottom: 15px;
@@ -652,6 +651,7 @@ ul.list-unstyled {
     -webkit-border-radius: 10px;
     border-radius: 10px;
     background: #B4B4B4;
+    background: transparent;
     display: block; }
   .overflow-box::-webkit-scrollbar-thumb:window-inactive {
     background: rgba(39, 39, 39, 0.4); }

@@ -4,7 +4,7 @@
 	overflow-y: scroll;
 	margin-top: 25px;
 	margin-bottom: 30px;
-	padding-right: 5px;
+	// padding-right: 5px;
 
 	// modal-rooms
 	&.-modalrooms {
@@ -38,6 +38,7 @@
 	    -webkit-border-radius: 10px;
 	    border-radius: 10px;
 	    background: $color-2;
+	    background: transparent;
 	    display: block;
 	}
 	&::-webkit-scrollbar-thumb:window-inactive {
