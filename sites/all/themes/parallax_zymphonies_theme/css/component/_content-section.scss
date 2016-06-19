@@ -133,60 +133,6 @@
 	}
 }
 
-.overflow-box {
-	// @media (min-width: 769px) {
-		height: 130px;	
-	// }
-	overflow-y: scroll;
-	margin-top: 25px;
-	margin-bottom: 30px;
-	padding-right: 5px;
-
-	&.-rooms {
-		margin-top: 15px;
-		margin-bottom: 15px;
-		padding-right: 140px;
-		height: 138px;
-	}
-
-	&.-modal {
-		height: 190px;
-	}
-	&._300px {
-		height: 300px;
-		margin-bottom: 0;
-	}
-
-	/* Let's get this party started */
-	&::-webkit-scrollbar {
-	    width: 6px;
-	    height: 130px;
-	}
-	 
-	/* Track */
-	&::-webkit-scrollbar-track { 
-	    -webkit-border-radius: 10px;
-	    border-radius: 10px;
-	}
-	 
-	/* Handle */
-	&::-webkit-scrollbar-thumb {
-	    -webkit-border-radius: 10px;
-	    border-radius: 10px;
-	    // background: rgba(39,39,39,0.8);
-	    background: $color-2;
-	    display: block;
-	    width: 1px;
-	    // -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
-	    height: 12px;
-	}
-	&::-webkit-scrollbar-thumb:window-inactive {
-	    background: rgba(39,39,39,0.4);
-	    height: 12px;
-	}
-
-}
-
 .button-box {
 	text-align: justify;
 	max-width: 310px;

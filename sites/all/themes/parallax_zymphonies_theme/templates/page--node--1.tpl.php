@@ -568,7 +568,7 @@
 											}
 										?>
 									</div>
-									<div class="overflow-box -rooms">
+									<div class="overflow-box -modalrooms">
 										<?php print $room->body['und'][0]['value']; ?>
 									</div>
 
@@ -641,7 +641,7 @@
     	<div class="modal-content text-modal">
       		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="/sites/all/themes/parallax_zymphonies_theme/images/close.svg" /></span></button>
       		<div class="modal-body text-modal">
-      			<div class="modal-label">ABOUT OXOTEL</div>
+      			<div class="modal-title modal-label">ABOUT OXOTEL</div>
       			<h3 class="text-center text-modal">OXOTEL</h3>
       			<div class="text-center"><?php print $about_node->body['und'][0]['value'];?></div>
       		</div>
