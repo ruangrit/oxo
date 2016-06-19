@@ -377,10 +377,10 @@
 	          <h1 class="headline__primary"><a href="#" style="color:#FFFFFF">CAFE</a></h1>
 	        </hgroup> -->
 			<div class="ct-wrapper">
-				<div class="inner -left _text-right text-bright">
+				<div class="inner -middle -left _text-right text-bright">
 					<div class="inner-wrapper">
 			            <h3><a class="text-bright" href="#">Cafe</a></h3>
-			            <div class="overflow-box">
+<!-- 			            <div class="overflow-box">
 			            	<p>
 			            		<strong class="class="text-bright"">Coffee/Hot/Iced/Frappe</strong><br />
 			            		Ristretto/Doppio, Espresso/Doppio, Americano, Latte, Cappuchino, Mocha 
@@ -398,7 +398,7 @@
 			            		Pink Ocean, Morning Glory Mango, Sunshine Rose, Big Apple, Strawberry, Mix Berry, Kiwi, Mango  
 			            		
 			            	</p>
-			            </div>
+			            </div> -->
 			            <div>
 				          	<button id="modal_click_cafe" class="btn btn-transparent -darkbg _capital" type="button"  data-toggle="modal" data-target="#cafeModal">
 								Explore
@@ -606,13 +606,13 @@
 			</ul>
 			<div class="modal-description -cafe">
 				<h2 class="text-bright">ARTISAN</h2>
-				<p>
+				<!-- <p>
 					Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
-				</p>
+				</p> -->
 			</div>
-			<div class="modal-description overflow-box -modal">
-				<?php print $cafe_modal_node->body['und'][0]['value']; ?>
-			</div>
+			<!-- <div class="modal-description overflow-box -modal"> -->
+				<?php //print $cafe_modal_node->body['und'][0]['value']; ?>
+			<!-- </div> -->
 
 
       </div>

@@ -12,6 +12,11 @@
 			vertical-align: top;		
 		}
 	}
+	> .inner.-middle {
+		@media (min-width: 768px) {
+			vertical-align: middle;
+		}
+	}
 	> .inner.-left {
 		@media (max-width: 767px) {
 			float: left;

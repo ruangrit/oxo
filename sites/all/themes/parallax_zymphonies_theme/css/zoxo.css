@@ -63,6 +63,9 @@
         width: 50%;
         position: relative;
         vertical-align: top; } }
+  @media (min-width: 768px) {
+    .ct-wrapper > .inner.-middle {
+      vertical-align: middle; } }
   @media (max-width: 767px) {
     .ct-wrapper > .inner.-left {
       float: left; } }
@@ -202,7 +205,8 @@ ul.list-unstyled {
   width: 25%; }
   .footer-list h4,
   .footer-list ul > li {
-    text-align: left; }
+    text-align: left;
+    line-height: 16px; }
   .footer-list h4 {
     color: #888; }
   .footer-list ul > li a {
