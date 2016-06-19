@@ -5,7 +5,8 @@
   font-size: 0.8em; }
 
 .text-huge {
-  font-size: 3em; }
+  font-size: 3em;
+  font-family: 'gotham_lightregular'; }
 
 .text-imgsection {
   color: #666; }
