@@ -202,7 +202,8 @@ ul.list-unstyled {
     text-align: left;
     line-height: 16px; }
   .footer-list h4 {
-    color: #888; }
+    color: #555;
+    margin-bottom: 20px; }
   .footer-list ul > li a {
     color: #aaa; }
   .footer-list ul > li a:hover {

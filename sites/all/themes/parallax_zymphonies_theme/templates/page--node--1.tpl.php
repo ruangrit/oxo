@@ -125,7 +125,7 @@
 </header>
 
 
-<div  class="description-main desc-section -reservation"> 
+<div id="about" class="description-main desc-section -reservation"> 
 	<div class="reservation-content">
 		<div class="ct-wrapper">
 			<div class="inner -left _text-right">
@@ -507,24 +507,26 @@
 			<h4>Hostel</h4>
 			<ul class="list-unstyled">
 				<li><a href="#">About</a></li>
-				<li><a href="#">Facilities</a></li>
-				<li><a href="#">Artisan cafe</a></li>
-				<li><a href="#">Find us</a></li>
+				<li><a href="#rooms">Rooms</a></li>
+				<li><a href="#facilities">Facilities</a></li>
+				<li><a href="#cafe">Artisan cafe</a></li>
+				<li><a href="#findus">Find us</a></li>
 			</ul>
 		</div>
 		<div class="footer-list">
 			<h4>Others</h4>
 			<ul class="list-unstyled">
-				<li><a href="http://l.facebook.com/l.php?u=http%3A%2F%2Fwww.booking.com%2Fhotel%2Fth%2Foxotel.th.html%3Flabel%3Dgen173nr-1FCAEoggJCAlhYSDNiBW5vcmVmaN0BiAEBmAEmwgEDYWJuyAEM2AEB6AEB-AELqAIE%253Bsid&h=MAQFxiyvL" target="_blank">Booking</a></li>
-				<li><a href="#">Rooms</a></li>
-				<li><a href="#">Email us</a></li>
+				<li><a href="#about">Condition</a></li>
+				<li><a href="#about">Reservation</a></li>
+				<li><a href="#findus">Map</a></li>
+				<li><a href="#findus">Email us</a></li>
 			</ul>
 		</div>
 		<div class="footer-list">
 			<h4>Social</h4>
 			<ul class="list-unstyled">
-				<li><a href="https://www.facebook.com/oxotelhostel">Facebook</a></li>
 				<li><a href="https://www.instagram.com/oxotelchiangmai/">Instagram</a></li>
+				<li><a href="https://www.facebook.com/oxotelhostel">Facebook</a></li>
 			</ul>
 		</div>
 		<div class="footer-list">
