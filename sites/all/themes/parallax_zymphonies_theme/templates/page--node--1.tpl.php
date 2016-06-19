@@ -367,7 +367,7 @@
 			<div class="ct-wrapper">
 				<div class="inner -center">
 					<div class="inner-wrapper">
-			            <h2 class="text-huge text-floatmiddle"><a class="text-bright" href="#">HOSTEL GARDEN CAFE</a></h2>
+			            <h2 class="text-huge text-floatmiddle text-bright">HOSTEL GARDEN CAFE</h2>
 					</div>
 				</div>
 			</div>
@@ -405,7 +405,7 @@
 			<div class="ct-wrapper">
 				<div class="inner -middle -center text-center text-bright">
 					<div class="inner-wrapper">
-						<h2 class="text-huge text-floatmiddle"><a class="text-bright" href="#">Comming Soon...</a></h2>
+						<h2 class="text-huge text-floatmiddle text-bright">Comming Soon...</h2>
 					</div>
 				</div>
 <!-- 				<div class="inner -middle -left _text-right text-bright">

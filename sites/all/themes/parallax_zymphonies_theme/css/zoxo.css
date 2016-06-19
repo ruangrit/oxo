@@ -674,7 +674,8 @@ h1, h2, h3, h4 {
 #main-menu {
   float: none; }
   #main-menu a {
-    color: #FFFFFF; }
+    color: #FFFFFF;
+    font-family: 'gotham_lightregular'; }
   #main-menu li:hover > a,
   #main-menu a:hover {
     color: #ED932D; }
