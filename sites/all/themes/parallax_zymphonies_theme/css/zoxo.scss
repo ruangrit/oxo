@@ -7,6 +7,7 @@
 @import "component/contact.scss";
 @import "component/font.scss";
 @import "component/facilities-image.scss";
+@import "component/button.scss";
 
 body {
 	color: $color-1;
@@ -35,10 +36,6 @@ h1, h2, h3, h4 {
 	}
 }
 
-.menu-navigation-container {
-
-}
-
 // .article__parallax
 .article__parallax {
 	border-left: 0;
@@ -53,52 +50,6 @@ h1, h2, h3, h4 {
 
 .flexbox__item.-bottom {
 	vertical-align: bottom;
-}
-
-
-// btn
-.btn.btn-transparent {
-	background-color: transparent;
-	border: 2px solid $color-2;
-	border-radius: 0;
-	padding: 8px 15px 5px 15px;
-	color: $color-1;
-	&:hover, 
-	&:active, 
-	&:focus {
-		background-color: $color-2;
-	}
-
-	&.-darkbg {
-		border: 2px solid $color-2;
-		color: $color-4;
-		&:hover,
-		&:active,
-		&:focus {
-			color: $color-7;
-			background-color: $color-2;
-		}
-	}
-
-	&.-orange {
-		border: 2px solid $color-3;
-		color: $color-1;
-		&:hover,
-		&:active,
-		&:focus {
-			color: $color-7;
-			background-color: $color-3;
-		}
-	}
-	&.-orange._invert {
-		color: $color-5;
-		&:hover,
-		&:active,
-		&:focus {
-			color: $color-7;
-			background-color: $color-3;
-		}		
-	}
 }
 
 .social-gang {
@@ -132,32 +83,4 @@ h1, h2, h3, h4 {
 			background: url(#{$path}/tw-hover.png) transparent no-repeat center;
 		}		
 	}
-}
-
-/* Let's get this party started */
-::-webkit-scrollbar {
-    width: 6px;
-    height: 130px;
-}
- 
-/* Track */
-::-webkit-scrollbar-track { 
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
-}
- 
-/* Handle */
-::-webkit-scrollbar-thumb {
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
-    // background: rgba(39,39,39,0.8);
-    background: $color-2;
-    display: block;
-    width: 1px;
-    // -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
-    height: 12px;
-}
-::-webkit-scrollbar-thumb:window-inactive {
-    background: rgba(39,39,39,0.4);
-    height: 12px;
 }

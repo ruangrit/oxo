@@ -1,0 +1,141 @@
+// btn
+.btn.btn-transparent {
+	background-color: transparent;
+	border: 2px solid $color-2;
+	border-radius: 0;
+	padding: 8px 15px 5px 15px;
+	color: $color-1;
+	&:hover, 
+	&:active, 
+	&:focus {
+		background-color: $color-2;
+	}
+
+	&.-darkbg {
+		border: 2px solid $color-2;
+		color: $color-4;
+		&:hover,
+		&:active,
+		&:focus {
+			color: $color-7;
+			background-color: $color-2;
+		}
+	}
+
+	&.-orange {
+		border: 2px solid $color-3;
+		color: $color-1;
+		&:hover,
+		&:active,
+		&:focus {
+			color: $color-7;
+			background-color: $color-3;
+		}
+	}
+	&.-orange.-booking {
+		width: 140px;
+	}
+	&.-orange._invert {
+		color: $color-5;
+		&:hover,
+		&:active,
+		&:focus {
+			color: $color-7;
+			background-color: $color-3;
+		}		
+	}
+
+	&.-modal {
+		font-size: 14px;
+		line-height: 16px;
+		padding-top: 6px;
+		padding-bottom: 5px;
+	}
+
+}
+
+
+
+
+
+/******************************************\
+	Select room button
+\******************************************/
+
+.btn.btn-transparent._modaltitle {
+	color: $color-5;
+	max-width: 200px;
+	margin-top: 0px;
+	margin-bottom: 5px;
+	display: block;
+	font-size: 1em;
+	padding: 3px 15px 0px 15px;
+	&:hover,
+	&:active,
+	&:focus,
+	&.active {
+		color: #FFFFFF;
+		background-color: transparent;
+		border: 2px solid $color-3;
+	}	
+}
+
+
+
+
+
+/******************************************\
+	booking button
+\******************************************/
+
+.bookingbtn-group {
+	float: left;
+	position: relative;
+	.btn {
+		margin-top: 0;
+		margin-right: 0;
+		margin-bottom: 0;
+	}
+}
+.bookingbtn-group.-modal {
+	@media (min-width: 769px) {
+		margin-top: -38px;
+	}
+	margin-top: 15px;
+}
+.bookingbtn-group.-modal {
+	@media (min-width: 769px) {
+		margin-top: -38px;
+	}
+	margin-top: 15px;
+}
+.subbtn-group {
+	width: 175px;
+	position: absolute;
+	top: 0;
+	left: 138px;
+
+	&.-show {
+		display: block;
+	}
+	&.-hide {
+		display: none;
+	}
+
+	> .btn.btn-transparent.-orange {
+		margin-right: 0; 
+		
+		&._subbutton {
+			width: 100%;
+			padding: 5px 15px 4px 15px;
+			font-family: 'gotham_mediumregular';
+			font-size: 0.9em;
+			margin-bottom: -2px;
+		}
+	}	
+}
+.subbtn-group.-modal {
+	@media (min-width: 769px) {
+		top: -38px;
+	}
+}
