@@ -600,14 +600,18 @@ ul.list-unstyled {
   width: 175px;
   position: absolute;
   top: 0;
-  left: 138px; }
+  left: 138px;
+  padding: 0;
+  margin: 0;
+  border: none;
+  box-shadow: none; }
   .subbtn-group.-show {
     display: block; }
   .subbtn-group.-hide {
     display: none; }
-  .subbtn-group > .btn.btn-transparent.-orange {
+  .subbtn-group .btn.btn-transparent.-orange {
     margin-right: 0; }
-    .subbtn-group > .btn.btn-transparent.-orange._subbutton {
+    .subbtn-group .btn.btn-transparent.-orange._subbutton {
       width: 100%;
       padding: 5px 15px 4px 15px;
       font-family: 'gotham_mediumregular';
