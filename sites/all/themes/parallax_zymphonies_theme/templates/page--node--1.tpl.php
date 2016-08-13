@@ -371,13 +371,10 @@
 		</div>
 	</div>
 </div>
-
+<!--
 <header id="post-740-title" class="article__header  article__header--page two-thirds-height">
  	<div class="flexbox">
       	<div class="flexbox__item">
-<!-- 	        <hgroup class="article__headline">
-	          <h1 class="headline__primary"><a href="#" style="color:#FFFFFF">CAFE</a></h1>
-	        </hgroup> -->
 			<div class="ct-wrapper">
 				<div class="inner -center">
 					<div class="inner-wrapper">
@@ -409,7 +406,7 @@
 	    </div>
 	</div>
 </header>
-
+-->
 <header id="post-740-title" class="article__header  article__header--page two-thirds-height">
  	<div class="flexbox">
       	<div class="flexbox__item">
@@ -480,6 +477,11 @@
 	    </div>
 	</div>
 </header>
+
+<div class="map">
+
+	<!--<iframe src="https://www.google.com/maps/d/embed?mid=11idAtyrUxD9qZCA6gGRayP18KsA&z=17&ll=18.7758, 98.98203" style="position:relative; top:-30px; border:none;"  width="1280" height="450"></iframe>-->
+	<!--<img src="sites/all/themes/parallax_zymphonies_theme/images/oxomap.png" width="100%" height="400">-->
 	
 <div id="findus" class="desc-section -findus description-find_us"> 
 	<div class="findus-content">
@@ -724,7 +726,7 @@
 							$video_v =  $query['v'];
 							?>
 							<div style="display:none" class="video-iframe" id="video_<?php print $video_v;?>">
-								<iframe width="1280" height="720" src="https://www.youtube.com/embed/<?php print $video_v;?>?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+								<iframe width="1280" height="720" src="https://www.youtube.com/embed/<?php print $video_v;?>?rel=0&amp;controls=1&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 
 							</div>
 							<?php
@@ -735,14 +737,14 @@
 
 						?>
 				</div>
-					<div class="video-thumbnail-wrapper">
+					<ul class="video-thumbnail-wrapper" id="lightSliderVideo">
 						<?php
 							foreach($video_modal_node as $video){
 								$parts = parse_url($video->field_youtube_link['und'][0]['value']);
 								parse_str($parts['query'], $query);
 								$video_v =  $query['v'];
 								?>
-									<div class="video-thumbnail" id="video_thumbnail_<?php print $video_v;?>" onClick="showVideo('<?php print $video_v;?>')">
+									<li class="video-thumbnail" id="video_thumbnail_<?php print $video_v;?>" onClick="showVideo('<?php print $video_v;?>')">
 										<?php 
 											print theme('image_style',array('style_name' => 'video_thumbnail', 'path' => $video->field_image['und'][0]['uri']));
 
@@ -750,13 +752,13 @@
 										<div class="video-title">
 											<?php print $video->title; ?>
 										</div>
-									</div>
+									</li>
 								
 								<?php	
 							}
 
 						?>
-					</div>
+					</ul>
 			
 
       		</div>
@@ -1054,7 +1056,24 @@
     	});
 
     	// ============== Video =============
-    	$('.video-thumbnail-wrapper div:first-child').trigger('click');
+    	$('.video-thumbnail-wrapper li:first-child').trigger('click');
+
+  		var is_slice_video = false;
+    	$('#modal_click_video').click(function () {
+
+			if (!is_slice_video) {
+	    		setTimeout(function(){
+			    	$("#lightSliderVideo").lightSlider({
+			    		item: 2,
+			    		auto: false,
+			    		controls: true,
+			    		vertical: true
+			    	}); 
+		    		is_slice_video = true;
+
+	    		}, 200);	
+			}
+    	});
 
 
   	});
