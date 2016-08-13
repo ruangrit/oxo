@@ -18,6 +18,7 @@
 	$about_node = node_load(14);
 
 	$rooms_modal_node = node_load_multiple(array(), array('type' => 'rooms')); 
+	$video_modal_node = node_load_multiple(array(), array('type' => 'vidoe')); 
 	$cafe_modal_node = node_load(11); 
 
 ?>
@@ -39,6 +40,16 @@
    		$('.group-slide .modal-description').find('.modaltitle-wrapper .title-rooms').removeClass('active');
    		$('.group-slide .modal-description').find('.modaltitle-wrapper .title-rooms:eq(' + gid + ')').addClass('active');
    	}
+
+	// ==================== Video function 
+	var showVideo = function(Id) {
+		$('.video-iframe').hide();
+		$('#video_'+Id).show();
+
+		$('.video-thumbnail').removeClass('active');
+		$('#video_thumbnail_'+Id).addClass('active');
+   		$(window).trigger('resize');
+	}
 
 </script>
 <div class="menu-wrap">
@@ -92,6 +103,9 @@
             	</div>
             </hgroup>
         	<div class="headline__description -since text-imgsection">
+	            <div>
+					<a class="btn btn-transparent -keepright _capital" data-toggle="modal" data-target="#videoModal" id="modal_click_video">MOVIE</a>
+	            </div>
         		HOSTEL • GARDEN • CAFE<br/>
         		<span class="small-text">oxotel hostel chiangmai thailand @ since 2015</span>
         	</div>  
@@ -695,6 +709,61 @@
 </div>
 
 
+<!-- Movie Modal -->
+<div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  	<div class="modal-dialog modal-lg" role="document">
+    	<div class="modal-content text-modal">
+      		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="/sites/all/themes/parallax_zymphonies_theme/images/close.svg" /></span></button>
+      		<div class="modal-body text-modal">
+      			<div class="video-iframe-wrapper" style="width:70%; height: 300px;">
+		      		<?php
+		      			$i_video = 1;
+						foreach($video_modal_node as $video){
+							$parts = parse_url($video->field_youtube_link['und'][0]['value']);
+							parse_str($parts['query'], $query);
+							$video_v =  $query['v'];
+							?>
+							<div style="display:none" class="video-iframe" id="video_<?php print $video_v;?>">
+								<iframe width="1280" height="720" src="https://www.youtube.com/embed/<?php print $video_v;?>?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+
+							</div>
+							<?php
+
+							$i_video++ ;
+						}
+
+
+						?>
+				</div>
+					<div class="video-thumbnail-wrapper">
+						<?php
+							foreach($video_modal_node as $video){
+								$parts = parse_url($video->field_youtube_link['und'][0]['value']);
+								parse_str($parts['query'], $query);
+								$video_v =  $query['v'];
+								?>
+									<div class="video-thumbnail" id="video_thumbnail_<?php print $video_v;?>" onClick="showVideo('<?php print $video_v;?>')">
+										<?php 
+											print theme('image_style',array('style_name' => 'video_thumbnail', 'path' => $video->field_image['und'][0]['uri']));
+
+										?>
+										<div class="video-title">
+											<?php print $video->title; ?>
+										</div>
+									</div>
+								
+								<?php	
+							}
+
+						?>
+					</div>
+			
+
+      		</div>
+    	</div>
+  	</div>
+</div>
+
 <!-- Term and condition Modal -->
 <div class="modal fade" id="conditionModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 	<div class="modal-dialog modal-lg" role="document">
@@ -928,6 +997,12 @@
 	   		}, 200);
     	});
 
+    	$('#modal_click_video').click(function () {
+	   		setTimeout(function(){
+	    		$(window).trigger('resize');
+	   		}, 200);
+    	});
+
   		var is_slice_rooms = false;
     	$('#modal_click_rooms').click(function () {
 
@@ -977,6 +1052,9 @@
 	    		}, 200);	
 			}
     	});
+
+    	// ============== Video =============
+    	$('.video-thumbnail-wrapper div:first-child').trigger('click');
 
 
   	});
