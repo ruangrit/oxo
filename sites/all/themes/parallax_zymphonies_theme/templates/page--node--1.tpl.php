@@ -515,6 +515,61 @@
 	</div>
 </div>
 
+<div id="about" class="description-main desc-section -reservation"> 
+	<div class="reservation-content">
+		<div class="ct-wrapper">
+			<div class="inner -left _text-right" id="findus_icon_content">
+				<div class="inner-wrapper _text-grey">
+					<a onclick="$('#findus_icon_content').hide();$('#qr_code').show('slide', { direction: 'left' }, 200);">Line Icon Here</a>
+ 				</div>
+ 			</div>
+ 			<!-- QR code hide -->
+			<div class="inner -left _text-right" id="qr_code" style="display:none">
+		    	<button onclick="$('#qr_code').hide();$('#findus_icon_content').show();" type="button" class="close"><span aria-hidden="true"><img src="/sites/all/themes/parallax_zymphonies_theme/images/close.svg" /></span></button>
+
+				QR Code Here
+			</div>
+
+ 			<div class="inner -right" id="findus_content">
+				<div class="inner-wrapper _text-grey">
+					<h3 class="desc-header _capital _text-grey">FIND US</h3>
+
+					<div class="overflow-box">
+ 					<p>
+ 						Oxotel is 2.00 kilometer from Chiangmai international airport and just only 10 minutes <br />
+ 						walk to Chiangmai gate (South-gate), one of the important antique gate of the old city area. <br />
+ 						At Chiangmai gate, there is a local fresh market that you can experience the northern people, <br />
+ 						local culture and life style. Public local transportation (yellow - cars) station to Jomthong <br />
+ 						and Hod for Doi Inthanon destination is around Chiangmai gate as well.
+ 					</p>
+ 					<p>
+ 						Tel. +66 (0)52 085 334<br />
+ 						149-153 Wua lai rd., T.hai ya, A.muang 50100<br />
+						Our hostel is 2.00 kilometer from Chiangmai international airport<br />
+						and just only 10 minutes walk to Chiangmai gate
+ 					</p>
+					</div>
+ 					
+ 					<a onclick="$('#findus_content').hide();$('#mailus_form').show('slide', { direction: 'right' }, 200);" class="btn btn-transparent _capital _pull-left _margin-right">MAIL US</a>
+ 				</div>
+ 			</div>
+			<div class="inner -right" id="mailus_form" style="display:none">
+		    	<button onclick="$('#mailus_form').hide();$('#findus_content').show();" type="button" class="close"><span aria-hidden="true"><img src="/sites/all/themes/parallax_zymphonies_theme/images/close.svg" /></span></button>
+		      	<h2 class="text-modal">MAIL US</h2>
+
+				<?php
+
+		 			$nid = 18;
+					$wnode = node_load($nid);
+					$form = drupal_get_form('webform_client_form_' . $nid, $wnode, array());
+					print render($form);
+				?>
+			</div>
+
+		</div>
+	</div>
+</div>
+
 <div class="footer">
 	<div class="booking-link">
 		<ul class="list-unstyled">
@@ -978,8 +1033,12 @@
 	        	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="/sites/all/themes/parallax_zymphonies_theme/images/close.svg" /></span></button>
 	      		<h2 class="text-modal">ARK US</h2>
 	 			<?php
-					module_load_include('inc', 'contact', 'contact.pages');
-				 	echo drupal_render(drupal_get_form('contact_site_form'));
+					//module_load_include('inc', 'contact', 'contact.pages');
+				 	//echo drupal_render(drupal_get_form('contact_site_form'));
+		 			$nid = 18;
+					$wnode = node_load($nid);
+					$form = drupal_get_form('webform_client_form_' . $nid, $wnode, array());
+					print render($form);
 				?>
 	      	</div>
 	    </div>
