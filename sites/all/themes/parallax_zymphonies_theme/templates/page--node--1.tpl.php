@@ -482,7 +482,8 @@
 
 	<!--<iframe src="https://www.google.com/maps/d/embed?mid=11idAtyrUxD9qZCA6gGRayP18KsA&z=17&ll=18.7758, 98.98203" style="position:relative; top:-30px; border:none;"  width="1280" height="450"></iframe>-->
 	<!--<img src="sites/all/themes/parallax_zymphonies_theme/images/oxomap.png" width="100%" height="400">-->
-	
+</div>
+<!--	
 <div id="findus" class="desc-section -findus description-find_us"> 
 	<div class="findus-content">
 		<div class="ct-wrapper">
@@ -514,14 +515,16 @@
 		</div>
 	</div>
 </div>
-
+-->
 <div id="about" class="description-main desc-section -reservation"> 
 	<div class="reservation-content">
 		<div class="ct-wrapper">
 			<div class="inner -left _text-right" id="findus_icon_content">
-				<div class="inner-wrapper _text-grey">
-					<a onclick="$('#findus_icon_content').hide();$('#qr_code').show('slide', { direction: 'left' }, 200);">Line Icon Here</a>
- 				</div>
+				<ul class="list-unstyled social-gang">
+					<li><a onclick="$('#findus_icon_content').hide();$('#qr_code').show('slide', { direction: 'left' }, 200);">Line Icon Here</a></li>
+					<li><a class="fb" href="https://www.facebook.com/oxotelhostel" target="_blank">Facebook</a></li>
+					<li><a class="ig" href="https://www.instagram.com/oxotelchiangmai/" target="_blank">Instagram</a></li>
+				</ul>
  			</div>
  			<!-- QR code hide -->
 			<div class="inner -left _text-right" id="qr_code" style="display:none">
