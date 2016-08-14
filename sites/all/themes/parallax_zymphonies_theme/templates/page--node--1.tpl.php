@@ -18,6 +18,7 @@
 	$about_node = node_load(14);
 
 	$rooms_modal_node = node_load_multiple(array(), array('type' => 'rooms')); 
+	$facilities_modal_node = node_load_multiple(array(), array('type' => 'facilities')); 
 	$video_modal_node = node_load_multiple(array(), array('type' => 'vidoe')); 
 	$cafe_modal_node = node_load(11); 
 
@@ -29,12 +30,15 @@
 <script type="text/javascript" src="<?php print $abs_theme_path;?>/js/lightslider.js"></script>
 <script type="text/javascript" src="<?php print $abs_theme_path;?>/js/bootstrap.min.js"></script>
 <script>
-   	var showGroupSlide = function (gid) {
-   		$('.group-slide .lSSlideOuter').hide();
-   		$('.group-slide .lSSlideOuter:eq(' + gid + ')').show();
+   	var showGroupSlide = function (gid, parentID) {
 
-   		$('.group-slide .modal-description').hide();
-   		$('.group-slide .modal-description:eq(' + gid + ')').show();
+   		var parentSelectorByID = $('#'+parentID);
+
+   		parentSelectorByID.find('.group-slide .lSSlideOuter').hide();
+   		parentSelectorByID.find('.group-slide .lSSlideOuter:eq(' + gid + ')').show();
+
+   		parentSelectorByID.find('.group-slide .modal-description').hide();
+   		parentSelectorByID.find('.group-slide .modal-description:eq(' + gid + ')').show();
    		// Fixed bug when change slide
    		$(window).trigger('resize');
    		$('.group-slide .modal-description').find('.modaltitle-wrapper .title-rooms').removeClass('active');
@@ -278,7 +282,26 @@
 	    </div>
 	</div>
 </header>
+<!-- Start new Facility -->
+<div id="facilities" class="desc-section -facilities"> 
+	<div class="facilities-content">
+		<div class="ct-wrapper">
+			<div class="faciimg-wrapper">
+				<div class="faciimg -img01">
+					<span class="text-tooltip">24 HOURS RECEPTION</span> 
+				</div>
 
+	          	<button  id="modal_click_facilities" class="btn btn-transparent -darkbg _capital" type="button"  data-toggle="modal" data-target="#facilitiesModal">
+					EXPLORE	
+				</button>
+
+			</div>
+		</div>
+	</div>
+</div>
+<!-- End Old Facility -->
+
+<!-- Start Old Facility
 <div id="facilities" class="desc-section -facilities"> 
 	<div class="facilities-content">
 		<div class="ct-wrapper">
@@ -286,51 +309,39 @@
 				<div class="inner-wrapper">
 					<div class="faciimg-wrapper">
 						<div class="faciimg -img01">
-							<!-- <img title="Duis arcu tortor" src="/sites/default/files/front-page/faci-02.png" alt="hanger"/> -->
 							<span class="text-tooltip">Towell & Bed sheet</span> 
 						</div>
 						<div class="faciimg -img02">
-							<!-- <img title="Nulla sit amet est"  src="/sites/default/files/front-page/faci-03.png" alt="hanger"/> -->
 							<span class="text-tooltip">Soap & Shampoo</span>
 						</div>
 						<div class="faciimg -img03">
-							<!-- <img title="Donec mollis hendrerit" src="/sites/default/files/front-page/faci-04.png" alt="hanger"/> -->
 							<span class="text-tooltip">Hair Dryer</span>
 						</div>
 						<div class="faciimg -img04">
-							<!-- <img title="Donec mollis hendrerit" src="/sites/default/files/front-page/faci-05.png" alt="hanger"/> -->
 							<span class="text-tooltip">Washing Machine</span>
 						</div>
 						<div class="faciimg -img05">
-							<!-- <img title="Donec mollis hendrerit" src="/sites/default/files/front-page/faci-06.png" alt="hanger"/> -->
 							<span class="text-tooltip">Shower Box</span>
 						</div>
 						<div class="faciimg -img06">
-							<!-- <img title="Donec mollis hendrerit" src="/sites/default/files/front-page/faci-07.png" alt="hanger"/> -->
 							<span class="text-tooltip">We service Wi-Fi All area</span>
 						</div>
 						<div class="faciimg -img07">
-							<!-- <img title="Donec mollis hendrerit" src="/sites/default/files/front-page/faci-08.png" alt="hanger"/> -->
 							<span class="text-tooltip">Internet Wireless</span>
 						</div>
 						<div class="faciimg -img08">
-							<!-- <img title="Donec mollis hendrerit" src="/sites/default/files/front-page/faci-09.png" alt="hanger"/> -->
 							<span class="text-tooltip">Map & Transportation</span>
 						</div>
 						<div class="faciimg -img09">
-							<!-- <img title="Donec mollis hendrerit" src="/sites/default/files/front-page/faci-10.png" alt="hanger"/> -->
 							<span class="text-tooltip">Luggage Storage</span>
 						</div>
 						<div class="faciimg -img10">
-							<!-- <img title="Donec mollis hendrerit" src="/sites/default/files/front-page/faci-11.png" alt="hanger"/> -->
 							<span class="text-tooltip">Closed-Circuit Television</span>
 						</div>
 						<div class="faciimg -img11">
-							<!-- <img title="Donec mollis hendrerit" src="/sites/default/files/front-page/faci-12.png" alt="hanger"/> -->
 							<span class="text-tooltip">Keycard System</span>
 						</div>
 						<div class="faciimg -img12">
-							<!-- <img title="Donec mollis hendrerit" src="/sites/default/files/front-page/faci-12.png" alt="hanger"/> -->
 							<span class="text-tooltip">Emergency Call</span>
 						</div>
 					</div>					
@@ -347,12 +358,6 @@
 						<p>- Free parking on site (Reservation is needed)</p>
 						<p>- ARTISAN Coffee café opens everyday from 9.00 am. to 7.00 pm.</p>
 
-						<!--- All rooms are fitted with a shared bathroom <br />
-						- Guest kitchen areaprovides dishes, mug, glasses, utensils, oven, microwave and a fridge <br />
-						- Up to 3 common areas, two on 2nd floor and one on 3rd floor- Wide screen TV in kitchen <br />
-						- Luggage storage after check-out on the same day <br />
-						- Free parking on site (Reservation is needed)<br />
-						- ARTISAN Coffee café opens everyday from 9.00 am. to 7.00 pm.-->
 
 
 					</div>
@@ -371,6 +376,7 @@
 		</div>
 	</div>
 </div>
+End Old Facility -->
 <!--
 <header id="post-740-title" class="article__header  article__header--page two-thirds-height">
  	<div class="flexbox">
@@ -664,7 +670,7 @@
 					      					$j = 0;
 											foreach($rooms_modal_node as $room2){
 												?>
-													<div class="btn btn-transparent _modaltitle title-rooms" onclick="showGroupSlide(<?php print $j;?>)"><?php print $room2->title;?></div>
+													<div class="btn btn-transparent _modaltitle title-rooms" onclick="showGroupSlide(<?php print $j;?>, 'roomsModal')"><?php print $room2->title;?></div>
 												<?php
 												$j++;
 											}
@@ -701,6 +707,69 @@
 											</ul>
 										</div>
 									</div>
+								</div>
+
+								<?php
+
+								$i++;
+							}
+						?>
+		      			
+		      		</div>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Facilities Modal -->
+<div class="modal fade" id="facilitiesModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-body slide-modal">
+		
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="/sites/all/themes/parallax_zymphonies_theme/images/close.svg" /></span></button>
+		      		<div class="group-slide">
+
+	      				<?php 
+							$i = 1;
+							foreach($facilities_modal_node as $facilities){
+								// Hard code break for only one content
+								if ($i == 2) {
+									//break;
+								}
+								?>
+
+								<ul class="lightSliderFacilities">
+								<?php
+								foreach($facilities->field_slide_image['und'] as $image){
+									?>
+									  <li>
+							           		<img src="<?php print file_create_url($image['uri']);?>" width="500">
+									  </li>
+
+									<?php
+
+								}
+								?>
+								</ul>
+								<div class="modal-description">
+									<div class="modaltitle-wrapper">
+					      				<?php
+					      					$j = 0;
+											foreach($facilities_modal_node as $facilities2){
+												?>
+													<div class="btn btn-transparent _modaltitle title-rooms" onclick="showGroupSlide(<?php print $j;?>, 'facilitiesModal')"><?php print $facilities2->title;?></div>
+												<?php
+												$j++;
+											}
+										?>
+									</div>
+									<div class="overflow-box -modalrooms">
+										<?php print $facilities->body['und'][0]['value']; ?>
+									</div>
+
 								</div>
 
 								<?php
@@ -1078,7 +1147,25 @@
 			    		controls: true,
 			    	}); 
 		    		is_slice_rooms = true;
-		    		showGroupSlide(0);
+		    		showGroupSlide(0, 'roomsModal');
+		    		refreshGlobal();
+
+	    		}, 200);	
+			}
+    	});
+
+  		var is_slice_facilities = false;
+    	$('#modal_click_facilities').click(function () {
+
+			if (!is_slice_facilities) {
+	    		setTimeout(function(){
+			    	$(".lightSliderFacilities").lightSlider({
+			    		item: 1,
+			    		auto: false,
+			    		controls: true,
+			    	}); 
+		    		is_slice_facilities = true;
+		    		showGroupSlide(0, 'facilitiesModal');
 		    		refreshGlobal();
 
 	    		}, 200);	
