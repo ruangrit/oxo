@@ -554,6 +554,8 @@
 					</div>
  					
  					<a onclick="$('#findus_content').hide();$('#mailus_form').show('slide', { direction: 'right' }, 200);" class="btn btn-transparent _capital _pull-left _margin-right">MAIL US</a>
+					<a id="modal_click_map" class="btn btn-transparent _capital" data-toggle="modal" data-target="#mapModal">Map</a>
+
  				</div>
  			</div>
 			<div class="inner -right" id="mailus_form" style="display:none">
@@ -1021,7 +1023,7 @@
 	    <div class="modal-content">
 	      	<div class="modal-body map-modal">
 	        	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="/sites/all/themes/parallax_zymphonies_theme/images/close.svg" /></span></button>
-	        	<div id="iframe_map"></div>
+	        	<div id="iframe_map" style="height:500px; width:100%"></div>
 	      		<!--<iframe src="https://www.google.com/maps/d/embed?mid=11idAtyrUxD9qZCA6gGRayP18KsA&z=14&ll=18.7758, 98.98203" width="640" height="480"></iframe>-->
 	      	</div>
 	    </div>
@@ -1053,13 +1055,9 @@
 
     	$('#modal_click_map').click(function () {
     		if ($('#mapModal').find('#iframe_map').html() == "") {
-	    		$('#mapModal').find('#iframe_map').html('<iframe src="https://www.google.com/maps/d/embed?mid=11idAtyrUxD9qZCA6gGRayP18KsA&z=14&ll=18.7758, 98.98203" width="640" height="480"></iframe>');
-
+    			init();
     		}
-	   		setTimeout(function(){
-	    		$(window).trigger('resize');
-	   		}, 200);
-    	});
+	   	});
 
     	$('#modal_click_video').click(function () {
 	   		setTimeout(function(){
@@ -1139,4 +1137,34 @@
 
 
   	});
+</script>
+
+       <script type="text/javascript">
+            //google.maps.event.addDomListener(window, 'load', init);
+        
+            function init() {
+
+                var mapOptions = {
+                    zoom: 15,
+
+                    center: new google.maps.LatLng(18.7758, 98.98203), 
+
+
+                     styles: [{"featureType":"administrative","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"visibility":"simplified"},{"color":"#fcfcfc"}]},{"featureType":"poi","elementType":"geometry","stylers":[{"visibility":"simplified"},{"color":"#fcfcfc"}]},{"featureType":"road.highway","elementType":"geometry","stylers":[{"visibility":"simplified"},{"color":"#dddddd"}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"visibility":"simplified"},{"color":"#dddddd"}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"visibility":"simplified"},{"color":"#eeeeee"}]},{"featureType":"water","elementType":"geometry","stylers":[{"visibility":"simplified"},{"color":"#dddddd"}]}]
+                };
+
+
+                var mapElement = document.getElementById('iframe_map');
+
+                var map = new google.maps.Map(mapElement, mapOptions);
+
+                var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(18.7758, 98.98203),
+                    map: map,
+                    title: 'OXOTEL'
+                });
+            }
+        </script>
+        <script async defer
+        src="https://maps.googleapis.com/maps/api/js?signed_in=true">
 </script>
