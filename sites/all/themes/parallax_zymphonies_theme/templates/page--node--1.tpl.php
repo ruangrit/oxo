@@ -553,7 +553,7 @@
  					</p>
 					</div>
  					
- 					<a onclick="$('#findus_content').hide();$('#mailus_form').show('slide', { direction: 'right' }, 200);" class="btn btn-transparent _capital _pull-left _margin-right">MAIL US</a>
+ 					<a onclick="$('#findus_content').hide();$('#mailus_form').show('slide', { direction: 'right' }, 200);$(window).trigger('resize');" class="btn btn-transparent _capital _pull-left _margin-right">MAIL US</a>
 					<a id="modal_click_map" class="btn btn-transparent _capital" data-toggle="modal" data-target="#mapModal">Map</a>
 
  				</div>
