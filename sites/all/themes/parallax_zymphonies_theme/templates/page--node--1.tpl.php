@@ -1055,7 +1055,9 @@
 
     	$('#modal_click_map').click(function () {
     		if ($('#mapModal').find('#iframe_map').html() == "") {
-    			init();
+		   		setTimeout(function(){
+	    			init();
+		   		}, 200);
     		}
 	   	});
 
