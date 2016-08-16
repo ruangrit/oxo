@@ -17,10 +17,10 @@
 	$cafe_image_node = node_load(5);
 	$about_node = node_load(14);
 
-	$rooms_modal_node = node_load_multiple(array(), array('type' => 'rooms')); 
-	$facilities_modal_node = node_load_multiple(array(), array('type' => 'facilities')); 
-	$video_modal_node = node_load_multiple(array(), array('type' => 'vidoe')); 
-	$cafe_modal_node = node_load(11); 
+	$rooms_modal_node = node_load_multiple(array(), array('type' => 'rooms'));
+	$facilities_modal_node = node_load_multiple(array(), array('type' => 'facilities'));
+	$video_modal_node = node_load_multiple(array(), array('type' => 'vidoe'));
+	$cafe_modal_node = node_load(11);
 
 ?>
 
@@ -45,7 +45,7 @@
    		$('.group-slide .modal-description').find('.modaltitle-wrapper .title-rooms:eq(' + gid + ')').addClass('active');
    	}
 
-	// ==================== Video function 
+	// ==================== Video function
 	var showVideo = function(Id) {
 		$('.video-iframe').hide();
 		$('#video_'+Id).show();
@@ -57,14 +57,14 @@
 
 </script>
 <div class="menu-wrap">
-  
+
   	<div class="full-wrap clearfix">
 
 
 	    <nav id="main-menu"  role="navigation">
 		    <a class="nav-toggle" href="#">Navigation</a>
 		    <div class="menu-navigation-container">
-		    	<?php 
+		    	<?php
 		     	//$main_menu_tree = menu_tree(variable_get('menu_main_links_source', 'main-menu'));
 		            //print drupal_render($main_menu_tree);
 		        ?>
@@ -112,8 +112,8 @@
 	            </div>
         		HOSTEL • GARDEN • CAFE<br/>
         		<span class="small-text">oxotel hostel chiangmai thailand @ since 2015</span>
-        	</div>  
-        </div>  
+        	</div>
+        </div>
     </div>
 
     <div class="article__parallax">
@@ -124,26 +124,26 @@
         		$img_path =  file_create_url($value['uri']);
         		?>
 
-		        <div class="gallery-item" 
-		        	itemscope="" 
-		        	itemtype="http://schema.org/ImageObject" 
-		        	data-caption="" 
-		        	data-description=""> 
-		        	<img src="<?php print $img_path;?>" 
-		        		class="attachment-blog-big rsImg" 
-		        		alt="" 
-		        		itemprop="contentURL"> 
+		        <div class="gallery-item"
+		        	itemscope=""
+		        	itemtype="http://schema.org/ImageObject"
+		        	data-caption=""
+		        	data-description="">
+		        	<img src="<?php print $img_path;?>"
+		        		class="attachment-blog-big rsImg"
+		        		alt=""
+		        		itemprop="contentURL">
 		        </div>
         		<?
         	}
         ?>
         </div>
-  
+
     </div>
 </header>
 
 
-<div id="about" class="description-main desc-section -reservation"> 
+<div id="about" class="description-main desc-section -reservation">
 	<div class="reservation-content">
 		<div class="ct-wrapper">
 			<div class="inner -left _text-right">
@@ -152,10 +152,10 @@
 
 					<div class="overflow-box">
 						<p>
-							Oxotel is a brand new design hostel in Chiangmai. It's been open on November 2015with our 6 types of room. The hostel is very close to Chiangmai international airport and also the city center. It is located on Wualai road, where the local experience on 'Walking Street Market' every Saturday is. Comfy and cozy style that can change a hotel images on your mind. You can spend you relaxing vacation at our stylish space and carry a beautiful travel memory back home. Hope you enjoy your stay with us 
+							Oxotel is a brand new design hostel in Chiangmai. It's been open on November 2015with our 6 types of room. The hostel is very close to Chiangmai international airport and also the city center. It is located on Wualai road, where the local experience on 'Walking Street Market' every Saturday is. Comfy and cozy style that can change a hotel images on your mind. You can spend you relaxing vacation at our stylish space and carry a beautiful travel memory back home. Hope you enjoy your stay with us
 						</p>
  					</div>
- 					
+
  					<a class="btn btn-transparent -keepright _capital" data-toggle="modal" data-target="#aboutModal">Explore</a>
  				</div>
  			</div>
@@ -165,10 +165,10 @@
 
 					<div class="overflow-box">
 						<p>
-							Agoda.com & Expedia.com: Your credit card has been charged already. Cancellation and modification are upon cancellation policy on each reservation 
+							Agoda.com & Expedia.com: Your credit card has been charged already. Cancellation and modification are upon cancellation policy on each reservation
 						</p>
 						<p>
-							Booking.com: Valid credit card details are required to book online. Your credit card is not charged before your arrival.  We just keep your credit card details for security reasons. You need to pay the total room balance directly to Oxotel Hostel on arrival either cash or credit card.  
+							Booking.com: Valid credit card details are required to book online. Your credit card is not charged before your arrival.  We just keep your credit card details for security reasons. You need to pay the total room balance directly to Oxotel Hostel on arrival either cash or credit card.
 						</p>
 						<p>
 							HostelWorld.com: You will be charged 10% deposit. This is automatically taken by the booking engine not by Oxotel Hostel. The deposit is non – refundable and non – transferable. You need to pay the due balance directly to Oxotel Hostel on arrival either cash or credit card.
@@ -184,10 +184,10 @@
 						- Cancellations received more than 14 days prior to your arrival: there is no charge. <br />
 						- Cancellations received in writing between 7-14 days prior to your arrival will be charged 50% of the full value of the reservation (incl. tax) <br />
 						- Cancellations received in writing less than 7 days will be charged 100% of the full value of the reservation (incl. tax) <br />
-						- When guests don't arrive and haven't cancelled their reservation - a 'no-show' - we will charge the equivalent to your entire stay 
+						- When guests don't arrive and haven't cancelled their reservation - a 'no-show' - we will charge the equivalent to your entire stay
 						</p>
 					</div>
- 					
+
  					<a id="modal_click_condition" class="btn btn-transparent _capital _pull-left _margin-right" data-toggle="modal" data-target="#conditionModal">Condition</a>
  					<div class="bookingbtn-group">
  					    <!--
@@ -197,7 +197,7 @@
 	 						<a class="btn btn-transparent -orange _capital _subbutton" target="_blank" href="http://www.booking.com/hotel/th/oxotel.th.html?label=gen173nr-1FCAEoggJCAlhYSDNiBW5vcmVmaN0BiAEBmAEmwgEDYWJuyAEM2AEB6AEB-AELqAIE%3Bsid%3Da9c400783e4d0678a2911325b020d663%3Bdcid%3D1%3Bdest_id%3D-3247115%3Bdest_type%3Dcity%3Bdist%3D0%3Bgroup_adults%3D2%3Broom1%3DA%2CA%3Bsb_price_type%3Dtotal%3Bsrfid%3D261b6fd664759b8069fb61cd82d78f852dfca842X1%3Btype%3Dtotal%3Bucfs%3D1">Booking.com</a>
 	 						<a class="btn btn-transparent -orange _capital _subbutton" target="_blank" href="http://www.booking.com/hotel/th/oxotel.th.html?label=gen173nr-1FCAEoggJCAlhYSDNiBW5vcmVmaN0BiAEBmAEmwgEDYWJuyAEM2AEB6AEB-AELqAIE%3Bsid%3Da9c400783e4d0678a2911325b020d663%3Bdcid%3D1%3Bdest_id%3D-3247115%3Bdest_type%3Dcity%3Bdist%3D0%3Bgroup_adults%3D2%3Broom1%3DA%2CA%3Bsb_price_type%3Dtotal%3Bsrfid%3D261b6fd664759b8069fb61cd82d78f852dfca842X1%3Btype%3Dtotal%3Bucfs%3D1">Hostel world</a>
 	 					</div>
-	 					--> 		
+	 					-->
 
 	 					<div class="dropdown">
 	 						<a class="btn btn-transparent -booking -orange _capital" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" target="_blank" href="#">Booking</a>
@@ -230,7 +230,7 @@
 	            <h1 class="headline__primary"><a href="#" style="color:#FFFFFF">Rooms</a></h1>
 	            <div>
 		          	<button type="button"  data-toggle="modal" data-target="#myModal">
-						DETAILS	
+						DETAILS
 					</button>
 	            </div>
 	        </hgroup> -->
@@ -244,14 +244,14 @@
 			            	<p>
 			            		With our 6 type’s rooms. Every dormitory bed has his/her locker,
 			            		reading lamp and power socket. The private rooms have their wash basin.
-			            		All our 6 types of room with shared bathroom on the 2nd floor 
+			            		All our 6 types of room with shared bathroom on the 2nd floor
 			            	</p>
 
 			            </div>
 
 			            <div>
 				          	<button  id="modal_click_rooms" class="btn btn-transparent -darkbg _capital" type="button"  data-toggle="modal" data-target="#roomsModal">
-								DETAILS	
+								DETAILS
 							</button>
 			            </div>
 					</div>
@@ -261,18 +261,18 @@
         </div>
   	</div>
   	<div id="rooms" class="article__parallax">
-   
+
 	    <div class="article__parallax__slider  header--slideshow  js-pixslider" data-imagealigncenter="" data-imagescale="fill" data-slidertransition="fade" data-customarrows="true" data-sliderautoplay="" data-sliderdelay="2000">
 	        <?php
 	        	foreach($rooms_image_node->field_slide_image['und'] as $key => $value) {
 	        		$img_path =  file_create_url($value['uri']);
 	        		?>
-	      		    <div class="gallery-item" 
-	      		    	itemscope="" 
-	      		    	itemtype="http://schema.org/ImageObject" 
-	      		    	data-caption="" 
-	      		    	data-description=""> 
-	      		    	<img src="<?php print $img_path;?>" 
+	      		    <div class="gallery-item"
+	      		    	itemscope=""
+	      		    	itemtype="http://schema.org/ImageObject"
+	      		    	data-caption=""
+	      		    	data-description="">
+	      		    	<img src="<?php print $img_path;?>"
 	      		    	class="attachment-blog-big rsImg" alt="" itemprop="contentURL">
 	      		    </div>
 
@@ -283,16 +283,16 @@
 	</div>
 </header>
 <!-- Start new Facility -->
-<div id="facilities" class="desc-section -facilities"> 
+<div id="facilities" class="desc-section -facilities">
 	<div class="facilities-content">
 		<div class="ct-wrapper">
 			<div class="faciimg-wrapper">
 				<div class="faciimg -img01">
-					<span class="text-tooltip">24 HOURS RECEPTION</span> 
+					<span class="text-tooltip">24 HOURS RECEPTION</span>
 				</div>
 
 	          	<button  id="modal_click_facilities" class="btn btn-transparent -darkbg _capital" type="button"  data-toggle="modal" data-target="#facilitiesModal">
-					EXPLORE	
+					EXPLORE
 				</button>
 
 			</div>
@@ -302,14 +302,14 @@
 <!-- End Old Facility -->
 
 <!-- Start Old Facility
-<div id="facilities" class="desc-section -facilities"> 
+<div id="facilities" class="desc-section -facilities">
 	<div class="facilities-content">
 		<div class="ct-wrapper">
 			<div class="inner -left _text-right">
 				<div class="inner-wrapper">
 					<div class="faciimg-wrapper">
 						<div class="faciimg -img01">
-							<span class="text-tooltip">Towell & Bed sheet</span> 
+							<span class="text-tooltip">Towell & Bed sheet</span>
 						</div>
 						<div class="faciimg -img02">
 							<span class="text-tooltip">Soap & Shampoo</span>
@@ -344,7 +344,7 @@
 						<div class="faciimg -img12">
 							<span class="text-tooltip">Emergency Call</span>
 						</div>
-					</div>					
+					</div>
 				</div>
 			</div>
 			<div class="inner -right _text-grey">
@@ -361,7 +361,7 @@
 
 
 					</div>
-					<h3 class="desc-header _capital _text-grey">Sell staffs & services</h3>	
+					<h3 class="desc-header _capital _text-grey">Sell staffs & services</h3>
 					<div class="overflow-box">
 
 							<p>-Toothbrush 15 THB</p>
@@ -391,18 +391,18 @@ End Old Facility -->
         </div>
   	</div>
 
-    <div  class="article__parallax">   
+    <div  class="article__parallax">
 	    <div class="article__parallax__slider  header--slideshow  js-pixslider" data-imagealigncenter="" data-imagescale="fill" data-slidertransition="fade" data-customarrows="true" data-sliderautoplay="" data-sliderdelay="2000">
 	        <?php
 	        	foreach($exterior_image_node->field_slide_image['und'] as $key => $value) {
 	        		$img_path =  file_create_url($value['uri']);
 	        		?>
-	      		    <div class="gallery-item" 
-	      		    	itemscope="" 
-	      		    	itemtype="http://schema.org/ImageObject" 
-	      		    	data-caption="" 
-	      		    	data-description=""> 
-	      		    	<img src="<?php print $img_path;?>" 
+	      		    <div class="gallery-item"
+	      		    	itemscope=""
+	      		    	itemtype="http://schema.org/ImageObject"
+	      		    	data-caption=""
+	      		    	data-description="">
+	      		    	<img src="<?php print $img_path;?>"
 	      		    	class="attachment-blog-big rsImg" alt="" itemprop="contentURL">
 	      		    </div>
 
@@ -431,20 +431,20 @@ End Old Facility -->
 			            <div class="overflow-box">
 			            	<p>
 			            		<strong class="class="text-bright"">Coffee/Hot/Iced/Frappe</strong><br />
-			            		Ristretto/Doppio, Espresso/Doppio, Americano, Latte, Cappuchino, Mocha 
+			            		Ristretto/Doppio, Espresso/Doppio, Americano, Latte, Cappuchino, Mocha
 			            	</p>
 			            	<p>
 			            		<strong class="class="text-bright"">Artisan Thai Style </strong><br />
-			            		Caramel Macciato, Flat White, Picolo Latte, Marrochino 
+			            		Caramel Macciato, Flat White, Picolo Latte, Marrochino
 			            	</p>
 			            	<p>
 			            		<strong class="class="text-bright"">Cocoa</strong><br />
-			            		Green Tea Latte, Thai Tea Latte 
+			            		Green Tea Latte, Thai Tea Latte
 			            	</p>
 			            	<p>
 			            		<strong class="class="text-bright"">ETC.</strong><br />
-			            		Pink Ocean, Morning Glory Mango, Sunshine Rose, Big Apple, Strawberry, Mix Berry, Kiwi, Mango  
-			            		
+			            		Pink Ocean, Morning Glory Mango, Sunshine Rose, Big Apple, Strawberry, Mix Berry, Kiwi, Mango
+
 			            	</p>
 			            </div>
 			            <div>
@@ -468,12 +468,12 @@ End Old Facility -->
 	        	foreach($cafe_image_node->field_slide_image['und'] as $key => $value) {
 	        		$img_path =  file_create_url($value['uri']);
 	        		?>
-	      		    <div class="gallery-item" 
-	      		    	itemscope="" 
-	      		    	itemtype="http://schema.org/ImageObject" 
-	      		    	data-caption="" 
-	      		    	data-description=""> 
-	      		    	<img src="<?php print $img_path;?>" 
+	      		    <div class="gallery-item"
+	      		    	itemscope=""
+	      		    	itemtype="http://schema.org/ImageObject"
+	      		    	data-caption=""
+	      		    	data-description="">
+	      		    	<img src="<?php print $img_path;?>"
 	      		    	class="attachment-blog-big rsImg" alt="" itemprop="contentURL">
 	      		    </div>
 
@@ -489,8 +489,8 @@ End Old Facility -->
 	<!--<iframe src="https://www.google.com/maps/d/embed?mid=11idAtyrUxD9qZCA6gGRayP18KsA&z=17&ll=18.7758, 98.98203" style="position:relative; top:-30px; border:none;"  width="1280" height="450"></iframe>-->
 	<!--<img src="sites/all/themes/parallax_zymphonies_theme/images/oxomap.png" width="100%" height="400">-->
 </div>
-<!--	
-<div id="findus" class="desc-section -findus description-find_us"> 
+<!--
+<div id="findus" class="desc-section -findus description-find_us">
 	<div class="findus-content">
 		<div class="ct-wrapper">
 			<div class="inner -center _text-center">
@@ -522,7 +522,7 @@ End Old Facility -->
 	</div>
 </div>
 -->
-<div id="about" class="description-main desc-section -reservation"> 
+<div id="about" class="description-main desc-section -reservation">
 	<div class="reservation-content">
 		<div class="ct-wrapper">
 			<div class="inner -left _text-right" id="findus_icon_content">
@@ -558,7 +558,7 @@ End Old Facility -->
 						and just only 10 minutes walk to Chiangmai gate
  					</p>
 					</div>
- 					
+
  					<a onclick="$('#findus_content').hide();$('#mailus_form').show('slide', { direction: 'right' }, 200);$(window).trigger('resize');" class="btn btn-transparent _capital _pull-left _margin-right">MAIL US</a>
 					<a id="modal_click_map" class="btn btn-transparent _capital" data-toggle="modal" data-target="#mapModal">Map</a>
 
@@ -623,7 +623,7 @@ End Old Facility -->
 				<li><a href="#">Booking.com</a></li>
 				<li><a href="http://l.facebook.com/l.php?u=http%3A%2F%2Fwww.hostelworld.com%2Fhosteldetails.php%2FOxotel-Hostel%2FChiang-Mai%2F101918&h=MAQFxiyvL" target="_blank">Hostel world</a></li>
 			</ul>
-		</div>		
+		</div>
 	</div>
 	<p>
 		OXOTEL @ 2016 all right reserved. Designed and Developed by BGxMINT.co<br />
@@ -637,12 +637,12 @@ End Old Facility -->
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-body slide-modal">
-		
+
         <h4 class="modal-title text-modal" id="myModalLabel">Rooms</h4>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="/sites/all/themes/parallax_zymphonies_theme/images/close.svg" /></span></button>
 		      		<div class="group-slide">
 
-	      				<?php 
+	      				<?php
 							$i = 1;
 							foreach($rooms_modal_node as $room){
 								// Hard code break for only one content
@@ -687,7 +687,7 @@ End Old Facility -->
 					 						<a class="btn btn-transparent -orange _invert _capital _subbutton" target="_blank" href="http://www.booking.com/hotel/th/oxotel.th.html?label=gen173nr-1FCAEoggJCAlhYSDNiBW5vcmVmaN0BiAEBmAEmwgEDYWJuyAEM2AEB6AEB-AELqAIE%3Bsid%3Da9c400783e4d0678a2911325b020d663%3Bdcid%3D1%3Bdest_id%3D-3247115%3Bdest_type%3Dcity%3Bdist%3D0%3Bgroup_adults%3D2%3Broom1%3DA%2CA%3Bsb_price_type%3Dtotal%3Bsrfid%3D261b6fd664759b8069fb61cd82d78f852dfca842X1%3Btype%3Dtotal%3Bucfs%3D1">Agoda</a>
 					 						<a class="btn btn-transparent -orange _invert _capital _subbutton" target="_blank" href="http://www.booking.com/hotel/th/oxotel.th.html?label=gen173nr-1FCAEoggJCAlhYSDNiBW5vcmVmaN0BiAEBmAEmwgEDYWJuyAEM2AEB6AEB-AELqAIE%3Bsid%3Da9c400783e4d0678a2911325b020d663%3Bdcid%3D1%3Bdest_id%3D-3247115%3Bdest_type%3Dcity%3Bdist%3D0%3Bgroup_adults%3D2%3Broom1%3DA%2CA%3Bsb_price_type%3Dtotal%3Bsrfid%3D261b6fd664759b8069fb61cd82d78f852dfca842X1%3Btype%3Dtotal%3Bucfs%3D1">Booking.com</a>
 					 						<a class="btn btn-transparent -orange _invert _capital _subbutton" target="_blank" href="http://www.booking.com/hotel/th/oxotel.th.html?label=gen173nr-1FCAEoggJCAlhYSDNiBW5vcmVmaN0BiAEBmAEmwgEDYWJuyAEM2AEB6AEB-AELqAIE%3Bsid%3Da9c400783e4d0678a2911325b020d663%3Bdcid%3D1%3Bdest_id%3D-3247115%3Bdest_type%3Dcity%3Bdist%3D0%3Bgroup_adults%3D2%3Broom1%3DA%2CA%3Bsb_price_type%3Dtotal%3Bsrfid%3D261b6fd664759b8069fb61cd82d78f852dfca842X1%3Btype%3Dtotal%3Bucfs%3D1">Hostel world</a>
-					 					</div> 						
+					 					</div>
 					 					-->
 
 					 					<div class="dropdown">
@@ -714,7 +714,7 @@ End Old Facility -->
 								$i++;
 							}
 						?>
-		      			
+
 		      		</div>
 
 
@@ -728,11 +728,11 @@ End Old Facility -->
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-body slide-modal">
-		
+
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="/sites/all/themes/parallax_zymphonies_theme/images/close.svg" /></span></button>
 		      		<div class="group-slide">
 
-	      				<?php 
+	      				<?php
 							$i = 1;
 							foreach($facilities_modal_node as $facilities){
 								// Hard code break for only one content
@@ -777,7 +777,7 @@ End Old Facility -->
 								$i++;
 							}
 						?>
-		      			
+
 		      		</div>
 
 
@@ -845,8 +845,8 @@ End Old Facility -->
   	<div class="modal-dialog modal-lg" role="document">
     	<div class="modal-content text-modal">
       		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="/sites/all/themes/parallax_zymphonies_theme/images/close.svg" /></span></button>
-      		<div class="modal-body text-modal">
-      			<div class="video-iframe-wrapper" style="width:70%; height: 300px;">
+      		<div class="modal-body text-modal video-modal">
+      			<div class="video-iframe-wrapper">
 		      		<?php
 		      			$i_video = 1;
 						foreach($video_modal_node as $video){
@@ -855,7 +855,7 @@ End Old Facility -->
 							$video_v =  $query['v'];
 							?>
 							<div style="display:none" class="video-iframe" id="video_<?php print $video_v;?>">
-								<iframe width="1280" height="720" src="https://www.youtube.com/embed/<?php print $video_v;?>?rel=0&amp;controls=1&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+								<iframe width="1280" height="560" src="https://www.youtube.com/embed/<?php print $video_v;?>?rel=0&amp;controls=1&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 
 							</div>
 							<?php
@@ -874,7 +874,7 @@ End Old Facility -->
 								$video_v =  $query['v'];
 								?>
 									<li class="video-thumbnail" id="video_thumbnail_<?php print $video_v;?>" onClick="showVideo('<?php print $video_v;?>')">
-										<?php 
+										<?php
 											print theme('image_style',array('style_name' => 'video_thumbnail', 'path' => $video->field_image['und'][0]['uri']));
 
 										?>
@@ -882,13 +882,13 @@ End Old Facility -->
 											<?php print $video->title; ?>
 										</div>
 									</li>
-								
-								<?php	
+
+								<?php
 							}
 
 						?>
 					</ul>
-			
+
 
       		</div>
     	</div>
@@ -903,7 +903,7 @@ End Old Facility -->
 	        	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="/sites/all/themes/parallax_zymphonies_theme/images/close.svg" /></span></button>
 	      		<ul class="lightSliderCondition">
 	      			<li>
-	      				<div>reservation</div>	
+	      				<div>reservation</div>
 	      				<h2 class="text-modal">Term and condition</h2>
 	      				<div class="overflow-box _300px">
 		      				<p>
@@ -916,14 +916,14 @@ End Old Facility -->
 			      			</p>
 			      			<p>
 		      					<strong class="text-bright">CHECK – OUT</strong><br />
-		      					- Check – out time before 12.00 PM. Let us know if you’re early bird and would like to check 
-		      					– out earlier 
-		      					-Noon late check 
-		      					– out between 12.00 PM 
-		      					– 6.00 PM is half day charge and after 6.00 PM is full day charge 
-		      					- If you have not checked 
+		      					- Check – out time before 12.00 PM. Let us know if you’re early bird and would like to check
+		      					– out earlier
+		      					-Noon late check
+		      					– out between 12.00 PM
+		      					– 6.00 PM is half day charge and after 6.00 PM is full day charge
+		      					- If you have not checked
 		      					– out of the room by noon and you do not have a reservation for the next night, Oxotel hostel may have to pack your <br />
-		      					belonging to be placed in the luggage area so the room can be cleaned for the new arrivals  
+		      					belonging to be placed in the luggage area so the room can be cleaned for the new arrivals
 		      					-You can leave your luggage with us with free of charge after check – out
 			      			</p>
 			      			<p>
@@ -933,12 +933,12 @@ End Old Facility -->
 			      			</p>
 			      			<p>
 		      					<strong class="text-bright">RECEPTION</strong><br />
-		      					- Reception operating time 24 hours service 
+		      					- Reception operating time 24 hours service
 			      			</p>
 			      			<p>
 		      					<strong class="text-bright">AGE RESTRICTIONS</strong><br />
-		      					- To preserve and maintain our laid<br /> 
-		      					– back & smooth atmosphere we do not allow persons under 15 year of age 
+		      					- To preserve and maintain our laid<br />
+		      					– back & smooth atmosphere we do not allow persons under 15 year of age
 		      				</p>
 			      			<p>
 		      					<strong class="text-bright">NO CURFEW</strong><br />
@@ -950,7 +950,7 @@ End Old Facility -->
 		      				</p>
 			      			<p>
 		      					<strong class="text-bright">EATING & DRINKING AREA</strong><br />
-									- Eating and drinking (except water) is forbidden in the room. You can only consume your own food and drink in the common area. <br /> 
+									- Eating and drinking (except water) is forbidden in the room. You can only consume your own food and drink in the common area. <br />
 									It is forbidden to bring any type of food or drink (except water) into your room
 							</p>
 			      			<p>
@@ -961,27 +961,27 @@ End Old Facility -->
 							<p>
 		      					<strong class="text-bright">RESPECT</strong><br />
 		      						- Do not put your personal item on the other bed. Do not pick up the other blanket, pillow or towel from the other bed <br />
-		      						- Travelers are expected to respect other guests, staffs and property 
-								
+		      						- Travelers are expected to respect other guests, staffs and property
+
 							</p>
 							<p>
 		      					<strong class="text-bright">SAFETY & SECURITY </strong><br />
 		      					- The reception, lobby and common areas are under 24 hours CCTV surveillance for your own safety  <br />
 		      					- Hostel area and rooms are accessed by key card <br />
-		      					- Any guest who in the opinion of our staffs, compromise the comfort, safety or security of other<br /> 
+		      					- Any guest who in the opinion of our staffs, compromise the comfort, safety or security of other<br />
 		      					guests or staffs will  be asked to leave the hostel and will not be offered any of refund
-								
+
 							</p>
 							<p>
 		      					<strong class="text-bright">NON – SMOKING</strong><br />
 		      					- Oxotel hostel is a non – smoking hostel. A 2,000 THB will be charged to anyone who smokes in the public area according to Thai laws.<br />
 		      					 You can have your cigarette only at the end of the rear backyard
-								
+
 							</p>
 							<p>
 		      					<strong class="text-bright">NO DRUGS</strong><br />
-		      					- Any type of drugs is forbidden throughout the whole poperty  
-								
+		      					- Any type of drugs is forbidden throughout the whole poperty
+
 							</p>
 							<p>
 		      					<strong class="text-bright">VISITOR RULES</strong><br />
@@ -990,54 +990,54 @@ End Old Facility -->
 							</p>
 							<p>
 		      					<strong class="text-bright">PET RULES</strong><br />
-		      					- Pets are not allowed in the hostel 
+		      					- Pets are not allowed in the hostel
 
 							</p>
 							<p>
 		      					<strong class="text-bright">LAUNDRY</strong><br />
 		      					- Oxotel hostel have a laundry service and we provide a washing machine on the 2nd floor. Please dry them in the washing area only <br />
-		      					- Any clothes hanging or left in the public areas will be removed by the staffs 
+		      					- Any clothes hanging or left in the public areas will be removed by the staffs
 
 							</p>
 							<p>
 		      					<strong class="text-bright">KITCHEN</strong><br />
 		      						- After use, please wash your dirty cups and dishes and please keep the kitchen clean and tidy<br />
-		      						- When placing food in the fridge, please write your name and your check – out date on it 
-								
+		      						- When placing food in the fridge, please write your name and your check – out date on it
+
 							</p>
 							<p>
 		      					<strong class="text-bright">CLEANLINESS</strong><br />
 		      						- Please keep your room and common areas of the hostel clean and tidy to help us maintain the cozy and friendly atmosphere, we are dedicated to welcome all our guests with <br />
-		      						- If you are staying in the dormitory room for multiple days and would like to have your bed cleaned, please inform our staffs  before 12.00 noon, beds are cleaned upon request 
-								
+		      						- If you are staying in the dormitory room for multiple days and would like to have your bed cleaned, please inform our staffs  before 12.00 noon, beds are cleaned upon request
+
 							</p>
 							<p>
 		      					<strong class="text-bright">DAMAGES</strong><br />
-		      						- If you lose or damage any property belonging to Oxotel hostel, we will have to charge you for it. The compensation must be pa id immediately and in cash.<br /> 
-		      						There is a 100 THB charged for missing the towel 
-								
+		      						- If you lose or damage any property belonging to Oxotel hostel, we will have to charge you for it. The compensation must be pa id immediately and in cash.<br />
+		      						There is a 100 THB charged for missing the towel
+
 							</p>
 							<p>
 		      					<strong class="text-bright">CONSERVATION </strong><br />
-		      						- For conservation reasons, please turn off the lights, air – condition before leaving your room 
-								
+		      						- For conservation reasons, please turn off the lights, air – condition before leaving your room
+
 							</p>
 							<p>
 		      					<strong class="text-bright">PERSONAL BELONGINGS</strong><br />
 		      					- You can put your luggage in our luggage area  <br />
 		      					- Valued articles should be stored in your room <br />
-		      					- Oxotel hostel is not responsible for any case of lost, damage or theft 
-								
+		      					- Oxotel hostel is not responsible for any case of lost, damage or theft
+
 							</p>
 							<p>
 		      					<strong class="text-bright">PERSONAL BELONGINGS</strong><br />
 		      					- f you wish to extend your stay, you must do so, it is subject to availability. Please inform us before your check – out date and with full payment in advance
-								
+
 							</p>
 	      				</div>
 	      			</li>
 	      			<li>
-	      				<h2 class="text-modal">Reservation policy</h2>	
+	      				<h2 class="text-modal">Reservation policy</h2>
 	      				<div class="overflow-box _300px">
 		      			<p>
 		      			    <strong class="text-bright">Agoda.com & Expedia.com: </strong>Your credit card has been charged already. Cancellation and modification are upon cancellation policy on each reservation <br />
@@ -1062,7 +1062,7 @@ End Old Facility -->
  						<a class="btn btn-transparent -orange _invert _capital _subbutton" target="_blank" href="http://www.booking.com/hotel/th/oxotel.th.html?label=gen173nr-1FCAEoggJCAlhYSDNiBW5vcmVmaN0BiAEBmAEmwgEDYWJuyAEM2AEB6AEB-AELqAIE%3Bsid%3Da9c400783e4d0678a2911325b020d663%3Bdcid%3D1%3Bdest_id%3D-3247115%3Bdest_type%3Dcity%3Bdist%3D0%3Bgroup_adults%3D2%3Broom1%3DA%2CA%3Bsb_price_type%3Dtotal%3Bsrfid%3D261b6fd664759b8069fb61cd82d78f852dfca842X1%3Btype%3Dtotal%3Bucfs%3D1">Agoda</a>
  						<a class="btn btn-transparent -orange _invert _capital _subbutton" target="_blank" href="http://www.booking.com/hotel/th/oxotel.th.html?label=gen173nr-1FCAEoggJCAlhYSDNiBW5vcmVmaN0BiAEBmAEmwgEDYWJuyAEM2AEB6AEB-AELqAIE%3Bsid%3Da9c400783e4d0678a2911325b020d663%3Bdcid%3D1%3Bdest_id%3D-3247115%3Bdest_type%3Dcity%3Bdist%3D0%3Bgroup_adults%3D2%3Broom1%3DA%2CA%3Bsb_price_type%3Dtotal%3Bsrfid%3D261b6fd664759b8069fb61cd82d78f852dfca842X1%3Btype%3Dtotal%3Bucfs%3D1">Booking.com</a>
  						<a class="btn btn-transparent -orange _invert _capital _subbutton" target="_blank" href="http://www.booking.com/hotel/th/oxotel.th.html?label=gen173nr-1FCAEoggJCAlhYSDNiBW5vcmVmaN0BiAEBmAEmwgEDYWJuyAEM2AEB6AEB-AELqAIE%3Bsid%3Da9c400783e4d0678a2911325b020d663%3Bdcid%3D1%3Bdest_id%3D-3247115%3Bdest_type%3Dcity%3Bdist%3D0%3Bgroup_adults%3D2%3Broom1%3DA%2CA%3Bsb_price_type%3Dtotal%3Bsrfid%3D261b6fd664759b8069fb61cd82d78f852dfca842X1%3Btype%3Dtotal%3Bucfs%3D1">Hostel world</a>
- 					</div> 						
+ 					</div>
  					-->
 
  					<div class="dropdown">
@@ -1119,7 +1119,7 @@ End Old Facility -->
 	</div>
 </div>
 <script type="text/javascript">
-  	$ = jQuery;	
+  	$ = jQuery;
   	$(document).ready(function() {
 
     	$('#modal_click_map').click(function () {
@@ -1145,12 +1145,12 @@ End Old Facility -->
 			    		item: 1,
 			    		auto: false,
 			    		controls: true,
-			    	}); 
+			    	});
 		    		is_slice_rooms = true;
 		    		showGroupSlide(0, 'roomsModal');
 		    		refreshGlobal();
 
-	    		}, 200);	
+	    		}, 200);
 			}
     	});
 
@@ -1163,12 +1163,12 @@ End Old Facility -->
 			    		item: 1,
 			    		auto: false,
 			    		controls: true,
-			    	}); 
+			    	});
 		    		is_slice_facilities = true;
 		    		showGroupSlide(0, 'facilitiesModal');
 		    		refreshGlobal();
 
-	    		}, 200);	
+	    		}, 200);
 			}
     	});
     	// =============================
@@ -1181,10 +1181,10 @@ End Old Facility -->
 			    		item: 1,
 			    		auto: false,
 			    		controls: true,
-			    	}); 
+			    	});
 		    		is_slice_cafe = true;
 
-	    		}, 200);	
+	    		}, 200);
 			}
     	});
     	// =============================
@@ -1197,10 +1197,10 @@ End Old Facility -->
 			    		item: 1,
 			    		auto: false,
 			    		controls: true,
-			    	}); 
+			    	});
 		    		is_slice_condition = true;
 
-	    		}, 200);	
+	    		}, 200);
 			}
     	});
 
@@ -1217,10 +1217,10 @@ End Old Facility -->
 			    		auto: false,
 			    		controls: true,
 			    		vertical: true
-			    	}); 
+			    	});
 		    		is_slice_video = true;
 
-	    		}, 200);	
+	    		}, 200);
 			}
     	});
 
@@ -1230,13 +1230,13 @@ End Old Facility -->
 
        <script type="text/javascript">
             //google.maps.event.addDomListener(window, 'load', init);
-        
+
             function init() {
 
                 var mapOptions = {
                     zoom: 15,
 
-                    center: new google.maps.LatLng(18.7758, 98.98203), 
+                    center: new google.maps.LatLng(18.7758, 98.98203),
 
 
                      styles: [{"featureType":"administrative","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"visibility":"simplified"},{"color":"#fcfcfc"}]},{"featureType":"poi","elementType":"geometry","stylers":[{"visibility":"simplified"},{"color":"#fcfcfc"}]},{"featureType":"road.highway","elementType":"geometry","stylers":[{"visibility":"simplified"},{"color":"#dddddd"}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"visibility":"simplified"},{"color":"#dddddd"}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"visibility":"simplified"},{"color":"#eeeeee"}]},{"featureType":"water","elementType":"geometry","stylers":[{"visibility":"simplified"},{"color":"#dddddd"}]}]

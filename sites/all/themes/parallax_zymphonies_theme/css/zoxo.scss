@@ -4,6 +4,7 @@
 @import "component/content-section.scss";
 @import "component/footer.scss";
 @import "component/modal.scss";
+@import "component/modal/video.scss";
 @import "component/contact.scss";
 @import "component/font.scss";
 @import "component/facilities-image.scss";
@@ -16,7 +17,7 @@ body {
 	font-family: 'gotham_lightregular';
 }
 h1, h2, h3, h4 {
-	font-family: 'gotham_mediumregular';	
+	font-family: 'gotham_mediumregular';
 }
 
 .menu-wrap {
@@ -77,12 +78,12 @@ h1, h2, h3, h4 {
 		background: url(#{$path}/ig.png) transparent no-repeat center;
 		&:hover {
 			background: url(#{$path}/ig-hover.png) transparent no-repeat center;
-		}		
+		}
 	}
 	> li > a.tw {
 		background: url(#{$path}/tw.png) transparent no-repeat center;
 		&:hover {
 			background: url(#{$path}/tw-hover.png) transparent no-repeat center;
-		}		
+		}
 	}
 }
