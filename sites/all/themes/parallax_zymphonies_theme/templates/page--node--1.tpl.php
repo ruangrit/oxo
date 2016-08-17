@@ -50,8 +50,8 @@
 		$('.video-iframe').hide();
 		$('#video_'+Id).show();
 
-		$('.video-thumbnail').removeClass('active');
-		$('#video_thumbnail_'+Id).addClass('active');
+		$('.video-thumbnail').removeClass('active-movie');
+		$('#video_thumbnail_'+Id).addClass('active-movie');
    		$(window).trigger('resize');
 	}
 
@@ -876,9 +876,10 @@ End Old Facility -->
 								?>
 									<li class="video-thumbnail" id="video_thumbnail_<?php print $video_v;?>" onClick="showVideo('<?php print $video_v;?>')">
 										<?php
-											print theme('image_style',array('style_name' => 'video_thumbnail', 'path' => $video->field_image['und'][0]['uri']));
-
+										 	$youtube_image_thumbnail = 'http://img.youtube.com/vi/'.$video_v.'/mqdefault.jpg';
+											//print theme('image_style',array('style_name' => 'video_thumbnail', 'path' => $video->field_image['und'][0]['uri']));
 										?>
+										<img src="<?php print $youtube_image_thumbnail;?>" width="230" height="150" />
 										<div class="video-title">
 											<?php print $video->title; ?>
 										</div>
