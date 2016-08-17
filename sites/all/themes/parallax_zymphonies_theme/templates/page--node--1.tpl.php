@@ -286,31 +286,31 @@
 <div id="facilities" class="desc-section -facilities">
 	<div class="facilities-content">
 		<div class="ct-wrapper">
-			<h3>FACILITIES</h3>
+			<h3 class="textLightWhiteBg">FACILITIES</h3>
 			<div class="faciimg-wrapper">
 				<div class="faciitem">
 					<div class="faciimg -img01">
-						<span class="text-tooltip">24 HOURS RECEPTION</span>
+						<span class="text-tooltip textLightWhiteBg">24 HOURS RECEPTION</span>
 					</div>
 				</div>
 				<div class="faciitem">
 					<div class="faciimg -img02">
-						<span class="text-tooltip">24 HOURS RECEPTION</span>
+						<span class="text-tooltip textLightWhiteBg">24 HOURS RECEPTION</span>
 					</div>
 				</div>
 				<div class="faciitem">
 					<div class="faciimg -img03">
-						<span class="text-tooltip">24 HOURS RECEPTION</span>
+						<span class="text-tooltip textLightWhiteBg">24 HOURS RECEPTION</span>
 					</div>
 				</div>
 				<div class="faciitem">
 					<div class="faciimg -img04">
-						<span class="text-tooltip">24 HOURS RECEPTION</span>
+						<span class="text-tooltip textLightWhiteBg">24 HOURS RECEPTION</span>
 					</div>
 				</div>
 				<div class="faciitem -last">
 					<div class="faciimg -img05">
-						<span class="text-tooltip">24 HOURS RECEPTION</span>
+						<span class="text-tooltip textLightWhiteBg">24 HOURS RECEPTION</span>
 					</div>
 				</div>
 			</div>

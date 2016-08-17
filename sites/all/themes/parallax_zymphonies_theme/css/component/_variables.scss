@@ -5,9 +5,15 @@
 // btn border on dark background
 $color-1: #3E3E3E;
 
+// text light on white background
+$color-whitebg: #CBCBCB;
+
 // btn border on white background
-// btn hover background on white background 
+// btn hover background on white background
 $color-2: #B4B4B4;
+.textLightWhiteBg {
+	color: $color-2;
+}
 
 // orange color
 $color-3: #ED932D;
