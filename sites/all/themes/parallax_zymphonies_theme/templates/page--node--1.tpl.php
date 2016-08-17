@@ -1234,7 +1234,7 @@ End Old Facility -->
             function init() {
 
                 var mapOptions = {
-                    zoom: 15,
+                    zoom: 13,
 
                     center: new google.maps.LatLng(18.7758, 98.98203), 
 
