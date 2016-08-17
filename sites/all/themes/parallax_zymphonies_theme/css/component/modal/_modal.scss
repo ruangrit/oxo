@@ -162,6 +162,12 @@
 	margin-top: 0;
 	background-image: url('../img/controls.svg');
 }
+.lSSlideOuter.vertical .lSAction > a {
+	height: 20px;
+}
+.lSSlideOuter.vertical .lSAction > .lSNext {
+    background-position: 31px -35px;
+}
 
 .lSSlideOuter .lSPager.lSpg > li {
 	padding: 0 8px;

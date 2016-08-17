@@ -127,28 +127,6 @@
   .desc-section.-findus {
     height: auto; }
 
-.facilities-content {
-  display: block;
-  box-sizing: border-box;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 50px; }
-  @media (min-width: 521px) and (max-width: 1200px) {
-    .facilities-content {
-      margin: 50px; } }
-  @media (max-width: 520px) {
-    .facilities-content {
-      margin: 50px 15px; } }
-  @media (max-width: 768px) {
-    .facilities-content {
-      padding: 50px 25px; } }
-  @media (min-width: 992px) {
-    .facilities-content {
-      padding: 0 8.57143%; } }
-  @media (max-width: 520px) {
-    .facilities-content {
-      padding: 25px 0; } }
-
 .reservation-content {
   display: block; }
 
@@ -366,6 +344,12 @@ ul.list-unstyled {
   margin-top: 0;
   background-image: url("../img/controls.svg"); }
 
+.lSSlideOuter.vertical .lSAction > a {
+  height: 20px; }
+
+.lSSlideOuter.vertical .lSAction > .lSNext {
+  background-position: 31px -35px; }
+
 .lSSlideOuter .lSPager.lSpg > li {
   padding: 0 8px; }
 
@@ -403,7 +387,7 @@ ul.list-unstyled {
     padding-bottom: 50px;
     height: 100%; }
     .modal-body.video-modal .vertical > .lSSlideWrapper {
-      height: 420px !important;
+      height: 430px !important;
       overflow: hidden;
       padding-top: 50px; }
     .modal-body.video-modal .vertical > .lSPager {
@@ -411,10 +395,10 @@ ul.list-unstyled {
     .modal-body.video-modal .vertical .lSAction .lSPrev {
       top: 0; }
     .modal-body.video-modal .vertical .lSAction .lSNext {
-      bottom: -8px; }
+      bottom: 0; }
   .modal-body.video-modal .video-thumbnail {
     height: auto !important;
-    margin-bottom: 50px !important; }
+    margin-bottom: 55px !important; }
 
 .modal-content input.form-text,
 .modal-content textarea.form-textarea {
@@ -486,17 +470,57 @@ ul.list-unstyled {
   src: url("/sites/all/themes/parallax_zymphonies_theme/fonts/gotham-medium-webfont.woff2") format("woff2"), url("/sites/all/themes/parallax_zymphonies_theme/fonts/gotham-medium-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
-@media (min-width: 769px) {
-  .faciimg-wrapper {
-    max-width: 400px; } }
-.faciimg-wrapper .faciimg {
-  width: 33.33%;
-  height: 120px;
-  text-align: center;
-  vertical-align: middle;
-  float: left; }
-  .faciimg-wrapper .faciimg > img {
-    display: inline-block; }
+.facilities-content {
+  display: block;
+  box-sizing: border-box;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px; }
+  .facilities-content h3 {
+    margin-bottom: 100px;
+    color: #CBCBCB; }
+  @media (min-width: 521px) and (max-width: 1200px) {
+    .facilities-content {
+      margin: 50px; } }
+  @media (max-width: 520px) {
+    .facilities-content {
+      margin: 50px 15px; } }
+  @media (max-width: 768px) {
+    .facilities-content {
+      padding: 50px 25px; } }
+  @media (min-width: 992px) {
+    .facilities-content {
+      padding: 0 8.57143%; } }
+  @media (max-width: 520px) {
+    .facilities-content {
+      padding: 25px 0; } }
+
+.faciimg-wrapper {
+  width: 100%;
+  float: left;
+  text-align: center; }
+  .faciimg-wrapper .faciitem {
+    display: block;
+    width: 150px;
+    margin-right: 48px;
+    float: left;
+    text-align: center; }
+    .faciimg-wrapper .faciitem.-last {
+      margin-right: 0; }
+  .faciimg-wrapper .faciimg {
+    text-align: center;
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    background-size: contain !important;
+    text-align: center;
+    vertical-align: middle;
+    float: left; }
+
+.btn.-facilities {
+  float: right;
+  margin-top: 100px;
+  margin-right: 34px; }
 
 .faciimg {
   position: relative;
@@ -505,65 +529,37 @@ ul.list-unstyled {
     display: none;
     position: absolute;
     bottom: 7px;
-    width: 120px;
+    width: 150px;
     left: 50%;
-    margin-left: -60px; }
+    margin-left: -75px;
+    margin-bottom: -80px;
+    font-size: 22px;
+    line-height: 30px;
+    color: #CBCBCB; }
   .faciimg:hover {
     cursor: pointer; }
   .faciimg:hover .text-tooltip {
     display: block; }
   .faciimg.-img01 {
-    background: url(/sites/all/themes/parallax_zymphonies_theme/images/faci-01.png) transparent no-repeat center top; }
+    background: url(/sites/all/themes/parallax_zymphonies_theme/images/24-hours.png) transparent no-repeat center; }
   .faciimg.-img01:hover {
-    background: url(/sites/all/themes/parallax_zymphonies_theme/images/faci-01-hover.png) transparent no-repeat center top; }
+    background: url(/sites/all/themes/parallax_zymphonies_theme/images/24-hours-a.png) transparent no-repeat center; }
   .faciimg.-img02 {
-    background: url(/sites/all/themes/parallax_zymphonies_theme/images/faci-02.png) transparent no-repeat center top; }
+    background: url(/sites/all/themes/parallax_zymphonies_theme/images/garden-area.png) transparent no-repeat center; }
   .faciimg.-img02:hover {
-    background: url(/sites/all/themes/parallax_zymphonies_theme/images/faci-02-hover.png) transparent no-repeat center top; }
+    background: url(/sites/all/themes/parallax_zymphonies_theme/images/garden-area-a.png) transparent no-repeat center; }
   .faciimg.-img03 {
-    background: url(/sites/all/themes/parallax_zymphonies_theme/images/faci-03.png) transparent no-repeat center 13px; }
+    background: url(/sites/all/themes/parallax_zymphonies_theme/images/kitchen.png) transparent no-repeat center; }
   .faciimg.-img03:hover {
-    background: url(/sites/all/themes/parallax_zymphonies_theme/images/faci-03-hover.png) transparent no-repeat center 13px; }
+    background: url(/sites/all/themes/parallax_zymphonies_theme/images/kitchen-a.png) transparent no-repeat center; }
   .faciimg.-img04 {
-    background: url(/sites/all/themes/parallax_zymphonies_theme/images/faci-04.png) transparent no-repeat center top; }
+    background: url(/sites/all/themes/parallax_zymphonies_theme/images/parking.png) transparent no-repeat center; }
   .faciimg.-img04:hover {
-    background: url(/sites/all/themes/parallax_zymphonies_theme/images/faci-04-hover.png) transparent no-repeat center top; }
+    background: url(/sites/all/themes/parallax_zymphonies_theme/images/parking-a.png) transparent no-repeat center; }
   .faciimg.-img05 {
-    background: url(/sites/all/themes/parallax_zymphonies_theme/images/faci-05.png) transparent no-repeat center top; }
+    background: url(/sites/all/themes/parallax_zymphonies_theme/images/cafe.png) transparent no-repeat center; }
   .faciimg.-img05:hover {
-    background: url(/sites/all/themes/parallax_zymphonies_theme/images/faci-05-hover.png) transparent no-repeat center top; }
-  .faciimg.-img06 {
-    background: url(/sites/all/themes/parallax_zymphonies_theme/images/faci-06.png) transparent no-repeat center top; }
-  .faciimg.-img06:hover {
-    background: url(/sites/all/themes/parallax_zymphonies_theme/images/faci-06-hover.png) transparent no-repeat center top; }
-  .faciimg.-img06 {
-    background: url(/sites/all/themes/parallax_zymphonies_theme/images/faci-06.png) transparent no-repeat center top; }
-  .faciimg.-img06:hover {
-    background: url(/sites/all/themes/parallax_zymphonies_theme/images/faci-06-hover.png) transparent no-repeat center top; }
-  .faciimg.-img07 {
-    background: url(/sites/all/themes/parallax_zymphonies_theme/images/faci-07.png) transparent no-repeat center 15px; }
-  .faciimg.-img07:hover {
-    background: url(/sites/all/themes/parallax_zymphonies_theme/images/faci-07-hover.png) transparent no-repeat center 15px; }
-  .faciimg.-img08 {
-    background: url(/sites/all/themes/parallax_zymphonies_theme/images/faci-08.png) transparent no-repeat center 12px; }
-  .faciimg.-img08:hover {
-    background: url(/sites/all/themes/parallax_zymphonies_theme/images/faci-08-hover.png) transparent no-repeat center 12px; }
-  .faciimg.-img09 {
-    background: url(/sites/all/themes/parallax_zymphonies_theme/images/faci-09.png) transparent no-repeat center top; }
-  .faciimg.-img09:hover {
-    background: url(/sites/all/themes/parallax_zymphonies_theme/images/faci-09-hover.png) transparent no-repeat center top; }
-  .faciimg.-img10 {
-    background: url(/sites/all/themes/parallax_zymphonies_theme/images/faci-10.png) transparent no-repeat center top; }
-  .faciimg.-img10:hover {
-    background: url(/sites/all/themes/parallax_zymphonies_theme/images/faci-10-hover.png) transparent no-repeat center top; }
-  .faciimg.-img11 {
-    background: url(/sites/all/themes/parallax_zymphonies_theme/images/faci-11.png) transparent no-repeat center top; }
-  .faciimg.-img11:hover {
-    background: url(/sites/all/themes/parallax_zymphonies_theme/images/faci-11-hover.png) transparent no-repeat center top; }
-  .faciimg.-img12 {
-    background: url(/sites/all/themes/parallax_zymphonies_theme/images/faci-12.png) transparent no-repeat center top; }
-  .faciimg.-img12:hover {
-    background: url(/sites/all/themes/parallax_zymphonies_theme/images/faci-12-hover.png) transparent no-repeat center top; }
+    background: url(/sites/all/themes/parallax_zymphonies_theme/images/cafe-a.png) transparent no-repeat center; }
 
 .btn.btn-transparent {
   background-color: transparent;
@@ -597,6 +593,15 @@ ul.list-unstyled {
     line-height: 16px;
     padding-top: 6px;
     padding-bottom: 5px; }
+  .btn.btn-transparent.-movies {
+    border-radius: 20px;
+    padding: 3px 30px 0 50px;
+    font-size: 0.9em;
+    color: #B4B4B4;
+    background: url(/sites/all/themes/parallax_zymphonies_theme/images/play.svg) transparent no-repeat 30px; }
+    .btn.btn-transparent.-movies:hover {
+      color: #3e3e3e;
+      background: url(/sites/all/themes/parallax_zymphonies_theme/images/play-hover.svg) #B4B4B4 no-repeat 30px; }
 
 /******************************************\
 	Select room button

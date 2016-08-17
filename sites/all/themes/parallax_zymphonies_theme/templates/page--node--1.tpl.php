@@ -108,7 +108,7 @@
             </hgroup>
         	<div class="headline__description -since text-imgsection">
 	            <div>
-					<a class="btn btn-transparent -keepright _capital" data-toggle="modal" data-target="#videoModal" id="modal_click_video">MOVIE</a>
+					<a class="btn -movies btn-transparent -keepright _capital" data-toggle="modal" data-target="#videoModal" id="modal_click_video"><span class="play"></span>MOVIE</a>
 	            </div>
         		HOSTEL • GARDEN • CAFE<br/>
         		<span class="small-text">oxotel hostel chiangmai thailand @ since 2015</span>
@@ -286,16 +286,37 @@
 <div id="facilities" class="desc-section -facilities">
 	<div class="facilities-content">
 		<div class="ct-wrapper">
+			<h3>FACILITIES</h3>
 			<div class="faciimg-wrapper">
-				<div class="faciimg -img01">
-					<span class="text-tooltip">24 HOURS RECEPTION</span>
+				<div class="faciitem">
+					<div class="faciimg -img01">
+						<span class="text-tooltip">24 HOURS RECEPTION</span>
+					</div>
 				</div>
-
-	          	<button  id="modal_click_facilities" class="btn btn-transparent -darkbg _capital" type="button"  data-toggle="modal" data-target="#facilitiesModal">
-					EXPLORE
-				</button>
-
+				<div class="faciitem">
+					<div class="faciimg -img02">
+						<span class="text-tooltip">24 HOURS RECEPTION</span>
+					</div>
+				</div>
+				<div class="faciitem">
+					<div class="faciimg -img03">
+						<span class="text-tooltip">24 HOURS RECEPTION</span>
+					</div>
+				</div>
+				<div class="faciitem">
+					<div class="faciimg -img04">
+						<span class="text-tooltip">24 HOURS RECEPTION</span>
+					</div>
+				</div>
+				<div class="faciitem -last">
+					<div class="faciimg -img05">
+						<span class="text-tooltip">24 HOURS RECEPTION</span>
+					</div>
+				</div>
 			</div>
+			<button  id="modal_click_facilities" class="btn -facilities btn-transparent -darkbg _capital" type="button"  data-toggle="modal" data-target="#facilitiesModal">
+				EXPLORE
+			</button>
 		</div>
 	</div>
 </div>

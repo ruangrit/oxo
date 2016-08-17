@@ -9,7 +9,7 @@
 			display: table-cell;
 			width: 50%;
 			position: relative;
-			vertical-align: top;		
+			vertical-align: top;
 		}
 	}
 	> .inner.-middle {
@@ -29,7 +29,7 @@
 				padding-left: 200px;
 			}
 		}
-	}	
+	}
 	> .inner.-right {
 		@media (max-width: 767px) {
 			float: left;
@@ -81,7 +81,7 @@
 	&.-facilities {
 		height: auto;
 		@media (min-width: 769px) {
-			padding: 100px 50px 50px 50px;	
+			padding: 100px 50px 50px 50px;
 		}
 		padding: 0 15px;
 	}
@@ -93,33 +93,6 @@
 	}
 	&.-findus {
 		height: auto;
-	}
-}
-
-// facities-content
-.facilities-content {
-	display: block;
-	box-sizing: border-box;
-	max-width: 1200px;
-	margin: 0 auto;
-	// overflow: hidden;
-	@media (min-width: 521px) and (max-width: 1200px) {
-		margin: 50px;
-	}
-	@media (max-width: 520px) {
-		margin: 50px 15px;
-	}
-
-	padding: 50px;
-	@media (max-width: 768px) {
-		padding: 50px 25px;
-	} 
-	@media (min-width: 992px) {
-		// padding: (30px / 700px * 100%) (60px / 700px * 100%);
-		padding: 0 (60px / 700px * 100%);
-	}
-	@media (max-width: 520px) {
-		padding: 25px 0;
 	}
 }
 

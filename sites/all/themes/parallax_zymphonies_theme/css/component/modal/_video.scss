@@ -22,7 +22,7 @@
         padding-bottom: 50px;
         height: 100%;
         > .lSSlideWrapper {
-            height: 420px !important;
+            height: 430px !important;
         	overflow: hidden;
             padding-top: 50px;
         }
@@ -34,12 +34,12 @@
                 top: 0;
             }
             .lSNext {
-                bottom: -8px;
+                bottom: 0;
             }
         }
     }
     .video-thumbnail {
         height: auto !important;
-        margin-bottom: 50px !important;
+        margin-bottom: 55px !important;
     }
 }
