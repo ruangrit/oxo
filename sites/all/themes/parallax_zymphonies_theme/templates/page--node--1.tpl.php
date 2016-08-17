@@ -50,8 +50,8 @@
 		$('.video-iframe').hide();
 		$('#video_'+Id).show();
 
-		$('.video-thumbnail').removeClass('active');
-		$('#video_thumbnail_'+Id).addClass('active');
+		$('.video-thumbnail').removeClass('active-movie');
+		$('#video_thumbnail_'+Id).addClass('active-movie');
    		$(window).trigger('resize');
 	}
 
@@ -897,9 +897,10 @@ End Old Facility -->
 								?>
 									<li class="video-thumbnail" id="video_thumbnail_<?php print $video_v;?>" onClick="showVideo('<?php print $video_v;?>')">
 										<?php
-											print theme('image_style',array('style_name' => 'video_thumbnail', 'path' => $video->field_image['und'][0]['uri']));
-
+										 	$youtube_image_thumbnail = 'http://img.youtube.com/vi/'.$video_v.'/mqdefault.jpg';
+											//print theme('image_style',array('style_name' => 'video_thumbnail', 'path' => $video->field_image['und'][0]['uri']));
 										?>
+										<img src="<?php print $youtube_image_thumbnail;?>" width="230" height="150" />
 										<div class="video-title">
 											<?php print $video->title; ?>
 										</div>
@@ -1259,11 +1260,9 @@ End Old Facility -->
 
                 var mapOptions = {
                     zoom: 13,
-
+                    scrollwheel: false,
                     center: new google.maps.LatLng(18.7758, 98.98203),
-
-
-                     styles: [{"featureType":"administrative","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"visibility":"simplified"},{"color":"#fcfcfc"}]},{"featureType":"poi","elementType":"geometry","stylers":[{"visibility":"simplified"},{"color":"#fcfcfc"}]},{"featureType":"road.highway","elementType":"geometry","stylers":[{"visibility":"simplified"},{"color":"#dddddd"}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"visibility":"simplified"},{"color":"#dddddd"}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"visibility":"simplified"},{"color":"#eeeeee"}]},{"featureType":"water","elementType":"geometry","stylers":[{"visibility":"simplified"},{"color":"#dddddd"}]}]
+                    styles: [{"featureType":"administrative","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"visibility":"simplified"},{"color":"#fcfcfc"}]},{"featureType":"poi","elementType":"geometry","stylers":[{"visibility":"simplified"},{"color":"#fcfcfc"}]},{"featureType":"road.highway","elementType":"geometry","stylers":[{"visibility":"simplified"},{"color":"#dddddd"}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"visibility":"simplified"},{"color":"#dddddd"}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"visibility":"simplified"},{"color":"#eeeeee"}]},{"featureType":"water","elementType":"geometry","stylers":[{"visibility":"simplified"},{"color":"#dddddd"}]}]
                 };
 
 
