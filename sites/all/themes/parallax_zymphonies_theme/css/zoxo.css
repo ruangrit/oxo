@@ -315,8 +315,15 @@ ul.list-unstyled {
   color: #AEAFB5;
   overflow: hidden; }
   .modal-content button.close {
-    color: #3E3E3E;
-    opacity: 1; }
+    opacity: 1;
+    border: 1px solid #AEAFB5;
+    border-radius: 25px;
+    width: 50px;
+    height: 50px; }
+    .modal-content button.close > span {
+      font-size: 48px;
+      line-height: 48px;
+      width: 100%; }
     .modal-content button.close:hover {
       background-color: transparent; }
 
@@ -376,6 +383,28 @@ ul.list-unstyled {
   @media (min-width: 769px) {
     .title-outsideSlider {
       padding-left: 100px; } }
+
+.modal-body.video-modal {
+  padding: 0;
+  width: 900px;
+  height: 560px; }
+  .modal-body.video-modal > .video-iframe-wrapper {
+    width: 675px;
+    height: 100%;
+    float: left; }
+  .modal-body.video-modal > .video-iframe-wrapper > .video-iframe {
+    height: 100%; }
+  .modal-body.video-modal > .video-iframe-wrapper > .video-iframe > iframe {
+    height: 100% !important; }
+  .modal-body.video-modal .vertical {
+    padding-top: 175px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 50px;
+    height: 100%; }
+  .modal-body.video-modal .video-thumbnail {
+    height: auto !important;
+    margin-bottom: 50px !important; }
 
 .modal-content input.form-text,
 .modal-content textarea.form-textarea {

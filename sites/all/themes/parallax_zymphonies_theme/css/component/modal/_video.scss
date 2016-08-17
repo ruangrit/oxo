@@ -1,0 +1,29 @@
+.modal-body.video-modal {
+    padding: 0;
+    width: 900px;
+    height: 560px;
+    > .video-iframe-wrapper {
+        width: 675px;
+        height: 100%;
+        float: left;
+    }
+    > .video-iframe-wrapper > .video-iframe {
+        height: 100%;
+    }
+    > .video-iframe-wrapper > .video-iframe > iframe {
+        height: 100% !important;
+    }
+
+    // sidebar
+    .vertical {
+        padding-top: 175px;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-bottom: 50px;
+        height: 100%;
+    }
+    .video-thumbnail {
+        height: auto !important;
+        margin-bottom: 50px !important;
+    }
+}
