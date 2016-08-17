@@ -16,11 +16,27 @@
 
     // sidebar
     .vertical {
-        padding-top: 175px;
+        padding-top: 100px;
         padding-left: 25px;
         padding-right: 25px;
         padding-bottom: 50px;
         height: 100%;
+        > .lSSlideWrapper {
+            height: 420px !important;
+        	overflow: hidden;
+            padding-top: 50px;
+        }
+        > .lSPager {
+            display: none;
+        }
+        .lSAction {
+            .lSPrev {
+                top: 0;
+            }
+            .lSNext {
+                bottom: -8px;
+            }
+        }
     }
     .video-thumbnail {
         height: auto !important;

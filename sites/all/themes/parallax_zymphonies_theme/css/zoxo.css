@@ -397,11 +397,21 @@ ul.list-unstyled {
   .modal-body.video-modal > .video-iframe-wrapper > .video-iframe > iframe {
     height: 100% !important; }
   .modal-body.video-modal .vertical {
-    padding-top: 175px;
+    padding-top: 100px;
     padding-left: 25px;
     padding-right: 25px;
     padding-bottom: 50px;
     height: 100%; }
+    .modal-body.video-modal .vertical > .lSSlideWrapper {
+      height: 420px !important;
+      overflow: hidden;
+      padding-top: 50px; }
+    .modal-body.video-modal .vertical > .lSPager {
+      display: none; }
+    .modal-body.video-modal .vertical .lSAction .lSPrev {
+      top: 0; }
+    .modal-body.video-modal .vertical .lSAction .lSNext {
+      bottom: -8px; }
   .modal-body.video-modal .video-thumbnail {
     height: auto !important;
     margin-bottom: 50px !important; }
