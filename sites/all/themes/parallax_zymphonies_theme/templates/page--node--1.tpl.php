@@ -488,6 +488,7 @@ End Old Facility -->
 
 	<!--<iframe src="https://www.google.com/maps/d/embed?mid=11idAtyrUxD9qZCA6gGRayP18KsA&z=17&ll=18.7758, 98.98203" style="position:relative; top:-30px; border:none;"  width="1280" height="450"></iframe>-->
 	<!--<img src="sites/all/themes/parallax_zymphonies_theme/images/oxomap.png" width="100%" height="400">-->
+	<div id="mapDesktop" style="width:100%; height:400px"></div>
 </div>
 <!--
 <div id="findus" class="desc-section -findus description-find_us">
@@ -1125,7 +1126,7 @@ End Old Facility -->
     	$('#modal_click_map').click(function () {
     		if ($('#mapModal').find('#iframe_map').html() == "") {
 		   		setTimeout(function(){
-	    			init();
+	    			init('iframe_map');
 		   		}, 200);
     		}
 	   	});
@@ -1225,13 +1226,15 @@ End Old Facility -->
     	});
 
 
+
+
   	});
 </script>
 
        <script type="text/javascript">
             //google.maps.event.addDomListener(window, 'load', init);
 
-            function init() {
+            function init(selectorId) {
 
                 var mapOptions = {
                     zoom: 13,
@@ -1243,7 +1246,7 @@ End Old Facility -->
                 };
 
 
-                var mapElement = document.getElementById('iframe_map');
+                var mapElement = document.getElementById(selectorId);
 
                 var map = new google.maps.Map(mapElement, mapOptions);
 
@@ -1253,6 +1256,15 @@ End Old Facility -->
                     title: 'OXOTEL'
                 });
             }
+
+            $(document).ready(function () {
+
+            	setTimeout(function(){
+	            	init('mapDesktop');
+
+	    		}, 200);
+
+            });
         </script>
         <script async defer
         src="https://maps.googleapis.com/maps/api/js?signed_in=true">
