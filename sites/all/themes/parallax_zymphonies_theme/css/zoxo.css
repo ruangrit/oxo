@@ -502,9 +502,9 @@ ul.list-unstyled {
   float: left;
   text-align: center; }
   .faciimg-wrapper .faciitem {
-    display: block;
+    display: inline-block;
     width: 150px;
-    margin-right: 48px;
+    margin-right: 45px;
     float: left;
     text-align: center; }
     .faciimg-wrapper .faciitem.-last {
@@ -518,6 +518,20 @@ ul.list-unstyled {
     text-align: center;
     vertical-align: middle;
     float: left; }
+  .faciimg-wrapper.line2 {
+    width: auto;
+    float: none;
+    display: block;
+    text-align: center;
+    margin: 0 auto; }
+
+.faciimg-wrapper.-line2 {
+  margin-top: 150px; }
+  .faciimg-wrapper.-line2 .faciitem {
+    margin-right: 150px;
+    float: none; }
+    .faciimg-wrapper.-line2 .faciitem.-last {
+      margin-right: 0; }
 
 .btn.-facilities {
   float: right;
@@ -561,6 +575,14 @@ ul.list-unstyled {
     background: url(/sites/all/themes/parallax_zymphonies_theme/images/cafe.png) transparent no-repeat center; }
   .faciimg.-img05:hover {
     background: url(/sites/all/themes/parallax_zymphonies_theme/images/cafe-a.png) transparent no-repeat center; }
+  .faciimg.-img06 {
+    background: url(/sites/all/themes/parallax_zymphonies_theme/images/free-services.png) transparent no-repeat center; }
+  .faciimg.-img06:hover {
+    background: url(/sites/all/themes/parallax_zymphonies_theme/images/free-services-a.png) transparent no-repeat center; }
+  .faciimg.-img07 {
+    background: url(/sites/all/themes/parallax_zymphonies_theme/images/small-fee-based.png) transparent no-repeat center; }
+  .faciimg.-img07:hover {
+    background: url(/sites/all/themes/parallax_zymphonies_theme/images/small-fee-based-a.png) transparent no-repeat center; }
 
 .btn.btn-transparent {
   background-color: transparent;

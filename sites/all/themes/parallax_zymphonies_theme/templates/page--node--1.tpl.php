@@ -318,6 +318,20 @@
 					</div>
 				</div>
 			</div>
+			<div class="faciimg-wrapper -line2">
+				<div class="faciitem">
+					<div class="faciimg -img06">
+						<span class="text-tooltip textLightWhiteBg">24 HOURS RECEPTION</span>
+					</div>
+				</div>
+				<div class="faciitem -last">
+					<div class="faciimg -img07">
+						<span class="text-tooltip textLightWhiteBg">24 HOURS RECEPTION</span>
+					</div>
+				</div>
+			</div>
+
+			</div>
 			<button  id="modal_click_facilities" class="btn -facilities btn-transparent -darkbg _capital" type="button"  data-toggle="modal" data-target="#facilitiesModal">
 				EXPLORE
 			</button>
