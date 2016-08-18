@@ -514,7 +514,7 @@ End Old Facility -->
 
 	<!--<iframe src="https://www.google.com/maps/d/embed?mid=11idAtyrUxD9qZCA6gGRayP18KsA&z=17&ll=18.7758, 98.98203" style="position:relative; top:-30px; border:none;"  width="1280" height="450"></iframe>-->
 	<!--<img src="sites/all/themes/parallax_zymphonies_theme/images/oxomap.png" width="100%" height="400">-->
-	<div id="mapDesktop" style="width:100%; height:400px"></div>
+	<div id="mapDesktop" style="width:100%; height:450px; top:-15px"></div>
 </div>
 <!--
 <div id="findus" class="desc-section -findus description-find_us">
