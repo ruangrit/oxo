@@ -801,6 +801,25 @@ End Old Facility -->
 								$i++;
 							}
 						?>
+						<!-- Start switch facilities popup-->
+						<!--
+						<div class="facilities-switch-page">
+							<div class="lSAction">
+								<a class="lSPrev"></a>
+								<a class="lSNext" data-toggle="modal" data-target="#facilitiesContentModal" id="modal_click_facilities_content" data-dismiss="modal" aria-label="Close"></a>
+
+							</div>
+							<ul class="lSPager lSpg" style="margin-top: 5px;">
+								<li class="active">
+									<a href="#">1</a>
+								</li>
+								<li>
+									<a href="#">2</a>
+								</li>
+							</ul>
+						</div>
+						-->
+						<!-- End switch facilities popup-->
 
 		      		</div>
 
@@ -809,6 +828,35 @@ End Old Facility -->
     </div>
   </div>
 </div>
+
+<!-- Facilities Content Modal -->
+<div class="modal fade" id="facilitiesContentModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  	<div class="modal-dialog modal-lg" role="document">
+    	<div class="modal-content text-modal">
+      		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="/sites/all/themes/parallax_zymphonies_theme/images/close.svg" /></span></button>
+      		<div class="modal-body text-modal">
+      			<div class="text-center">xxxxxxxxxxxx</div>
+				<!-- Start switch facilities popup-->
+				<div class="facilities-switch-page">
+					<div class="lSAction">
+						<a class="lSPrev" data-toggle="modal" data-target="#facilitiesModal" data-dismiss="modal" aria-label="Close"></a>
+						<a class="lSNext"></a>
+
+					</div>
+					<ul class="lSPager lSpg" style="margin-top: 5px;">
+						<li>
+							<a href="#">1</a>
+						</li>
+						<li class="active">
+							<a href="#">2</a>
+						</li>
+					</ul>
+				</div>
+				<!-- End switch facilities popup-->
+      		</div>
+    	</div>
+  	</div>
+ </div>
 
 <!-- Cafe Modal -->
 <div class="modal fade" id="cafeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
