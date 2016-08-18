@@ -7,7 +7,6 @@
 	// padding: 0 50px;
 	// overflow: hidden;
 
-
 	h3 {
 		margin-bottom: 100px;
 	}
@@ -39,7 +38,7 @@
 	.faciitem {
 		display: inline-block;
 		width: 150px;
-		margin-right: 68px;
+		margin-right: 63px;
 		float: left;
 		text-align: center;
 		&.-last {
@@ -85,17 +84,6 @@ $path: "/sites/all/themes/parallax_zymphonies_theme/images";
 .faciimg {
 	position: relative;
 	margin-bottom: 8px;
-	.text-tooltip {
-		display: none;
-		position: absolute;
-		bottom: 7px;
-		width: 150px;
-		left: 50%;
-		margin-left: -75px;
-		margin-bottom: -80px;
-		font-size: 22px;
-		line-height: 30px;
-	}
 	&:hover {
 		cursor: pointer;
 	}
@@ -151,5 +139,16 @@ $path: "/sites/all/themes/parallax_zymphonies_theme/images";
 	&.-img07:hover {
 		background: url(#{$path}/small-fee-based-a.png) transparent no-repeat center;
 	}
+}
 
+.text-tooltip {
+	display: none;
+	position: absolute;
+	bottom: 7px;
+	width: 150px;
+	left: 50%;
+	margin-left: -75px;
+	margin-bottom: -80px;
+	font-size: 22px;
+	line-height: 30px;
 }

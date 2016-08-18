@@ -504,7 +504,7 @@ ul.list-unstyled {
   .faciimg-wrapper .faciitem {
     display: inline-block;
     width: 150px;
-    margin-right: 68px;
+    margin-right: 63px;
     float: left;
     text-align: center; }
     .faciimg-wrapper .faciitem.-last {
@@ -541,16 +541,6 @@ ul.list-unstyled {
 .faciimg {
   position: relative;
   margin-bottom: 8px; }
-  .faciimg .text-tooltip {
-    display: none;
-    position: absolute;
-    bottom: 7px;
-    width: 150px;
-    left: 50%;
-    margin-left: -75px;
-    margin-bottom: -80px;
-    font-size: 22px;
-    line-height: 30px; }
   .faciimg:hover {
     cursor: pointer; }
   .faciimg:hover .text-tooltip {
@@ -583,6 +573,17 @@ ul.list-unstyled {
     background: url(/sites/all/themes/parallax_zymphonies_theme/images/small-fee-based.png) transparent no-repeat center; }
   .faciimg.-img07:hover {
     background: url(/sites/all/themes/parallax_zymphonies_theme/images/small-fee-based-a.png) transparent no-repeat center; }
+
+.text-tooltip {
+  display: none;
+  position: absolute;
+  bottom: 7px;
+  width: 150px;
+  left: 50%;
+  margin-left: -75px;
+  margin-bottom: -80px;
+  font-size: 22px;
+  line-height: 30px; }
 
 .btn.btn-transparent {
   background-color: transparent;

@@ -293,9 +293,9 @@
 			<h3 class="textLightWhiteBg">FACILITIES</h3>
 			<div class="faciimg-wrapper">
 				<div class="faciitem">
-					<div class="faciimg -img01">
-						<span class="text-tooltip textLightWhiteBg">24 HOURS RECEPTION</span>
-					</div>
+					<span class="text-tooltip textLightWhiteBg">24 HOURS RECEPTION</span>
+					<div class="faciimg -img01"></div>
+					<span class="explore"></span>
 				</div>
 				<div class="faciitem">
 					<div class="faciimg -img02">
@@ -318,15 +318,15 @@
 					</div>
 				</div>
 			</div>
-			<div class="faciimg-wrapper -line2">
+			<div class="faciimg-wrapper line2">
 				<div class="faciitem">
+					<span class="text-tooltip textLightWhiteBg">24 HOURS RECEPTION</span>
 					<div class="faciimg -img06">
-						<span class="text-tooltip textLightWhiteBg">24 HOURS RECEPTION</span>
 					</div>
 				</div>
 				<div class="faciitem -last">
+					<span class="text-tooltip textLightWhiteBg">24 HOURS RECEPTION</span>
 					<div class="faciimg -img07">
-						<span class="text-tooltip textLightWhiteBg">24 HOURS RECEPTION</span>
 					</div>
 				</div>
 			</div>
