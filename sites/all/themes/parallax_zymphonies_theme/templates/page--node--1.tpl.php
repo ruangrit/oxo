@@ -805,7 +805,7 @@ End Old Facility -->
 							}
 						?>
 						<!-- Start switch facilities popup-->
-						
+						<!--
 						<div class="facilities-switch-page">
 							<div class="lSAction">
 								<a class="lSPrev"></a>
@@ -821,6 +821,7 @@ End Old Facility -->
 								</li>
 							</ul>
 						</div>
+						-->
 						
 						<!-- End switch facilities popup-->
 
