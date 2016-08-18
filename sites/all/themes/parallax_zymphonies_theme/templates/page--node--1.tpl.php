@@ -44,8 +44,8 @@
    		parentSelectorByID.find('.group-slide .modal-description:eq(' + gid + ')').show();
    		// Fixed bug when change slide
    		$(window).trigger('resize');
-   		$('.group-slide .modal-description').find('.modaltitle-wrapper .title-rooms').removeClass('active');
-   		$('.group-slide .modal-description').find('.modaltitle-wrapper .title-rooms:eq(' + gid + ')').addClass('active');
+   		parentSelectorByID.find('.group-slide .modal-description').find('.modaltitle-wrapper .title-rooms').removeClass('active');
+   		parentSelectorByID.find('.group-slide .modal-description').find('.modaltitle-wrapper .title-rooms:eq(' + gid + ')').addClass('active');
    	}
 
 	// ==================== Video function
@@ -1283,6 +1283,9 @@ End Old Facility -->
 
 	    		}, 200);
 			}
+			else {
+				$(window).trigger('resize');
+			}
     	});
 
   		var is_slice_facilities = false;
@@ -1301,6 +1304,9 @@ End Old Facility -->
 
 	    		}, 200);
 			}
+			else {
+				$(window).trigger('resize');
+			}
     	});
 
   		var is_slice_facilities_content = false;
@@ -1318,6 +1324,9 @@ End Old Facility -->
 		    		refreshGlobal();
 
 	    		}, 200);
+			}
+			else {
+				$(window).trigger('resize');
 			}
     	});
     	// =============================
