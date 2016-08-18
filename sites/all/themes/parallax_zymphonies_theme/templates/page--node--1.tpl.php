@@ -115,8 +115,8 @@
 	            <div>
 					<a class="btn -movies btn-transparent -keepright _capital" data-toggle="modal" data-target="#videoModal" id="modal_click_video"><span class="play"></span>MOVIE</a>
 	            </div>
-        		HOSTEL • GARDEN • CAFE<br/>
-        		<span class="small-text">oxotel hostel chiangmai thailand @ since 2015</span>
+        		<!--HOSTEL • GARDEN • CAFE<br/>-->
+        		<span class="small-text" style="color:#B4B4B4">oxotel hostel chiangmai thailand @ since 2015</span>
         	</div>
         </div>
     </div>
