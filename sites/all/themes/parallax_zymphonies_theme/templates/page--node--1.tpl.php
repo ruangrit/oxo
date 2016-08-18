@@ -294,40 +294,61 @@
 			<h3 class="textLightWhiteBg">FACILITIES</h3>
 			<div class="faciimg-wrapper">
 				<div class="faciitem">
-					<span class="text-tooltip textLightWhiteBg">24 HOURS RECEPTION</span>
-					<div class="faciimg -img01"></div>
-					<span class="explore"></span>
+					<div class="faciimg -img01">
+						<img class="idle" src="/sites/all/themes/parallax_zymphonies_theme/images/24-hours.png" />
+						<img class="hover" src="/sites/all/themes/parallax_zymphonies_theme/images/24-hours-a.png" />
+						<span class="text-tooltip textLightWhiteBg">24 HOURS RECEPTION</span>
+						<span class="explore-facilities">CLICK FOR EXPLORE</span>
+					</div>
 				</div>
 				<div class="faciitem">
 					<div class="faciimg -img02">
-						<span class="text-tooltip textLightWhiteBg">24 HOURS RECEPTION</span>
+						<img class="idle" src="/sites/all/themes/parallax_zymphonies_theme/images/garden-area.png" />
+						<img class="hover" src="/sites/all/themes/parallax_zymphonies_theme/images/garden-area-a.png" />
+						<span class="text-tooltip textLightWhiteBg">GARDEN & COMMUNAL AREA</span>
+						<span class="explore-facilities">CLICK FOR EXPLORE</span>
 					</div>
 				</div>
 				<div class="faciitem">
 					<div class="faciimg -img03">
-						<span class="text-tooltip textLightWhiteBg">24 HOURS RECEPTION</span>
+						<img class="idle" src="/sites/all/themes/parallax_zymphonies_theme/images/kitchen.png" />
+						<img class="hover" src="/sites/all/themes/parallax_zymphonies_theme/images/kitchen-a.png" />
+						<span class="text-tooltip textLightWhiteBg">KITCHEN</span>
+						<span class="explore-facilities">CLICK FOR EXPLORE</span>
 					</div>
 				</div>
 				<div class="faciitem">
 					<div class="faciimg -img04">
-						<span class="text-tooltip textLightWhiteBg">24 HOURS RECEPTION</span>
+						<img class="idle" src="/sites/all/themes/parallax_zymphonies_theme/images/parking.png" />
+						<img class="hover" src="/sites/all/themes/parallax_zymphonies_theme/images/parking-a.png" />
+						<span class="text-tooltip textLightWhiteBg">PARKING AREA</span>
+						<span class="explore-facilities">CLICK FOR EXPLORE</span>
 					</div>
 				</div>
 				<div class="faciitem -last">
 					<div class="faciimg -img05">
-						<span class="text-tooltip textLightWhiteBg">24 HOURS RECEPTION</span>
+						<img class="idle" src="/sites/all/themes/parallax_zymphonies_theme/images/cafe.png" />
+						<img class="hover" src="/sites/all/themes/parallax_zymphonies_theme/images/cafe-a.png" />
+						<span class="text-tooltip textLightWhiteBg">CAFE</span>
+						<span class="explore-facilities">CLICK FOR EXPLORE</span>
 					</div>
 				</div>
 			</div>
-			<div class="faciimg-wrapper line2">
+			<div class="faciimg-wrapper -line2">
 				<div class="faciitem">
-					<span class="text-tooltip textLightWhiteBg">24 HOURS RECEPTION</span>
 					<div class="faciimg -img06">
+						<img class="idle" src="/sites/all/themes/parallax_zymphonies_theme/images/free-services.png" />
+						<img class="hover" src="/sites/all/themes/parallax_zymphonies_theme/images/free-services-a.png" />
+						<span class="text-tooltip textLightWhiteBg">FRER SERVICES</span>
+						<span class="explore-facilities">CLICK FOR EXPLORE</span>
 					</div>
 				</div>
 				<div class="faciitem -last">
-					<span class="text-tooltip textLightWhiteBg">24 HOURS RECEPTION</span>
 					<div class="faciimg -img07">
+						<img class="idle" src="/sites/all/themes/parallax_zymphonies_theme/images/small-fee-based.png" />
+						<img class="hover" src="/sites/all/themes/parallax_zymphonies_theme/images/small-fee-based-a.png" />
+						<span class="text-tooltip textLightWhiteBg">SMALL FEE BASED</span>
+						<span class="explore-facilities">CLICK FOR EXPLORE</span>
 					</div>
 				</div>
 			</div>
@@ -566,11 +587,11 @@ End Old Facility -->
 <div id="about" class="description-main desc-section -reservation">
 	<div class="reservation-content">
 		<div class="ct-wrapper">
-			<div class="inner -left _text-right" id="findus_icon_content">
+			<div class="inner -left" id="findus_icon_content">
 				<ul class="list-unstyled social-gang">
-					<li><a onclick="$('#findus_icon_content').hide();$('#qr_code').show('slide', { direction: 'left' }, 200);">Line Icon Here</a></li>
-					<li><a class="fb" href="https://www.facebook.com/oxotelhostel" target="_blank">Facebook</a></li>
-					<li><a class="ig" href="https://www.instagram.com/oxotelchiangmai/" target="_blank">Instagram</a></li>
+					<li><a class="line" onclick="$('#findus_icon_content').hide();$('#qr_code').show('slide', { direction: 'left' }, 200);">Line</a></li>
+					<li><a class="facebook" href="https://www.facebook.com/oxotelhostel" target="_blank">Facebook</a></li>
+					<li><a class="Instagram" href="https://www.instagram.com/oxotelchiangmai/" target="_blank">Instagram</a></li>
 				</ul>
  			</div>
  			<!-- QR code hide -->
@@ -819,7 +840,7 @@ End Old Facility -->
 							}
 						?>
 						<!-- Start switch facilities popup-->
-						
+
 						<div class="facilities-switch-page">
 							<div class="lSAction">
 								<a class="lSPrev"></a>
@@ -835,7 +856,7 @@ End Old Facility -->
 								</li>
 							</ul>
 						</div>
-						
+
 						<!-- End switch facilities popup-->
 
 		      		</div>
@@ -901,7 +922,7 @@ End Old Facility -->
 							}
 						?>
 						<!-- Start switch facilities popup-->
-						
+
 						<div class="facilities-switch-page">
 							<div class="lSAction">
 								<a class="lSPrev"></a>
@@ -917,7 +938,7 @@ End Old Facility -->
 								</li>
 							</ul>
 						</div>
-						
+
 						<!-- End switch facilities popup-->
 
 		      		</div>
@@ -983,61 +1004,7 @@ End Old Facility -->
 
 
 <!-- Movie Modal -->
-<div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  	<div class="modal-dialog modal-lg" role="document">
-    	<div class="modal-content text-modal">
-      		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="/sites/all/themes/parallax_zymphonies_theme/images/close.svg" /></span></button>
-      		<div class="modal-body text-modal video-modal">
-      			<div class="video-iframe-wrapper">
-      				<div id="video_player_area"></div>
-		      		<?php
-		      			$i_video = 1;
-						foreach($video_modal_node as $video){
-							$parts = parse_url($video->field_youtube_link['und'][0]['value']);
-							parse_str($parts['query'], $query);
-							$video_v =  $query['v'];
-							?>
-							<div style="display:none" class="video-iframe" id="video_<?php print $video_v;?>">
-								<iframe width="1280" height="560"  src="https://www.youtube.com/embed/<?php print $video_v;?>?rel=0&amp;controls=1&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 
-							</div>
-							<?php
-
-							$i_video++ ;
-						}
-
-
-						?>
-				</div>
-					<ul class="video-thumbnail-wrapper" id="lightSliderVideo">
-						<?php
-							foreach($video_modal_node as $video){
-								$parts = parse_url($video->field_youtube_link['und'][0]['value']);
-								parse_str($parts['query'], $query);
-								$video_v =  $query['v'];
-								?>
-									<li class="video-thumbnail" id="video_thumbnail_<?php print $video_v;?>" onClick="showVideo('<?php print $video_v;?>')">
-										<?php
-										 	$youtube_image_thumbnail = 'http://img.youtube.com/vi/'.$video_v.'/mqdefault.jpg';
-											//print theme('image_style',array('style_name' => 'video_thumbnail', 'path' => $video->field_image['und'][0]['uri']));
-										?>
-										<img src="<?php print $youtube_image_thumbnail;?>" width="230" height="150" />
-										<div class="video-title">
-											<?php print $video->title; ?>
-										</div>
-									</li>
-
-								<?php
-							}
-
-						?>
-					</ul>
-
-
-      		</div>
-    	</div>
-  	</div>
-</div>
 
 <!-- Term and condition Modal -->
 <div class="modal fade" id="conditionModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
