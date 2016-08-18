@@ -19,8 +19,8 @@
 	$about_node = node_load(14);
 
 	$rooms_modal_node = node_load_multiple(array(), array('type' => 'rooms'));
-	$facilities_modal_node = node_load_multiple(array(), array('type' => 'facilities'));
-	$facilities_content_modal_node = node_load_multiple(array(), array('type' => 'facilities_content'));
+	//$facilities_modal_node = node_load_multiple(array(), array('type' => 'facilities'));
+	//$facilities_content_modal_node = node_load_multiple(array(), array('type' => 'facilities_content'));
 	$video_modal_node = node_load_multiple(array(), array('type' => 'vidoe'));
 	$cafe_modal_node = node_load(11);
 
