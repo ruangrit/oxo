@@ -805,7 +805,6 @@ End Old Facility -->
 							}
 						?>
 						<!-- Start switch facilities popup-->
-						<!--
 						<div class="facilities-switch-page">
 							<div class="lSAction">
 								<a class="lSPrev"></a>
@@ -821,7 +820,6 @@ End Old Facility -->
 								</li>
 							</ul>
 						</div>
-						-->
 						
 						<!-- End switch facilities popup-->
 
@@ -891,14 +889,14 @@ End Old Facility -->
 						
 						<div class="facilities-switch-page">
 							<div class="lSAction">
-								<a class="lSPrev"></a>
-								<a class="lSNext" data-toggle="modal" data-target="#facilitiesContentModal" id="modal_click_facilities_content" data-dismiss="modal" aria-label="Close"></a>
+								<a class="lSPrev" onclick="$('#modal_click_facilities').trigger('click')" data-dismiss="modal" aria-label="Close"></a>
+								<a class="lSNext"></a>
 
 							</div>
 							<ul class="lSPager lSpg" style="margin-top: 5px;">
-								<li class="active">
+								<li>
 									<a href="#">1</a>
-								</li>
+								</li class="active">
 								<li>
 									<a href="#">2</a>
 								</li>
@@ -1319,7 +1317,7 @@ End Old Facility -->
 			    		auto: false,
 			    		controls: true,
 			    	});
-		    		is_slice_facilities = true;
+		    		is_slice_facilities_content = true;
 		    		showGroupSlide(0, 'facilitiesContentModal');
 		    		refreshGlobal();
 
@@ -1393,39 +1391,39 @@ End Old Facility -->
   	});
 </script>
 
-       <script type="text/javascript">
-            //google.maps.event.addDomListener(window, 'load', init);
+<script type="text/javascript">
+    //google.maps.event.addDomListener(window, 'load', init);
 
-            function init(selectorId) {
+    function init(selectorId) {
 
-                var mapOptions = {
-                    zoom: 13,
-                    scrollwheel: false,
-                    center: new google.maps.LatLng(18.7758, 98.98203),
-                    styles: [{"featureType":"administrative","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"visibility":"simplified"},{"color":"#fcfcfc"}]},{"featureType":"poi","elementType":"geometry","stylers":[{"visibility":"simplified"},{"color":"#fcfcfc"}]},{"featureType":"road.highway","elementType":"geometry","stylers":[{"visibility":"simplified"},{"color":"#dddddd"}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"visibility":"simplified"},{"color":"#dddddd"}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"visibility":"simplified"},{"color":"#eeeeee"}]},{"featureType":"water","elementType":"geometry","stylers":[{"visibility":"simplified"},{"color":"#dddddd"}]}]
-                };
+        var mapOptions = {
+            zoom: 13,
+            scrollwheel: false,
+            center: new google.maps.LatLng(18.7758, 98.98203),
+            styles: [{"featureType":"administrative","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"visibility":"simplified"},{"color":"#fcfcfc"}]},{"featureType":"poi","elementType":"geometry","stylers":[{"visibility":"simplified"},{"color":"#fcfcfc"}]},{"featureType":"road.highway","elementType":"geometry","stylers":[{"visibility":"simplified"},{"color":"#dddddd"}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"visibility":"simplified"},{"color":"#dddddd"}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"visibility":"simplified"},{"color":"#eeeeee"}]},{"featureType":"water","elementType":"geometry","stylers":[{"visibility":"simplified"},{"color":"#dddddd"}]}]
+        };
 
 
-                var mapElement = document.getElementById(selectorId);
+        var mapElement = document.getElementById(selectorId);
 
-                var map = new google.maps.Map(mapElement, mapOptions);
+        var map = new google.maps.Map(mapElement, mapOptions);
 
-                var marker = new google.maps.Marker({
-                    position: new google.maps.LatLng(18.7758, 98.98203),
-                    map: map,
-                    title: 'OXOTEL'
-                });
-            }
+        var marker = new google.maps.Marker({
+            position: new google.maps.LatLng(18.7758, 98.98203),
+            map: map,
+            title: 'OXOTEL'
+        });
+    }
 
-            $(document).ready(function () {
+    $(document).ready(function () {
 
-            	setTimeout(function(){
-	            	init('mapDesktop');
+    	setTimeout(function(){
+        	init('mapDesktop');
 
-	    		}, 200);
+		}, 200);
 
-            });
-        </script>
-        <script async defer
+    });
+</script>
+<script async defer
         src="https://maps.googleapis.com/maps/api/js?signed_in=true">
 </script>
