@@ -492,7 +492,7 @@ ul.list-unstyled {
       padding: 50px 25px; } }
   @media (min-width: 992px) {
     .facilities-content {
-      padding: 0 8.57143%; } }
+      padding: 0 6.25%; } }
   @media (max-width: 520px) {
     .facilities-content {
       padding: 25px 0; } }
@@ -504,7 +504,7 @@ ul.list-unstyled {
   .faciimg-wrapper .faciitem {
     display: inline-block;
     width: 150px;
-    margin-right: 45px;
+    margin-right: 68px;
     float: left;
     text-align: center; }
     .faciimg-wrapper .faciitem.-last {
