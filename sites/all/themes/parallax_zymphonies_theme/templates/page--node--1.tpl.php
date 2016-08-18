@@ -11,6 +11,7 @@
 	drupal_add_css($theme_path.'/css/dev.css');
 	drupal_add_css($theme_path.'/css/lightslider.css');
 	drupal_add_css($theme_path.'/css/bootstrap.min.css');
+	drupal_add_css($theme_path.'/css/jquery.mCustomScrollbar.css');
 	$main_image_node = node_load(2);
 	$rooms_image_node = node_load(3);
 	$exterior_image_node = node_load(4);
@@ -29,6 +30,7 @@
 <script type="text/javascript" src="<?php print $abs_theme_path;?>/js/modernizr.min.js"></script>
 <script type="text/javascript" src="<?php print $abs_theme_path;?>/js/lightslider.js"></script>
 <script type="text/javascript" src="<?php print $abs_theme_path;?>/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="<?php print $abs_theme_path;?>/js/jquery.mCustomScrollbar.concat.min.js"></script>
 <script>
    	var showGroupSlide = function (gid, parentID) {
 
@@ -584,7 +586,7 @@ End Old Facility -->
 					</div>
 
  					<a onclick="$('#findus_content').hide();$('#mailus_form').show('slide', { direction: 'right' }, 200);$(window).trigger('resize');" class="btn btn-transparent _capital _pull-left _margin-right">MAIL US</a>
-					<a id="modal_click_map" class="btn btn-transparent _capital" data-toggle="modal" data-target="#mapModal">Map</a>
+					<!--<a id="modal_click_map" class="btn btn-transparent _capital" data-toggle="modal" data-target="#mapModal">Map</a>-->
 
  				</div>
  			</div>
