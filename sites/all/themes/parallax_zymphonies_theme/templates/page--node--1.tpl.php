@@ -33,6 +33,13 @@
 <script type="text/javascript" src="<?php print $abs_theme_path;?>/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="<?php print $abs_theme_path;?>/js/jquery.mCustomScrollbar.concat.min.js"></script>
 <script>
+	var windowResizeDelay = function () {
+   		setTimeout(function(){
+	   		$(window).trigger('resize');
+   		}, 200);
+
+	}
+
    	var showGroupSlide = function (gid, parentID) {
 
    		var parentSelectorByID = $('#'+parentID);
@@ -288,6 +295,7 @@
 	</div>
 </header>
 <!-- Start new Facility -->
+<!--
 <div id="facilities" class="desc-section -facilities">
 	<div class="facilities-content">
 		<div class="ct-wrapper">
@@ -325,9 +333,10 @@
 		</div>
 	</div>
 </div>
+-->
 <!-- End Old Facility -->
 
-<!-- Start Old Facility
+<!-- Start Old Facility -->
 <div id="facilities" class="desc-section -facilities">
 	<div class="facilities-content">
 		<div class="ct-wrapper">
@@ -402,7 +411,7 @@
 		</div>
 	</div>
 </div>
-End Old Facility -->
+<!-- End Old Facility -->
 <!--
 <header id="post-740-title" class="article__header  article__header--page two-thirds-height">
  	<div class="flexbox">
@@ -516,7 +525,7 @@ End Old Facility -->
 	<!--<img src="sites/all/themes/parallax_zymphonies_theme/images/oxomap.png" width="100%" height="400">-->
 	<div id="mapDesktop" style="width:100%; height:450px; top:-15px"></div>
 </div>
-<!--
+<!-- Start Old find us -->
 <div id="findus" class="desc-section -findus description-find_us">
 	<div class="findus-content">
 		<div class="ct-wrapper">
@@ -539,16 +548,16 @@ End Old Facility -->
 						Our hostel is 2.00 kilometer from Chiangmai international airport<br />
 						and just only 10 minutes walk to Chiangmai gate
  					</p>
- 					<div class="button-box">
- 						<a id="modal_click_map" class="btn btn-transparent _capital" data-toggle="modal" data-target="#mapModal">Map</a>
- 						<a class="btn btn-transparent _capital" data-toggle="modal" data-target="#contactModal">Mail us</a>
+ 					<div class="button-box" style="max-width:144px">
+ 						<a class="btn btn-transparent _capital" data-toggle="modal" data-target="#contactModal" onClick="windowResizeDelay()">Mail us</a>
  					</div>
  				</div>
  			</div>
 		</div>
 	</div>
 </div>
--->
+<!-- End Old find us-->
+<!-- Start new find us
 <div id="about" class="description-main desc-section -reservation">
 	<div class="reservation-content">
 		<div class="ct-wrapper">
@@ -559,7 +568,6 @@ End Old Facility -->
 					<li><a class="ig" href="https://www.instagram.com/oxotelchiangmai/" target="_blank">Instagram</a></li>
 				</ul>
  			</div>
- 			<!-- QR code hide -->
 			<div class="inner -left _text-right" id="qr_code" style="display:none">
 		    	<button onclick="$('#qr_code').hide();$('#findus_icon_content').show();" type="button" class="close"><span aria-hidden="true"><img src="/sites/all/themes/parallax_zymphonies_theme/images/close.svg" /></span></button>
 
@@ -587,7 +595,6 @@ End Old Facility -->
 					</div>
 
  					<a onclick="$('#findus_content').hide();$('#mailus_form').show('slide', { direction: 'right' }, 200);$(window).trigger('resize');" class="btn btn-transparent _capital _pull-left _margin-right">MAIL US</a>
-					<!--<a id="modal_click_map" class="btn btn-transparent _capital" data-toggle="modal" data-target="#mapModal">Map</a>-->
 
  				</div>
  			</div>
@@ -607,6 +614,8 @@ End Old Facility -->
 		</div>
 	</div>
 </div>
+
+End new find us -->
 
 <div class="footer">
 	<div class="booking-link">
