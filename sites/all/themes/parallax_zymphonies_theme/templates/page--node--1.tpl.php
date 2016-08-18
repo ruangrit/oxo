@@ -20,6 +20,7 @@
 
 	$rooms_modal_node = node_load_multiple(array(), array('type' => 'rooms'));
 	$facilities_modal_node = node_load_multiple(array(), array('type' => 'facilities'));
+	$facilities_content_modal_node = node_load_multiple(array(), array('type' => 'facilities_content'));
 	$video_modal_node = node_load_multiple(array(), array('type' => 'vidoe'));
 	$cafe_modal_node = node_load(11);
 
@@ -818,7 +819,7 @@ End Old Facility -->
 							}
 						?>
 						<!-- Start switch facilities popup-->
-						<!--
+						
 						<div class="facilities-switch-page">
 							<div class="lSAction">
 								<a class="lSPrev"></a>
@@ -834,7 +835,7 @@ End Old Facility -->
 								</li>
 							</ul>
 						</div>
-						-->
+						
 						<!-- End switch facilities popup-->
 
 		      		</div>
@@ -845,34 +846,87 @@ End Old Facility -->
   </div>
 </div>
 
-<!-- Facilities Content Modal -->
+<!-- Facilities Modal -->
 <div class="modal fade" id="facilitiesContentModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  	<div class="modal-dialog modal-lg" role="document">
-    	<div class="modal-content text-modal">
-      		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="/sites/all/themes/parallax_zymphonies_theme/images/close.svg" /></span></button>
-      		<div class="modal-body text-modal">
-      			<div class="text-center">xxxxxxxxxxxx</div>
-				<!-- Start switch facilities popup-->
-				<div class="facilities-switch-page">
-					<div class="lSAction">
-						<a class="lSPrev" data-toggle="modal" data-target="#facilitiesModal" data-dismiss="modal" aria-label="Close"></a>
-						<a class="lSNext"></a>
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-body slide-modal">
 
-					</div>
-					<ul class="lSPager lSpg" style="margin-top: 5px;">
-						<li>
-							<a href="#">1</a>
-						</li>
-						<li class="active">
-							<a href="#">2</a>
-						</li>
-					</ul>
-				</div>
-				<!-- End switch facilities popup-->
-      		</div>
-    	</div>
-  	</div>
- </div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="/sites/all/themes/parallax_zymphonies_theme/images/close.svg" /></span></button>
+		      		<div class="group-slide">
+
+	      				<?php
+							$i = 1;
+							foreach($facilities_content_modal_node as $facilities){
+								// Hard code break for only one content
+								if ($i == 2) {
+									//break;
+								}
+								?>
+
+								<ul class="lightSliderFacilitiesContent">
+								<?php
+								foreach($facilities->field_slide_image['und'] as $image){
+									?>
+									  <li>
+							           		<img src="<?php print file_create_url($image['uri']);?>" width="500">
+									  </li>
+
+									<?php
+
+								}
+								?>
+								</ul>
+								<div class="modal-description">
+									<div class="modaltitle-wrapper">
+					      				<?php
+					      					$j = 0;
+											foreach($facilities_content_modal_node as $facilities2){
+												?>
+													<div class="btn btn-transparent _modaltitle title-rooms" onclick="showGroupSlide(<?php print $j;?>, 'facilitiesContentModal')"><?php print $facilities2->title;?></div>
+												<?php
+												$j++;
+											}
+										?>
+									</div>
+									<div class="overflow-box -modalrooms">
+										<?php print $facilities->body['und'][0]['value']; ?>
+									</div>
+
+								</div>
+
+								<?php
+
+								$i++;
+							}
+						?>
+						<!-- Start switch facilities popup-->
+						
+						<div class="facilities-switch-page">
+							<div class="lSAction">
+								<a class="lSPrev"></a>
+								<a class="lSNext" data-toggle="modal" data-target="#facilitiesContentModal" id="modal_click_facilities_content" data-dismiss="modal" aria-label="Close"></a>
+
+							</div>
+							<ul class="lSPager lSpg" style="margin-top: 5px;">
+								<li class="active">
+									<a href="#">1</a>
+								</li>
+								<li>
+									<a href="#">2</a>
+								</li>
+							</ul>
+						</div>
+						
+						<!-- End switch facilities popup-->
+
+		      		</div>
+
+
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- Cafe Modal -->
 <div class="modal fade" id="cafeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -1256,6 +1310,24 @@ End Old Facility -->
 			    	});
 		    		is_slice_facilities = true;
 		    		showGroupSlide(0, 'facilitiesModal');
+		    		refreshGlobal();
+
+	    		}, 200);
+			}
+    	});
+
+  		var is_slice_facilities_content = false;
+    	$('#modal_click_facilities_content').click(function () {
+
+			if (!is_slice_facilities_content) {
+	    		setTimeout(function(){
+			    	$(".lightSliderFacilitiesContent").lightSlider({
+			    		item: 1,
+			    		auto: false,
+			    		controls: true,
+			    	});
+		    		is_slice_facilities = true;
+		    		showGroupSlide(0, 'facilitiesContentModal');
 		    		refreshGlobal();
 
 	    		}, 200);
