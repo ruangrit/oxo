@@ -47,11 +47,13 @@
 
 	// ==================== Video function
 	var showVideo = function(Id) {
-		$('.video-iframe').hide();
-		$('#video_'+Id).show();
+		//$('.video-iframe').hide();
+		//$('#video_'+Id).show();
+		$('#video_player_area').html($('#video_'+Id).html());
 
 		$('.video-thumbnail').removeClass('active-movie');
 		$('#video_thumbnail_'+Id).addClass('active-movie');
+		$('#video_player_area').find('iframe').css({'height': '560px'})
    		$(window).trigger('resize');
 	}
 
@@ -869,6 +871,7 @@ End Old Facility -->
       		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="/sites/all/themes/parallax_zymphonies_theme/images/close.svg" /></span></button>
       		<div class="modal-body text-modal video-modal">
       			<div class="video-iframe-wrapper">
+      				<div id="video_player_area"></div>
 		      		<?php
 		      			$i_video = 1;
 						foreach($video_modal_node as $video){
@@ -877,7 +880,7 @@ End Old Facility -->
 							$video_v =  $query['v'];
 							?>
 							<div style="display:none" class="video-iframe" id="video_<?php print $video_v;?>">
-								<iframe width="1280" height="560" src="https://www.youtube.com/embed/<?php print $video_v;?>?rel=0&amp;controls=1&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+								<iframe width="1280" height="560"  src="https://www.youtube.com/embed/<?php print $video_v;?>?rel=0&amp;controls=1&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 
 							</div>
 							<?php
@@ -1228,10 +1231,10 @@ End Old Facility -->
     	});
 
     	// ============== Video =============
-    	$('.video-thumbnail-wrapper li:first-child').trigger('click');
 
   		var is_slice_video = false;
     	$('#modal_click_video').click(function () {
+	    	$('.video-thumbnail-wrapper li:first-child').trigger('click');
 
 			if (!is_slice_video) {
 	    		setTimeout(function(){
@@ -1246,6 +1249,11 @@ End Old Facility -->
 	    		}, 200);
 			}
     	});
+
+    	$('#videoModal').on('hidden.bs.modal', function () {
+  			$('.video-thumbnail-wrapper li:first-child').trigger('click');
+
+		})
 
 
 
