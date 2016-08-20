@@ -171,8 +171,8 @@
 <div id="about" class="description-main desc-section -reservation">
 	<div class="reservation-content">
 		<div class="ct-wrapper">
-			<div class="inner -left _text-right">
-				<div class="inner-wrapper _text-grey">
+			<div class="inner -left _text-right switch-content-wrapper" slide="left">
+				<div class="inner-wrapper _text-grey switch-content-main">
 					<h3 class="desc-header _capital _text-grey">OXOTEL</h3>
 
 					<div class="overflow-box">
@@ -181,11 +181,15 @@
 						</p>
  					</div>
 
- 					<a class="btn btn-transparent -keepright _capital" data-toggle="modal" data-target="#aboutModal">Explore</a>
+ 					<a class="btn btn-transparent -keepright _capital open-sub">Explore</a>
+ 				</div>
+ 				<div class="switch-content-sub" style="display:none">
+			    	<button type="button" class="close close-sub"><span aria-hidden="true"><img src="/sites/all/themes/parallax_zymphonies_theme/images/close.svg" /></span></button>
+ 					<?php print $about_node->body['und'][0]['value'];?> 
  				</div>
  			</div>
- 			<div class="inner -right">
-				<div class="inner-wrapper _text-grey">
+ 			<div class="inner -right switch-content-wrapper" slide="right">
+				<div class="inner-wrapper _text-grey switch-content-main">
 					<h3 class="desc-header _capital _text-grey">Reservation</h3>
 
 					<div class="overflow-box">
@@ -213,7 +217,7 @@
 						</p>
 					</div>
 
- 					<a id="modal_click_condition" class="btn btn-transparent _capital _pull-left _margin-right" data-toggle="modal" data-target="#conditionModal">Condition</a>
+ 					<a id="modal_click_condition" class="btn btn-transparent _capital _pull-left _margin-right open-sub">Condition</a>
  					<div class="bookingbtn-group">
  					    <!--
 	 					<a class="btn btn-transparent -booking -orange _capital" target="_blank" href="http://www.booking.com/hotel/th/oxotel.th.html?label=gen173nr-1FCAEoggJCAlhYSDNiBW5vcmVmaN0BiAEBmAEmwgEDYWJuyAEM2AEB6AEB-AELqAIE%3Bsid%3Da9c400783e4d0678a2911325b020d663%3Bdcid%3D1%3Bdest_id%3D-3247115%3Bdest_type%3Dcity%3Bdist%3D0%3Bgroup_adults%3D2%3Broom1%3DA%2CA%3Bsb_price_type%3Dtotal%3Bsrfid%3D261b6fd664759b8069fb61cd82d78f852dfca842X1%3Btype%3Dtotal%3Bucfs%3D1">Booking</a>
@@ -242,6 +246,167 @@
 
  					</div>
  				</div>
+ 				<div class="switch-content-sub" style="display:none">
+			    	<button type="button" class="close close-sub"><span aria-hidden="true"><img src="/sites/all/themes/parallax_zymphonies_theme/images/close.svg" /></span></button>
+			    	<br />
+		      		<ul class="lightSliderCondition">
+		      			<li>
+		      				<div>reservation</div>
+		      				<h2 class="text-modal">Term and condition</h2>
+		      				<div class="overflow-box _300px">
+			      				<p>
+			      					<strong class="text-bright">CHECK –IN</strong><br />
+			      					- Check – in time from 2.00 pm. Leave your luggage is available at reception before check <br />
+			      					– in-Arrivals between 12.00 AM midnight and 7.00 AM will be considered as the previous night and will require payment<br />
+			      					- Please pay the total of your room balance on arrival. We accept either cash or credit card<br />
+			      					- Passport or ID card is strictly required for check <br />
+			      					– in. However all of your personal data will be kept privately
+				      			</p>
+				      			<p>
+			      					<strong class="text-bright">CHECK – OUT</strong><br />
+			      					- Check – out time before 12.00 PM. Let us know if you’re early bird and would like to check
+			      					– out earlier
+			      					-Noon late check
+			      					– out between 12.00 PM
+			      					– 6.00 PM is half day charge and after 6.00 PM is full day charge
+			      					- If you have not checked
+			      					– out of the room by noon and you do not have a reservation for the next night, Oxotel hostel may have to pack your <br />
+			      					belonging to be placed in the luggage area so the room can be cleaned for the new arrivals
+			      					-You can leave your luggage with us with free of charge after check – out
+				      			</p>
+				      			<p>
+			      					<strong class="text-bright">KEY CARD</strong><br />
+			      					- Guest will get a personal key card to enter their room <br />
+			      					- Key card deposit is 100 THB and paid by cash only. The deposit will be returned upon return of card <br />
+				      			</p>
+				      			<p>
+			      					<strong class="text-bright">RECEPTION</strong><br />
+			      					- Reception operating time 24 hours service
+				      			</p>
+				      			<p>
+			      					<strong class="text-bright">AGE RESTRICTIONS</strong><br />
+			      					- To preserve and maintain our laid<br />
+			      					– back & smooth atmosphere we do not allow persons under 15 year of age
+			      				</p>
+				      			<p>
+			      					<strong class="text-bright">NO CURFEW</strong><br />
+										- After 10.00 PM the main gate will be closed. When you go out or in after that please use your key card entering the main gate
+			      				</p>
+				      			<p>
+			      					<strong class="text-bright">BREAKFAST</strong><br />
+										- Breakfast buffet start from 7.00 AM until 10.00 AM at the breakfast area. It is not permitted to take any food away from there
+			      				</p>
+				      			<p>
+			      					<strong class="text-bright">EATING & DRINKING AREA</strong><br />
+										- Eating and drinking (except water) is forbidden in the room. You can only consume your own food and drink in the common area. <br />
+										It is forbidden to bring any type of food or drink (except water) into your room
+								</p>
+				      			<p>
+			      					<strong class="text-bright">QUIET TIME </strong><br />
+										- Please keep the noise level down in the entire of hostel from 10.00 PM until an early morning hours to avoid disturbing other  guests.<br />
+										 Please be generally mindful of their presence as you move around the building
+								</p>
+								<p>
+			      					<strong class="text-bright">RESPECT</strong><br />
+			      						- Do not put your personal item on the other bed. Do not pick up the other blanket, pillow or towel from the other bed <br />
+			      						- Travelers are expected to respect other guests, staffs and property
+
+								</p>
+								<p>
+			      					<strong class="text-bright">SAFETY & SECURITY </strong><br />
+			      					- The reception, lobby and common areas are under 24 hours CCTV surveillance for your own safety  <br />
+			      					- Hostel area and rooms are accessed by key card <br />
+			      					- Any guest who in the opinion of our staffs, compromise the comfort, safety or security of other<br />
+			      					guests or staffs will  be asked to leave the hostel and will not be offered any of refund
+
+								</p>
+								<p>
+			      					<strong class="text-bright">NON – SMOKING</strong><br />
+			      					- Oxotel hostel is a non – smoking hostel. A 2,000 THB will be charged to anyone who smokes in the public area according to Thai laws.<br />
+			      					 You can have your cigarette only at the end of the rear backyard
+
+								</p>
+								<p>
+			      					<strong class="text-bright">NO DRUGS</strong><br />
+			      					- Any type of drugs is forbidden throughout the whole poperty
+
+								</p>
+								<p>
+			      					<strong class="text-bright">VISITOR RULES</strong><br />
+			      					- Outsiders or visitors are only allowed in the lobby area and garden are, not in the guest room <br />
+			      					- No visitors are allowed inside the hostel after 10.00  PM
+								</p>
+								<p>
+			      					<strong class="text-bright">PET RULES</strong><br />
+			      					- Pets are not allowed in the hostel
+
+								</p>
+								<p>
+			      					<strong class="text-bright">LAUNDRY</strong><br />
+			      					- Oxotel hostel have a laundry service and we provide a washing machine on the 2nd floor. Please dry them in the washing area only <br />
+			      					- Any clothes hanging or left in the public areas will be removed by the staffs
+
+								</p>
+								<p>
+			      					<strong class="text-bright">KITCHEN</strong><br />
+			      						- After use, please wash your dirty cups and dishes and please keep the kitchen clean and tidy<br />
+			      						- When placing food in the fridge, please write your name and your check – out date on it
+
+								</p>
+								<p>
+			      					<strong class="text-bright">CLEANLINESS</strong><br />
+			      						- Please keep your room and common areas of the hostel clean and tidy to help us maintain the cozy and friendly atmosphere, we are dedicated to welcome all our guests with <br />
+			      						- If you are staying in the dormitory room for multiple days and would like to have your bed cleaned, please inform our staffs  before 12.00 noon, beds are cleaned upon request
+
+								</p>
+								<p>
+			      					<strong class="text-bright">DAMAGES</strong><br />
+			      						- If you lose or damage any property belonging to Oxotel hostel, we will have to charge you for it. The compensation must be pa id immediately and in cash.<br />
+			      						There is a 100 THB charged for missing the towel
+
+								</p>
+								<p>
+			      					<strong class="text-bright">CONSERVATION </strong><br />
+			      						- For conservation reasons, please turn off the lights, air – condition before leaving your room
+
+								</p>
+								<p>
+			      					<strong class="text-bright">PERSONAL BELONGINGS</strong><br />
+			      					- You can put your luggage in our luggage area  <br />
+			      					- Valued articles should be stored in your room <br />
+			      					- Oxotel hostel is not responsible for any case of lost, damage or theft
+
+								</p>
+								<p>
+			      					<strong class="text-bright">PERSONAL BELONGINGS</strong><br />
+			      					- f you wish to extend your stay, you must do so, it is subject to availability. Please inform us before your check – out date and with full payment in advance
+
+								</p>
+		      				</div>
+		      			</li>
+		      			<li>
+		      				<h2 class="text-modal">Reservation policy</h2>
+		      				<div class="overflow-box _300px">
+			      			<p>
+			      			    <strong class="text-bright">Agoda.com & Expedia.com: </strong>Your credit card has been charged already. Cancellation and modification are upon cancellation policy on each reservation <br />
+			      			    <strong class="text-bright">Booking.com:  </strong>Valid credit card details are required to book online.Your credit card is not charged before your arrival.  We just keep your credit card details  for security reasons. You need to pay the total room balance directly to Oxotel Hostel on arrival either cash or credit card. <br />
+			      			    <strong class="text-bright">HostelWorld.com:</strong> You will be charged 10% deposit. This is automatically taken by the booking engine not by Oxotel Hostel.The deposit is non – refundable and non – transferable.You need to pay the due balance directly to Oxotel Hostel on arrival either cash or credit card. <br />
+			      			    <strong class="text-bright"> Reservation by Phone:</strong> Reservation directly by phone call +66 52 085 334 or +66 95 674 1442. For your standard booking through email or phone reservation, we accept payment by bank transfer only. Your room will blocked until 12.00 pm. noon of the next day. It is only confirmed wh en we have received the payment from you before due. Otherwise your booking will be cancelled <br />
+			      			    <strong class="text-bright">Cancellation policy </strong> Oxotel is a small property with only 12 rooms. Because of that we are significantly affected by cancellations. The cancellati on will only be considered final when the Oxotel hostel has received written notification and acknowledged this. The following cancellation charges apply;<br />
+
+			      			    - Cancellations received more than 14 days prior to your arrival: there is no charge. <br />
+			      			    - Cancellations received in writing between 7-14 days prior to your arrival will be charged 50% of the full value of the reservation (incl. tax)  <br />
+			      			    - Cancellations received in writing less than 7 days will be charged 100% of the full value of the reservation (incl. tax)  <br />
+			      			    - When guests don't arrive and haven't cancelled their reservation - a 'no-show' - we will charge the equivalent to your entire stay
+
+		      				</p>
+		      				</div>
+		      			</li>
+		      		</ul>
+
+ 				</div>
+
+
  			</div>
 		</div>
 	</div>
@@ -975,6 +1140,7 @@ End Old Facility -->
 </div>
 
 <!-- About Modal -->
+<!--
 <div class="modal fade" id="aboutModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   	<div class="modal-dialog modal-lg" role="document">
     	<div class="modal-content text-modal">
@@ -987,6 +1153,7 @@ End Old Facility -->
     	</div>
   	</div>
 </div>
+-->
 
 
 <!-- Movie Modal -->
@@ -1366,20 +1533,10 @@ End Old Facility -->
 			}
     	});
     	// =============================
-  		var is_slice_condition = false;
-    	$('#modal_click_condition').click(function () {
-
-			if (!is_slice_condition) {
-	    		setTimeout(function(){
-			    	$(".lightSliderCondition").lightSlider({
-			    		item: 1,
-			    		auto: false,
-			    		controls: true,
-			    	});
-		    		is_slice_condition = true;
-
-	    		}, 200);
-			}
+    	$(".lightSliderCondition").lightSlider({
+    		item: 1,
+    		auto: false,
+    		controls: true,
     	});
 
     	// ============== Video =============
@@ -1408,7 +1565,7 @@ End Old Facility -->
 		})
 
 
-
+    switchContent();
 
   	});
 </script>
