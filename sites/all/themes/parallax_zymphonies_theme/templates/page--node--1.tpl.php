@@ -782,16 +782,16 @@ End Old Facility -->
 	<div class="reservation-content">
 		<div class="ct-wrapper">
 			<div class="inner -left switch-content-wrapper" slide="left" id="findus_icon_content">
-				<ul class="list-unstyled social-gang switch-content-main">
-					<li><a hre="#" class="line open-sub">Line Icon Here</a></li>
-					<li><a class="facebook" href="https://www.facebook.com/oxotelhostel" target="_blank">Facebook</a></li>
-					<li><a class="instagram" href="https://www.instagram.com/oxotelchiangmai/" target="_blank">Instagram</a></li>
+				<ul class="list-unstyled social-gang switch-content-main text-center">
+					<li><a hre="#" class="line open-sub text-hide">Line Icon Here</a></li>
+					<li><a class="facebook text-hide" href="https://www.facebook.com/oxotelhostel" target="_blank">Facebook</a></li>
+					<li><a class="instagram text-hide" href="https://www.instagram.com/oxotelchiangmai/" target="_blank">Instagram</a></li>
 				</ul>
 	 			<!-- QR code hide -->
-				<div class="inner -left _text-right switch-content-sub" style="display:none">
-			    	<button type="button" class="close close-sub"><span aria-hidden="true" class="sr-inly"></span></button>
+				<div class="inner -left text-center switch-content-sub" style="display:none">
+			    	<button type="button" class="close close-sub -qrcode"><span aria-hidden="true" class="sr-only">close</span></button>
 
-					QR Code Here
+					<img class="qr-code" src="/sites/all/themes/parallax_zymphonies_theme/images/QR-code.png" />
 				</div>
  			</div>
 
@@ -1097,7 +1097,7 @@ End Old Facility -->
 
 <!-- Facilities Modal -->
 <div class="modal fade" id="facilitiesContentModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog modal-lg -facilities" role="document">
+  <div class="modal-dialog modal-lg -facilities -services" role="document">
     <div class="modal-content">
       <div class="modal-body slide-modal">
 

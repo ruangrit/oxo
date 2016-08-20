@@ -733,6 +733,10 @@ button.close {
   button.close > span {
     font-size: 0;
     line-height: 0; }
+  button.close.-qrcode {
+    top: -15px;
+    right: auto;
+    left: 35px; }
 
 .btn.btn-transparent {
   background-color: transparent;
@@ -914,6 +918,42 @@ button.close {
   .webform-submit.form-submit:hover {
     background-color: #B4B4B4; }
 
+/*
+** Social-gang
+*/
+.social-gang {
+  margin-bottom: 30px !important;
+  margin-top: 70px; }
+  .social-gang > li {
+    display: inline-block;
+    padding: 0 10px;
+    margin-left: 20px;
+    margin-right: 20px; }
+  .social-gang > li > a {
+    display: block;
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    background-size: 100% auto !important; }
+    .social-gang > li > a:hover {
+      cursor: pointer; }
+  .social-gang > li > a.facebook {
+    background: url(/sites/all/themes/parallax_zymphonies_theme/images/Facebook.png) transparent no-repeat center; }
+    .social-gang > li > a.facebook:hover {
+      background: url(/sites/all/themes/parallax_zymphonies_theme/images/Facebook-A.png) transparent no-repeat center; }
+  .social-gang > li > a.instagram {
+    background: url(/sites/all/themes/parallax_zymphonies_theme/images/Instagram.png) transparent no-repeat center; }
+    .social-gang > li > a.instagram:hover {
+      background: url(/sites/all/themes/parallax_zymphonies_theme/images/Instagram-A.png) transparent no-repeat center; }
+  .social-gang > li > a.line {
+    background: url(/sites/all/themes/parallax_zymphonies_theme/images/Line.png) transparent no-repeat center; }
+    .social-gang > li > a.line:hover {
+      background: url(/sites/all/themes/parallax_zymphonies_theme/images/Line-A.png) transparent no-repeat center; }
+
+.qr-code {
+  display: inline-block;
+  max-width: 250px; }
+
 body {
   color: #3E3E3E;
   font-size: 13px;
@@ -947,37 +987,5 @@ h1, h2, h3, h4 {
 
 .flexbox__item.-bottom {
   vertical-align: bottom; }
-
-/*
-** Social-gang
-*/
-.social-gang {
-  margin-bottom: 30px !important;
-  text-align: left;
-  margin-top: 70px; }
-  .social-gang > li {
-    display: inline-block;
-    padding: 0 10px;
-    margin-left: 30px;
-    margin-right: 30px; }
-  .social-gang > li > a {
-    display: block;
-    width: 60px;
-    height: 60px;
-    text-indent: 999em;
-    overflow: hidden;
-    background-size: 100% auto !important; }
-  .social-gang > li > a.facebook {
-    background: url(/sites/all/themes/parallax_zymphonies_theme/images/Facebook.png) transparent no-repeat; }
-    .social-gang > li > a.facebook:hover {
-      background: url(/sites/all/themes/parallax_zymphonies_theme/images/Facebook-A.png) transparent no-repeat; }
-  .social-gang > li > a.instagram {
-    background: url(/sites/all/themes/parallax_zymphonies_theme/images/Instagram.png) transparent no-repeat; }
-    .social-gang > li > a.instagram:hover {
-      background: url(/sites/all/themes/parallax_zymphonies_theme/images/Instagram-A.png) transparent no-repeat; }
-  .social-gang > li > a.line {
-    background: url(/sites/all/themes/parallax_zymphonies_theme/images/Line.png) transparent no-repeat; }
-    .social-gang > li > a.line:hover {
-      background: url(/sites/all/themes/parallax_zymphonies_theme/images/Line-A.png) transparent no-repeat; }
 
 /*# sourceMappingURL=zoxo.css.map */

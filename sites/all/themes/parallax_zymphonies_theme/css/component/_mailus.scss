@@ -53,3 +53,53 @@
         background-color: #B4B4B4;
     }
 }
+
+/*
+** Social-gang
+*/
+
+.social-gang {
+	margin-bottom: 30px !important;
+	margin-top: 70px;
+	> li {
+		display: inline-block;
+		padding: 0 10px;
+		margin-left: 20px;
+		margin-right: 20px
+	}
+	> li > a {
+		display: block;
+		width: 60px;
+		height: 60px;
+		overflow: hidden;
+		background-size: 100% auto !important;
+		&:hover {
+			cursor: pointer;
+		}
+
+	}
+	> li > a.facebook {
+		background: url(#{$path}/Facebook.png) transparent no-repeat center;
+		&:hover {
+			background: url(#{$path}/Facebook-A.png) transparent no-repeat center;
+		}
+	}
+	> li > a.instagram {
+		background: url(#{$path}/Instagram.png) transparent no-repeat center;
+		&:hover {
+			background: url(#{$path}/Instagram-A.png) transparent no-repeat center;
+		}
+	}
+	> li > a.line {
+		background: url(#{$path}/Line.png) transparent no-repeat center;
+		&:hover {
+			background: url(#{$path}/Line-A.png) transparent no-repeat center;
+		}
+	}
+}
+
+
+.qr-code {
+    display: inline-block;
+    max-width: 250px;
+}
