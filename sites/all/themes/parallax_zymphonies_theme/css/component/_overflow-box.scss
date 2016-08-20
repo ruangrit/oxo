@@ -1,6 +1,6 @@
 // default box show in front page
 .overflow-box {
-	height: 130px;	
+	height: 130px;
 	overflow-y: scroll;
 	margin-top: 25px;
 	margin-bottom: 30px;
@@ -24,25 +24,25 @@
 	}
 
 	// custom scrollbar
-	&::-webkit-scrollbar {
-	    width: 6px;
-	    height: 130px;
-	}
-	 
-	&::-webkit-scrollbar-track { 
-	    -webkit-border-radius: 10px;
-	    border-radius: 10px;
-	}
-	 
-	&::-webkit-scrollbar-thumb {
-	    -webkit-border-radius: 10px;
-	    border-radius: 10px;
-	    background: $color-2;
-	    background: transparent;
-	    display: block;
-	}
-	&::-webkit-scrollbar-thumb:window-inactive {
-	    background: rgba(39,39,39,0.4);
-	}
+	// &::-webkit-scrollbar {
+	//     width: 6px;
+	//     height: 130px;
+	// }
+	//
+	// &::-webkit-scrollbar-track {
+	//     -webkit-border-radius: 10px;
+	//     border-radius: 10px;
+	// }
+	//
+	// &::-webkit-scrollbar-thumb {
+	//     -webkit-border-radius: 10px;
+	//     border-radius: 10px;
+	//     background: $color-2;
+	//     background: transparent;
+	//     display: block;
+	// }
+	// &::-webkit-scrollbar-thumb:window-inactive {
+	//     background: rgba(39,39,39,0.4);
+	// }
 
 }
