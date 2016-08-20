@@ -1004,7 +1004,61 @@ End Old Facility -->
 
 
 <!-- Movie Modal -->
+<div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  	<div class="modal-dialog modal-lg" role="document">
+    	<div class="modal-content text-modal">
+      		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="/sites/all/themes/parallax_zymphonies_theme/images/close.svg" /></span></button>
+      		<div class="modal-body text-modal video-modal">
+      			<div class="video-iframe-wrapper">
+      				<div id="video_player_area"></div>
+		      		<?php
+		      			$i_video = 1;
+						foreach($video_modal_node as $video){
+							$parts = parse_url($video->field_youtube_link['und'][0]['value']);
+							parse_str($parts['query'], $query);
+							$video_v =  $query['v'];
+							?>
+							<div style="display:none" class="video-iframe" id="video_<?php print $video_v;?>">
+								<iframe width="1280" height="560"  src="https://www.youtube.com/embed/<?php print $video_v;?>?rel=0&amp;controls=1&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 
+							</div>
+							<?php
+
+							$i_video++ ;
+						}
+
+
+						?>
+				</div>
+					<ul class="video-thumbnail-wrapper" id="lightSliderVideo">
+						<?php
+							foreach($video_modal_node as $video){
+								$parts = parse_url($video->field_youtube_link['und'][0]['value']);
+								parse_str($parts['query'], $query);
+								$video_v =  $query['v'];
+								?>
+									<li class="video-thumbnail" id="video_thumbnail_<?php print $video_v;?>" onClick="showVideo('<?php print $video_v;?>')">
+										<?php
+										 	$youtube_image_thumbnail = 'http://img.youtube.com/vi/'.$video_v.'/mqdefault.jpg';
+											//print theme('image_style',array('style_name' => 'video_thumbnail', 'path' => $video->field_image['und'][0]['uri']));
+										?>
+										<img src="<?php print $youtube_image_thumbnail;?>" width="230" height="150" />
+										<div class="video-title">
+											<?php print $video->title; ?>
+										</div>
+									</li>
+
+								<?php
+							}
+
+						?>
+					</ul>
+
+
+      		</div>
+    	</div>
+  	</div>
+</div>
 
 <!-- Term and condition Modal -->
 <div class="modal fade" id="conditionModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
