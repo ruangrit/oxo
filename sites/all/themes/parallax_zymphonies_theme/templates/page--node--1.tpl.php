@@ -77,6 +77,18 @@
 				$(obj).find('.switch-content-sub').hide();
 			});
 		});
+
+		$('body').click(function (e) {
+			var container = $('.switch-content-sub');
+			if (!container.is(e.target) && container.has(e.target).length === 0) {
+				if (!$(e.target).hasClass('open-sub')) {
+					$('.switch-content-sub').hide();
+					$('.switch-content-main').show();
+				}
+			}
+		  
+		});
+
 	}
 	//switchContent();
 
