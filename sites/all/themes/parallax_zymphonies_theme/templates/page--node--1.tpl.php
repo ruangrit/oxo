@@ -1127,17 +1127,6 @@ End Old Facility -->
 								?>
 								</ul>
 								<div class="modal-description">
-									<div class="modaltitle-wrapper">
-					      				<?php
-					      					$j = 0;
-											foreach($facilities_content_modal_node as $facilities2){
-												?>
-													<div class="btn btn-facilities" onclick="showGroupSlide(<?php print $j;?>, 'facilitiesContentModal')"><?php print $facilities2->title;?></div>
-												<?php
-												$j++;
-											}
-										?>
-									</div>
 									<div class="overflow-box -modalrooms">
 										<?php print $facilities->body['und'][0]['value']; ?>
 									</div>
