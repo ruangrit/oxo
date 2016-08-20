@@ -492,29 +492,64 @@
 			<div class="faciimg-wrapper">
 				<div class="faciitem">
 					<div class="faciimg -img01">
+						<img class="idle" src="/sites/all/themes/parallax_zymphonies_theme/images/24-hours.png" />
+						<img class="hover" src="/sites/all/themes/parallax_zymphonies_theme/images/24-hours-a.png" />
 						<span class="text-tooltip textLightWhiteBg">24 HOURS RECEPTION</span>
+						<span class="explore-facilities">CLICK FOR EXPLORE</span>
 					</div>
 				</div>
 				<div class="faciitem">
 					<div class="faciimg -img02">
-						<span class="text-tooltip textLightWhiteBg">24 HOURS RECEPTION</span>
+						<img class="idle" src="/sites/all/themes/parallax_zymphonies_theme/images/garden-area.png" />
+						<img class="hover" src="/sites/all/themes/parallax_zymphonies_theme/images/garden-area-a.png" />
+						<span class="text-tooltip textLightWhiteBg">GARDEN & COMMUNAL AREA</span>
+						<span class="explore-facilities">CLICK FOR EXPLORE</span>
 					</div>
 				</div>
 				<div class="faciitem">
 					<div class="faciimg -img03">
-						<span class="text-tooltip textLightWhiteBg">24 HOURS RECEPTION</span>
+						<img class="idle" src="/sites/all/themes/parallax_zymphonies_theme/images/kitchen.png" />
+						<img class="hover" src="/sites/all/themes/parallax_zymphonies_theme/images/kitchen-a.png" />
+						<span class="text-tooltip textLightWhiteBg">KITCHEN</span>
+						<span class="explore-facilities">CLICK FOR EXPLORE</span>
 					</div>
 				</div>
 				<div class="faciitem">
 					<div class="faciimg -img04">
-						<span class="text-tooltip textLightWhiteBg">24 HOURS RECEPTION</span>
+						<img class="idle" src="/sites/all/themes/parallax_zymphonies_theme/images/parking.png" />
+						<img class="hover" src="/sites/all/themes/parallax_zymphonies_theme/images/parking-a.png" />
+						<span class="text-tooltip textLightWhiteBg">PARKING AREA</span>
+						<span class="explore-facilities">CLICK FOR EXPLORE</span>
 					</div>
 				</div>
 				<div class="faciitem -last">
 					<div class="faciimg -img05">
-						<span class="text-tooltip textLightWhiteBg">24 HOURS RECEPTION</span>
+						<img class="idle" src="/sites/all/themes/parallax_zymphonies_theme/images/cafe.png" />
+						<img class="hover" src="/sites/all/themes/parallax_zymphonies_theme/images/cafe-a.png" />
+						<span class="text-tooltip textLightWhiteBg">CAFE</span>
+						<span class="explore-facilities">CLICK FOR EXPLORE</span>
 					</div>
 				</div>
+			</div>
+			<div class="faciimg-wrapper -line2">
+				<div class="faciitem">
+					<div class="faciimg -img06">
+						<img class="idle" src="/sites/all/themes/parallax_zymphonies_theme/images/free-services.png" />
+						<img class="hover" src="/sites/all/themes/parallax_zymphonies_theme/images/free-services-a.png" />
+						<span class="text-tooltip textLightWhiteBg">FRER SERVICES</span>
+						<span class="explore-facilities">CLICK FOR EXPLORE</span>
+					</div>
+				</div>
+				<div class="faciitem -last">
+					<div class="faciimg -img07">
+						<img class="idle" src="/sites/all/themes/parallax_zymphonies_theme/images/small-fee-based.png" />
+						<img class="hover" src="/sites/all/themes/parallax_zymphonies_theme/images/small-fee-based-a.png" />
+						<span class="text-tooltip textLightWhiteBg">SMALL FEE BASED</span>
+						<span class="explore-facilities">CLICK FOR EXPLORE</span>
+					</div>
+				</div>
+			</div>
+
 			</div>
 			<button  id="modal_click_facilities" class="btn -facilities btn-transparent -darkbg _capital" type="button"  data-toggle="modal" data-target="#facilitiesModal">
 				EXPLORE
@@ -749,11 +784,11 @@ End Old Facility -->
 <div id="about" class="description-main desc-section -reservation">
 	<div class="reservation-content">
 		<div class="ct-wrapper">
-			<div class="inner -left _text-right switch-content-wrapper" slide="left" id="findus_icon_content">
+			<div class="inner -left switch-content-wrapper" slide="left" id="findus_icon_content">
 				<ul class="list-unstyled social-gang switch-content-main">
-					<li><a class="open-sub">Line Icon Here</a></li>
-					<li><a class="fb" href="https://www.facebook.com/oxotelhostel" target="_blank">Facebook</a></li>
-					<li><a class="ig" href="https://www.instagram.com/oxotelchiangmai/" target="_blank">Instagram</a></li>
+					<li><a hre="#" class="line open-sub">Line Icon Here</a></li>
+					<li><a class="facebook" href="https://www.facebook.com/oxotelhostel" target="_blank">Facebook</a></li>
+					<li><a class="instagram" href="https://www.instagram.com/oxotelchiangmai/" target="_blank">Instagram</a></li>
 				</ul>
 	 			<!-- QR code hide -->
 				<div class="inner -left _text-right switch-content-sub" style="display:none">
@@ -1004,6 +1039,7 @@ End Old Facility -->
 							}
 						?>
 						<!-- Start switch facilities popup-->
+
 						<div class="facilities-switch-page">
 							<div class="lSAction">
 								<a class="lSPrev"></a>
@@ -1019,7 +1055,7 @@ End Old Facility -->
 								</li>
 							</ul>
 						</div>
-						
+
 						<!-- End switch facilities popup-->
 
 		      		</div>
@@ -1085,7 +1121,7 @@ End Old Facility -->
 							}
 						?>
 						<!-- Start switch facilities popup-->
-						
+
 						<div class="facilities-switch-page">
 							<div class="lSAction">
 								<a class="lSPrev" onclick="$('#modal_click_facilities').trigger('click')" data-dismiss="modal" aria-label="Close"></a>
@@ -1101,7 +1137,7 @@ End Old Facility -->
 								</li>
 							</ul>
 						</div>
-						
+
 						<!-- End switch facilities popup-->
 
 		      		</div>

@@ -57,33 +57,39 @@ h1, h2, h3, h4 {
 
 .social-gang {
 	margin-bottom: 30px !important;
+	text-align: right;
+	margin-top: 50px;
 	> li {
 		display: inline-block;
 		padding: 0 10px;
+		margin-left: 30px;
+		margin-right: 30px
 	}
 	> li > a {
 		display: block;
-		width: 52px;
-		height: 52px;
-		text-indent: -999em;
+		width: 80px;
+		height: 80px;
+		text-indent: 999em;
 		overflow: hidden;
+		background-size: 100% auto !important;
+
 	}
-	> li > a.fb {
-		background: url(#{$path}/fb.png) transparent no-repeat center;
+	> li > a.facebook {
+		background: url(#{$path}/Facebook.png) transparent no-repeat;
 		&:hover {
-			background: url(#{$path}/fb-hover.png) transparent no-repeat center;
+			background: url(#{$path}/Facebook-A.png) transparent no-repeat;
 		}
 	}
-	> li > a.ig {
-		background: url(#{$path}/ig.png) transparent no-repeat center;
+	> li > a.instagram {
+		background: url(#{$path}/Instagram.png) transparent no-repeat;
 		&:hover {
-			background: url(#{$path}/ig-hover.png) transparent no-repeat center;
+			background: url(#{$path}/Instagram-A.png) transparent no-repeat;
 		}
 	}
-	> li > a.tw {
-		background: url(#{$path}/tw.png) transparent no-repeat center;
+	> li > a.line {
+		background: url(#{$path}/Line.png) transparent no-repeat;
 		&:hover {
-			background: url(#{$path}/tw-hover.png) transparent no-repeat center;
+			background: url(#{$path}/Line-A.png) transparent no-repeat;
 		}
 	}
 }
