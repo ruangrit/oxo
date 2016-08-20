@@ -7,6 +7,11 @@
     @media (min-width: 992px) {
         width: 1280px;
     }
+    &.-sevices {
+        @media (min-width: 992px) {
+            width: 900px;
+        }
+    }
     .modal-content {
         background-color: #FFF;
         border: none;

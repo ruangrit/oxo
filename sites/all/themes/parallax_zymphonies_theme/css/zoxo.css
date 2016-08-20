@@ -269,10 +269,7 @@ ul.list-unstyled {
   line-height: 13px;
   overflow: hidden; }
   .modal-body.slide-modal {
-    padding: 60px 15px 15px 15px; }
-    @media (min-width: 769px) {
-      .modal-body.slide-modal {
-        padding: 60px 0 80px 0; } }
+    padding: 0; }
   .modal-body.text-modal {
     padding: 60px 15px 15px 15px; }
     @media (min-width: 769px) {
@@ -425,6 +422,9 @@ ul.list-unstyled {
 @media (min-width: 992px) {
   .modal-dialog.-facilities {
     width: 1280px; } }
+@media (min-width: 992px) {
+  .modal-dialog.-facilities.-sevices {
+    width: 900px; } }
 .modal-dialog.-facilities .modal-content {
   background-color: #FFF;
   border: none; }
@@ -793,6 +793,21 @@ ul.list-unstyled {
     color: #FFFFFF;
     background-color: transparent;
     border: 2px solid #ED932D; }
+
+.btn-noborder,
+.btn-facilities {
+  background-color: transparent;
+  color: #AFB0B3;
+  border: none;
+  padding: 3px 0;
+  display: block;
+  width: auto;
+  text-align: left; }
+  .btn-noborder:hover, .btn-noborder.active,
+  .btn-facilities:hover,
+  .btn-facilities.active {
+    background-color: transparent;
+    color: #ED932D; }
 
 /******************************************\
 	booking button

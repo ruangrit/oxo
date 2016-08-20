@@ -899,8 +899,7 @@ End Old Facility -->
     <div class="modal-content">
       <div class="modal-body slide-modal">
 
-        <h4 class="modal-title text-modal" id="myModalLabel">Rooms</h4>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="/sites/all/themes/parallax_zymphonies_theme/images/close.svg" /></span></button>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="sr-only"></span></button>
 		      		<div class="group-slide">
 
 	      				<?php
@@ -931,7 +930,7 @@ End Old Facility -->
 					      					$j = 0;
 											foreach($rooms_modal_node as $room2){
 												?>
-													<div class="btn btn-transparent _modaltitle title-rooms" onclick="showGroupSlide(<?php print $j;?>, 'roomsModal')"><?php print $room2->title;?></div>
+													<div class="btn btn-noborder" onclick="showGroupSlide(<?php print $j;?>, 'roomsModal')"><?php print $room2->title;?></div>
 												<?php
 												$j++;
 											}
@@ -1187,7 +1186,7 @@ End Old Facility -->
       		<h4 class="modal-title text-modal">
       			<?php print $cafe_modal_node->title;?>
       		</h4>
-        	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="/sites/all/themes/parallax_zymphonies_theme/images/close.svg" /></span></button>
+        	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="sr-only"></span></button>
 			<ul class="lightSliderCafe">
 			<?php
 			foreach($cafe_modal_node->field_slide_image['und'] as $image){
