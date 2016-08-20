@@ -60,6 +60,26 @@
    		$(window).trigger('resize');
 	}
 
+	var switchContent = function () {
+		$('.switch-content-wrapper').each(function(i, obj) {
+
+			$(obj).find('.open-sub').click(function () {
+				$(obj).find('.switch-content-main').hide();
+				$(obj).find('.switch-content-sub').show('slide', { direction: $(obj).attr('slide') }, 200);
+
+		   		setTimeout(function(){
+					$(window).trigger('resize');
+		   		}, 200);
+
+			});
+			$(obj).find('.close-sub').click(function () {
+				$(obj).find('.switch-content-main').show();
+				$(obj).find('.switch-content-sub').hide();
+			});
+		});
+	}
+	//switchContent();
+
 </script>
 <div class="menu-wrap">
 
@@ -552,22 +572,22 @@ End Old Facility -->
 <div id="about" class="description-main desc-section -reservation">
 	<div class="reservation-content">
 		<div class="ct-wrapper">
-			<div class="inner -left _text-right" id="findus_icon_content">
-				<ul class="list-unstyled social-gang">
-					<li><a onclick="$('#findus_icon_content').hide();$('#qr_code').show('slide', { direction: 'left' }, 200);">Line Icon Here</a></li>
+			<div class="inner -left _text-right switch-content-wrapper" slide="left" id="findus_icon_content">
+				<ul class="list-unstyled social-gang switch-content-main">
+					<li><a class="open-sub">Line Icon Here</a></li>
 					<li><a class="fb" href="https://www.facebook.com/oxotelhostel" target="_blank">Facebook</a></li>
 					<li><a class="ig" href="https://www.instagram.com/oxotelchiangmai/" target="_blank">Instagram</a></li>
 				</ul>
+	 			<!-- QR code hide -->
+				<div class="inner -left _text-right switch-content-sub" style="display:none">
+			    	<button type="button" class="close close-sub"><span aria-hidden="true"><img src="/sites/all/themes/parallax_zymphonies_theme/images/close.svg" /></span></button>
+
+					QR Code Here
+				</div>
  			</div>
- 			<!-- QR code hide -->
-			<div class="inner -left _text-right" id="qr_code" style="display:none">
-		    	<button onclick="$('#qr_code').hide();$('#findus_icon_content').show();" type="button" class="close"><span aria-hidden="true"><img src="/sites/all/themes/parallax_zymphonies_theme/images/close.svg" /></span></button>
 
-				QR Code Here
-			</div>
-
- 			<div class="inner -right" id="findus_content">
-				<div class="inner-wrapper _text-grey">
+ 			<div class="inner -right switch-content-wrapper" id="findus_content" slide="right">
+				<div class="inner-wrapper _text-grey switch-content-main">
 					<h3 class="desc-header _capital _text-grey">FIND US</h3>
 
 					<div class="overflow-box">
@@ -586,23 +606,25 @@ End Old Facility -->
  					</p>
 					</div>
 
- 					<a onclick="$('#findus_content').hide();$('#mailus_form').show('slide', { direction: 'right' }, 200);$(window).trigger('resize');" class="btn btn-transparent _capital _pull-left _margin-right">MAIL US</a>
+ 					<a class="btn btn-transparent _capital _pull-left _margin-right open-sub">MAIL US</a>
 					<!--<a id="modal_click_map" class="btn btn-transparent _capital" data-toggle="modal" data-target="#mapModal">Map</a>-->
 
  				</div>
+
+				<div class="switch-content-sub" style="display:none">
+			    	<button type="button" class="close close-sub"><span aria-hidden="true"><img src="/sites/all/themes/parallax_zymphonies_theme/images/close.svg" /></span></button>
+			      	<h2 class="text-modal">MAIL US</h2>
+
+					<?php
+
+			 			$nid = 18;
+						$wnode = node_load($nid);
+						$form = drupal_get_form('webform_client_form_' . $nid, $wnode, array());
+						print render($form);
+					?>
+				</div>
+
  			</div>
-			<div class="inner -right" id="mailus_form" style="display:none">
-		    	<button onclick="$('#mailus_form').hide();$('#findus_content').show();" type="button" class="close"><span aria-hidden="true"><img src="/sites/all/themes/parallax_zymphonies_theme/images/close.svg" /></span></button>
-		      	<h2 class="text-modal">MAIL US</h2>
-
-				<?php
-
-		 			$nid = 18;
-					$wnode = node_load($nid);
-					$form = drupal_get_form('webform_client_form_' . $nid, $wnode, array());
-					print render($form);
-				?>
-			</div>
 
 		</div>
 	</div>
