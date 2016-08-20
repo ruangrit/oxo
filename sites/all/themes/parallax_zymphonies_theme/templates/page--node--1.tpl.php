@@ -77,6 +77,18 @@
 				$(obj).find('.switch-content-sub').hide();
 			});
 		});
+
+		$('body').click(function (e) {
+			var container = $('.switch-content-sub');
+			if (!container.is(e.target) && container.has(e.target).length === 0) {
+				if (!$(e.target).hasClass('open-sub')) {
+					$('.switch-content-sub').hide();
+					$('.switch-content-main').show();
+				}
+			}
+		  
+		});
+
 	}
 	//switchContent();
 
@@ -1250,6 +1262,7 @@ End Old Facility -->
 </div>
 
 <!-- Term and condition Modal -->
+<!--
 <div class="modal fade" id="conditionModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 	<div class="modal-dialog modal-lg" role="document">
 	    <div class="modal-content">
@@ -1410,14 +1423,6 @@ End Old Facility -->
 	      			</li>
 	      		</ul>
       		 	<div class="bookingbtn-group -modal">
-      		 	    <!--
- 					<a class="btn btn-transparent -modal -booking -orange _invert _capital" target="_blank" href="http://www.booking.com/hotel/th/oxotel.th.html?label=gen173nr-1FCAEoggJCAlhYSDNiBW5vcmVmaN0BiAEBmAEmwgEDYWJuyAEM2AEB6AEB-AELqAIE%3Bsid%3Da9c400783e4d0678a2911325b020d663%3Bdcid%3D1%3Bdest_id%3D-3247115%3Bdest_type%3Dcity%3Bdist%3D0%3Bgroup_adults%3D2%3Broom1%3DA%2CA%3Bsb_price_type%3Dtotal%3Bsrfid%3D261b6fd664759b8069fb61cd82d78f852dfca842X1%3Btype%3Dtotal%3Bucfs%3D1">Booking</a>
- 					<div class="subbtn-group -show">
- 						<a class="btn btn-transparent -orange _invert _capital _subbutton" target="_blank" href="http://www.booking.com/hotel/th/oxotel.th.html?label=gen173nr-1FCAEoggJCAlhYSDNiBW5vcmVmaN0BiAEBmAEmwgEDYWJuyAEM2AEB6AEB-AELqAIE%3Bsid%3Da9c400783e4d0678a2911325b020d663%3Bdcid%3D1%3Bdest_id%3D-3247115%3Bdest_type%3Dcity%3Bdist%3D0%3Bgroup_adults%3D2%3Broom1%3DA%2CA%3Bsb_price_type%3Dtotal%3Bsrfid%3D261b6fd664759b8069fb61cd82d78f852dfca842X1%3Btype%3Dtotal%3Bucfs%3D1">Agoda</a>
- 						<a class="btn btn-transparent -orange _invert _capital _subbutton" target="_blank" href="http://www.booking.com/hotel/th/oxotel.th.html?label=gen173nr-1FCAEoggJCAlhYSDNiBW5vcmVmaN0BiAEBmAEmwgEDYWJuyAEM2AEB6AEB-AELqAIE%3Bsid%3Da9c400783e4d0678a2911325b020d663%3Bdcid%3D1%3Bdest_id%3D-3247115%3Bdest_type%3Dcity%3Bdist%3D0%3Bgroup_adults%3D2%3Broom1%3DA%2CA%3Bsb_price_type%3Dtotal%3Bsrfid%3D261b6fd664759b8069fb61cd82d78f852dfca842X1%3Btype%3Dtotal%3Bucfs%3D1">Booking.com</a>
- 						<a class="btn btn-transparent -orange _invert _capital _subbutton" target="_blank" href="http://www.booking.com/hotel/th/oxotel.th.html?label=gen173nr-1FCAEoggJCAlhYSDNiBW5vcmVmaN0BiAEBmAEmwgEDYWJuyAEM2AEB6AEB-AELqAIE%3Bsid%3Da9c400783e4d0678a2911325b020d663%3Bdcid%3D1%3Bdest_id%3D-3247115%3Bdest_type%3Dcity%3Bdist%3D0%3Bgroup_adults%3D2%3Broom1%3DA%2CA%3Bsb_price_type%3Dtotal%3Bsrfid%3D261b6fd664759b8069fb61cd82d78f852dfca842X1%3Btype%3Dtotal%3Bucfs%3D1">Hostel world</a>
- 					</div>
- 					-->
 
  					<div class="dropdown">
  						<a class="btn btn-transparent -modal -booking -orange _invert _capital" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" target="_blank" href="#">Booking</a>
@@ -1439,6 +1444,7 @@ End Old Facility -->
 	    </div>
 	</div>
 </div>
+-->
 
 <!-- About Modal -->
 <div class="modal fade" id="mapModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
