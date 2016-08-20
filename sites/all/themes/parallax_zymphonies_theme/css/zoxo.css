@@ -258,6 +258,8 @@ ul.list-unstyled {
 .modal-content .modal-content button.close > span {
   font-size: 0;
   line-height: 0; }
+.modal-content .lSPager {
+  display: none; }
 
 .modal-title {
   font-size: 15px;
@@ -343,11 +345,6 @@ ul.list-unstyled {
   .slide-modal .lSSlideOuter {
     width: 50%;
     float: left; } }
-.slide-modal .lSSlideOuter li > img {
-  width: 100%;
-  border-right: 1px solid #3E3E3E;
-  border-top: 1px solid #3E3E3E;
-  border-bottom: 1px solid #3E3E3E; }
 
 .lSSlideWrapper {
   overflow: visible; }

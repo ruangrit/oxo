@@ -22,7 +22,9 @@
         font-size: 0;
         line-height: 0;
     }
-
+	.lSPager {
+		display: none;
+	}
 }
 
 .modal-title {
@@ -134,13 +136,6 @@
 	@media (min-width: 769px) {
 		width: 50%;
 		float: left;
-	}
-
-	li > img {
-		width: 100%;
-		border-right: 1px solid $color-1;
-		border-top: 1px solid $color-1;
-		border-bottom: 1px solid $color-1;
 	}
 }
 

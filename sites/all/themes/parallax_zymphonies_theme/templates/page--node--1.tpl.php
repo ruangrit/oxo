@@ -1182,10 +1182,6 @@ End Old Facility -->
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-body slide-modal">
-
-      		<h4 class="modal-title text-modal">
-      			<?php print $cafe_modal_node->title;?>
-      		</h4>
         	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="sr-only"></span></button>
 			<ul class="lightSliderCafe">
 			<?php
@@ -1201,6 +1197,9 @@ End Old Facility -->
 			?>
 			</ul>
 			<div class="modal-description -cafe">
+				<h4 class="modal-title text-modal">
+					<?php print $cafe_modal_node->title;?>
+				</h4>
 				<h2 class="text-bright">ARTISAN</h2>
 				<!-- <p>
 					Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
