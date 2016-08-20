@@ -46,13 +46,13 @@
 		}
 	}
 
-	.faciimg {
+	.faciimg,
+	.faci-img {
 		text-align: center;
 		display: inline-block;
 		width: 150px;
 		height: 150px;
 		background-size: contain !important;
-		text-align: center;
 		vertical-align: middle;
 		float: left;
 	}
@@ -65,12 +65,11 @@
 	}
 }
 .faciimg-wrapper.-line2 {
-	margin-top: 150px;
+	margin-top: 100px;
 	.faciitem {
-		margin-right: 150px;
 		float: none;
 		&.-last {
-			margin-right: 0;
+			margin-right: 35px;
 		}
 	}
 }
@@ -81,41 +80,19 @@
 }
 
 $path: "/sites/all/themes/parallax_zymphonies_theme/images";
-.faciimg {
+
+.faci-img {
 	position: relative;
 	margin-bottom: 8px;
 	vertical-align: middle;
 	text-align: center;
 
+	> .image {
+		width: 150px;
+		height: 150px;
+	}
 	&:hover {
 		cursor: pointer;
-	}
-	.text-tooltip {
-		display: block;
-		visibility: hidden;
-		position: absolute;
-		width: 150px;
-		left: 50%;
-		margin-left: -75px;
-		margin-bottom: -80px;
-		font-size: 18px;
-		line-height: 24px;
-		top: -60px;
-
-		opacity: 0;
-	    transition: visibility 0.5s, opacity 0.5s linear;
-	}
-	.explore-facilities {
-		display: block;
-		visibility: hidden;
-		transition: display 2px;
-		position: absolute;;
-		bottom: -35px;
-		width: 100%;
-		left: 0;
-
-		opacity: 0;
-	    transition: visibility 0.5s, opacity 0.5s linear;
 	}
 	&:hover > .text-tooltip {
 		color: $color-3;
@@ -126,24 +103,135 @@ $path: "/sites/all/themes/parallax_zymphonies_theme/images";
 		opacity: 1;
 		transition: visibility 0.5s, opacity 0.5s linear;
 	}
+}
+.text-tooltip {
+	display: block;
+	visibility: hidden;
+	position: absolute;
+	width: 176px;
+	left: 50%;
+	margin-left: -86px;
+	margin-bottom: -80px;
+	font-size: 18px;
+	line-height: 24px;
+	top: -37px;
+	opacity: 0;
+	transition: visibility 0.5s, opacity 0.5s linear;
+	&.-twiceline {
+		top: -60px;
+	}
+}
 
-	> img {
-		display: block;
-		width: auto;
-		height: 100%;
+.explore-facilities {
+	display: block;
+	visibility: hidden;
+	transition: display 2px;
+	position: absolute;;
+	bottom: -35px;
+	width: 100%;
+	left: 0;
+	opacity: 0;
+	transition: visibility 0.5s, opacity 0.5s linear;
+}
+
+.faci-img {
+
+	&.-img01 > .image {
+		background: url(#{$path}/24-hours.png) transparent no-repeat center;
+		background-size: contain;
+		-webkit-transition: background-image 0.5s linear;
+		transition: background-image 0.5s linear;
+
+	}
+	&.-img01:hover > .image {
+		background: url(#{$path}/24-hours-a.png) transparent no-repeat center;
+		background-size: contain;
+		-webkit-transition: background-image 0.5s linear;
+		transition: background-image 0.5s linear;
 	}
 
-	> img.hover {
-		visibility: hidden;
-		position: absolute;
-		top: 0;
-		left: 0;
-		opacity: 0;
-	    transition: visibility 0.5s, opacity 0.5s linear;
+	&.-img02 > .image {
+		background: url(#{$path}/garden-area.png) transparent no-repeat center;
+		background-size: contain;
+		-webkit-transition: background-image 0.5s linear;
+		transition: background-image 0.5s linear;
+
 	}
-	&:hover > img.hover {
-		visibility: visible;
-		opacity: 1;
-		transition: visibility 0.5s, opacity 0.5s linear;
+	&.-img02:hover > .image {
+		background: url(#{$path}/garden-area-a.png) transparent no-repeat center;
+		background-size: contain;
+		-webkit-transition: background-image 0.5s linear;
+		transition: background-image 0.5s linear;
 	}
+
+	&.-img03 > .image {
+		background: url(#{$path}/kitchen.png) transparent no-repeat center;
+		background-size: 120px;
+		-webkit-transition: background-image 0.5s linear;
+		transition: background-image 0.5s linear;
+
+	}
+	&.-img03:hover > .image {
+		background: url(#{$path}/kitchen-a.png) transparent no-repeat center;
+		background-size: 120px;
+		-webkit-transition: background-image 0.5s linear;
+		transition: background-image 0.5s linear;
+	}
+
+	&.-img04 > .image {
+		background: url(#{$path}/parking.png) transparent no-repeat center;
+		background-size: contain;
+		-webkit-transition: background-image 0.5s linear;
+		transition: background-image 0.5s linear;
+
+	}
+	&.-img04:hover > .image {
+		background: url(#{$path}/parking-a.png) transparent no-repeat center;
+		background-size: contain;
+		-webkit-transition: background-image 0.5s linear;
+		transition: background-image 0.5s linear;
+	}
+
+	&.-img05 > .image {
+		background: url(#{$path}/cafe.png) transparent no-repeat center;
+		background-size: 120px;
+		-webkit-transition: background-image 0.5s linear;
+		transition: background-image 0.5s linear;
+
+	}
+	&.-img05:hover > .image {
+		background: url(#{$path}/cafe-a.png) transparent no-repeat center;
+		background-size: 120px;
+		-webkit-transition: background-image 0.5s linear;
+		transition: background-image 0.5s linear;
+	}
+
+	&.-img06 > .image {
+		background: url(#{$path}/free-services.png) transparent no-repeat center;
+		background-size: 120px;
+		-webkit-transition: background-image 0.5s linear;
+		transition: background-image 0.5s linear;
+
+	}
+	&.-img06:hover > .image {
+		background: url(#{$path}/free-services-a.png) transparent no-repeat center;
+		background-size: 120px;
+		-webkit-transition: background-image 0.5s linear;
+		transition: background-image 0.5s linear;
+	}
+
+	&.-img07 > .image {
+		background: url(#{$path}/small-fee-based.png) transparent no-repeat center;
+		background-size: 100px;
+		-webkit-transition: background-image 0.5s linear;
+		transition: background-image 0.5s linear;
+
+	}
+	&.-img07:hover > .image {
+		background: url(#{$path}/small-fee-based-a.png) transparent no-repeat center;
+		background-size: 100px;
+		-webkit-transition: background-image 0.5s linear;
+		transition: background-image 0.5s linear;
+	}
+
 }
