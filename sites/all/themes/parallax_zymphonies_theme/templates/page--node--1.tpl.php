@@ -196,7 +196,7 @@
  					<a class="btn btn-transparent -keepright _capital open-sub">Explore</a>
  				</div>
  				<div class="switch-content-sub" style="display:none">
-			    	<button type="button" class="close close-sub"><span aria-hidden="true"><img src="/sites/all/themes/parallax_zymphonies_theme/images/close.svg" /></span></button>
+			    	<button type="button" class="close close-sub"><span aria-hidden="true" class="sr-inly"></span></button>
  					<?php print $about_node->body['und'][0]['value'];?>
  				</div>
  			</div>
@@ -259,7 +259,7 @@
  					</div>
  				</div>
  				<div class="switch-content-sub" style="display:none">
-			    	<button type="button" class="close close-sub"><span aria-hidden="true"><img src="/sites/all/themes/parallax_zymphonies_theme/images/close.svg" /></span></button>
+			    	<button type="button" class="close close-sub"><span aria-hidden="true" class="sr-inly"></span></button>
 			    	<br />
 		      		<ul class="lightSliderCondition">
 		      			<li>
@@ -789,7 +789,7 @@ End Old Facility -->
 				</ul>
 	 			<!-- QR code hide -->
 				<div class="inner -left _text-right switch-content-sub" style="display:none">
-			    	<button type="button" class="close close-sub"><span aria-hidden="true"><img src="/sites/all/themes/parallax_zymphonies_theme/images/close.svg" /></span></button>
+			    	<button type="button" class="close close-sub"><span aria-hidden="true" class="sr-inly"></span></button>
 
 					QR Code Here
 				</div>
@@ -821,7 +821,7 @@ End Old Facility -->
  				</div>
 
 				<div class="switch-content-sub" style="display:none">
-			    	<button type="button" class="close close-sub"><span aria-hidden="true"><img src="/sites/all/themes/parallax_zymphonies_theme/images/close.svg" /></span></button>
+			    	<button type="button" class="close close-sub"><span aria-hidden="true" class="sr-only"></span></button>
 			      	<h2 class="text-modal">MAIL US</h2>
 
 					<?php
@@ -1221,7 +1221,7 @@ End Old Facility -->
 <div class="modal fade" id="aboutModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   	<div class="modal-dialog modal-lg" role="document">
     	<div class="modal-content text-modal">
-      		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="/sites/all/themes/parallax_zymphonies_theme/images/close.svg" /></span></button>
+      		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="sr-inly"></span></button>
       		<div class="modal-body text-modal">
       			<div class="modal-title modal-label">ABOUT OXOTEL</div>
       			<h3 class="text-center text-modal">OXOTEL</h3>
@@ -1296,7 +1296,7 @@ End Old Facility -->
 	<div class="modal-dialog modal-lg" role="document">
 	    <div class="modal-content">
 	      	<div class="modal-body textSlide-modal">
-	        	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="/sites/all/themes/parallax_zymphonies_theme/images/close.svg" /></span></button>
+	        	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="sr-inly"></span></button>
 	      		<ul class="lightSliderCondition">
 	      			<li>
 	      				<div>reservation</div>
@@ -1480,7 +1480,7 @@ End Old Facility -->
 	<div class="modal-dialog modal-lg" role="document">
 	    <div class="modal-content">
 	      	<div class="modal-body map-modal">
-	        	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="/sites/all/themes/parallax_zymphonies_theme/images/close.svg" /></span></button>
+	        	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="sr-only"></button>
 	        	<div id="iframe_map" style="height:500px; width:100%"></div>
 	      		<!--<iframe src="https://www.google.com/maps/d/embed?mid=11idAtyrUxD9qZCA6gGRayP18KsA&z=14&ll=18.7758, 98.98203" width="640" height="480"></iframe>-->
 	      	</div>
@@ -1493,7 +1493,7 @@ End Old Facility -->
 	<div class="modal-dialog modal-lg" role="document">
 	    <div class="modal-content">
 	      	<div class="modal-body form-modal">
-	        	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="/sites/all/themes/parallax_zymphonies_theme/images/close.svg" /></span></button>
+	        	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="sr-only"></span></button>
 	      		<h2 class="text-modal">ARK US</h2>
 	 			<?php
 					//module_load_include('inc', 'contact', 'contact.pages');

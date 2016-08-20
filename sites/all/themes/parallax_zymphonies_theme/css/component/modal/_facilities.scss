@@ -44,20 +44,6 @@
     }
 
 }
-.btn-facilities {
-    background-color: transparent;
-    color: #AFB0B3;
-    border: none;
-    padding: 3px 0;
-    display: block;
-    width: auto;
-    text-align: left;
-    &:hover,
-    &.active {
-        background-color: transparent;
-        color: $orange;
-    }
-}
 
 .facilities-switch-page {
     width: 640px;
