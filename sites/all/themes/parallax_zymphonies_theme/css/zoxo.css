@@ -439,6 +439,15 @@ button.close img {
     height: auto !important;
     margin-bottom: 55px !important; }
 
+@media (min-width: 992px) {
+  .modal-dialog.-facilities {
+    width: 1280px; } }
+.modal-dialog.-facilities .modal-content {
+  background-color: #FFF;
+  border: none; }
+.modal-dialog.-facilities .modal-body.slide-modal {
+  padding: 0; }
+
 .modal-content input.form-text,
 .modal-content textarea.form-textarea {
   border-color: #3E3E3E;
@@ -630,13 +639,13 @@ button.close img {
 .faci-img.-img02 > .image {
   background: url(/sites/all/themes/parallax_zymphonies_theme/images/garden-area.png) transparent no-repeat center;
   background-size: contain;
-  -webkit-transition: background-image 0.5s linear;
-  transition: background-image 0.5s linear; }
+  -webkit-transition: background-image 0.5s ease-in-out;
+  transition: background-image 0.5s ease-in-out; }
 .faci-img.-img02:hover > .image {
   background: url(/sites/all/themes/parallax_zymphonies_theme/images/garden-area-a.png) transparent no-repeat center;
   background-size: contain;
-  -webkit-transition: background-image 0.5s linear;
-  transition: background-image 0.5s linear; }
+  -webkit-transition: background-image 0.5s ease-in-out;
+  transition: background-image 0.5s ease-in-out; }
 .faci-img.-img03 > .image {
   background: url(/sites/all/themes/parallax_zymphonies_theme/images/kitchen.png) transparent no-repeat center;
   background-size: 120px;

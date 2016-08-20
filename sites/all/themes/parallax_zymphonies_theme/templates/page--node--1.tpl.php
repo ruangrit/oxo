@@ -672,12 +672,14 @@ End Old Facility -->
 	          <h1 class="headline__primary"><a href="#" style="color:#FFFFFF">CAFE</a></h1>
 	        </hgroup> -->
 			<div class="ct-wrapper">
-				<div class="inner -middle -center text-center text-bright">
+
+				<!-- <div class="inner -middle -center text-center text-bright">
 					<div class="inner-wrapper">
 						<h2 class="text-huge text-floatmiddle text-bright">Comming Soon...</h2>
 					</div>
-				</div>
-<!-- 				<div class="inner -middle -left _text-right text-bright">
+				</div> -->
+
+				<div class="inner -middle -left _text-right text-bright">
 					<div class="inner-wrapper">
 			            <h3><a class="text-bright" href="#">Cafe</a></h3>
 			            <div class="overflow-box">
@@ -710,7 +712,8 @@ End Old Facility -->
 					<div class="inner-wrapper">
 			            <h2 class="text-huge text-floatmiddle"><a class="text-bright" href="#">Artisan</a></h2>
 					</div>
-				</div> -->
+				</div>
+
 			</div>
         </div>
   	</div>
@@ -983,7 +986,7 @@ End Old Facility -->
 
 <!-- Facilities Modal -->
 <div class="modal fade" id="facilitiesModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog modal-lg" role="document">
+  <div class="modal-dialog modal-lg -facilities" role="document">
     <div class="modal-content">
       <div class="modal-body slide-modal">
 

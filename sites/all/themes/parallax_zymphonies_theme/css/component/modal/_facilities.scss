@@ -1,0 +1,12 @@
+.modal-dialog.-facilities {
+    @media (min-width: 992px) {
+        width: 1280px;
+    }
+    .modal-content {
+        background-color: #FFF;
+        border: none;
+    }
+    .modal-body.slide-modal {
+        padding: 0;
+    }
+}

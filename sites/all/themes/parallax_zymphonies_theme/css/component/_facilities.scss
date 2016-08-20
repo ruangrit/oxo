@@ -153,15 +153,15 @@ $path: "/sites/all/themes/parallax_zymphonies_theme/images";
 	&.-img02 > .image {
 		background: url(#{$path}/garden-area.png) transparent no-repeat center;
 		background-size: contain;
-		-webkit-transition: background-image 0.5s linear;
-		transition: background-image 0.5s linear;
+		-webkit-transition: background-image 0.5s ease-in-out;
+		transition: background-image 0.5s ease-in-out;
 
 	}
 	&.-img02:hover > .image {
 		background: url(#{$path}/garden-area-a.png) transparent no-repeat center;
 		background-size: contain;
-		-webkit-transition: background-image 0.5s linear;
-		transition: background-image 0.5s linear;
+		-webkit-transition: background-image 0.5s ease-in-out;
+		transition: background-image 0.5s ease-in-out;
 	}
 
 	&.-img03 > .image {
