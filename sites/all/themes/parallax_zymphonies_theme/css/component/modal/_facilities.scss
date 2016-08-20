@@ -5,12 +5,7 @@
     }
 
     @media (min-width: 992px) {
-        width: 1280px;
-    }
-    &.-sevices {
-        @media (min-width: 992px) {
-            width: 900px;
-        }
+        width: 950px;
     }
     .modal-content {
         background-color: #FFF;
@@ -26,8 +21,8 @@
 
     .slide-modal .lSSlideOuter {
         @media (min-width: 769px) {
-            width: 640px;
-            height: 400px;
+            width: 450px;
+            // height: 400px;
         }
     }
     .slide-modal .lSSlideOuter li > img {
@@ -37,31 +32,46 @@
 
     .modal-description {
         @media (min-width: 769px) {
-            width: 640px;
+            width: 450px;
             float: right;
-            padding-left: 35px;
+            padding-left: 0;
         }
     }
 
 }
+.modal-dialog.-services {
+    @media (min-width: 992px) {
+        width: 950px;
+    }
+    .modal-description {
+        padding-right: 50px;
+    }
+    .overflow-box.-services {
+        height: 300px;
+        margin-top: 60px;
+        margin-bottom: 100px;
+    }
+}
 
 .facilities-switch-page {
-    width: 640px;
-    position: absolute;
-    top: 200px;
-    margin-top: -21px;
-
+    position: relative;
+    width: 150px;
+    float: left;
+    margin-left: 50px;
     .lSPager {
         display: none;
     }
-    > .lSAction {
-        > .lSPrev {
-            left: 25px;
-        }
-        > .lSNext {
-            right: 25px;
-        }
+
+    > .lSAction > a {
+        position: relative;
+
     }
+	> .lSAction > .lSNext {
+		right: auto;
+	}
+	> .lSAction > .lSPrev {
+		left: auto;
+	}
 }
 
 .free-services {
@@ -85,5 +95,14 @@
     }
     ul > li {
         line-height: 20px;
+    }
+}
+
+.small-free-base,
+.freeservice {
+    padding-top: 15px;
+    .header {
+        font-size: 20px;
+        color: #5A5B5E;
     }
 }

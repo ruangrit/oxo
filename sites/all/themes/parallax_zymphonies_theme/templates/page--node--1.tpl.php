@@ -673,13 +673,13 @@ End Old Facility -->
 	        </hgroup> -->
 			<div class="ct-wrapper">
 
-				<!-- <div class="inner -middle -center text-center text-bright">
+				<div class="inner -middle -center text-center text-bright">
 					<div class="inner-wrapper">
 						<h2 class="text-huge text-floatmiddle text-bright">Comming Soon...</h2>
 					</div>
-				</div> -->
+				</div>
 
-				<div class="inner -middle -left _text-right text-bright">
+				<!-- <div class="inner -middle -left _text-right text-bright">
 					<div class="inner-wrapper">
 			            <h3><a class="text-bright" href="#">Cafe</a></h3>
 			            <div class="overflow-box">
@@ -712,7 +712,7 @@ End Old Facility -->
 					<div class="inner-wrapper">
 			            <h2 class="text-huge text-floatmiddle"><a class="text-bright" href="#">Artisan</a></h2>
 					</div>
-				</div>
+				</div> -->
 
 			</div>
         </div>
@@ -1058,38 +1058,6 @@ End Old Facility -->
 						<!-- End switch facilities popup-->
 
 		      		</div>
-
-					<div class="free-services">
-						<div class="left pull-left text-right">
-							<h3>FREE SERVICES</h3>
-							<ul class="list-unstyled">
-								<li>ELECTRIC KEYCARD</li>
-								<li>PERSONAL LOCKER</li>
-								<li>LUGGAGE STORAGE</li>
-								<li>INTETNET WI-FI</li>
-								<li>TOWELLS</li>
-								<li>SHOWER ROOM</li>
-								<li>FREE TOILETRIES</li>
-								<li>HAIR DRYER</li>
-								<li>TOURIST INFORMATION</li>
-								<li>CITY MAP</li>
-								<li>CCTV SYSTEM</li>
-							</ul>
-						</div>
-						<div class="right pull-left text-left">
-							<h3>SMALL FEE BASED</h3>
-							<ul class="list-unstyled">
-								<li>BICYCLE RENTAL</li>
-								<li>TRANSPORTATION SERVICE</li>
-								<li>VENDING MACHINE</li>
-								<li>WASHING MACHINE</li>
-								<li>POWER ADAPTER</li>
-								<li>EAR PLUG</li>
-								<li>PADLOCK</li>
-							</ul>
-						</div>
-					</div>
-
       </div>
     </div>
   </div>
@@ -1097,7 +1065,7 @@ End Old Facility -->
 
 <!-- Facilities Modal -->
 <div class="modal fade" id="facilitiesContentModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog modal-lg -facilities -services" role="document">
+  <div class="modal-dialog modal-lg -services" role="document">
     <div class="modal-content">
       <div class="modal-body slide-modal">
 
@@ -1127,7 +1095,7 @@ End Old Facility -->
 								?>
 								</ul>
 								<div class="modal-description">
-									<div class="overflow-box -modalrooms">
+									<div class="overflow-box -services">
 										<?php print $facilities->body['und'][0]['value']; ?>
 									</div>
 

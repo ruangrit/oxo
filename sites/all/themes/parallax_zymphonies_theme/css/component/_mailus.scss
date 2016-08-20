@@ -8,7 +8,6 @@
 
 .webform-client-form {
     position: relative;
-    padding-bottom: 180px;
 }
 
 .webform-component {
@@ -80,20 +79,32 @@
 	}
 	> li > a.facebook {
 		background: url(#{$path}/Facebook.png) transparent no-repeat center;
+		-webkit-transition: background-image 0.5s linear;
+		transition: background-image 0.5s linear;
 		&:hover {
 			background: url(#{$path}/Facebook-A.png) transparent no-repeat center;
+    		-webkit-transition: background-image 0.5s linear;
+    		transition: background-image 0.5s linear;
 		}
 	}
 	> li > a.instagram {
 		background: url(#{$path}/Instagram.png) transparent no-repeat center;
+		-webkit-transition: background-image 0.5s linear;
+		transition: background-image 0.5s linear;
 		&:hover {
 			background: url(#{$path}/Instagram-A.png) transparent no-repeat center;
+    		-webkit-transition: background-image 0.5s linear;
+    		transition: background-image 0.5s linear;
 		}
 	}
 	> li > a.line {
 		background: url(#{$path}/Line.png) transparent no-repeat center;
+		-webkit-transition: background-image 0.5s linear;
+		transition: background-image 0.5s linear;
 		&:hover {
 			background: url(#{$path}/Line-A.png) transparent no-repeat center;
+    		-webkit-transition: background-image 0.5s linear;
+    		transition: background-image 0.5s linear;
 		}
 	}
 }

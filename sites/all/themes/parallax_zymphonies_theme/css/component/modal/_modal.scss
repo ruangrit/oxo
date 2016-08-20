@@ -149,8 +149,18 @@
 .lSAction > a {
 	top: auto;
 	margin-top: 0;
-	background-image: url('../img/controls.svg');
+	background: url('../images/symbols.png') transparent no-repeat 0 -135px;
+	background-size: 174px;
 }
+.lSAction > a.lSPrev {
+	background-position: 0 -135px;
+	float: left;
+}
+.lSAction > a.lSNext {
+	background-position: -39px -135px;
+	float: right;
+}
+
 .lSSlideOuter.vertical .lSAction > a {
 	height: 20px;
 }

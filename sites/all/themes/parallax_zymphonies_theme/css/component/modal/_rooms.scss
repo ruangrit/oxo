@@ -1,0 +1,27 @@
+#roomsModal {
+    .modal-dialog {
+        @media (min-width: 992px) {
+            width: 950px;
+        }
+    }
+
+    .group-slide {
+        width: 950px;
+        height: 560px;
+    }
+
+    .lSSlideWrapper {
+        height: 560px;
+    }
+
+    .modal-description {
+        margin-top: 80px;
+        margin-bottom: 50px;
+    }
+
+    .overflow-box {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+}
