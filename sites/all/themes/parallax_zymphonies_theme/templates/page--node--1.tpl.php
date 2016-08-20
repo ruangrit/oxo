@@ -86,7 +86,7 @@
 					$('.switch-content-main').show();
 				}
 			}
-		  
+
 		});
 
 	}
@@ -197,7 +197,7 @@
  				</div>
  				<div class="switch-content-sub" style="display:none">
 			    	<button type="button" class="close close-sub"><span aria-hidden="true"><img src="/sites/all/themes/parallax_zymphonies_theme/images/close.svg" /></span></button>
- 					<?php print $about_node->body['und'][0]['value'];?> 
+ 					<?php print $about_node->body['und'][0]['value'];?>
  				</div>
  			</div>
  			<div class="inner -right switch-content-wrapper" slide="right">
@@ -845,8 +845,9 @@ End Old Facility -->
 <div class="footer">
 	<div class="booking-link">
 		<ul class="list-unstyled">
-			<li class="booking"><a href="" target="_blank">booking.com</a></li>
 			<li class="agoda"><a href="" target="_blank">agoda</a></li>
+			<li class="tripadvisor"><a href="" target="_blank">tripadvisor</a></li>
+			<li class="booking"><a href="" target="_blank">booking.com</a></li>
 			<li class="hostelworld"><a href="" target="_blank">hostel world</a></li>
 		</ul>
 	</div>
@@ -875,6 +876,7 @@ End Old Facility -->
 			<ul class="list-unstyled">
 				<li><a href="https://www.instagram.com/oxotelchiangmai/" target="_blank">Instagram</a></li>
 				<li><a href="https://www.facebook.com/oxotelhostel" target="_blank">Facebook</a></li>
+				<li><a href="">LINE</a></li>
 			</ul>
 		</div>
 		<div class="footer-list">
@@ -883,6 +885,7 @@ End Old Facility -->
 				<li><a href="http://l.facebook.com/l.php?u=http%3A%2F%2Fwww.agoda.com%2Foxotel-hostel%2Fhotel%2Fchiang-mai-th.html%3Fasq%3Du2qcKLxwzRU5NDuxJ0kOF8%252BzmLRvZQXVHFy2wHSdGKIFSKDtD0xR6njQwBLdDP7xerWduBIJ6k4cf5HcWilYNBLdZHzbs772XCoPWdSgD%252FTz17U3ZgWLnEdNzxKxNx92DsFKOYv4cKN%252BraPqz4f%252FLYprVp2TwP6wstUVR8FJRF%252BfkDX3uHFMuWTqeVL9h7qQKil0Kd5NpRQf1zGe1xDr05pxj%252FA%252BylTfAGs1qJCjm9k0V1AMDQx7njgkgAhn4vUi%26tick%3D636015089081%26pagetypeid%3D1%26origin%3DTH%26cid%3D-1%26htmlLanguage%3Den-us%26checkIn%3D2016-6-15%26checkout%3D2016-6-16%26los%3D1%26rooms%3D1%26adults%3D2%26childs%3D0%26isFromSearchBox%3Dtrue&h=MAQFxiyvL" target="_blank">Agoda</a></li>
 				<li><a href="#">Booking.com</a></li>
 				<li><a href="http://l.facebook.com/l.php?u=http%3A%2F%2Fwww.hostelworld.com%2Fhosteldetails.php%2FOxotel-Hostel%2FChiang-Mai%2F101918&h=MAQFxiyvL" target="_blank">Hostel world</a></li>
+				<li><a href="" target="_blank">Tripadvisor</a></li>
 			</ul>
 		</div>
 	</div>

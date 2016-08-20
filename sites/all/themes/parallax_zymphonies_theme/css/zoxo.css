@@ -189,37 +189,57 @@ ul.list-unstyled {
     color: #555;
     margin-bottom: 15px; }
   .footer-list ul > li a {
-    color: #aaa; }
+    color: #aaa;
+    font-size: 12px; }
   .footer-list ul > li a:hover {
     color: #ED932D; }
 
 .booking-link {
   display: block;
-  max-width: 660px;
+  max-width: 960px;
   width: 100%;
   margin: 0 auto 30px auto; }
   .booking-link ul > li {
-    display: inline-block;
-    margin: 0 40px; }
+    display: inline-block; }
   .booking-link ul > li > a {
     display: block;
     overflow: hidden;
     text-indent: -999em; }
-  .booking-link ul > li.booking > a {
-    background: url(../images/Booking.png) transparent no-repeat center;
-    background-size: contain;
-    width: 137px;
-    height: 48px; }
   .booking-link ul > li.agoda > a {
     background: url(../images/Agoda.png) transparent no-repeat center;
     background-size: contain;
-    width: 95px;
-    height: 48px; }
+    width: 120px;
+    height: 48px;
+    margin-right: 50px; }
+    .booking-link ul > li.agoda > a:hover {
+      background: url(../images/Agoda-A.png) transparent no-repeat center;
+      background-size: contain; }
+  .booking-link ul > li.tripadvisor > a {
+    background: url(../images/Trip.png) transparent no-repeat center;
+    background-size: contain;
+    width: 210px;
+    height: 48px;
+    margin-right: 50px; }
+    .booking-link ul > li.tripadvisor > a:hover {
+      background: url(../images/Trip-A.png) transparent no-repeat center;
+      background-size: contain; }
+  .booking-link ul > li.booking > a {
+    background: url(../images/Booking.png) transparent no-repeat center;
+    background-size: contain;
+    width: 192px;
+    height: 41px;
+    margin-right: 50px; }
+    .booking-link ul > li.booking > a:hover {
+      background: url(../images/Booking-A.png) transparent no-repeat center;
+      background-size: contain; }
   .booking-link ul > li.hostelworld > a {
     background: url(../images/Hostelworld.png) transparent no-repeat center;
     background-size: contain;
-    width: 165px;
-    height: 48px; }
+    width: 222px;
+    height: 45px; }
+    .booking-link ul > li.hostelworld > a:hover {
+      background: url(../images/Hostelworld-A.png) transparent no-repeat center;
+      background-size: contain; }
 
 .modal-content {
   border: 1px solid #3E3E3E; }

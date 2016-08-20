@@ -52,6 +52,7 @@ ul.list-unstyled {
 	}
 	ul > li a {
 		color: #aaa;
+		font-size: 12px;
 	}
 	ul > li a:hover {
 		color: $color-3;
@@ -59,38 +60,61 @@ ul.list-unstyled {
 }
 .booking-link {
 	display: block;
-	max-width: 660px;
+	max-width: 960px;
 	width: 100%;
 	margin: 0 auto 30px auto;
 
 	ul > li {
 		display: inline-block;
 		// width: 33.33%;
-		margin: 0 40px;
+		// margin: 0 40px;
 	}
 	ul > li > a {
 		display: block;
 		overflow: hidden;
 		text-indent: -999em;
-		// background: url(../images/Booking.png) transparent no-repeat center;
-		// background-size: contain;
-	}
-	ul > li.booking > a {
-		background: url(../images/Booking.png) transparent no-repeat center;
-		background-size: contain;
-		width: 137px;
-		height: 48px;
 	}
 	ul > li.agoda > a {
 		background: url(../images/Agoda.png) transparent no-repeat center;
 		background-size: contain;
-		width: 95px;
+		width: 120px;
 		height: 48px;
+		margin-right: 50px;
+		&:hover {
+			background: url(../images/Agoda-A.png) transparent no-repeat center;
+			background-size: contain;
+		}
+	}
+	ul > li.tripadvisor > a {
+		background: url(../images/Trip.png) transparent no-repeat center;
+		background-size: contain;
+		width: 210px;
+		height: 48px;
+		margin-right: 50px;
+		&:hover {
+			background: url(../images/Trip-A.png) transparent no-repeat center;
+			background-size: contain;
+		}
+	}
+	ul > li.booking > a {
+		background: url(../images/Booking.png) transparent no-repeat center;
+		background-size: contain;
+		width: 192px;
+		height: 41px;
+		margin-right: 50px;
+		&:hover {
+			background: url(../images/Booking-A.png) transparent no-repeat center;
+			background-size: contain;
+		}
 	}
 	ul > li.hostelworld > a {
 		background: url(../images/Hostelworld.png) transparent no-repeat center;
 		background-size: contain;
-		width: 165px;
-		height: 48px;
+		width: 222px;
+		height: 45px;
+		&:hover {
+			background: url(../images/Hostelworld-A.png) transparent no-repeat center;
+			background-size: contain;
+		}
 	}
 }
