@@ -44,8 +44,8 @@
    		parentSelectorByID.find('.group-slide .modal-description:eq(' + gid + ')').show();
    		// Fixed bug when change slide
    		$(window).trigger('resize');
-   		$('.group-slide .modal-description').find('.modaltitle-wrapper .title-rooms').removeClass('active');
-   		$('.group-slide .modal-description').find('.modaltitle-wrapper .title-rooms:eq(' + gid + ')').addClass('active');
+   		parentSelectorByID.find('.group-slide .modal-description').find('.modaltitle-wrapper .title-rooms').removeClass('active');
+   		parentSelectorByID.find('.group-slide .modal-description').find('.modaltitle-wrapper .title-rooms:eq(' + gid + ')').addClass('active');
    	}
 
 	// ==================== Video function
@@ -59,6 +59,26 @@
 		$('#video_player_area').find('iframe').css({'height': '560px'})
    		$(window).trigger('resize');
 	}
+
+	var switchContent = function () {
+		$('.switch-content-wrapper').each(function(i, obj) {
+
+			$(obj).find('.open-sub').click(function () {
+				$(obj).find('.switch-content-main').hide();
+				$(obj).find('.switch-content-sub').show('slide', { direction: $(obj).attr('slide') }, 200);
+
+		   		setTimeout(function(){
+					$(window).trigger('resize');
+		   		}, 200);
+
+			});
+			$(obj).find('.close-sub').click(function () {
+				$(obj).find('.switch-content-main').show();
+				$(obj).find('.switch-content-sub').hide();
+			});
+		});
+	}
+	//switchContent();
 
 </script>
 <div class="menu-wrap">
@@ -115,8 +135,8 @@
 	            <div>
 					<a class="btn -movies btn-transparent -keepright _capital" data-toggle="modal" data-target="#videoModal" id="modal_click_video"><span class="play"></span>MOVIE</a>
 	            </div>
-        		HOSTEL • GARDEN • CAFE<br/>
-        		<span class="small-text">oxotel hostel chiangmai thailand @ since 2015</span>
+        		<!--HOSTEL • GARDEN • CAFE<br/>-->
+        		<span class="small-text" style="color:#B4B4B4">oxotel hostel chiangmai thailand @ since 2015</span>
         	</div>
         </div>
     </div>
@@ -549,7 +569,7 @@ End Old Facility -->
 
 	<!--<iframe src="https://www.google.com/maps/d/embed?mid=11idAtyrUxD9qZCA6gGRayP18KsA&z=17&ll=18.7758, 98.98203" style="position:relative; top:-30px; border:none;"  width="1280" height="450"></iframe>-->
 	<!--<img src="sites/all/themes/parallax_zymphonies_theme/images/oxomap.png" width="100%" height="400">-->
-	<div id="mapDesktop" style="width:100%; height:400px"></div>
+	<div id="mapDesktop" style="width:100%; height:450px; top:-15px"></div>
 </div>
 <!--
 <div id="findus" class="desc-section -findus description-find_us">
@@ -587,22 +607,22 @@ End Old Facility -->
 <div id="about" class="description-main desc-section -reservation">
 	<div class="reservation-content">
 		<div class="ct-wrapper">
-			<div class="inner -left" id="findus_icon_content">
-				<ul class="list-unstyled social-gang">
-					<li><a class="line" onclick="$('#findus_icon_content').hide();$('#qr_code').show('slide', { direction: 'left' }, 200);">Line</a></li>
+			<div class="inner -left switch-content-wrapper" slide="left" id="findus_icon_content">
+				<ul class="list-unstyled social-gang switch-content-main">
+					<li><a hre="#" class="line open-sub">Line Icon Here</a></li>
 					<li><a class="facebook" href="https://www.facebook.com/oxotelhostel" target="_blank">Facebook</a></li>
-					<li><a class="Instagram" href="https://www.instagram.com/oxotelchiangmai/" target="_blank">Instagram</a></li>
+					<li><a class="instagram" href="https://www.instagram.com/oxotelchiangmai/" target="_blank">Instagram</a></li>
 				</ul>
+	 			<!-- QR code hide -->
+				<div class="inner -left _text-right switch-content-sub" style="display:none">
+			    	<button type="button" class="close close-sub"><span aria-hidden="true"><img src="/sites/all/themes/parallax_zymphonies_theme/images/close.svg" /></span></button>
+
+					QR Code Here
+				</div>
  			</div>
- 			<!-- QR code hide -->
-			<div class="inner -left _text-right" id="qr_code" style="display:none">
-		    	<button onclick="$('#qr_code').hide();$('#findus_icon_content').show();" type="button" class="close"><span aria-hidden="true"><img src="/sites/all/themes/parallax_zymphonies_theme/images/close.svg" /></span></button>
 
-				QR Code Here
-			</div>
-
- 			<div class="inner -right" id="findus_content">
-				<div class="inner-wrapper _text-grey">
+ 			<div class="inner -right switch-content-wrapper" id="findus_content" slide="right">
+				<div class="inner-wrapper _text-grey switch-content-main">
 					<h3 class="desc-header _capital _text-grey">FIND US</h3>
 
 					<div class="overflow-box">
@@ -621,23 +641,25 @@ End Old Facility -->
  					</p>
 					</div>
 
- 					<a onclick="$('#findus_content').hide();$('#mailus_form').show('slide', { direction: 'right' }, 200);$(window).trigger('resize');" class="btn btn-transparent _capital _pull-left _margin-right">MAIL US</a>
+ 					<a class="btn btn-transparent _capital _pull-left _margin-right open-sub">MAIL US</a>
 					<!--<a id="modal_click_map" class="btn btn-transparent _capital" data-toggle="modal" data-target="#mapModal">Map</a>-->
 
  				</div>
+
+				<div class="switch-content-sub" style="display:none">
+			    	<button type="button" class="close close-sub"><span aria-hidden="true"><img src="/sites/all/themes/parallax_zymphonies_theme/images/close.svg" /></span></button>
+			      	<h2 class="text-modal">MAIL US</h2>
+
+					<?php
+
+			 			$nid = 18;
+						$wnode = node_load($nid);
+						$form = drupal_get_form('webform_client_form_' . $nid, $wnode, array());
+						print render($form);
+					?>
+				</div>
+
  			</div>
-			<div class="inner -right" id="mailus_form" style="display:none">
-		    	<button onclick="$('#mailus_form').hide();$('#findus_content').show();" type="button" class="close"><span aria-hidden="true"><img src="/sites/all/themes/parallax_zymphonies_theme/images/close.svg" /></span></button>
-		      	<h2 class="text-modal">MAIL US</h2>
-
-				<?php
-
-		 			$nid = 18;
-					$wnode = node_load($nid);
-					$form = drupal_get_form('webform_client_form_' . $nid, $wnode, array());
-					print render($form);
-				?>
-			</div>
 
 		</div>
 	</div>
@@ -925,14 +947,14 @@ End Old Facility -->
 
 						<div class="facilities-switch-page">
 							<div class="lSAction">
-								<a class="lSPrev"></a>
-								<a class="lSNext" data-toggle="modal" data-target="#facilitiesContentModal" id="modal_click_facilities_content" data-dismiss="modal" aria-label="Close"></a>
+								<a class="lSPrev" onclick="$('#modal_click_facilities').trigger('click')" data-dismiss="modal" aria-label="Close"></a>
+								<a class="lSNext"></a>
 
 							</div>
 							<ul class="lSPager lSpg" style="margin-top: 5px;">
-								<li class="active">
+								<li>
 									<a href="#">1</a>
-								</li>
+								</li class="active">
 								<li>
 									<a href="#">2</a>
 								</li>
@@ -1317,6 +1339,9 @@ End Old Facility -->
 
 	    		}, 200);
 			}
+			else {
+				$(window).trigger('resize');
+			}
     	});
 
   		var is_slice_facilities = false;
@@ -1335,6 +1360,9 @@ End Old Facility -->
 
 	    		}, 200);
 			}
+			else {
+				$(window).trigger('resize');
+			}
     	});
 
   		var is_slice_facilities_content = false;
@@ -1347,11 +1375,14 @@ End Old Facility -->
 			    		auto: false,
 			    		controls: true,
 			    	});
-		    		is_slice_facilities = true;
+		    		is_slice_facilities_content = true;
 		    		showGroupSlide(0, 'facilitiesContentModal');
 		    		refreshGlobal();
 
 	    		}, 200);
+			}
+			else {
+				$(window).trigger('resize');
 			}
     	});
     	// =============================
@@ -1418,39 +1449,39 @@ End Old Facility -->
   	});
 </script>
 
-       <script type="text/javascript">
-            //google.maps.event.addDomListener(window, 'load', init);
+<script type="text/javascript">
+    //google.maps.event.addDomListener(window, 'load', init);
 
-            function init(selectorId) {
+    function init(selectorId) {
 
-                var mapOptions = {
-                    zoom: 13,
-                    scrollwheel: false,
-                    center: new google.maps.LatLng(18.7758, 98.98203),
-                    styles: [{"featureType":"administrative","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"visibility":"simplified"},{"color":"#fcfcfc"}]},{"featureType":"poi","elementType":"geometry","stylers":[{"visibility":"simplified"},{"color":"#fcfcfc"}]},{"featureType":"road.highway","elementType":"geometry","stylers":[{"visibility":"simplified"},{"color":"#dddddd"}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"visibility":"simplified"},{"color":"#dddddd"}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"visibility":"simplified"},{"color":"#eeeeee"}]},{"featureType":"water","elementType":"geometry","stylers":[{"visibility":"simplified"},{"color":"#dddddd"}]}]
-                };
+        var mapOptions = {
+            zoom: 13,
+            scrollwheel: false,
+            center: new google.maps.LatLng(18.7758, 98.98203),
+            styles: [{"featureType":"administrative","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"visibility":"simplified"},{"color":"#fcfcfc"}]},{"featureType":"poi","elementType":"geometry","stylers":[{"visibility":"simplified"},{"color":"#fcfcfc"}]},{"featureType":"road.highway","elementType":"geometry","stylers":[{"visibility":"simplified"},{"color":"#dddddd"}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"visibility":"simplified"},{"color":"#dddddd"}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"visibility":"simplified"},{"color":"#eeeeee"}]},{"featureType":"water","elementType":"geometry","stylers":[{"visibility":"simplified"},{"color":"#dddddd"}]}]
+        };
 
 
-                var mapElement = document.getElementById(selectorId);
+        var mapElement = document.getElementById(selectorId);
 
-                var map = new google.maps.Map(mapElement, mapOptions);
+        var map = new google.maps.Map(mapElement, mapOptions);
 
-                var marker = new google.maps.Marker({
-                    position: new google.maps.LatLng(18.7758, 98.98203),
-                    map: map,
-                    title: 'OXOTEL'
-                });
-            }
+        var marker = new google.maps.Marker({
+            position: new google.maps.LatLng(18.7758, 98.98203),
+            map: map,
+            title: 'OXOTEL'
+        });
+    }
 
-            $(document).ready(function () {
+    $(document).ready(function () {
 
-            	setTimeout(function(){
-	            	init('mapDesktop');
+    	setTimeout(function(){
+        	init('mapDesktop');
 
-	    		}, 200);
+		}, 200);
 
-            });
-        </script>
-        <script async defer
+    });
+</script>
+<script async defer
         src="https://maps.googleapis.com/maps/api/js?signed_in=true">
 </script>
