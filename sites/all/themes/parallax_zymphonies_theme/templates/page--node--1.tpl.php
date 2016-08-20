@@ -488,7 +488,7 @@
 <div id="facilities" class="desc-section -facilities">
 	<div class="facilities-content">
 		<div class="ct-wrapper">
-			<h3 class="textLightWhiteBg">FACILITIES</h3>
+			<h3 class="text-center textLightWhiteBg">FACILITIES</h3>
 
 			<div class="faciimg-wrapper">
 				<div class="faciitem">
@@ -1098,11 +1098,11 @@ End Old Facility -->
 
 <!-- Facilities Modal -->
 <div class="modal fade" id="facilitiesContentModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog modal-lg" role="document">
+  <div class="modal-dialog modal-lg -facilities" role="document">
     <div class="modal-content">
       <div class="modal-body slide-modal">
 
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="/sites/all/themes/parallax_zymphonies_theme/images/close.svg" /></span></button>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="sr-only">close</span></button>
 		      		<div class="group-slide">
 
 	      				<?php
@@ -1133,7 +1133,7 @@ End Old Facility -->
 					      					$j = 0;
 											foreach($facilities_content_modal_node as $facilities2){
 												?>
-													<div class="btn btn-transparent _modaltitle title-rooms" onclick="showGroupSlide(<?php print $j;?>, 'facilitiesContentModal')"><?php print $facilities2->title;?></div>
+													<div class="btn btn-facilities" onclick="showGroupSlide(<?php print $j;?>, 'facilitiesContentModal')"><?php print $facilities2->title;?></div>
 												<?php
 												$j++;
 											}
@@ -1238,7 +1238,7 @@ End Old Facility -->
 <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   	<div class="modal-dialog modal-lg" role="document">
     	<div class="modal-content text-modal">
-      		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="/sites/all/themes/parallax_zymphonies_theme/images/close.svg" /></span></button>
+      		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="sr-only">close</span></button>
       		<div class="modal-body text-modal video-modal">
       			<div class="video-iframe-wrapper">
       				<div id="video_player_area"></div>

@@ -38,21 +38,6 @@
         }
     }
 
-    button.close {
-        border: none;
-        width: 33px;
-        height: 33px;
-        background: url(#{$imagePath}/symbols.png) transparent no-repeat 0 0;
-        background-size: 174px;
-        &:hover {
-            background: url(#{$imagePath}/symbols.png) transparent no-repeat -43px 0;
-        }
-    }
-    .modal-content button.close > span {
-        font-size: 0;
-        line-height: 0;
-    }
-
 }
 .btn-facilities {
     background-color: transparent;

@@ -241,13 +241,24 @@ ul.list-unstyled {
       background: url(../images/Hostelworld-A.png) transparent no-repeat center;
       background-size: contain; }
 
-.modal-content {
-  border: 1px solid #3E3E3E; }
-  .modal-content button.close {
-    position: absolute;
-    top: 30px;
-    right: 30px;
-    z-index: 999; }
+.modal-content button.close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  z-index: 999;
+  opacity: 1; }
+.modal-content button.close {
+  border: none;
+  width: 33px;
+  height: 33px;
+  background: url(/sites/all/themes/parallax_zymphonies_theme/images/symbols.png) transparent no-repeat 1px 0;
+  background-size: 174px; }
+  .modal-content button.close:hover {
+    background: url(/sites/all/themes/parallax_zymphonies_theme/images/symbols.png) transparent no-repeat -43px 0;
+    background-size: 174px; }
+.modal-content .modal-content button.close > span {
+  font-size: 0;
+  line-height: 0; }
 
 .modal-title {
   font-size: 15px;
@@ -309,40 +320,10 @@ ul.list-unstyled {
   float: right;
   width: 250px; }
 
-button.close {
-  opacity: 1;
-  border: 1px solid #AEAFB5;
-  border-radius: 25px;
-  width: 50px;
-  height: 50px; }
-  button.close > span {
-    font-size: 48px;
-    line-height: 48px;
-    width: 100%; }
-  button.close:hover {
-    background-color: transparent; }
-
-button.close img {
-  width: 24px;
-  height: 24px; }
-
 .modal-content {
-  background-color: rgba(39, 39, 39, 0.93);
   border-radius: 0;
   color: #AEAFB5;
   overflow: hidden; }
-  .modal-content button.close {
-    opacity: 1;
-    border: 1px solid #AEAFB5;
-    border-radius: 25px;
-    width: 50px;
-    height: 50px; }
-    .modal-content button.close > span {
-      font-size: 48px;
-      line-height: 48px;
-      width: 100%; }
-    .modal-content button.close:hover {
-      background-color: transparent; }
 
 .modal-description {
   margin-top: 25px; }
@@ -463,17 +444,6 @@ button.close img {
     width: 640px;
     float: right;
     padding-left: 35px; } }
-.modal-dialog.-facilities button.close {
-  border: none;
-  width: 33px;
-  height: 33px;
-  background: url(/sites/all/themes/parallax_zymphonies_theme/images/symbols.png) transparent no-repeat 0 0;
-  background-size: 174px; }
-  .modal-dialog.-facilities button.close:hover {
-    background: url(/sites/all/themes/parallax_zymphonies_theme/images/symbols.png) transparent no-repeat -43px 0; }
-.modal-dialog.-facilities .modal-content button.close > span {
-  font-size: 0;
-  line-height: 0; }
 
 .btn-facilities {
   background-color: transparent;
