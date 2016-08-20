@@ -439,6 +439,8 @@ button.close img {
     height: auto !important;
     margin-bottom: 55px !important; }
 
+.modal-dialog.-facilities .overflow-box {
+  color: #5A5B5E; }
 @media (min-width: 992px) {
   .modal-dialog.-facilities {
     width: 1280px; } }
@@ -447,6 +449,73 @@ button.close img {
   border: none; }
 .modal-dialog.-facilities .modal-body.slide-modal {
   padding: 0; }
+.modal-dialog.-facilities .group-slide {
+  width: 100%;
+  float: left; }
+@media (min-width: 769px) {
+  .modal-dialog.-facilities .slide-modal .lSSlideOuter {
+    width: 640px;
+    height: 400px; } }
+.modal-dialog.-facilities .slide-modal .lSSlideOuter li > img {
+  border: none; }
+@media (min-width: 769px) {
+  .modal-dialog.-facilities .modal-description {
+    width: 640px;
+    float: right;
+    padding-left: 35px; } }
+.modal-dialog.-facilities button.close {
+  border: none;
+  width: 33px;
+  height: 33px;
+  background: url(/sites/all/themes/parallax_zymphonies_theme/images/symbols.png) transparent no-repeat 0 0;
+  background-size: 174px; }
+  .modal-dialog.-facilities button.close:hover {
+    background: url(/sites/all/themes/parallax_zymphonies_theme/images/symbols.png) transparent no-repeat -43px 0; }
+.modal-dialog.-facilities .modal-content button.close > span {
+  font-size: 0;
+  line-height: 0; }
+
+.btn-facilities {
+  background-color: transparent;
+  color: #AFB0B3;
+  border: none;
+  padding: 3px 0;
+  display: block;
+  width: auto;
+  text-align: left; }
+  .btn-facilities:hover, .btn-facilities.active {
+    background-color: transparent;
+    color: #ED932D; }
+
+.facilities-switch-page {
+  width: 640px;
+  position: absolute;
+  top: 200px;
+  margin-top: -21px; }
+  .facilities-switch-page .lSPager {
+    display: none; }
+  .facilities-switch-page > .lSAction > .lSPrev {
+    left: 25px; }
+  .facilities-switch-page > .lSAction > .lSNext {
+    right: 25px; }
+
+.free-services {
+  width: 100%;
+  float: left;
+  margin-top: 70px;
+  margin-bottom: 50px; }
+  .free-services > div {
+    box-sizing: border-box;
+    width: 640px; }
+  .free-services > .left {
+    padding-right: 35px; }
+  .free-services > .right {
+    padding-left: 35px; }
+  .free-services h3 {
+    color: #5A5B5E;
+    margin-bottom: 15px; }
+  .free-services ul > li {
+    line-height: 20px; }
 
 .modal-content input.form-text,
 .modal-content textarea.form-textarea {

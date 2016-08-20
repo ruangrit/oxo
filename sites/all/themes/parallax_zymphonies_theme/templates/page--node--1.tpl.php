@@ -990,7 +990,7 @@ End Old Facility -->
     <div class="modal-content">
       <div class="modal-body slide-modal">
 
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="/sites/all/themes/parallax_zymphonies_theme/images/close.svg" /></span></button>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="sr-only">close</span></button>
 		      		<div class="group-slide">
 
 	      				<?php
@@ -1021,7 +1021,7 @@ End Old Facility -->
 					      					$j = 0;
 											foreach($facilities_modal_node as $facilities2){
 												?>
-													<div class="btn btn-transparent _modaltitle title-rooms" onclick="showGroupSlide(<?php print $j;?>, 'facilitiesModal')"><?php print $facilities2->title;?></div>
+													<div class="btn btn-facilities" onclick="showGroupSlide(<?php print $j;?>, 'facilitiesModal')"><?php print $facilities2->title;?></div>
 												<?php
 												$j++;
 											}
@@ -1060,6 +1060,36 @@ End Old Facility -->
 
 		      		</div>
 
+					<div class="free-services">
+						<div class="left pull-left text-right">
+							<h3>FREE SERVICES</h3>
+							<ul class="list-unstyled">
+								<li>ELECTRIC KEYCARD</li>
+								<li>PERSONAL LOCKER</li>
+								<li>LUGGAGE STORAGE</li>
+								<li>INTETNET WI-FI</li>
+								<li>TOWELLS</li>
+								<li>SHOWER ROOM</li>
+								<li>FREE TOILETRIES</li>
+								<li>HAIR DRYER</li>
+								<li>TOURIST INFORMATION</li>
+								<li>CITY MAP</li>
+								<li>CCTV SYSTEM</li>
+							</ul>
+						</div>
+						<div class="right pull-left text-left">
+							<h3>SMALL FEE BASED</h3>
+							<ul class="list-unstyled">
+								<li>BICYCLE RENTAL</li>
+								<li>TRANSPORTATION SERVICE</li>
+								<li>VENDING MACHINE</li>
+								<li>WASHING MACHINE</li>
+								<li>POWER ADAPTER</li>
+								<li>EAR PLUG</li>
+								<li>PADLOCK</li>
+							</ul>
+						</div>
+					</div>
 
       </div>
     </div>

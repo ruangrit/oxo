@@ -1,4 +1,9 @@
 .modal-dialog.-facilities {
+
+    .overflow-box {
+        color: #5A5B5E;
+    }
+
     @media (min-width: 992px) {
         width: 1280px;
     }
@@ -8,5 +13,101 @@
     }
     .modal-body.slide-modal {
         padding: 0;
+    }
+    .group-slide {
+        width: 100%;
+        float: left;
+    }
+
+    .slide-modal .lSSlideOuter {
+        @media (min-width: 769px) {
+            width: 640px;
+            height: 400px;
+        }
+    }
+    .slide-modal .lSSlideOuter li > img {
+        border: none;
+    }
+
+
+    .modal-description {
+        @media (min-width: 769px) {
+            width: 640px;
+            float: right;
+            padding-left: 35px;
+        }
+    }
+
+    button.close {
+        border: none;
+        width: 33px;
+        height: 33px;
+        background: url(#{$imagePath}/symbols.png) transparent no-repeat 0 0;
+        background-size: 174px;
+        &:hover {
+            background: url(#{$imagePath}/symbols.png) transparent no-repeat -43px 0;
+        }
+    }
+    .modal-content button.close > span {
+        font-size: 0;
+        line-height: 0;
+    }
+
+}
+.btn-facilities {
+    background-color: transparent;
+    color: #AFB0B3;
+    border: none;
+    padding: 3px 0;
+    display: block;
+    width: auto;
+    text-align: left;
+    &:hover,
+    &.active {
+        background-color: transparent;
+        color: $orange;
+    }
+}
+
+.facilities-switch-page {
+    width: 640px;
+    position: absolute;
+    top: 200px;
+    margin-top: -21px;
+
+    .lSPager {
+        display: none;
+    }
+    > .lSAction {
+        > .lSPrev {
+            left: 25px;
+        }
+        > .lSNext {
+            right: 25px;
+        }
+    }
+}
+
+.free-services {
+    width: 100%;
+    float: left;
+    margin-top: 70px;
+    margin-bottom: 50px;
+    > div {
+        box-sizing: border-box;
+        width: 640px;
+    }
+    > .left {
+        padding-right: 35px;
+    }
+    > .right {
+        padding-left: 35px;
+    }
+    h3 {
+        color: #5A5B5E;
+        margin-bottom: 15px;
+    }
+    ul > li {
+        line-height: 20px;
     }
 }
