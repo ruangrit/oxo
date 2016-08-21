@@ -133,7 +133,8 @@
     height: auto; }
 
 .reservation-content {
-  display: block; }
+  display: block;
+  min-height: 260px; }
 
 .findus-content h3 {
   margin-bottom: 30px; }
