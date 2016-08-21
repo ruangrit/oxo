@@ -548,6 +548,12 @@ ul.list-unstyled {
 #roomsModal .overflow-box {
   margin-top: 50px;
   margin-bottom: 50px; }
+#roomsModal .slide-modal .group-slide > .lSSlideOuter .lSAction {
+  position: absolute;
+  width: 475px;
+  height: 30px;
+  top: 50%;
+  margin-top: -15px; }
 
 .modal-content input.form-text,
 .modal-content textarea.form-textarea {
@@ -1076,5 +1082,9 @@ h1, h2, h3, h4 {
 
 .flexbox__item.-bottom {
   vertical-align: bottom; }
+
+.btn.active,
+.btn:active {
+  box-shadow: none !important; }
 
 /*# sourceMappingURL=zoxo.css.map */
