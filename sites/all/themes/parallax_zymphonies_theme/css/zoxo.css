@@ -410,20 +410,6 @@ ul.list-unstyled {
 .modal-dialog.-services .overflow-box.-services {
   height: 300px; }
 
-.facilities-switch-page {
-  position: relative;
-  width: 150px;
-  float: left;
-  margin-left: 50px; }
-  .facilities-switch-page .lSPager {
-    display: block; }
-  .facilities-switch-page > .lSAction > a {
-    position: relative; }
-  .facilities-switch-page > .lSAction > .lSNext {
-    right: auto; }
-  .facilities-switch-page > .lSAction > .lSPrev {
-    left: auto; }
-
 .free-services {
   width: 100%;
   float: left;
@@ -993,11 +979,34 @@ button.close {
     background-position: -142px -5px; }
 
 /*
+** lSAction switch modal page
+*/
+.facilities-switch-page {
+  position: relative;
+  width: 150px;
+  float: left;
+  margin-left: 50px; }
+  .facilities-switch-page > .lSAction > a {
+    position: relative;
+    width: 30px;
+    height: 25px; }
+  .facilities-switch-page > .lSAction > .lSPrev {
+    left: auto;
+    float: left;
+    background-position: 0 -137px; }
+  .facilities-switch-page > .lSAction > .lSNext {
+    right: auto;
+    float: right;
+    background-position: -25px -185px; }
+
+/*
 ** lSAction in slide-text
 */
 /*
-** lSAction in switch modal (facilities)
+** lSPager in switch modal (facilities)
 */
+.facilities-switch-page .lSPager {
+  display: block; }
 .facilities-switch-page .lSPager.lSpg {
   margin-left: 12px;
   margin-top: 7px !important;

@@ -9,14 +9,6 @@
     	background: url('../images/symbols.png') transparent no-repeat 0 0;
     	background-size: 174px;
     }
-    // > a.lSPrev {
-    // 	background-position: 0 -135px;
-    // 	float: left;
-    // }
-    // > a.lSNext {
-    // 	background-position: -20px -135px;
-    // 	float: right;
-    // }
 }
 
 .lSSlideOuter.vertical .lSAction > a {
@@ -51,33 +43,45 @@
 }
 
 /*
-** lSAction in slide-text
-*/
-
-// .textSlide-modal {
-// 	.lSSlideWrapper {
-// 		padding-bottom: 30px;
-// 		@media (max-width: 768px) {
-// 			padding-bottom: 15px;
-// 		}
-// 	}
-// 	.lSAction {
-// 		width: 250px;
-//     	position: absolute;
-//     	right: 0;
-//     	bottom: 0;
-// 	}
-// 	.lSPager {
-// 		float: right;
-// 		width: 250px;
-// 	}
-// }
-
-/*
-** lSAction in switch modal (facilities)
+** lSAction switch modal page
 */
 
 .facilities-switch-page {
+    position: relative;
+    width: 150px;
+    float: left;
+    margin-left: 50px;
+    > .lSAction > a {
+        position: relative;
+        width: 30px;
+        height: 25px;
+    }
+	> .lSAction > .lSPrev {
+		left: auto;
+        float: left;
+        background-position: 0 -137px;
+	}
+	> .lSAction > .lSNext {
+		right: auto;
+        float: right;
+        background-position: -25px -185px;
+	}
+}
+
+/*
+** lSAction in slide-text
+*/
+
+// Code Here
+
+/*
+** lSPager in switch modal (facilities)
+*/
+
+.facilities-switch-page {
+    .lSPager {
+        display: block;
+    }
     .lSPager.lSpg {
     	margin-left: 12px;
     	margin-top: 7px !important;
