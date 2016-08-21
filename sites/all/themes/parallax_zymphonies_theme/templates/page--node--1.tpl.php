@@ -942,7 +942,9 @@ End Old Facility -->
 								foreach($room->field_slide_image['und'] as $image){
 									?>
 									  <li>
-							           		<img src="<?php print file_create_url($image['uri']);?>" width="500">
+											<?php print theme('image_style',array('style_name' => 'slide_modal', 'path' => $image['uri'])); ?>
+
+							           		<!--<img src="<?php print file_create_url($image['uri']);?>" width="500">-->
 									  </li>
 
 									<?php
@@ -1032,7 +1034,9 @@ End Old Facility -->
 								foreach($facilities->field_slide_image['und'] as $image){
 									?>
 									  <li>
-							           		<img src="<?php print file_create_url($image['uri']);?>" width="500">
+   											<?php print theme('image_style',array('style_name' => 'slide_modal', 'path' => $image['uri'])); ?>
+
+							           		<!--<img src="<?php print file_create_url($image['uri']);?>" width="500">-->
 									  </li>
 
 									<?php
@@ -1112,7 +1116,9 @@ End Old Facility -->
 								foreach($facilities->field_slide_image['und'] as $image){
 									?>
 									  <li>
-							           		<img src="<?php print file_create_url($image['uri']);?>" width="500">
+ 											<?php print theme('image_style',array('style_name' => 'slide_modal', 'path' => $image['uri'])); ?>
+
+							           		<!--<img src="<?php print file_create_url($image['uri']);?>" width="500">-->
 									  </li>
 
 									<?php
