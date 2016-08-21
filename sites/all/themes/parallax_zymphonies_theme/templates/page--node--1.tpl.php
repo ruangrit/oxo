@@ -44,8 +44,8 @@
    		parentSelectorByID.find('.group-slide .modal-description:eq(' + gid + ')').show();
    		// Fixed bug when change slide
    		$(window).trigger('resize');
-   		parentSelectorByID.find('.group-slide .modal-description').find('.modaltitle-wrapper .title-rooms').removeClass('active');
-   		parentSelectorByID.find('.group-slide .modal-description').find('.modaltitle-wrapper .title-rooms:eq(' + gid + ')').addClass('active');
+   		parentSelectorByID.find('.group-slide .modal-description').find('.modaltitle-wrapper .btn').removeClass('active');
+   		parentSelectorByID.find('.group-slide .modal-description').find('.modaltitle-wrapper .btn:eq(' + gid + ')').addClass('active');
    	}
 
 	// ==================== Video function
@@ -779,7 +779,7 @@ End Old Facility -->
 	</div>
 </div>
 -->
-<div id="about" class="description-main desc-section -reservation">
+<div id="findus" class="description-main desc-section -reservation">
 	<div class="reservation-content">
 		<div class="ct-wrapper">
 			<div class="inner -left switch-content-wrapper" slide="left" id="findus_icon_content">
