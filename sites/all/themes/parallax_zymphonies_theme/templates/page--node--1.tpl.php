@@ -1144,7 +1144,7 @@ End Old Facility -->
 						?>
 						<!-- Start switch facilities popup-->
 
-						<div class="facilities-switch-page">
+						<div class="facilities-switch-page active-second">
 							<div class="lSAction">
 								<a class="lSPrev" onclick="openFacilitiesModal(0)" data-dismiss="modal" aria-label="Close"></a>
 								<a class="lSNext"></a>
@@ -1571,6 +1571,7 @@ End Old Facility -->
 			    		auto: false,
 			    		controls: true,
 			    	});
+			    	$('.active-second').find('li:eq("1")').addClass('active');
 		    		is_slice_facilities_content = true;
 		    		showGroupSlide(0, 'facilitiesContentModal');
 		    		refreshGlobal();
