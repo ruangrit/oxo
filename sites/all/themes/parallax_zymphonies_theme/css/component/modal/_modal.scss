@@ -76,46 +76,6 @@
 	overflow: hidden;
 }
 
-.slide-modal {
-	.modal-title {
-		@media (min-width: 769px) {
-			margin-left: 100px;
-		}
-		margin-bottom: 30px;
-	}
-	.group-slide > .lSSlideOuter .lSAction {
-		position: absolute;
-		width: 450px;
-		height: 30px;
-		top: 50%;
-		margin-top: -15px;
-		> .lSNext {
-			right: 25px;
-		}
-		> .lSPrev {
-			left: 25px;
-		}
-	}
-}
-.textSlide-modal {
-	.lSSlideWrapper {
-		padding-bottom: 30px;
-		@media (max-width: 768px) {
-			padding-bottom: 15px;
-		}
-	}
-	.lSAction {
-		width: 250px;
-    	position: absolute;
-    	right: 0;
-    	bottom: 0;
-	}
-	.lSPager {
-		float: right;
-		width: 250px;
-	}
-}
-
 .modal-content {
 	background-color: rgba(39, 39, 39, .93);
 	border-radius: 0;
@@ -134,79 +94,13 @@
 	}
 }
 
-.slide-modal .lSSlideOuter {
-	@media (max-width: 768px) {
+.slide-modal {
+	.modal-title {
+		@media (min-width: 769px) {
+			margin-left: 100px;
+		}
 		margin-bottom: 30px;
 	}
-	@media (min-width: 769px) {
-		width: 50%;
-		float: left;
-	}
-}
-
-.lSSlideWrapper {
-	overflow: visible;
-}
-.lSSlideOuter .lSPager.lSpg {
-	line-height: 30px;
-}
-
-.lSAction > a {
-	top: auto;
-	margin-top: 0;
-	background: url('../images/symbols.png') transparent no-repeat 0 -135px;
-	background-size: 174px;
-}
-.lSAction > a.lSPrev {
-	background-position: 0 -135px;
-	float: left;
-}
-.lSAction > a.lSNext {
-	background-position: -20px -135px;
-	float: right;
-}
-
-.lSSlideOuter.vertical .lSAction > a {
-	height: 20px;
-}
-.lSSlideOuter.vertical .lSAction > .lSNext {
-    background-position: 31px -35px;
-}
-
-// Switch modal pager
-.facilities-switch-page .lSPager.lSpg {
-	margin-left: 12px;
-	margin-top: 7px !important;
-	display: inline-block;
-}
-.facilities-switch-page .lSPager.lSpg > li {
-	cursor: pointer;
-    display: inline-block;
-    padding: 0 5px;
-
-	padding: 0 8px;
-}
-.facilities-switch-page .lSPager.lSpg > li a {
-	cursor: pointer;
-	background-color: #222222;
-    border-radius: 30px;
-    display: inline-block;
-    height: 8px;
-    overflow: hidden;
-    text-indent: -999em;
-    width: 8px;
-    position: relative;
-    z-index: 99;
-    -webkit-transition: all 0.5s linear 0s;
-    transition: all 0.5s linear 0s;
-
-	background-color: $color-1;
-	width: 12px;
-	height: 12px;
-}
-.facilities-switch-page .lSPager.lSpg > li.active a,
-.facilities-switch-page .lSPager.lSpg > li:hover a {
-	background-color: $color-4;
 }
 
 .title-outsideSlider {

@@ -301,36 +301,6 @@ ul.list-unstyled {
   .modal-body > .modal-label {
     margin-bottom: 100px; }
 
-.slide-modal .modal-title {
-  margin-bottom: 30px; }
-  @media (min-width: 769px) {
-    .slide-modal .modal-title {
-      margin-left: 100px; } }
-.slide-modal .group-slide > .lSSlideOuter .lSAction {
-  position: absolute;
-  width: 450px;
-  height: 30px;
-  top: 50%;
-  margin-top: -15px; }
-  .slide-modal .group-slide > .lSSlideOuter .lSAction > .lSNext {
-    right: 25px; }
-  .slide-modal .group-slide > .lSSlideOuter .lSAction > .lSPrev {
-    left: 25px; }
-
-.textSlide-modal .lSSlideWrapper {
-  padding-bottom: 30px; }
-  @media (max-width: 768px) {
-    .textSlide-modal .lSSlideWrapper {
-      padding-bottom: 15px; } }
-.textSlide-modal .lSAction {
-  width: 250px;
-  position: absolute;
-  right: 0;
-  bottom: 0; }
-.textSlide-modal .lSPager {
-  float: right;
-  width: 250px; }
-
 .modal-content {
   background-color: rgba(39, 39, 39, 0.93);
   border-radius: 0;
@@ -347,71 +317,11 @@ ul.list-unstyled {
   .modal-description .-cafe {
     margin-bottom: 60px; }
 
-@media (max-width: 768px) {
-  .slide-modal .lSSlideOuter {
-    margin-bottom: 30px; } }
-@media (min-width: 769px) {
-  .slide-modal .lSSlideOuter {
-    width: 50%;
-    float: left; } }
-
-.lSSlideWrapper {
-  overflow: visible; }
-
-.lSSlideOuter .lSPager.lSpg {
-  line-height: 30px; }
-
-.lSAction > a {
-  top: auto;
-  margin-top: 0;
-  background: url("../images/symbols.png") transparent no-repeat 0 -135px;
-  background-size: 174px; }
-
-.lSAction > a.lSPrev {
-  background-position: 0 -135px;
-  float: left; }
-
-.lSAction > a.lSNext {
-  background-position: -20px -135px;
-  float: right; }
-
-.lSSlideOuter.vertical .lSAction > a {
-  height: 20px; }
-
-.lSSlideOuter.vertical .lSAction > .lSNext {
-  background-position: 31px -35px; }
-
-.facilities-switch-page .lSPager.lSpg {
-  margin-left: 12px;
-  margin-top: 7px !important;
-  display: inline-block; }
-
-.facilities-switch-page .lSPager.lSpg > li {
-  cursor: pointer;
-  display: inline-block;
-  padding: 0 5px;
-  padding: 0 8px; }
-
-.facilities-switch-page .lSPager.lSpg > li a {
-  cursor: pointer;
-  background-color: #222222;
-  border-radius: 30px;
-  display: inline-block;
-  height: 8px;
-  overflow: hidden;
-  text-indent: -999em;
-  width: 8px;
-  position: relative;
-  z-index: 99;
-  -webkit-transition: all 0.5s linear 0s;
-  transition: all 0.5s linear 0s;
-  background-color: #3E3E3E;
-  width: 12px;
-  height: 12px; }
-
-.facilities-switch-page .lSPager.lSpg > li.active a,
-.facilities-switch-page .lSPager.lSpg > li:hover a {
-  background-color: #E1E2E5; }
+.slide-modal .modal-title {
+  margin-bottom: 30px; }
+  @media (min-width: 769px) {
+    .slide-modal .modal-title {
+      margin-left: 100px; } }
 
 .title-outsideSlider {
   margin-bottom: 20px; }
@@ -553,7 +463,7 @@ ul.list-unstyled {
   margin-bottom: 50px; }
 #roomsModal .slide-modal .group-slide > .lSSlideOuter .lSAction {
   position: absolute;
-  width: 475px;
+  width: 450px;
   height: 30px;
   top: 50%;
   margin-top: -15px; }

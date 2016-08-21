@@ -1,0 +1,129 @@
+/*
+** lSAction default
+*/
+
+.lSAction {
+    > a {
+    	top: auto;
+    	margin-top: 0;
+    	background: url('../images/symbols.png') transparent no-repeat 0 -135px;
+    	background-size: 174px;
+    }
+    > a.lSPrev {
+    	background-position: 0 -135px;
+    	float: left;
+    }
+    > a.lSNext {
+    	background-position: -20px -135px;
+    	float: right;
+    }
+}
+
+.lSSlideOuter.vertical .lSAction > a {
+	height: 45px;
+}
+.lSSlideOuter.vertical .lSAction > .lSNext {
+    background-position: 31px -35px;
+}
+
+/*
+** lSAction image slide
+*/
+
+.slide-modal .group-slide {
+    .lSSlideOuter .lSAction {
+        position: absolute;
+        width: 450px;
+        height: 45px;
+        top: 50%;
+        margin-top: -15px;
+    }
+}
+
+.slide-modal {
+	.group-slide > .lSSlideOuter .lSAction {
+		position: absolute;
+		width: 450px;
+		height: 30px;
+		top: 50%;
+		margin-top: -15px;
+		> .lSNext {
+			right: 25px;
+		}
+		> .lSPrev {
+			left: 25px;
+		}
+	}
+}
+
+/*
+** lSAction in slide-text
+*/
+
+.textSlide-modal {
+	.lSSlideWrapper {
+		padding-bottom: 30px;
+		@media (max-width: 768px) {
+			padding-bottom: 15px;
+		}
+	}
+	.lSAction {
+		width: 250px;
+    	position: absolute;
+    	right: 0;
+    	bottom: 0;
+	}
+	.lSPager {
+		float: right;
+		width: 250px;
+	}
+}
+
+/*
+** lSAction in switch modal (facilities)
+*/
+
+.facilities-switch-page {
+    .lSPager.lSpg {
+    	margin-left: 12px;
+    	margin-top: 7px !important;
+    	display: inline-block;
+    }
+    .lSPager.lSpg > li {
+    	cursor: pointer;
+        display: inline-block;
+        padding: 0 5px;
+
+    	padding: 0 8px;
+    }
+    .lSPager.lSpg > li a {
+    	cursor: pointer;
+    	background-color: #222222;
+        border-radius: 30px;
+        display: inline-block;
+        height: 8px;
+        overflow: hidden;
+        text-indent: -999em;
+        width: 8px;
+        position: relative;
+        z-index: 99;
+        -webkit-transition: all 0.5s linear 0s;
+        transition: all 0.5s linear 0s;
+
+    	background-color: $color-1;
+    	width: 12px;
+    	height: 12px;
+    }
+    .lSPager.lSpg > li.active a,
+    .lSPager.lSpg > li:hover a {
+    	background-color: $color-4;
+    }
+}
+
+/*
+** Pager style (use in switch sub modal)
+*/
+
+.lSSlideOuter .lSPager.lSpg {
+	line-height: 30px;
+}
