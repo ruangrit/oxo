@@ -44,8 +44,8 @@
    		parentSelectorByID.find('.group-slide .modal-description:eq(' + gid + ')').show();
    		// Fixed bug when change slide
    		$(window).trigger('resize');
-   		parentSelectorByID.find('.group-slide .modal-description').find('.modaltitle-wrapper .title-rooms').removeClass('active');
-   		parentSelectorByID.find('.group-slide .modal-description').find('.modaltitle-wrapper .title-rooms:eq(' + gid + ')').addClass('active');
+   		parentSelectorByID.find('.group-slide .modal-description').find('.modaltitle-wrapper .btn').removeClass('active');
+   		parentSelectorByID.find('.group-slide .modal-description').find('.modaltitle-wrapper .btn:eq(' + gid + ')').addClass('active');
    	}
 
 	// ==================== Video function
@@ -88,6 +88,31 @@
 			}
 
 		});
+
+	}
+
+	var is_slice_facilities = false;
+	var openFacilitiesModal = function (gid) {
+		$('#facilitiesModal').modal('show');
+		if (!is_slice_facilities) {
+    		setTimeout(function(){
+		    	$(".lightSliderFacilities").lightSlider({
+		    		item: 1,
+		    		auto: false,
+		    		controls: true,
+		    	});
+	    		is_slice_facilities = true;
+	    		showGroupSlide(gid, 'facilitiesModal');
+	    		refreshGlobal();
+
+    		}, 200);
+		}
+		else {
+    		showGroupSlide(gid, 'facilitiesModal');
+			$(window).trigger('resize');
+		}
+    	
+
 
 	}
 	//switchContent();
@@ -493,55 +518,55 @@
 
 			<div class="faciimg-wrapper">
 				<div class="faciitem">
-					<div class="faci-img -img01">
+					<div class="faci-img -img01" onclick="openFacilitiesModal(0)">
 						<div class="image"></div>
 						<span class="text-tooltip -twiceline textLightWhiteBg">24 HOURS RECEPTION</span>
-						<span class="explore-facilities" onclick="$('#modal_click_facilities').trigger('click')" >CLICK FOR EXPLORE</span>
+						<span class="explore-facilities">CLICK FOR EXPLORE</span>
 					</div>
 				</div>
 				<div class="faciitem">
-					<div class="faci-img -img02">
+					<div class="faci-img -img02" onclick="openFacilitiesModal(1)">
 						<div class="image"></div>
 						<span class="text-tooltip -twiceline textLightWhiteBg">GARDEN & COMMUNAL AREA</span>
-						<span class="explore-facilities" onclick="$('#modal_click_facilities').trigger('click')" >CLICK FOR EXPLORE</span>
+						<span class="explore-facilities">CLICK FOR EXPLORE</span>
 					</div>
 				</div>
 				<div class="faciitem">
-					<div class="faci-img -img03">
+					<div class="faci-img -img03" onclick="openFacilitiesModal(2)">
 						<div class="image"></div>
 						<span class="text-tooltip textLightWhiteBg">KITCHEN</span>
-						<span class="explore-facilities" onclick="$('#modal_click_facilities').trigger('click')" >CLICK FOR EXPLORE</span>
+						<span class="explore-facilities">CLICK FOR EXPLORE</span>
 					</div>
 				</div>
 				<div class="faciitem">
-					<div class="faci-img -img04">
+					<div class="faci-img -img04" onclick="openFacilitiesModal(3)">
 						<div class="image"></div>
 						<span class="text-tooltip textLightWhiteBg">PARKING AREA</span>
-						<span class="explore-facilities" onclick="$('#modal_click_facilities').trigger('click')" >CLICK FOR EXPLORE</span>
+						<span class="explore-facilities">CLICK FOR EXPLORE</span>
 					</div>
 				</div>
 				<div class="faciitem -last">
-					<div class="faci-img -img05">
+					<div class="faci-img -img05" onclick="openFacilitiesModal(4)">
 						<div class="image"></div>
 						<span class="text-tooltip textLightWhiteBg">CAFE</span>
-						<span class="explore-facilities" onclick="$('#modal_click_facilities').trigger('click')" >CLICK FOR EXPLORE</span>
+						<span class="explore-facilities">CLICK FOR EXPLORE</span>
 					</div>
 				</div>
 			</div>
 
 			<div class="faciimg-wrapper -line2">
 				<div class="faciitem">
-					<div class="faci-img -img06">
+					<div class="faci-img -img06" onclick="$('#modal_click_facilities_content').trigger('click')">
 						<div class="image"></div>
 						<span class="text-tooltip textLightWhiteBg">FRER SERVICES</span>
-						<span class="explore-facilities" onclick="$('#modal_click_facilities').trigger('click')" >CLICK FOR EXPLORE</span>
+						<span class="explore-facilities">CLICK FOR EXPLORE</span>
 					</div>
 				</div>
 				<div class="faciitem -last">
-					<div class="faci-img -img07">
+					<div class="faci-img -img07" onclick="$('#modal_click_facilities_content').trigger('click')">
 						<div class="image"></div>
 						<span class="text-tooltip textLightWhiteBg">SMALL FEE BASED</span>
-						<span class="explore-facilities" onclick="$('#modal_click_facilities').trigger('click')" >CLICK FOR EXPLORE</span>
+						<span class="explore-facilities">CLICK FOR EXPLORE</span>
 					</div>
 				</div>
 			</div>
@@ -779,7 +804,7 @@ End Old Facility -->
 	</div>
 </div>
 -->
-<div id="about" class="description-main desc-section -reservation">
+<div id="findus" class="description-main desc-section -reservation">
 	<div class="reservation-content">
 		<div class="ct-wrapper">
 			<div class="inner -left switch-content-wrapper" slide="left" id="findus_icon_content">
@@ -1111,7 +1136,7 @@ End Old Facility -->
 
 						<div class="facilities-switch-page">
 							<div class="lSAction">
-								<a class="lSPrev" onclick="$('#modal_click_facilities').trigger('click')" data-dismiss="modal" aria-label="Close"></a>
+								<a class="lSPrev" onclick="openFacilitiesModal(0)" data-dismiss="modal" aria-label="Close"></a>
 								<a class="lSNext"></a>
 
 							</div>
@@ -1502,7 +1527,7 @@ End Old Facility -->
 				$(window).trigger('resize');
 			}
     	});
-
+    	/*
   		var is_slice_facilities = false;
     	$('#modal_click_facilities').click(function () {
 
@@ -1523,7 +1548,7 @@ End Old Facility -->
 				$(window).trigger('resize');
 			}
     	});
-
+    	*/
   		var is_slice_facilities_content = false;
     	$('#modal_click_facilities_content').click(function () {
 
@@ -1544,6 +1569,7 @@ End Old Facility -->
 				$(window).trigger('resize');
 			}
     	});
+    	
     	// =============================
   		var is_slice_cafe = false;
     	$('#modal_click_cafe').click(function () {
