@@ -441,10 +441,13 @@ ul.list-unstyled {
     font-size: 20px;
     color: #5A5B5E; }
 
+.small-free-base p,
 .freeservice p {
-  margin-bottom: 8px; }
+  margin-bottom: 5px; }
+.small-free-base p.header,
 .freeservice p.header {
-  margin-bottom: 25px; }
+  margin-top: 15px;
+  margin-bottom: 20px; }
 
 @media (min-width: 992px) {
   #roomsModal .modal-dialog {
