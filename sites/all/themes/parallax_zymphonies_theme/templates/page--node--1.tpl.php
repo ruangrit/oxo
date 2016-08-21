@@ -212,7 +212,7 @@
 				<div class="inner-wrapper _text-grey switch-content-main">
 					<h3 class="desc-header _capital _text-grey">OXOTEL</h3>
 
-					<div class="overflow-box">
+					<div class="overflow-box -scrollleft">
 						<p>
 							Oxotel is a brand new design hostel in Chiangmai. It's been open on November 2015with our 6 types of room. The hostel is very close to Chiangmai international airport and also the city center. It is located on Wualai road, where the local experience on 'Walking Street Market' every Saturday is. Comfy and cozy style that can change a hotel images on your mind. You can spend you relaxing vacation at our stylish space and carry a beautiful travel memory back home. Hope you enjoy your stay with us
 						</p>
@@ -232,7 +232,7 @@
 				<div class="inner-wrapper _text-grey switch-content-main">
 					<h3 class="desc-header _capital _text-grey">Reservation</h3>
 
-					<div class="overflow-box">
+					<div class="overflow-box -scrollright">
 						<p>
 							Agoda.com & Expedia.com: Your credit card has been charged already. Cancellation and modification are upon cancellation policy on each reservation
 						</p>

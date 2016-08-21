@@ -752,6 +752,7 @@ button.close {
     padding-bottom: 5px; }
   .btn.btn-transparent.-movies {
     border-radius: 20px;
+    margin-bottom: 40px;
     padding: 3px 30px 0 50px;
     font-size: 0.9em;
     color: #B4B4B4;
@@ -859,8 +860,15 @@ button.close {
     height: 300px;
     margin-bottom: 0; }
 
-.mCustomScrollBox {
+.overflow-box.-scrollleft .mCustomScrollBox {
+  padding-left: 12px; }
+.overflow-box.-scrollleft .mCSB_scrollTools {
+  left: -26px; }
+
+.overflow-box.-scrollright .mCustomScrollBox {
   padding-right: 12px; }
+.overflow-box.-scrollright .mCSB_scrollTools {
+  right: -26px; }
 
 .mCSB_scrollTools {
   width: 25px; }
