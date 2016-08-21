@@ -317,6 +317,9 @@ ul.list-unstyled {
   .modal-description .-cafe {
     margin-bottom: 60px; }
 
+.slide-modal .group-slide > .lSSlideOuter {
+  width: 450px;
+  float: left; }
 .slide-modal .modal-title {
   margin-bottom: 30px; }
   @media (min-width: 769px) {
@@ -461,12 +464,6 @@ ul.list-unstyled {
 #roomsModal .overflow-box {
   margin-top: 50px;
   margin-bottom: 50px; }
-#roomsModal .slide-modal .group-slide > .lSSlideOuter .lSAction {
-  position: absolute;
-  width: 450px;
-  height: 30px;
-  top: 50%;
-  margin-top: -15px; }
 
 .modal-content input.form-text,
 .modal-content textarea.form-textarea {
@@ -961,6 +958,80 @@ button.close {
 .qr-code {
   display: inline-block;
   max-width: 250px; }
+
+/*
+** lSAction default
+*/
+.lSAction > a {
+  top: auto;
+  margin-top: 0;
+  background: url("../images/symbols.png") transparent no-repeat 0 0;
+  background-size: 174px; }
+
+.lSSlideOuter.vertical .lSAction > a {
+  height: 45px; }
+
+.lSSlideOuter.vertical .lSAction > .lSNext {
+  background-position: 31px -35px; }
+
+/*
+** lSAction image slide
+*/
+.slide-modal .group-slide .lSSlideOuter .lSAction {
+  position: absolute;
+  width: 450px;
+  height: 45px;
+  top: 50%;
+  margin-top: -15px; }
+  .slide-modal .group-slide .lSSlideOuter .lSAction > a.lSPrev {
+    left: 25px;
+    height: 45px;
+    background-position: -118px -65px; }
+  .slide-modal .group-slide .lSSlideOuter .lSAction > a.lSNext {
+    right: 25px;
+    height: 45px;
+    background-position: -142px -5px; }
+
+/*
+** lSAction in slide-text
+*/
+/*
+** lSAction in switch modal (facilities)
+*/
+.facilities-switch-page .lSPager.lSpg {
+  margin-left: 12px;
+  margin-top: 7px !important;
+  display: inline-block; }
+.facilities-switch-page .lSPager.lSpg > li {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0 5px;
+  padding: 0 8px; }
+.facilities-switch-page .lSPager.lSpg > li a {
+  cursor: pointer;
+  background-color: #222222;
+  border-radius: 30px;
+  display: inline-block;
+  height: 8px;
+  overflow: hidden;
+  text-indent: -999em;
+  width: 8px;
+  position: relative;
+  z-index: 99;
+  -webkit-transition: all 0.5s linear 0s;
+  transition: all 0.5s linear 0s;
+  background-color: #3E3E3E;
+  width: 12px;
+  height: 12px; }
+.facilities-switch-page .lSPager.lSpg > li.active a,
+.facilities-switch-page .lSPager.lSpg > li:hover a {
+  background-color: #E1E2E5; }
+
+/*
+** Pager style (use in switch sub modal)
+*/
+.lSSlideOuter .lSPager.lSpg {
+  line-height: 30px; }
 
 body {
   color: #3E3E3E;

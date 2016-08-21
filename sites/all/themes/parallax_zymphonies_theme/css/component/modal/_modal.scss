@@ -95,6 +95,10 @@
 }
 
 .slide-modal {
+	.group-slide > .lSSlideOuter {
+		width: 450px;
+		float: left;
+	}
 	.modal-title {
 		@media (min-width: 769px) {
 			margin-left: 100px;

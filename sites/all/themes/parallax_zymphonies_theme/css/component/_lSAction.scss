@@ -6,17 +6,17 @@
     > a {
     	top: auto;
     	margin-top: 0;
-    	background: url('../images/symbols.png') transparent no-repeat 0 -135px;
+    	background: url('../images/symbols.png') transparent no-repeat 0 0;
     	background-size: 174px;
     }
-    > a.lSPrev {
-    	background-position: 0 -135px;
-    	float: left;
-    }
-    > a.lSNext {
-    	background-position: -20px -135px;
-    	float: right;
-    }
+    // > a.lSPrev {
+    // 	background-position: 0 -135px;
+    // 	float: left;
+    // }
+    // > a.lSNext {
+    // 	background-position: -20px -135px;
+    // 	float: right;
+    // }
 }
 
 .lSSlideOuter.vertical .lSAction > a {
@@ -37,47 +37,41 @@
         height: 45px;
         top: 50%;
         margin-top: -15px;
+        > a.lSPrev {
+            left: 25px;
+            height: 45px;
+            background-position: -118px -65px;
+        }
+        > a.lSNext {
+            right: 25px;
+            height: 45px;
+            background-position: -142px -5px;
+        }
     }
-}
-
-.slide-modal {
-	.group-slide > .lSSlideOuter .lSAction {
-		position: absolute;
-		width: 450px;
-		height: 30px;
-		top: 50%;
-		margin-top: -15px;
-		> .lSNext {
-			right: 25px;
-		}
-		> .lSPrev {
-			left: 25px;
-		}
-	}
 }
 
 /*
 ** lSAction in slide-text
 */
 
-.textSlide-modal {
-	.lSSlideWrapper {
-		padding-bottom: 30px;
-		@media (max-width: 768px) {
-			padding-bottom: 15px;
-		}
-	}
-	.lSAction {
-		width: 250px;
-    	position: absolute;
-    	right: 0;
-    	bottom: 0;
-	}
-	.lSPager {
-		float: right;
-		width: 250px;
-	}
-}
+// .textSlide-modal {
+// 	.lSSlideWrapper {
+// 		padding-bottom: 30px;
+// 		@media (max-width: 768px) {
+// 			padding-bottom: 15px;
+// 		}
+// 	}
+// 	.lSAction {
+// 		width: 250px;
+//     	position: absolute;
+//     	right: 0;
+//     	bottom: 0;
+// 	}
+// 	.lSPager {
+// 		float: right;
+// 		width: 250px;
+// 	}
+// }
 
 /*
 ** lSAction in switch modal (facilities)
