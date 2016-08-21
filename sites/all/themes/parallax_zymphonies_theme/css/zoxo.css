@@ -441,6 +441,11 @@ ul.list-unstyled {
     font-size: 20px;
     color: #5A5B5E; }
 
+.freeservice p {
+  margin-bottom: 8px; }
+.freeservice p.header {
+  margin-bottom: 25px; }
+
 @media (min-width: 992px) {
   #roomsModal .modal-dialog {
     width: 950px; } }
@@ -1091,7 +1096,6 @@ button.close {
   padding: 0 8px; }
 .facilities-switch-page .lSPager.lSpg > li a {
   cursor: pointer;
-  background-color: #222222;
   border-radius: 30px;
   display: inline-block;
   height: 8px;
@@ -1102,12 +1106,12 @@ button.close {
   z-index: 99;
   -webkit-transition: all 0.5s linear 0s;
   transition: all 0.5s linear 0s;
-  background-color: #3E3E3E;
+  background-color: #E1E2E5;
   width: 12px;
   height: 12px; }
 .facilities-switch-page .lSPager.lSpg > li.active a,
 .facilities-switch-page .lSPager.lSpg > li:hover a {
-  background-color: #E1E2E5; }
+  background-color: #3E3E3E; }
 
 /*
 ** Pager style (use in switch sub modal)

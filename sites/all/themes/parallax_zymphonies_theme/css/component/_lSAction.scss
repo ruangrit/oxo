@@ -64,6 +64,7 @@
     .lSPager {
         margin-top: -35px !important;
     }
+
     .lSPager.lSpg > li a {
     	cursor: pointer;
     	background-color: #222222;
@@ -143,7 +144,6 @@
     }
     .lSPager.lSpg > li a {
     	cursor: pointer;
-    	background-color: #222222;
         border-radius: 30px;
         display: inline-block;
         height: 8px;
@@ -155,13 +155,13 @@
         -webkit-transition: all 0.5s linear 0s;
         transition: all 0.5s linear 0s;
 
-    	background-color: $color-1;
+    	background-color: $color-4;
     	width: 12px;
     	height: 12px;
     }
     .lSPager.lSpg > li.active a,
     .lSPager.lSpg > li:hover a {
-    	background-color: $color-4;
+    	background-color: $color-1;
     }
 }
 
