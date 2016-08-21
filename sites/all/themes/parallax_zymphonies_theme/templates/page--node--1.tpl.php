@@ -196,6 +196,7 @@
  					<a class="btn btn-transparent -keepright _capital open-sub">Explore</a>
  				</div>
  				<div class="switch-content-sub" style="display:none">
+ 					<h3 class="desc-header">ABOUT</h3>
 			    	<button type="button" class="close close-sub"><span aria-hidden="true" class="sr-inly"></span></button>
  					<?php print $about_node->body['und'][0]['value'];?>
  				</div>
@@ -495,35 +496,35 @@
 					<div class="faci-img -img01">
 						<div class="image"></div>
 						<span class="text-tooltip -twiceline textLightWhiteBg">24 HOURS RECEPTION</span>
-						<span class="explore-facilities">CLICK FOR EXPLORE</span>
+						<span class="explore-facilities" onclick="$('#modal_click_facilities').trigger('click')" >CLICK FOR EXPLORE</span>
 					</div>
 				</div>
 				<div class="faciitem">
 					<div class="faci-img -img02">
 						<div class="image"></div>
 						<span class="text-tooltip -twiceline textLightWhiteBg">GARDEN & COMMUNAL AREA</span>
-						<span class="explore-facilities">CLICK FOR EXPLORE</span>
+						<span class="explore-facilities" onclick="$('#modal_click_facilities').trigger('click')" >CLICK FOR EXPLORE</span>
 					</div>
 				</div>
 				<div class="faciitem">
 					<div class="faci-img -img03">
 						<div class="image"></div>
 						<span class="text-tooltip textLightWhiteBg">KITCHEN</span>
-						<span class="explore-facilities">CLICK FOR EXPLORE</span>
+						<span class="explore-facilities" onclick="$('#modal_click_facilities').trigger('click')" >CLICK FOR EXPLORE</span>
 					</div>
 				</div>
 				<div class="faciitem">
 					<div class="faci-img -img04">
 						<div class="image"></div>
 						<span class="text-tooltip textLightWhiteBg">PARKING AREA</span>
-						<span class="explore-facilities">CLICK FOR EXPLORE</span>
+						<span class="explore-facilities" onclick="$('#modal_click_facilities').trigger('click')" >CLICK FOR EXPLORE</span>
 					</div>
 				</div>
 				<div class="faciitem -last">
 					<div class="faci-img -img05">
 						<div class="image"></div>
 						<span class="text-tooltip textLightWhiteBg">CAFE</span>
-						<span class="explore-facilities">CLICK FOR EXPLORE</span>
+						<span class="explore-facilities" onclick="$('#modal_click_facilities').trigger('click')" >CLICK FOR EXPLORE</span>
 					</div>
 				</div>
 			</div>
@@ -533,19 +534,19 @@
 					<div class="faci-img -img06">
 						<div class="image"></div>
 						<span class="text-tooltip textLightWhiteBg">FRER SERVICES</span>
-						<span class="explore-facilities">CLICK FOR EXPLORE</span>
+						<span class="explore-facilities" onclick="$('#modal_click_facilities').trigger('click')" >CLICK FOR EXPLORE</span>
 					</div>
 				</div>
 				<div class="faciitem -last">
 					<div class="faci-img -img07">
 						<div class="image"></div>
 						<span class="text-tooltip textLightWhiteBg">SMALL FEE BASED</span>
-						<span class="explore-facilities">CLICK FOR EXPLORE</span>
+						<span class="explore-facilities" onclick="$('#modal_click_facilities').trigger('click')" >CLICK FOR EXPLORE</span>
 					</div>
 				</div>
 			</div>
 
-			<button  id="modal_click_facilities" class="btn -facilities btn-transparent -darkbg _capital" type="button"  data-toggle="modal" data-target="#facilitiesModal">
+			<button  style="display:none" id="modal_click_facilities" class="btn -facilities btn-transparent -darkbg _capital" type="button"  data-toggle="modal" data-target="#facilitiesModal">
 				EXPLORE
 			</button>
 		</div>
@@ -675,7 +676,7 @@ End Old Facility -->
 
 				<div class="inner -middle -center text-center text-bright">
 					<div class="inner-wrapper">
-						<h2 class="text-huge text-floatmiddle text-bright">Comming Soon...</h2>
+						<h2 class="text-huge text-floatmiddle text-bright">Coming Soon...</h2>
 					</div>
 				</div>
 
