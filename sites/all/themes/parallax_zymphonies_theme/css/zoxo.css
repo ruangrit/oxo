@@ -130,7 +130,9 @@
       .desc-section.-reservation {
         padding: 0 15px; } }
   .desc-section.-findus {
+    max-width: 1280px;
     height: auto;
+    margin: 0 auto 50px auto;
     padding: 100px 50px 50px 50px; }
 
 .reservation-content {
@@ -850,9 +852,10 @@ button.close {
   margin-top: 25px;
   margin-bottom: 30px; }
   .overflow-box.-modalrooms {
+    max-width: 300px;
     margin-top: 15px;
     margin-bottom: 15px;
-    padding-right: 140px;
+    padding-right: 25px;
     height: 133px; }
   .overflow-box.-modal {
     height: 190px; }
@@ -860,13 +863,14 @@ button.close {
     height: 300px;
     margin-bottom: 0; }
 
+.overflow-box .mCustomScrollBox {
+  padding-right: 12px; }
+
 .overflow-box.-scrollleft .mCustomScrollBox {
   padding-left: 12px; }
 .overflow-box.-scrollleft .mCSB_scrollTools {
   left: -26px; }
 
-.overflow-box.-scrollright .mCustomScrollBox {
-  padding-right: 12px; }
 .overflow-box.-scrollright .mCSB_scrollTools {
   right: -26px; }
 
