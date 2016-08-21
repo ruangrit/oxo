@@ -1,5 +1,6 @@
 .modal-content {
 	//border: 1px solid $color-1;
+
 	button.close {
 		position: absolute;
 		top: 30px;
@@ -82,6 +83,19 @@
 		}
 		margin-bottom: 30px;
 	}
+	.group-slide > .lSSlideOuter .lSAction {
+		position: absolute;
+		width: 450px;
+		height: 30px;
+		top: 50%;
+		margin-top: -15px;
+		> .lSNext {
+			right: 25px;
+		}
+		> .lSPrev {
+			left: 25px;
+		}
+	}
 }
 .textSlide-modal {
 	.lSSlideWrapper {
@@ -103,7 +117,7 @@
 }
 
 .modal-content {
-	// background-color: rgba(39, 39, 39, .93);
+	background-color: rgba(39, 39, 39, .93);
 	border-radius: 0;
 	color: $color-5;
 	overflow: hidden;
@@ -117,15 +131,6 @@
 	}
 	.-cafe {
 		margin-bottom: 60px;
-	}
-}
-
-.slide-modal {
-	.lSAction > .lSNext {
-		right: 120px;
-	}
-	.lSAction > .lSPrev {
-		left: 120px;
 	}
 }
 
@@ -157,7 +162,7 @@
 	float: left;
 }
 .lSAction > a.lSNext {
-	background-position: -39px -135px;
+	background-position: -20px -135px;
 	float: right;
 }
 
@@ -168,16 +173,39 @@
     background-position: 31px -35px;
 }
 
-.lSSlideOuter .lSPager.lSpg > li {
+// Switch modal pager
+.facilities-switch-page .lSPager.lSpg {
+	margin-left: 12px;
+	margin-top: 7px !important;
+	display: inline-block;
+}
+.facilities-switch-page .lSPager.lSpg > li {
+	cursor: pointer;
+    display: inline-block;
+    padding: 0 5px;
+
 	padding: 0 8px;
 }
-.lSSlideOuter .lSPager.lSpg > li a {
+.facilities-switch-page .lSPager.lSpg > li a {
+	cursor: pointer;
+	background-color: #222222;
+    border-radius: 30px;
+    display: inline-block;
+    height: 8px;
+    overflow: hidden;
+    text-indent: -999em;
+    width: 8px;
+    position: relative;
+    z-index: 99;
+    -webkit-transition: all 0.5s linear 0s;
+    transition: all 0.5s linear 0s;
+
 	background-color: $color-1;
 	width: 12px;
 	height: 12px;
 }
-.lSSlideOuter .lSPager.lSpg > li.active a,
-.lSSlideOuter .lSPager.lSpg > li:hover a {
+.facilities-switch-page .lSPager.lSpg > li.active a,
+.facilities-switch-page .lSPager.lSpg > li:hover a {
 	background-color: $color-4;
 }
 

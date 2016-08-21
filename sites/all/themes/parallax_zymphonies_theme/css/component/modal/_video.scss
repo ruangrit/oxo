@@ -18,7 +18,7 @@
     .vertical {
         padding-top: 100px;
         padding-left: 25px;
-        padding-right: 25px;
+        padding-right: 25px !important;
         padding-bottom: 50px;
         height: 100%;
         > .lSSlideWrapper {
@@ -41,5 +41,8 @@
     .video-thumbnail {
         height: auto !important;
         margin-bottom: 55px !important;
+    }
+    .video-title {
+        text-align: center;
     }
 }

@@ -303,6 +303,16 @@ ul.list-unstyled {
   @media (min-width: 769px) {
     .slide-modal .modal-title {
       margin-left: 100px; } }
+.slide-modal .group-slide > .lSSlideOuter .lSAction {
+  position: absolute;
+  width: 450px;
+  height: 30px;
+  top: 50%;
+  margin-top: -15px; }
+  .slide-modal .group-slide > .lSSlideOuter .lSAction > .lSNext {
+    right: 25px; }
+  .slide-modal .group-slide > .lSSlideOuter .lSAction > .lSPrev {
+    left: 25px; }
 
 .textSlide-modal .lSSlideWrapper {
   padding-bottom: 30px; }
@@ -319,6 +329,7 @@ ul.list-unstyled {
   width: 250px; }
 
 .modal-content {
+  background-color: rgba(39, 39, 39, 0.93);
   border-radius: 0;
   color: #AEAFB5;
   overflow: hidden; }
@@ -332,11 +343,6 @@ ul.list-unstyled {
       padding-left: 30px; } }
   .modal-description .-cafe {
     margin-bottom: 60px; }
-
-.slide-modal .lSAction > .lSNext {
-  right: 120px; }
-.slide-modal .lSAction > .lSPrev {
-  left: 120px; }
 
 @media (max-width: 768px) {
   .slide-modal .lSSlideOuter {
@@ -363,7 +369,7 @@ ul.list-unstyled {
   float: left; }
 
 .lSAction > a.lSNext {
-  background-position: -39px -135px;
+  background-position: -20px -135px;
   float: right; }
 
 .lSSlideOuter.vertical .lSAction > a {
@@ -372,16 +378,36 @@ ul.list-unstyled {
 .lSSlideOuter.vertical .lSAction > .lSNext {
   background-position: 31px -35px; }
 
-.lSSlideOuter .lSPager.lSpg > li {
+.facilities-switch-page .lSPager.lSpg {
+  margin-left: 12px;
+  margin-top: 7px !important;
+  display: inline-block; }
+
+.facilities-switch-page .lSPager.lSpg > li {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0 5px;
   padding: 0 8px; }
 
-.lSSlideOuter .lSPager.lSpg > li a {
+.facilities-switch-page .lSPager.lSpg > li a {
+  cursor: pointer;
+  background-color: #222222;
+  border-radius: 30px;
+  display: inline-block;
+  height: 8px;
+  overflow: hidden;
+  text-indent: -999em;
+  width: 8px;
+  position: relative;
+  z-index: 99;
+  -webkit-transition: all 0.5s linear 0s;
+  transition: all 0.5s linear 0s;
   background-color: #3E3E3E;
   width: 12px;
   height: 12px; }
 
-.lSSlideOuter .lSPager.lSpg > li.active a,
-.lSSlideOuter .lSPager.lSpg > li:hover a {
+.facilities-switch-page .lSPager.lSpg > li.active a,
+.facilities-switch-page .lSPager.lSpg > li:hover a {
   background-color: #E1E2E5; }
 
 .title-outsideSlider {
@@ -405,7 +431,7 @@ ul.list-unstyled {
   .modal-body.video-modal .vertical {
     padding-top: 100px;
     padding-left: 25px;
-    padding-right: 25px;
+    padding-right: 25px !important;
     padding-bottom: 50px;
     height: 100%; }
     .modal-body.video-modal .vertical > .lSSlideWrapper {
@@ -421,30 +447,44 @@ ul.list-unstyled {
   .modal-body.video-modal .video-thumbnail {
     height: auto !important;
     margin-bottom: 55px !important; }
+  .modal-body.video-modal .video-title {
+    text-align: center; }
 
-.modal-dialog.-facilities .overflow-box {
+.modal-dialog.-facilities .overflow-box,
+.modal-dialog.-services .overflow-box {
   color: #5A5B5E; }
 @media (min-width: 992px) {
-  .modal-dialog.-facilities {
+  .modal-dialog.-facilities,
+  .modal-dialog.-services {
     width: 950px; } }
-.modal-dialog.-facilities .modal-content {
+.modal-dialog.-facilities .modal-content,
+.modal-dialog.-services .modal-content {
   background-color: #FFF;
   border: none; }
-.modal-dialog.-facilities .modal-body.slide-modal {
+.modal-dialog.-facilities .modal-body.slide-modal,
+.modal-dialog.-services .modal-body.slide-modal {
   padding: 0; }
-.modal-dialog.-facilities .group-slide {
+.modal-dialog.-facilities .group-slide,
+.modal-dialog.-services .group-slide {
   width: 100%;
   float: left; }
 @media (min-width: 769px) {
-  .modal-dialog.-facilities .slide-modal .lSSlideOuter {
-    width: 450px; } }
-.modal-dialog.-facilities .slide-modal .lSSlideOuter li > img {
-  border: none; }
-@media (min-width: 769px) {
-  .modal-dialog.-facilities .modal-description {
+  .modal-dialog.-facilities .slide-modal .lSSlideOuter,
+  .modal-dialog.-services .slide-modal .lSSlideOuter {
     width: 450px;
-    float: right;
-    padding-left: 0; } }
+    height: 560px; } }
+.modal-dialog.-facilities .slide-modal .lSSlideOuter li > img,
+.modal-dialog.-services .slide-modal .lSSlideOuter li > img {
+  border: none; }
+.modal-dialog.-facilities .modal-description,
+.modal-dialog.-services .modal-description {
+  margin-top: 80px; }
+  @media (min-width: 769px) {
+    .modal-dialog.-facilities .modal-description,
+    .modal-dialog.-services .modal-description {
+      width: 450px;
+      float: right;
+      padding-left: 0; } }
 
 @media (min-width: 992px) {
   .modal-dialog.-services {
@@ -452,9 +492,7 @@ ul.list-unstyled {
 .modal-dialog.-services .modal-description {
   padding-right: 50px; }
 .modal-dialog.-services .overflow-box.-services {
-  height: 300px;
-  margin-top: 60px;
-  margin-bottom: 100px; }
+  height: 300px; }
 
 .facilities-switch-page {
   position: relative;
@@ -462,7 +500,7 @@ ul.list-unstyled {
   float: left;
   margin-left: 50px; }
   .facilities-switch-page .lSPager {
-    display: none; }
+    display: block; }
   .facilities-switch-page > .lSAction > a {
     position: relative; }
   .facilities-switch-page > .lSAction > .lSNext {
