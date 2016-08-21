@@ -22,27 +22,31 @@
 		height: 300px;
 		margin-bottom: 0;
 	}
+}
 
-	// custom scrollbar
-	// &::-webkit-scrollbar {
-	//     width: 6px;
-	//     height: 130px;
-	// }
-	//
-	// &::-webkit-scrollbar-track {
-	//     -webkit-border-radius: 10px;
-	//     border-radius: 10px;
-	// }
-	//
-	// &::-webkit-scrollbar-thumb {
-	//     -webkit-border-radius: 10px;
-	//     border-radius: 10px;
-	//     background: $color-2;
-	//     background: transparent;
-	//     display: block;
-	// }
-	// &::-webkit-scrollbar-thumb:window-inactive {
-	//     background: rgba(39,39,39,0.4);
-	// }
-
+// Custom scrollbar
+.mCustomScrollBox {
+	padding-right: 12px;
+}
+.mCSB_scrollTools {
+	width: 25px;
+	.mCSB_buttonUp,
+	.mCSB_buttonDown {
+		background-image: url('../images/symbols.png') !important;
+		background-repeat: no-repeat;
+		background-size: 174px !important;
+	    display: block;
+	    position: absolute;
+	    height: 20px;
+	    width: 100%;
+	    overflow: hidden;
+	    margin: 0 auto;
+	    cursor: pointer;
+	}
+	.mCSB_buttonUp {
+		background-position: -51px -58px !important;
+	}
+	.mCSB_buttonDown {
+	    background-position: -4px -92px !important;
+	}
 }

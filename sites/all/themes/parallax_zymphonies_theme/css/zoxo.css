@@ -859,6 +859,28 @@ button.close {
     height: 300px;
     margin-bottom: 0; }
 
+.mCustomScrollBox {
+  padding-right: 12px; }
+
+.mCSB_scrollTools {
+  width: 25px; }
+  .mCSB_scrollTools .mCSB_buttonUp,
+  .mCSB_scrollTools .mCSB_buttonDown {
+    background-image: url("../images/symbols.png") !important;
+    background-repeat: no-repeat;
+    background-size: 174px !important;
+    display: block;
+    position: absolute;
+    height: 20px;
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    cursor: pointer; }
+  .mCSB_scrollTools .mCSB_buttonUp {
+    background-position: -51px -58px !important; }
+  .mCSB_scrollTools .mCSB_buttonDown {
+    background-position: -4px -92px !important; }
+
 .switch-content-wrapper .close {
   position: absolute;
   top: -60px;
