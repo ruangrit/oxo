@@ -111,7 +111,7 @@
     		showGroupSlide(gid, 'facilitiesModal');
 			$(window).trigger('resize');
 		}
-    	
+
 
 
 	}
@@ -808,8 +808,8 @@ End Old Facility -->
 	</div>
 </div>
 -->
-<div id="findus" class="description-main desc-section -reservation">
-	<div class="reservation-content">
+<div id="findus" class="description-main desc-section -findus">
+	<div class="findus-content">
 		<div class="ct-wrapper">
 			<div class="inner -left switch-content-wrapper" slide="left" id="findus_icon_content">
 				<ul class="list-unstyled social-gang switch-content-main text-center">
@@ -1581,7 +1581,7 @@ End Old Facility -->
 				$(window).trigger('resize');
 			}
     	});
-    	
+
     	// =============================
   		var is_slice_cafe = false;
     	$('#modal_click_cafe').click(function () {

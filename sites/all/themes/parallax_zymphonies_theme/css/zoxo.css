@@ -130,13 +130,14 @@
       .desc-section.-reservation {
         padding: 0 15px; } }
   .desc-section.-findus {
-    height: auto; }
+    height: auto;
+    padding: 100px 50px 50px 50px; }
 
 .reservation-content {
   display: block; }
 
 .findus-content {
-  min-height: 260px; }
+  min-height: 300px; }
   .findus-content h3 {
     margin-bottom: 30px; }
 
