@@ -42,6 +42,53 @@
     }
 }
 
+#conditionModal {
+    .lSSlideOuter .lSAction {
+        height: 45px;
+        position: relative;
+        width: 250px;
+        margin: 0 auto;
+        margin-top: 40px;
+        > a.lSPrev {
+            left: 25px;
+            height: 45px;
+            background-position: -118px -65px;
+        }
+        > a.lSNext {
+            right: 25px;
+            height: 45px;
+            background-position: -142px -5px;
+        }
+    }
+
+    .lSPager {
+        margin-top: -35px !important;
+    }
+    .lSPager.lSpg > li a {
+    	cursor: pointer;
+    	background-color: #222222;
+        border-radius: 30px;
+        display: inline-block;
+        height: 8px;
+        overflow: hidden;
+        text-indent: -999em;
+        width: 8px;
+        position: relative;
+        z-index: 99;
+        -webkit-transition: all 0.5s linear 0s;
+        transition: all 0.5s linear 0s;
+
+    	background-color: $color-1;
+    	width: 12px;
+    	height: 12px;
+    }
+    .lSPager.lSpg > li.active a,
+    .lSPager.lSpg > li:hover a {
+    	background-color: $color-4;
+    }
+
+}
+
 /*
 ** lSAction switch modal page
 */

@@ -266,6 +266,9 @@ ul.list-unstyled {
 .modal-content .lSPager {
   display: none; }
 
+#conditionModal .modal-content .lSPager {
+  display: block; }
+
 .modal-title {
   font-size: 15px;
   font-family: "gotham_lightregular"; }
@@ -1011,6 +1014,42 @@ button.close {
     right: 25px;
     height: 45px;
     background-position: -142px -5px; }
+
+#conditionModal .lSSlideOuter .lSAction {
+  height: 45px;
+  position: relative;
+  width: 250px;
+  margin: 0 auto;
+  margin-top: 40px; }
+  #conditionModal .lSSlideOuter .lSAction > a.lSPrev {
+    left: 25px;
+    height: 45px;
+    background-position: -118px -65px; }
+  #conditionModal .lSSlideOuter .lSAction > a.lSNext {
+    right: 25px;
+    height: 45px;
+    background-position: -142px -5px; }
+#conditionModal .lSPager {
+  margin-top: -35px !important; }
+#conditionModal .lSPager.lSpg > li a {
+  cursor: pointer;
+  background-color: #222222;
+  border-radius: 30px;
+  display: inline-block;
+  height: 8px;
+  overflow: hidden;
+  text-indent: -999em;
+  width: 8px;
+  position: relative;
+  z-index: 99;
+  -webkit-transition: all 0.5s linear 0s;
+  transition: all 0.5s linear 0s;
+  background-color: #3E3E3E;
+  width: 12px;
+  height: 12px; }
+#conditionModal .lSPager.lSpg > li.active a,
+#conditionModal .lSPager.lSpg > li:hover a {
+  background-color: #E1E2E5; }
 
 /*
 ** lSAction switch modal page

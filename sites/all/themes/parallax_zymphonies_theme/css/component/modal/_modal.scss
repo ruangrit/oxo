@@ -27,6 +27,11 @@
 		display: none;
 	}
 }
+#conditionModal {
+	.modal-content .lSPager {
+		display: block;
+	}
+}
 
 .modal-title {
 	font-size: 15px;
