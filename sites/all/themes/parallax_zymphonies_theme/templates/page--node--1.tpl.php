@@ -1443,6 +1443,7 @@ End Old Facility -->
 	      				</div>
 	      			</li>
 	      		</ul>
+	      		<!--
       		 	<div class="bookingbtn-group -modal">
 
  					<div class="dropdown">
@@ -1461,6 +1462,7 @@ End Old Facility -->
 					    </ul>
 					</div>
 				</div>
+				-->
 	      	</div>
 	    </div>
 	</div>
