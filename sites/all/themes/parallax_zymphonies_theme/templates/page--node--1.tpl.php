@@ -218,13 +218,15 @@
 						</p>
  					</div>
 
- 					<a class="btn btn-transparent -keepright _capital open-sub">Explore</a>
+ 					<a class="btn btn-transparent -keepright _capital" data-toggle="modal" data-target="#aboutModal">Explore</a>
  				</div>
+ 				<!--
  				<div class="switch-content-sub" style="display:none">
  					<h3 class="desc-header">ABOUT</h3>
 			    	<button type="button" class="close close-sub"><span aria-hidden="true" class="sr-inly"></span></button>
  					<?php print $about_node->body['und'][0]['value'];?>
  				</div>
+ 				-->
  			</div>
  			<div class="inner -right switch-content-wrapper" slide="right">
 				<div class="inner-wrapper _text-grey switch-content-main">
@@ -255,7 +257,7 @@
 						</p>
 					</div>
 
- 					<a id="modal_click_condition" class="btn btn-transparent _capital _pull-left _margin-right open-sub">Condition</a>
+ 					<a id="modal_click_condition" class="btn btn-transparent _capital _pull-left _margin-right" data-toggle="modal" data-target="#conditionModal">Condition</a>
  					<div class="bookingbtn-group">
  					    <!--
 	 					<a class="btn btn-transparent -booking -orange _capital" target="_blank" href="http://www.booking.com/hotel/th/oxotel.th.html?label=gen173nr-1FCAEoggJCAlhYSDNiBW5vcmVmaN0BiAEBmAEmwgEDYWJuyAEM2AEB6AEB-AELqAIE%3Bsid%3Da9c400783e4d0678a2911325b020d663%3Bdcid%3D1%3Bdest_id%3D-3247115%3Bdest_type%3Dcity%3Bdist%3D0%3Bgroup_adults%3D2%3Broom1%3DA%2CA%3Bsb_price_type%3Dtotal%3Bsrfid%3D261b6fd664759b8069fb61cd82d78f852dfca842X1%3Btype%3Dtotal%3Bucfs%3D1">Booking</a>
@@ -284,6 +286,7 @@
 
  					</div>
  				</div>
+ 				<!--
  				<div class="switch-content-sub" style="display:none">
 			    	<button type="button" class="close close-sub"><span aria-hidden="true" class="sr-inly"></span></button>
 			    	<br />
@@ -443,6 +446,7 @@
 		      		</ul>
 
  				</div>
+ 				-->
 
 
  			</div>
@@ -1205,7 +1209,7 @@ End Old Facility -->
 </div>
 
 <!-- About Modal -->
-<!--
+
 <div class="modal fade" id="aboutModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   	<div class="modal-dialog modal-lg" role="document">
     	<div class="modal-content text-modal">
@@ -1218,7 +1222,7 @@ End Old Facility -->
     	</div>
   	</div>
 </div>
--->
+
 
 
 <!-- Movie Modal -->
@@ -1279,7 +1283,7 @@ End Old Facility -->
 </div>
 
 <!-- Term and condition Modal -->
-<!--
+
 <div class="modal fade" id="conditionModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 	<div class="modal-dialog modal-lg" role="document">
 	    <div class="modal-content">
@@ -1461,7 +1465,7 @@ End Old Facility -->
 	    </div>
 	</div>
 </div>
--->
+
 
 <!-- About Modal -->
 <div class="modal fade" id="mapModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -1593,10 +1597,27 @@ End Old Facility -->
 			}
     	});
     	// =============================
+    	/*
     	$(".lightSliderCondition").lightSlider({
     		item: 1,
     		auto: false,
     		controls: true,
+    	});
+    	*/
+  		var is_slice_condition = false;
+    	$('#modal_click_condition').click(function () {
+
+			if (!is_slice_condition) {
+	    		setTimeout(function(){
+			    	$(".lightSliderCondition").lightSlider({
+			    		item: 1,
+			    		auto: false,
+			    		controls: true,
+			    	});
+		    		is_slice_condition = true;
+
+	    		}, 200);
+			}
     	});
 
     	// ============== Video =============
