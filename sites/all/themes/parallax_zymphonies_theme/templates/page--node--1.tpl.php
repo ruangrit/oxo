@@ -32,6 +32,9 @@
 <script type="text/javascript" src="<?php print $abs_theme_path;?>/js/lightslider.js"></script>
 <script type="text/javascript" src="<?php print $abs_theme_path;?>/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="<?php print $abs_theme_path;?>/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script type="text/javascript" src="<?php print $abs_theme_path;?>/js/velocity.min.js"></script>
+<script type="text/javascript" src="<?php print $abs_theme_path;?>/js/velocity.ui.min.js"></script>
+<script type="text/javascript" src="<?php print $abs_theme_path;?>/js/modal_effect.js"></script>
 <script>
    	var showGroupSlide = function (gid, parentID) {
 
@@ -924,7 +927,7 @@ End Old Facility -->
 
 
 <!-- Rooms Modal -->
-<div class="modal fade" id="roomsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal" id="roomsModal" data-easein="fadeIn"  tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-body slide-modal">
@@ -1016,7 +1019,7 @@ End Old Facility -->
 </div>
 
 <!-- Facilities Modal -->
-<div class="modal fade" id="facilitiesModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal" id="facilitiesModal" data-easein="fadeIn"  tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog modal-lg -facilities" role="document">
     <div class="modal-content">
       <div class="modal-body slide-modal">
@@ -1098,7 +1101,7 @@ End Old Facility -->
 </div>
 
 <!-- Facilities Modal -->
-<div class="modal fade" id="facilitiesContentModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal" data-easein="fadeIn"  id="facilitiesContentModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog modal-lg -services" role="document">
     <div class="modal-content">
       <div class="modal-body slide-modal">
@@ -1171,7 +1174,7 @@ End Old Facility -->
 </div>
 
 <!-- Cafe Modal -->
-<div class="modal fade" id="cafeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal"  data-easein="fadeIn"  id="cafeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-body slide-modal">
@@ -1210,7 +1213,7 @@ End Old Facility -->
 
 <!-- About Modal -->
 
-<div class="modal fade" id="aboutModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal" data-easein="fadeIn"  id="aboutModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   	<div class="modal-dialog modal-lg" role="document">
     	<div class="modal-content text-modal">
       		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="sr-inly"></span></button>
@@ -1226,7 +1229,7 @@ End Old Facility -->
 
 
 <!-- Movie Modal -->
-<div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal" data-easein="fadeIn"  id="videoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   	<div class="modal-dialog modal-lg" role="document">
     	<div class="modal-content text-modal">
       		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="sr-only">close</span></button>
@@ -1284,7 +1287,7 @@ End Old Facility -->
 
 <!-- Term and condition Modal -->
 
-<div class="modal fade" id="conditionModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal" data-easein="fadeIn" id="conditionModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 	<div class="modal-dialog modal-lg" role="document">
 	    <div class="modal-content">
 	      	<div class="modal-body textSlide-modal">
@@ -1470,7 +1473,7 @@ End Old Facility -->
 
 
 <!-- About Modal -->
-<div class="modal fade" id="mapModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal" data-easein="fadeIn" id="mapModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 	<div class="modal-dialog modal-lg" role="document">
 	    <div class="modal-content">
 	      	<div class="modal-body map-modal">
@@ -1483,7 +1486,7 @@ End Old Facility -->
 </div>
 
 <!-- Contact Modal -->
-<div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal" data-easein="fadeIn" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 	<div class="modal-dialog modal-lg" role="document">
 	    <div class="modal-content">
 	      	<div class="modal-body form-modal">
@@ -1690,3 +1693,4 @@ End Old Facility -->
 <script async defer
         src="https://maps.googleapis.com/maps/api/js?signed_in=true">
 </script>
+
