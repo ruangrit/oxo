@@ -119,7 +119,7 @@
   .desc-section.-facilities {
     height: auto;
     padding: 0 15px; }
-    @media (min-width: 769px) {
+    @media (min-width: 992px) {
       .desc-section.-facilities {
         padding: 100px 50px 50px 50px; } }
   .desc-section.-reservation {
@@ -538,25 +538,18 @@ ul.list-unstyled {
   display: block;
   box-sizing: border-box;
   max-width: 1200px;
-  margin: 0 auto;
-  padding: 50px; }
+  margin: 0 auto; }
+  @media (min-width: 768px) {
+    .facilities-content {
+      margin: 50px auto; } }
   .facilities-content h3 {
     margin-bottom: 100px; }
-  @media (min-width: 521px) and (max-width: 1200px) {
-    .facilities-content {
-      margin: 50px; } }
-  @media (max-width: 520px) {
-    .facilities-content {
-      margin: 50px 15px; } }
+    @media (max-width: 479px) {
+      .facilities-content h3 {
+        margin-bottom: 15px; } }
   @media (max-width: 768px) {
     .facilities-content {
-      padding: 50px 25px; } }
-  @media (min-width: 992px) {
-    .facilities-content {
-      padding: 0 6.25%; } }
-  @media (max-width: 520px) {
-    .facilities-content {
-      padding: 25px 0; } }
+      padding: 50px 0; } }
 
 .faciimg-wrapper {
   width: 100%;
@@ -564,21 +557,33 @@ ul.list-unstyled {
   text-align: center; }
   .faciimg-wrapper .faciitem {
     display: inline-block;
-    width: 150px;
-    margin-right: 60px;
+    width: 20%;
+    margin-right: 0;
     float: left;
     text-align: center; }
-    .faciimg-wrapper .faciitem.-last {
-      margin-right: 0; }
-  .faciimg-wrapper .faciimg,
+    @media (max-width: 750px) {
+      .faciimg-wrapper .faciitem {
+        width: 33.33%; }
+        .faciimg-wrapper .faciitem.-item4, .faciimg-wrapper .faciitem.-item5 {
+          width: 33.33%;
+          margin-top: 50px;
+          float: none; } }
+    @media (max-width: 479px) {
+      .faciimg-wrapper .faciitem {
+        width: 100%;
+        margin-top: 50px; }
+        .faciimg-wrapper .faciitem.-item4, .faciimg-wrapper .faciitem.-item5 {
+          width: 100%; } }
   .faciimg-wrapper .faci-img {
     text-align: center;
     display: inline-block;
-    width: 150px;
+    width: 100%;
+    max-width: 150px;
     height: 150px;
-    background-size: contain !important;
-    vertical-align: middle;
-    float: left; }
+    vertical-align: middle; }
+    @media (max-width: 991px) {
+      .faciimg-wrapper .faci-img {
+        height: 100px; } }
   .faciimg-wrapper.line2 {
     width: auto;
     float: none;
@@ -590,8 +595,6 @@ ul.list-unstyled {
   margin-top: 100px; }
   .faciimg-wrapper.-line2 .faciitem {
     float: none; }
-    .faciimg-wrapper.-line2 .faciitem.-last {
-      margin-right: 35px; }
 
 .btn.-facilities {
   float: right;
@@ -606,6 +609,10 @@ ul.list-unstyled {
   .faci-img > .image {
     width: 150px;
     height: 150px; }
+    @media (max-width: 991px) {
+      .faci-img > .image {
+        width: 100%;
+        height: 100px; } }
   .faci-img:hover {
     cursor: pointer; }
   .faci-img:hover > .text-tooltip {
@@ -628,13 +635,19 @@ ul.list-unstyled {
   top: -37px;
   opacity: 0;
   transition: visibility 0.5s, opacity 0.5s linear; }
+  @media (max-width: 479px) {
+    .text-tooltip {
+      width: 300px;
+      margin-left: -150px; } }
   .text-tooltip.-twiceline {
     top: -60px; }
+    @media (max-width: 479px) {
+      .text-tooltip.-twiceline {
+        top: -37px; } }
 
 .explore-facilities {
   display: block;
   visibility: hidden;
-  transition: display 2px;
   position: absolute;
   bottom: -35px;
   width: 100%;
@@ -642,76 +655,78 @@ ul.list-unstyled {
   opacity: 0;
   transition: visibility 0.5s, opacity 0.5s linear; }
 
+.faci-img > .image {
+  -webkit-transition: background-image 0.5s linear;
+  transition: background-image 0.5s linear; }
+.faci-img:hover > .image {
+  -webkit-transition: background-image 0.5s linear;
+  transition: background-image 0.5s linear; }
 .faci-img.-img01 > .image {
   background: url(/sites/all/themes/parallax_zymphonies_theme/images/24-hours.png) transparent no-repeat center;
-  background-size: contain;
-  -webkit-transition: background-image 0.5s linear;
-  transition: background-image 0.5s linear; }
+  background-size: contain; }
 .faci-img.-img01:hover > .image {
   background: url(/sites/all/themes/parallax_zymphonies_theme/images/24-hours-a.png) transparent no-repeat center;
-  background-size: contain;
-  -webkit-transition: background-image 0.5s linear;
-  transition: background-image 0.5s linear; }
+  background-size: contain; }
 .faci-img.-img02 > .image {
   background: url(/sites/all/themes/parallax_zymphonies_theme/images/garden-area.png) transparent no-repeat center;
-  background-size: contain;
-  -webkit-transition: background-image 0.5s ease-in-out;
-  transition: background-image 0.5s ease-in-out; }
+  background-size: contain; }
 .faci-img.-img02:hover > .image {
   background: url(/sites/all/themes/parallax_zymphonies_theme/images/garden-area-a.png) transparent no-repeat center;
-  background-size: contain;
-  -webkit-transition: background-image 0.5s ease-in-out;
-  transition: background-image 0.5s ease-in-out; }
+  background-size: contain; }
 .faci-img.-img03 > .image {
   background: url(/sites/all/themes/parallax_zymphonies_theme/images/kitchen.png) transparent no-repeat center;
-  background-size: 120px;
-  -webkit-transition: background-image 0.5s linear;
-  transition: background-image 0.5s linear; }
+  background-size: 120px; }
+  @media (max-width: 991px) {
+    .faci-img.-img03 > .image {
+      background-size: contain; } }
 .faci-img.-img03:hover > .image {
   background: url(/sites/all/themes/parallax_zymphonies_theme/images/kitchen-a.png) transparent no-repeat center;
-  background-size: 120px;
-  -webkit-transition: background-image 0.5s linear;
-  transition: background-image 0.5s linear; }
+  background-size: 120px; }
+  @media (max-width: 991px) {
+    .faci-img.-img03:hover > .image {
+      background-size: contain; } }
 .faci-img.-img04 > .image {
   background: url(/sites/all/themes/parallax_zymphonies_theme/images/parking.png) transparent no-repeat center;
-  background-size: contain;
-  -webkit-transition: background-image 0.5s linear;
-  transition: background-image 0.5s linear; }
+  background-size: contain; }
 .faci-img.-img04:hover > .image {
   background: url(/sites/all/themes/parallax_zymphonies_theme/images/parking-a.png) transparent no-repeat center;
-  background-size: contain;
-  -webkit-transition: background-image 0.5s linear;
-  transition: background-image 0.5s linear; }
+  background-size: contain; }
 .faci-img.-img05 > .image {
   background: url(/sites/all/themes/parallax_zymphonies_theme/images/cafe.png) transparent no-repeat center;
-  background-size: 120px;
-  -webkit-transition: background-image 0.5s linear;
-  transition: background-image 0.5s linear; }
+  background-size: 120px; }
+  @media (max-width: 991px) {
+    .faci-img.-img05 > .image {
+      background-size: contain; } }
 .faci-img.-img05:hover > .image {
   background: url(/sites/all/themes/parallax_zymphonies_theme/images/cafe-a.png) transparent no-repeat center;
-  background-size: 120px;
-  -webkit-transition: background-image 0.5s linear;
-  transition: background-image 0.5s linear; }
+  background-size: 120px; }
+  @media (max-width: 991px) {
+    .faci-img.-img05:hover > .image {
+      background-size: contain; } }
 .faci-img.-img06 > .image {
   background: url(/sites/all/themes/parallax_zymphonies_theme/images/free-services.png) transparent no-repeat center;
-  background-size: 120px;
-  -webkit-transition: background-image 0.5s linear;
-  transition: background-image 0.5s linear; }
+  background-size: 120px; }
+  @media (max-width: 991px) {
+    .faci-img.-img06 > .image {
+      background-size: 100px; } }
 .faci-img.-img06:hover > .image {
   background: url(/sites/all/themes/parallax_zymphonies_theme/images/free-services-a.png) transparent no-repeat center;
-  background-size: 120px;
-  -webkit-transition: background-image 0.5s linear;
-  transition: background-image 0.5s linear; }
+  background-size: 120px; }
+  @media (max-width: 991px) {
+    .faci-img.-img06:hover > .image {
+      background-size: 100px; } }
 .faci-img.-img07 > .image {
   background: url(/sites/all/themes/parallax_zymphonies_theme/images/small-fee-based.png) transparent no-repeat center;
-  background-size: 100px;
-  -webkit-transition: background-image 0.5s linear;
-  transition: background-image 0.5s linear; }
+  background-size: 100px; }
+  @media (max-width: 991px) {
+    .faci-img.-img07 > .image {
+      background-size: 80px; } }
 .faci-img.-img07:hover > .image {
   background: url(/sites/all/themes/parallax_zymphonies_theme/images/small-fee-based-a.png) transparent no-repeat center;
-  background-size: 100px;
-  -webkit-transition: background-image 0.5s linear;
-  transition: background-image 0.5s linear; }
+  background-size: 100px; }
+  @media (max-width: 991px) {
+    .faci-img.-img07:hover > .image {
+      background-size: 80px; } }
 
 button.close {
   opacity: 1;
@@ -1150,11 +1165,22 @@ h1, h2, h3, h4 {
   border-right: 0; }
 
 .headline__description.-since {
-  margin-top: 150px;
-  margin-bottom: 80px; }
+  position: absolute;
+  left: 50%;
+  bottom: 90px;
+  margin-left: -117px; }
+  @media (max-width: 767px) {
+    .headline__description.-since {
+      bottom: 120px; } }
 
 .flexbox__item.-bottom {
   vertical-align: bottom; }
+
+.flexbox__item.-middle {
+  vertical-align: middle; }
+  .flexbox__item.-middle > .article-headline-main {
+    display: block;
+    margin: -100px auto 0 auto; }
 
 .btn.active,
 .btn:active {

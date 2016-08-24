@@ -4,30 +4,19 @@
 	box-sizing: border-box;
 	max-width: 1200px;
 	margin: 0 auto;
-	// padding: 0 50px;
-	// overflow: hidden;
+	@media (min-width: 768px) {
+		margin: 50px auto;
+	}
 
 	h3 {
 		margin-bottom: 100px;
+		@media (max-width: 479px) {
+			margin-bottom: 15px;
+		}
 	}
 
-	@media (min-width: 521px) and (max-width: 1200px) {
-		margin: 50px;
-	}
-	@media (max-width: 520px) {
-		margin: 50px 15px;
-	}
-
-	padding: 50px;
 	@media (max-width: 768px) {
-		padding: 50px 25px;
-	}
-	@media (min-width: 992px) {
-		// padding: (30px / 700px * 100%) (60px / 700px * 100%);
-		padding: 0 (60px / 960px * 100%);
-	}
-	@media (max-width: 520px) {
-		padding: 25px 0;
+		padding: 50px 0;
 	}
 }
 
@@ -37,24 +26,39 @@
 	text-align: center;
 	.faciitem {
 		display: inline-block;
-		width: 150px;
-		margin-right: 60px;
+		width: 20%;
+		margin-right: 0;
 		float: left;
 		text-align: center;
-		&.-last {
-			margin-right: 0;
+		@media (max-width: 750px) {
+			width: 33.33%;
+			&.-item4,
+			&.-item5 {
+				width: 33.33%;
+				margin-top: 50px;
+				float: none;
+			}
+		}
+		@media (max-width: 479px) {
+			width: 100%;
+			margin-top: 50px;
+			&.-item4,
+			&.-item5 {
+				width: 100%;
+			}
 		}
 	}
 
-	.faciimg,
 	.faci-img {
 		text-align: center;
 		display: inline-block;
-		width: 150px;
+		width: 100%;
+		max-width: 150px;
 		height: 150px;
-		background-size: contain !important;
 		vertical-align: middle;
-		float: left;
+		@media (max-width: 991px) {
+			height: 100px;
+		}
 	}
 	&.line2 {
 		width: auto;
@@ -68,9 +72,6 @@
 	margin-top: 100px;
 	.faciitem {
 		float: none;
-		&.-last {
-			margin-right: 35px;
-		}
 	}
 }
 .btn.-facilities {
@@ -90,6 +91,10 @@ $path: "/sites/all/themes/parallax_zymphonies_theme/images";
 	> .image {
 		width: 150px;
 		height: 150px;
+		@media (max-width: 991px) {
+			width: 100%;
+			height: 100px;
+		}
 	}
 	&:hover {
 		cursor: pointer;
@@ -117,15 +122,22 @@ $path: "/sites/all/themes/parallax_zymphonies_theme/images";
 	top: -37px;
 	opacity: 0;
 	transition: visibility 0.5s, opacity 0.5s linear;
+	@media (max-width: 479px) {
+		width: 300px;
+		margin-left: -150px;
+	}
 	&.-twiceline {
 		top: -60px;
+		@media (max-width: 479px) {
+			top: -37px;
+		}
 	}
+
 }
 
 .explore-facilities {
 	display: block;
 	visibility: hidden;
-	transition: display 2px;
 	position: absolute;;
 	bottom: -35px;
 	width: 100%;
@@ -136,102 +148,105 @@ $path: "/sites/all/themes/parallax_zymphonies_theme/images";
 
 .faci-img {
 
+	> .image {
+		-webkit-transition: background-image 0.5s linear;
+		transition: background-image 0.5s linear;
+	}
+	&:hover > .image {
+		-webkit-transition: background-image 0.5s linear;
+		transition: background-image 0.5s linear;
+	}
+
 	&.-img01 > .image {
 		background: url(#{$path}/24-hours.png) transparent no-repeat center;
 		background-size: contain;
-		-webkit-transition: background-image 0.5s linear;
-		transition: background-image 0.5s linear;
-
 	}
 	&.-img01:hover > .image {
 		background: url(#{$path}/24-hours-a.png) transparent no-repeat center;
 		background-size: contain;
-		-webkit-transition: background-image 0.5s linear;
-		transition: background-image 0.5s linear;
 	}
 
 	&.-img02 > .image {
 		background: url(#{$path}/garden-area.png) transparent no-repeat center;
 		background-size: contain;
-		-webkit-transition: background-image 0.5s ease-in-out;
-		transition: background-image 0.5s ease-in-out;
 
 	}
 	&.-img02:hover > .image {
 		background: url(#{$path}/garden-area-a.png) transparent no-repeat center;
 		background-size: contain;
-		-webkit-transition: background-image 0.5s ease-in-out;
-		transition: background-image 0.5s ease-in-out;
 	}
 
 	&.-img03 > .image {
 		background: url(#{$path}/kitchen.png) transparent no-repeat center;
 		background-size: 120px;
-		-webkit-transition: background-image 0.5s linear;
-		transition: background-image 0.5s linear;
-
+		@media (max-width: 991px) {
+			background-size: contain;
+		}
 	}
 	&.-img03:hover > .image {
 		background: url(#{$path}/kitchen-a.png) transparent no-repeat center;
 		background-size: 120px;
-		-webkit-transition: background-image 0.5s linear;
-		transition: background-image 0.5s linear;
+		@media (max-width: 991px) {
+			background-size: contain;
+		}
 	}
 
 	&.-img04 > .image {
 		background: url(#{$path}/parking.png) transparent no-repeat center;
 		background-size: contain;
-		-webkit-transition: background-image 0.5s linear;
-		transition: background-image 0.5s linear;
 
 	}
 	&.-img04:hover > .image {
 		background: url(#{$path}/parking-a.png) transparent no-repeat center;
 		background-size: contain;
-		-webkit-transition: background-image 0.5s linear;
-		transition: background-image 0.5s linear;
 	}
 
 	&.-img05 > .image {
 		background: url(#{$path}/cafe.png) transparent no-repeat center;
 		background-size: 120px;
-		-webkit-transition: background-image 0.5s linear;
-		transition: background-image 0.5s linear;
+		@media (max-width: 991px) {
+			background-size: contain;
+		}
 
 	}
 	&.-img05:hover > .image {
 		background: url(#{$path}/cafe-a.png) transparent no-repeat center;
 		background-size: 120px;
-		-webkit-transition: background-image 0.5s linear;
-		transition: background-image 0.5s linear;
+		@media (max-width: 991px) {
+			background-size: contain;
+		}
 	}
 
 	&.-img06 > .image {
 		background: url(#{$path}/free-services.png) transparent no-repeat center;
 		background-size: 120px;
-		-webkit-transition: background-image 0.5s linear;
-		transition: background-image 0.5s linear;
+		@media (max-width: 991px) {
+			background-size: 100px;
+		}
 
 	}
 	&.-img06:hover > .image {
 		background: url(#{$path}/free-services-a.png) transparent no-repeat center;
 		background-size: 120px;
-		-webkit-transition: background-image 0.5s linear;
-		transition: background-image 0.5s linear;
+		@media (max-width: 991px) {
+			background-size: 100px;
+		}
 	}
 
 	&.-img07 > .image {
 		background: url(#{$path}/small-fee-based.png) transparent no-repeat center;
 		background-size: 100px;
-		-webkit-transition: background-image 0.5s linear;
-		transition: background-image 0.5s linear;
+		@media (max-width: 991px) {
+			background-size: 80px;
+		}
 
 	}
 	&.-img07:hover > .image {
 		background: url(#{$path}/small-fee-based-a.png) transparent no-repeat center;
 		background-size: 100px;
-		-webkit-transition: background-image 0.5s linear;
-		transition: background-image 0.5s linear;
+		@media (max-width: 991px) {
+			background-size: 80px;
+		}
 	}
 
 }

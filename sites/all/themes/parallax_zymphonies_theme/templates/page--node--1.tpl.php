@@ -160,7 +160,7 @@
 <header id="post-205-title" class="article__header  article__header--page full-height">
     <div class="covers"></div>
     <div class="flexbox">
-        <div class="flexbox__item -bottom">
+        <div class="flexbox__item -middle">
             <hgroup class="article__headline article-headline-main">
  	           <h1 class="headline__primary">OXOTEL</h1>
  	           <div class="headline__description">
@@ -521,35 +521,35 @@
 			<h3 class="text-center textLightWhiteBg">FACILITIES</h3>
 
 			<div class="faciimg-wrapper">
-				<div class="faciitem">
+				<div class="faciitem -item1">
 					<div class="faci-img -img01" onclick="openFacilitiesModal(0)">
 						<div class="image"></div>
 						<span class="text-tooltip -twiceline textLightWhiteBg">24 HOURS RECEPTION</span>
 						<span class="explore-facilities">CLICK FOR EXPLORE</span>
 					</div>
 				</div>
-				<div class="faciitem">
+				<div class="faciitem -item2">
 					<div class="faci-img -img02" onclick="openFacilitiesModal(1)">
 						<div class="image"></div>
 						<span class="text-tooltip -twiceline textLightWhiteBg">GARDEN & COMMUNAL AREA</span>
 						<span class="explore-facilities">CLICK FOR EXPLORE</span>
 					</div>
 				</div>
-				<div class="faciitem">
+				<div class="faciitem -item3">
 					<div class="faci-img -img03" onclick="openFacilitiesModal(2)">
 						<div class="image"></div>
 						<span class="text-tooltip textLightWhiteBg">KITCHEN</span>
 						<span class="explore-facilities">CLICK FOR EXPLORE</span>
 					</div>
 				</div>
-				<div class="faciitem">
+				<div class="faciitem -item4">
 					<div class="faci-img -img04" onclick="openFacilitiesModal(3)">
 						<div class="image"></div>
 						<span class="text-tooltip textLightWhiteBg">PARKING AREA</span>
 						<span class="explore-facilities">CLICK FOR EXPLORE</span>
 					</div>
 				</div>
-				<div class="faciitem -last">
+				<div class="faciitem -item5 -last">
 					<div class="faci-img -img05" onclick="openFacilitiesModal(4)">
 						<div class="image"></div>
 						<span class="text-tooltip textLightWhiteBg">CAFE</span>

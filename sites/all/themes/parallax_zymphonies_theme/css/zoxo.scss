@@ -51,12 +51,24 @@ h1, h2, h3, h4 {
 
 // headline__description -since
 .headline__description.-since {
-	margin-top: 150px;
-	margin-bottom: 80px;
+	position: absolute;
+	left: 50%;
+	bottom: 90px;
+	margin-left: -117px;
+	@media (max-width: 767px) {
+		bottom: 120px;
+	}
 }
 
 .flexbox__item.-bottom {
 	vertical-align: bottom;
+}
+.flexbox__item.-middle {
+	vertical-align: middle;
+	> .article-headline-main {
+		display: block;
+		margin: -100px auto 0 auto;
+	}
 }
 
 .btn.active,
