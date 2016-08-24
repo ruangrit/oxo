@@ -134,6 +134,16 @@
     height: auto;
     margin: 0 auto 50px auto;
     padding: 100px 50px 50px 50px; }
+    @media (max-width: 767px) {
+      .desc-section.-findus {
+        padding: 100px 15px 50px 15px; }
+        .desc-section.-findus .inner {
+          width: 100%;
+          text-align: center; }
+          .desc-section.-findus .inner ._margin-right {
+            margin-right: 0 !important; }
+          .desc-section.-findus .inner ._pull-left {
+            float: none; } }
 
 .reservation-content {
   display: block; }
@@ -968,6 +978,10 @@ button.close {
     padding: 0 10px;
     margin-left: 20px;
     margin-right: 20px; }
+    @media (min-width: 767px) and (max-width: 890px) {
+      .social-gang > li {
+        margin-left: 10px;
+        margin-right: 10px; } }
   .social-gang > li > a {
     display: block;
     width: 60px;

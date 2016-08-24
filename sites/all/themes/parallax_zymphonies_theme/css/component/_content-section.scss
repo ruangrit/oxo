@@ -98,6 +98,19 @@
 		height: auto;
     	margin: 0 auto 50px auto;
 	    padding: 100px 50px 50px 50px;
+		@media (max-width: 767px) {
+			padding: 100px 15px 50px 15px;
+			.inner {
+				width: 100%;
+				text-align: center;
+				._margin-right {
+					margin-right: 0 !important;
+				}
+				._pull-left {
+					float: none;
+				}
+			}
+		}
 	}
 }
 
