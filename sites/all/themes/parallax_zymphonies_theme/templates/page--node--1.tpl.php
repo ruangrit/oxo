@@ -272,7 +272,7 @@
 	 					-->
 
 	 					<div class="dropdown">
-	 						<a class="btn btn-transparent -booking -orange _capital" aria-haspopup="true" aria-expanded="false" target="_blank" href="http://goo.gl/owzdZ2">Booking</a>
+	 						<a class="btn btn-transparent -booking -orange _capital" aria-haspopup="true" aria-expanded="false" target="_blank" href="http://goo.gl/Hz5s8T">Booking</a>
 
 							<ul class="dropdown-menu subbtn-group" aria-labelledby="dLabel">
 							  	<li>
@@ -986,7 +986,7 @@ End Old Facility -->
 					 					-->
 
 					 					<div class="dropdown">
-					 						<a class="btn btn-transparent -modal -booking -orange _invert _capital" aria-haspopup="true" aria-expanded="false" target="_blank" href="http://goo.gl/owzdZ2">Booking
+					 						<a class="btn btn-transparent -modal -booking -orange _invert _capital" aria-haspopup="true" aria-expanded="false" target="_blank" href="http://goo.gl/Hz5s8T">Booking
 					 						</a>
 
 											<ul class="dropdown-menu subbtn-group" aria-labelledby="dLabel">
