@@ -272,7 +272,7 @@
 	 					-->
 
 	 					<div class="dropdown">
-	 						<a class="btn btn-transparent -booking -orange _capital" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" target="_blank" href="#">Booking</a>
+	 						<a class="btn btn-transparent -booking -orange _capital" aria-haspopup="true" aria-expanded="false" target="_blank" href="http://goo.gl/owzdZ2">Booking</a>
 
 							<ul class="dropdown-menu subbtn-group" aria-labelledby="dLabel">
 							  	<li>
@@ -986,7 +986,7 @@ End Old Facility -->
 					 					-->
 
 					 					<div class="dropdown">
-					 						<a class="btn btn-transparent -modal -booking -orange _invert _capital" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" target="_blank" href="#">Booking
+					 						<a class="btn btn-transparent -modal -booking -orange _invert _capital" aria-haspopup="true" aria-expanded="false" target="_blank" href="http://goo.gl/owzdZ2">Booking
 					 						</a>
 
 											<ul class="dropdown-menu subbtn-group" aria-labelledby="dLabel">
@@ -1690,7 +1690,12 @@ End Old Facility -->
 
     });
 </script>
+<!--
 <script async defer
         src="https://maps.googleapis.com/maps/api/js?signed_in=true">
+</script>
+-->
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?signed_in=true&key=AIzaSyCqho1kroGimqIa2gbflvYpea0cFgk8ong">
 </script>
 
