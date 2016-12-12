@@ -211,7 +211,7 @@
     </div>
   <?php endif; ?>
 
-  <div class="footer_credit">
+  <div class="footer_credit" style="display:none">
       
     <div id="copyright" class="full-wrap clearfix">
 
