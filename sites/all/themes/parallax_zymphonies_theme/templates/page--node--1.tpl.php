@@ -247,6 +247,7 @@
 						Look no further, it assures that you'll always get the best rate available when you book directly at www.oxotelchiangmai.com
 						</p>
 						<br />
+						<br />
 						<b>EMAIL OR PHONE RESERVATION</b>
 						<p>[NO CREDIT CARD NEEDED] </p>
 						<p>
@@ -1749,7 +1750,16 @@ End Old Facility -->
 
 		}, 200);
 
-    });
+		$(".overflow-box").mCustomScrollbar({
+
+			scrollButtons:{enable:true, scrollType:"stepped"},
+				theme:"light-thick",
+				scrollbarPosition:"outside",
+				mouseWheel:{enable:false},
+			});
+
+    	});
+
 </script>
 <!--
 <script async defer
