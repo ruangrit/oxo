@@ -47,6 +47,9 @@
 
 .mCSB_scrollTools {
 	width: 25px;
+	top: 10px;
+	bottom: 10px;
+
 	.mCSB_buttonUp,
 	.mCSB_buttonDown {
 		background-image: url('../images/symbols.png') !important;
@@ -65,5 +68,8 @@
 	}
 	.mCSB_buttonDown {
 	    background-position: -4px -92px !important;
+	}
+	.mCSB_draggerContainer {
+		display: none;
 	}
 }

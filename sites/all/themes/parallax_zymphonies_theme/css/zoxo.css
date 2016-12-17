@@ -164,6 +164,18 @@
   .button-box > .btn + .btn {
     float: right; }
 
+.article__parallax:before {
+  transition: none;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #000000;
+  opacity: 0.5;
+  z-index: 2; }
+
 .footer {
   background-color: #272727;
   border-top: 5px solid #B4B4B4;
@@ -919,7 +931,9 @@ button.close {
   right: -26px; }
 
 .mCSB_scrollTools {
-  width: 25px; }
+  width: 25px;
+  top: 10px;
+  bottom: 10px; }
   .mCSB_scrollTools .mCSB_buttonUp,
   .mCSB_scrollTools .mCSB_buttonDown {
     background-image: url("../images/symbols.png") !important;
@@ -936,6 +950,8 @@ button.close {
     background-position: -51px -58px !important; }
   .mCSB_scrollTools .mCSB_buttonDown {
     background-position: -4px -92px !important; }
+  .mCSB_scrollTools .mCSB_draggerContainer {
+    display: none; }
 
 .switch-content-wrapper .close {
   position: absolute;
