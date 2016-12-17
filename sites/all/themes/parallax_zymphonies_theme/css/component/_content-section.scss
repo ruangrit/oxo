@@ -138,8 +138,8 @@
 		float: right;
 	}
 }
-
-.article__parallax__slider.header--slideshow.js-pixslider.rsHor.rsFade.slider--loaded:before {
+.article__parallax:before {
+	transition: none;
     position: absolute;
     content: "";
     width: 100%;
@@ -147,5 +147,6 @@
     top: 0;
     left: 0;
     background-color: #000000;
-    opacity: 0.5;
+    opacity: 0.3;
+	z-index: 2;
 }
