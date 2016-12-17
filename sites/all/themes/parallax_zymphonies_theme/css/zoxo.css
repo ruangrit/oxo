@@ -164,6 +164,16 @@
   .button-box > .btn + .btn {
     float: right; }
 
+.article__parallax__slider.header--slideshow.js-pixslider.rsHor.rsFade.slider--loaded:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #000000;
+  opacity: 0.5; }
+
 .footer {
   background-color: #272727;
   border-top: 5px solid #B4B4B4;
@@ -260,16 +270,17 @@ ul.list-unstyled {
   position: absolute;
   top: 30px;
   right: 30px;
-  z-index: 999; }
-.modal-content button.close {
+  z-index: 999;
   border: none;
   width: 33px;
   height: 33px;
-  background: url(/sites/all/themes/parallax_zymphonies_theme/images/symbols.png) transparent no-repeat 1px 0;
-  background-size: 174px; }
-  .modal-content button.close:hover {
+  background: url(/sites/all/themes/parallax_zymphonies_theme/images/symbols.png) transparent no-repeat -43px 0;
+  background-size: 174px;
+  opacity: 0.5; }
+  .modal-content button.close:hover, .modal-content button.close:focus {
     background: url(/sites/all/themes/parallax_zymphonies_theme/images/symbols.png) transparent no-repeat -43px 0;
-    background-size: 174px; }
+    background-size: 174px;
+    opacity: 1; }
 .modal-content .modal-content button.close > span {
   font-size: 0;
   line-height: 0; }
@@ -739,15 +750,19 @@ ul.list-unstyled {
       background-size: 80px; } }
 
 button.close {
-  opacity: 1;
+  transition: all 0.5s linear;
   border: none;
   width: 33px;
   height: 33px;
-  background: url(/sites/all/themes/parallax_zymphonies_theme/images/symbols.png) transparent no-repeat 1px 0;
-  background-size: 174px; }
+  background: url(/sites/all/themes/parallax_zymphonies_theme/images/symbols.png) transparent no-repeat -43px 0;
+  background-size: 174px;
+  opacity: 0.5; }
+  button.close:hover {
+    transition: all 0.5s linear; }
   button.close:hover {
     background: url(/sites/all/themes/parallax_zymphonies_theme/images/symbols.png) transparent no-repeat -43px 0;
-    background-size: 174px; }
+    background-size: 174px;
+    opacity: 1; }
   button.close > span {
     font-size: 0;
     line-height: 0; }
@@ -757,11 +772,14 @@ button.close {
     left: 35px; }
 
 .btn.btn-transparent {
+  transition: all 0.5s linear;
   background-color: transparent;
   border: 2px solid #B4B4B4;
   border-radius: 0;
   padding: 8px 15px 5px 15px;
   color: #3E3E3E; }
+  .btn.btn-transparent:hover {
+    transition: all 0.5s linear; }
   .btn.btn-transparent:hover, .btn.btn-transparent:active, .btn.btn-transparent:focus {
     background-color: #B4B4B4; }
   .btn.btn-transparent.-darkbg {
@@ -777,7 +795,7 @@ button.close {
       color: #2B2A2F;
       background-color: #ED932D; }
   .btn.btn-transparent.-orange.-booking {
-    width: 140px; }
+    width: 160px; }
   .btn.btn-transparent.-orange._invert {
     color: #AEAFB5; }
     .btn.btn-transparent.-orange._invert:hover, .btn.btn-transparent.-orange._invert:active, .btn.btn-transparent.-orange._invert:focus {
@@ -963,7 +981,10 @@ button.close {
   background-color: transparent;
   border: 2px solid #B4B4B4;
   padding: 8px 15px 5px 15px;
-  color: #3E3E3E; }
+  color: #3E3E3E;
+  transition: all 0.5s linear; }
+  .webform-submit.form-submit:hover {
+    transition: all 0.5s linear; }
   .webform-submit.form-submit:hover {
     background-color: #B4B4B4; }
 
