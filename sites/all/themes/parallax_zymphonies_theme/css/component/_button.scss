@@ -1,13 +1,23 @@
+@mixin btn-transition() {
+	transition: all 0.5s linear;
+	&:hover {
+		transition: all 0.5s linear;
+	}
+}
+
 button.close {
-	opacity: 1;
+	@include btn-transition();
+
 	border: none;
 	width: 33px;
 	height: 33px;
-	background: url(#{$imagePath}/symbols.png) transparent no-repeat 1px 0;
+	background: url(#{$imagePath}/symbols.png) transparent no-repeat -43px 0;
 	background-size: 174px;
+	opacity: 0.5;
 	&:hover {
 		background: url(#{$imagePath}/symbols.png) transparent no-repeat -43px 0;
 		background-size: 174px;
+		opacity: 1;
 	}
 	> span {
 		font-size: 0;
@@ -22,6 +32,8 @@ button.close {
 }
 
 .btn.btn-transparent {
+	@include btn-transition();
+
 	background-color: transparent;
 	border: 2px solid $color-2;
 	border-radius: 0;
@@ -55,7 +67,7 @@ button.close {
 		}
 	}
 	&.-orange.-booking {
-		width: 140px;
+		width: 160px;
 	}
 	&.-orange._invert {
 		color: $color-5;

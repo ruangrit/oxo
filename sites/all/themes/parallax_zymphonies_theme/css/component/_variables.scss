@@ -64,3 +64,10 @@ $text-imgsection: #666;
 }
 
 $imagePath: "/sites/all/themes/parallax_zymphonies_theme/images";
+
+@mixin btn-transition() {
+	transition: all 0.5s linear;
+	&:hover {
+		transition: all 0.5s linear;
+	}
+}

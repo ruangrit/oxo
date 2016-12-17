@@ -6,17 +6,17 @@
 		top: 30px;
 		right: 30px;
 		z-index: 999;
-	}
-
-	button.close {
         border: none;
         width: 33px;
         height: 33px;
-        background: url(#{$imagePath}/symbols.png) transparent no-repeat 1px 0;
+        background: url(#{$imagePath}/symbols.png) transparent no-repeat -43px 0;
         background-size: 174px;
-        &:hover {
-            background: url(#{$imagePath}/symbols.png) transparent no-repeat -43px 0;
-            background-size: 174px;
+		opacity: 0.5;
+        &:hover,
+		&:focus {
+			background: url(#{$imagePath}/symbols.png) transparent no-repeat -43px 0;
+			background-size: 174px;
+			opacity: 1;
         }
     }
     .modal-content button.close > span {
@@ -27,6 +27,7 @@
 		display: none;
 	}
 }
+
 #conditionModal {
 	.modal-content .lSPager {
 		display: block;

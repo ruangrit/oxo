@@ -48,6 +48,8 @@
     border: 2px solid #B4B4B4;
     padding: 8px 15px 5px 15px;
     color: #3E3E3E;
+
+    @include btn-transition();
     &:hover {
         background-color: #B4B4B4;
     }
