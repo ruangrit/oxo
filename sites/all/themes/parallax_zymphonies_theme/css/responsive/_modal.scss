@@ -9,14 +9,18 @@
             text-align: center;
         }
 
-        .modal-content button.close {
+        button.close {
             top: 15px;
             right: 8px;
         }
     }
 }
-
-
+.modal .modal-dialog .modal-content .modal-body {
+    @media (max-width: 640px) {
+        padding-top: 60px;
+        padding-bottom: 30px;
+    }
+}
 
 
 
@@ -45,5 +49,71 @@
             height: auto;
             display: inline-block;
         }
+    }
+}
+
+
+
+
+
+// Modal Room
+#roomsModal .group-slide {
+    @media (max-width: 640px) {
+        width: 100%;
+        height: auto;
+
+        .lSSlideOuter {
+            width: 100%;
+        }
+        .lSSlideWrapper {
+            height: 400px;
+        }
+    }
+}
+
+
+
+
+
+// Modal image slide
+@media (max-width: 425px) {
+    .slide-modal .group-slide {
+        padding-top: 0;
+    }
+    .slide-modal .group-slide > .lSSlideOuter {
+        max-width: 290px;
+        width: 100%;
+        margin: 0 auto;
+        float: none;
+    }
+    .slide-modal .group-slide > .lSSlideOuter .lSAction {
+        width: 100%;
+        margin-top: -45px;
+    }
+    .slide-modal .group-slide > .lSSlideOuter .lSAction > a.lSPrev {
+        left: 10px;
+    }
+    .slide-modal .group-slide > .lSSlideOuter .lSAction > a.lSNext {
+        right: 10px;
+    }
+
+    #roomsModal .modal-description {
+        margin-top: 0;
+        margin-bottom: 30px;
+        padding: 0 15px;
+    }
+    #roomsModal .overflow-box {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .modal-dialog.-facilities .modal-description,
+    .modal-dialog.-services .modal-description {
+        margin-top: 30px;
+        padding: 0 15px;
+    }
+    .facilities-switch-page {
+        float: none;
+        margin: 0 auto;
     }
 }

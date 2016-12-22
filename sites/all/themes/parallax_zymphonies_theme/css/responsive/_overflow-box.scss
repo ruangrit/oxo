@@ -17,4 +17,16 @@
     .mCSB_outside + .mCSB_scrollTools {
         right: 0;
     }
+
+    .article__header.-rooms {
+        .mCSB_buttonUp,
+        .mCSB_buttonDown {
+            opacity: 1;
+            z-index: 999;
+        }
+    }
+
+    .overflow-box.-modalrooms {
+        max-width: 100%;
+    }
 }

@@ -1192,9 +1192,14 @@ button.close {
     .modal .modal-dialog .modal-body .modal-title {
       margin-bottom: 30px;
       text-align: center; }
-    .modal .modal-dialog .modal-body .modal-content button.close {
+    .modal .modal-dialog .modal-body button.close {
       top: 15px;
       right: 8px; } }
+
+@media (max-width: 640px) {
+  .modal .modal-dialog .modal-content .modal-body {
+    padding-top: 60px;
+    padding-bottom: 30px; } }
 
 @media (max-width: 640px) {
   .modal .modal-dialog .modal-body.video-modal .video-iframe-wrapper {
@@ -1214,6 +1219,52 @@ button.close {
     height: auto;
     display: inline-block; } }
 
+@media (max-width: 640px) {
+  #roomsModal .group-slide {
+    width: 100%;
+    height: auto; }
+    #roomsModal .group-slide .lSSlideOuter {
+      width: 100%; }
+    #roomsModal .group-slide .lSSlideWrapper {
+      height: 400px; } }
+
+@media (max-width: 425px) {
+  .slide-modal .group-slide {
+    padding-top: 0; }
+
+  .slide-modal .group-slide > .lSSlideOuter {
+    max-width: 290px;
+    width: 100%;
+    margin: 0 auto;
+    float: none; }
+
+  .slide-modal .group-slide > .lSSlideOuter .lSAction {
+    width: 100%;
+    margin-top: -45px; }
+
+  .slide-modal .group-slide > .lSSlideOuter .lSAction > a.lSPrev {
+    left: 10px; }
+
+  .slide-modal .group-slide > .lSSlideOuter .lSAction > a.lSNext {
+    right: 10px; }
+
+  #roomsModal .modal-description {
+    margin-top: 0;
+    margin-bottom: 30px;
+    padding: 0 15px; }
+
+  #roomsModal .overflow-box {
+    margin-top: 30px;
+    margin-bottom: 30px; }
+
+  .modal-dialog.-facilities .modal-description,
+  .modal-dialog.-services .modal-description {
+    margin-top: 30px;
+    padding: 0 15px; }
+
+  .facilities-switch-page {
+    float: none;
+    margin: 0 auto; } }
 @media (max-width: 768px) {
   .desc-section.-reservation {
     padding: 24px 15px; } }
@@ -1232,7 +1283,15 @@ button.close {
     right: 0; }
 
   .mCSB_outside + .mCSB_scrollTools {
-    right: 0; } }
+    right: 0; }
+
+  .article__header.-rooms .mCSB_buttonUp,
+  .article__header.-rooms .mCSB_buttonDown {
+    opacity: 1;
+    z-index: 999; }
+
+  .overflow-box.-modalrooms {
+    max-width: 100%; } }
 body {
   color: #3E3E3E;
   font-size: 13px;
