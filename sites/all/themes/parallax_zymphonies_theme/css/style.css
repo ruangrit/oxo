@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,300,500,600,700);
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 
-/* --------------------------------------------- 
+/* ---------------------------------------------
 
 * Filename:     style.css
 * Version:      1.0.0 (2015-11-07)
@@ -14,8 +14,8 @@
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
   margin: 0;
@@ -26,7 +26,7 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
 }
@@ -69,7 +69,7 @@ body {
   font-size: 15px;
   line-height: 150%;
   background-attachment: fixed;
-  margin-top: 50px;
+  /*margin-top: 50px;*/
 }
 
 a {
@@ -455,8 +455,8 @@ ul.menu {
   margin: 5px 0 5px 0;
 }
 
-.region ul.menu li, 
-.region ul.links li, 
+.region ul.menu li,
+.region ul.links li,
 .region .item-list ul li {
   background: url("../images/marker.png") no-repeat scroll 4px center rgba(0, 0, 0, 0);
   list-style: none outside none;
@@ -516,7 +516,7 @@ ul.menu {
 }
 
 #main-menu li ul {
-   display: none; 
+   display: none;
   position: absolute;
   z-index: 9999;
   padding: 0;
@@ -535,8 +535,8 @@ ul.menu {
   display: none;
 }
 
-#main-menu ul li.leaf, 
-#main-menu ul li.expanded, 
+#main-menu ul li.leaf,
+#main-menu ul li.expanded,
 #main-menu ul li.collapsed {
   list-style: none;
 }
@@ -573,7 +573,7 @@ ul.menu {
 }
 
 .homebanner{
-  position: relative;  
+  position: relative;
   background: url(../images/bg.jpg) no-repeat bottom #00afc4;
   font-size: 14px;
   background-size: cover;
@@ -777,7 +777,7 @@ body.sidebar-second #sidebar-second {
   margin: 20px 0;
 }
 
-.node h2.title a, 
+.node h2.title a,
 .page-title a{
   color: #000;
 }
@@ -889,7 +889,7 @@ input.form-checkbox, input.form-radio {
 }
 
 /*-------------------------------------------*
-  Menus and item lists 
+  Menus and item lists
 /*-------------------------------------------*/
 
 .item-list ul {
@@ -1714,7 +1714,7 @@ ol.search-results {
   float: right;
 }
 
-.region-contactno h2, 
+.region-contactno h2,
 .region-contactno .content {
   float: left;
   margin: 0;
@@ -1922,7 +1922,7 @@ div.warning {
 
 /*Parallax Block*/
 
-.parallax-block{  
+.parallax-block{
   background: #edecf8;
   border-bottom: 10px solid #fff;
 }
