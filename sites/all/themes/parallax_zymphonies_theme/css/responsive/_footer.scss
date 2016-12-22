@@ -1,0 +1,18 @@
+@media (max-width: 640px) {
+    .footer p {
+        padding: 0 30px;
+    }
+    .footer-list {
+        width: 50%;
+        height: 130px;
+    }
+    .booking-link ul > li {
+        display: block;
+        margin: 0 auto 8px;
+        text-align: center;
+    }
+    .booking-link ul > li > a {
+        display: inline-block;
+        margin-right: 0 !important;
+    }
+}

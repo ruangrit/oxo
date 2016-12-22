@@ -573,7 +573,7 @@ ul.list-unstyled {
         margin-bottom: 15px; } }
   @media (max-width: 768px) {
     .facilities-content {
-      padding: 50px 0; } }
+      padding: 30px 0; } }
 
 .faciimg-wrapper {
   width: 100%;
@@ -1270,6 +1270,65 @@ button.close {
     padding: 24px 15px; } }
 
 @media (max-width: 640px) {
+  .article__header.article__header--page.two-thirds-height {
+    height: 50%; } }
+@media (max-width: 640px) {
+  .faciimg-wrapper .faciitem {
+    margin-top: 30px;
+    text-align: left; }
+
+  .faciimg-wrapper .faci-img {
+    max-width: 100%;
+    height: auto; }
+
+  .faciimg-wrapper.-line2 {
+    margin-top: 0; }
+
+  .faci-img > .image {
+    margin-bottom: 15px; }
+
+  .text-tooltip {
+    width: 100%;
+    position: relative;
+    display: block;
+    top: auto !important;
+    margin-left: 0;
+    margin-top: 0;
+    opacity: 1 !important;
+    left: auto;
+    float: left;
+    margin-bottom: 0;
+    transition: none !important;
+    visibility: visible !important; }
+
+  .explore-facilities {
+    transition: none;
+    visibility: visible;
+    position: relative;
+    bottom: auto;
+    left: auto;
+    opacity: 1; } }
+#post-740-title .text-floatmiddle {
+  line-height: 2em; }
+#post-740-title.article__header--page.two-thirds-height .ct-wrapper .inner {
+  margin-bottom: 0;
+  padding-bottom: 0; }
+
+@media (max-width: 640px) {
+  .desc-section.-findus .ct-wrapper {
+    display: block; }
+
+  .desc-section.-findus {
+    padding-top: 0; }
+
+  .switch-content-wrapper .close {
+    top: auto;
+    right: 10px; }
+
+  .social-gang > li {
+    margin-left: 0;
+    margin-right: 0; } }
+@media (max-width: 640px) {
   .overflow-box .mCustomScrollBox {
     padding-right: 38px; }
 
@@ -1292,6 +1351,22 @@ button.close {
 
   .overflow-box.-modalrooms {
     max-width: 100%; } }
+@media (max-width: 640px) {
+  .footer p {
+    padding: 0 30px; }
+
+  .footer-list {
+    width: 50%;
+    height: 130px; }
+
+  .booking-link ul > li {
+    display: block;
+    margin: 0 auto 8px;
+    text-align: center; }
+
+  .booking-link ul > li > a {
+    display: inline-block;
+    margin-right: 0 !important; } }
 body {
   color: #3E3E3E;
   font-size: 13px;
