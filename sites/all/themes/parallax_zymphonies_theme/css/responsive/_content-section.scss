@@ -1,0 +1,7 @@
+.desc-section {
+	&.-reservation {
+		@media (max-width: 768px) {
+			padding: 24px 15px;
+		}
+	}
+}

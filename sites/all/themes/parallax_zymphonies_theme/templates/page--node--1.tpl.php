@@ -241,9 +241,9 @@
 
 					<div class="overflow-box -scrollright">
 						<b>ONLINE RESERVATION</b>
-						 <p>[BEST RATE GUARANTEE] </p>
+ <p>[BEST RATE GUARANTEE] </p>
 						<p>
-							
+
 						Look no further, it assures that you'll always get the best rate available when you book directly at www.oxotelchiangmai.com
 						</p>
 						<br />
@@ -860,7 +860,7 @@ End Old Facility -->
 						149-153 Wua Lai Road Hai-Ya District Muang Chiang Mai Thailand 50100
 					</p>
 					<p>
-						Tel. +66 (0)52 085 334 
+						Tel. +66 (0)52 085 334
 						Mobile. +66 (0)95 674 1442
 					</p>
 
@@ -1482,10 +1482,10 @@ End Old Facility -->
 								<li>
 									[50% Charge]<br />
 									50% of room rate for whole booking will be charged when cancel 7-14 day prior to the accommodation date.
-										
+
 								</li>
 								<li>
-									
+
 									[100% Charge]<br />
 									100% of room rate for whole booking will be charged when cancel less than 7 days prior to the accommodation date.
 									Amendments or cancellations must by notified to us in writing only during Front office hours (07:00 AM to 10:00 PM).
@@ -1494,14 +1494,14 @@ End Old Facility -->
 								<li>
 									[NO SHOW]<br />
 									If you do not show up before 10:00 PM without informing us, we consider the guest as NO SHOW and we cancel the booking. Please note that 100% of room rate for whole booking will be charged in that case.
-									
+
 								</li>
 								<li>
 									[BOOKING AMENDMENT]<br />
 									Please inform us your change detail via e-mail at latest 14 days in advance. Otherwise, it will not be possible to change your reservation.
-									
+
 								</li>
-							</ul>	
+							</ul>
 
 	      				</p>
 	      				</div>
@@ -1768,4 +1768,3 @@ End Old Facility -->
 <script async defer
         src="https://maps.googleapis.com/maps/api/js?signed_in=true&key=AIzaSyCqho1kroGimqIa2gbflvYpea0cFgk8ong">
 </script>
-

@@ -1,0 +1,49 @@
+// Overall
+.modal .modal-dialog .modal-body {
+    @media (max-width: 640px) {
+        padding-top: 60px;
+        padding-bottom: 30px;
+
+        .modal-title {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .modal-content button.close {
+            top: 15px;
+            right: 8px;
+        }
+    }
+}
+
+
+
+
+
+// Modal Video
+.modal .modal-dialog .modal-body.video-modal {
+    @media (max-width: 640px) {
+        .video-iframe-wrapper {
+            width: 100%;
+            height: auto;
+        }
+
+        .vertical {
+            padding-top: 30px;
+            padding-left: 15px;
+            padding-right: 15px !important;
+        }
+        .vertical > .lSSlideWrapper {
+            padding-top: 0;
+        }
+        .video-thumbnail {
+            margin-bottom: 15px !important;
+            text-align: center;
+        }
+        .video-thumbnail img {
+            max-width: 150px;
+            height: auto;
+            display: inline-block;
+        }
+    }
+}

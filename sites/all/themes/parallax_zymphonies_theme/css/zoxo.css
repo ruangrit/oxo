@@ -362,7 +362,8 @@ ul.list-unstyled {
 
 .modal-body.video-modal {
   padding: 0;
-  width: 900px;
+  max-width: 900px;
+  width: 100%;
   height: 560px; }
   .modal-body.video-modal > .video-iframe-wrapper {
     width: 675px;
@@ -1178,6 +1179,60 @@ button.close {
 .lSSlideOuter .lSPager.lSpg {
   line-height: 30px; }
 
+@media screen and (max-width: 640px) {
+  body {
+    margin-top: 0; }
+
+  .modal-dialog {
+    margin-top: 57px; } }
+@media (max-width: 640px) {
+  .modal .modal-dialog .modal-body {
+    padding-top: 60px;
+    padding-bottom: 30px; }
+    .modal .modal-dialog .modal-body .modal-title {
+      margin-bottom: 30px;
+      text-align: center; }
+    .modal .modal-dialog .modal-body .modal-content button.close {
+      top: 15px;
+      right: 8px; } }
+
+@media (max-width: 640px) {
+  .modal .modal-dialog .modal-body.video-modal .video-iframe-wrapper {
+    width: 100%;
+    height: auto; }
+  .modal .modal-dialog .modal-body.video-modal .vertical {
+    padding-top: 30px;
+    padding-left: 15px;
+    padding-right: 15px !important; }
+  .modal .modal-dialog .modal-body.video-modal .vertical > .lSSlideWrapper {
+    padding-top: 0; }
+  .modal .modal-dialog .modal-body.video-modal .video-thumbnail {
+    margin-bottom: 15px !important;
+    text-align: center; }
+  .modal .modal-dialog .modal-body.video-modal .video-thumbnail img {
+    max-width: 150px;
+    height: auto;
+    display: inline-block; } }
+
+@media (max-width: 768px) {
+  .desc-section.-reservation {
+    padding: 24px 15px; } }
+
+@media (max-width: 640px) {
+  .overflow-box .mCustomScrollBox {
+    padding-right: 38px; }
+
+  .overflow-box.-scrollleft .mCustomScrollBox,
+  .overflow-box.-scrollright .mCustomScrollBox {
+    padding-left: 0; }
+
+  .overflow-box.-scrollleft .mCSB_scrollTools,
+  .overflow-box.-scrollright .mCSB_scrollTools {
+    left: auto;
+    right: 0; }
+
+  .mCSB_outside + .mCSB_scrollTools {
+    right: 0; } }
 body {
   color: #3E3E3E;
   font-size: 13px;

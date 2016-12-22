@@ -1,0 +1,20 @@
+@media (max-width: 640px) {
+
+    .overflow-box .mCustomScrollBox {
+        padding-right: 38px;
+    }
+
+    .overflow-box.-scrollleft .mCustomScrollBox,
+    .overflow-box.-scrollright .mCustomScrollBox {
+        padding-left: 0;
+    }
+    .overflow-box.-scrollleft .mCSB_scrollTools,
+    .overflow-box.-scrollright .mCSB_scrollTools {
+        left: auto;
+        right: 0;
+    }
+
+    .mCSB_outside + .mCSB_scrollTools {
+        right: 0;
+    }
+}

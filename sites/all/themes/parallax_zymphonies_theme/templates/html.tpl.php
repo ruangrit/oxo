@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 <?php print $head; ?>
 <title><?php print $head_title; ?></title>
 <?php print $styles; ?>

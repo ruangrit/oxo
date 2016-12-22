@@ -106,3 +106,24 @@ function medical_page_alter($page) {
   );
   drupal_add_html_head($viewport, 'viewport');
 }
+
+/**
+ * Preprocesses the wrapping HTML.
+ *
+ * @param array &$variables
+ *   Template variables.
+ */
+function parallax_zymphonies_theme_preprocess_html(&$vars) {
+  // Setup IE meta tag to force IE rendering mode
+  $meta_viewport = array(
+    '#type' => 'html_tag',
+    '#tag' => 'meta',
+    '#attributes' => array(
+      'name' =>  'viewport',
+      'content' => 'width=device-width, initial-scale=1.0',
+    )
+  );
+
+  // Add header meta tag for IE to head
+  drupal_add_html_head($meta_viewport, 'meta_viewport');
+}

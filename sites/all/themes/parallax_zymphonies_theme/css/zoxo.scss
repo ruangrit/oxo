@@ -15,6 +15,11 @@
 @import "component/mailus.scss";
 @import "component/lSAction.scss";
 
+@import "responsive/main.scss";
+@import "responsive/modal.scss";
+@import "responsive/content-section.scss";
+@import "responsive/overflow-box.scss";
+
 body {
 	color: $color-1;
 	font-size: 13px;
