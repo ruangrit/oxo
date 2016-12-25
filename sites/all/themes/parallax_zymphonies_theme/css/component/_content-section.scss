@@ -26,7 +26,7 @@
 		}
 		@media (min-width: 992px) {
 			p {
-				padding-left: 200px;
+				padding-left: 1850px;
 			}
 		}
 	}
@@ -39,7 +39,7 @@
 		}
 		@media (min-width: 992px) {
 			p {
-				padding-right: 200px;
+				padding-right: 100px;
 			}
 		}
 	}
@@ -53,6 +53,10 @@
 	> .inner > p {
 		margin-bottom: 30px;
 	}
+}
+.-rooms .ct-wrapper {
+	max-width: 900px;
+	margin: 0 auto;
 }
 
 .inner-wrapper {
@@ -111,11 +115,27 @@
 				}
 			}
 		}
+		.ct-wrapper {
+			max-width: 900px;
+			margin: 0 auto;
+		}
 	}
 }
 
 .reservation-content {
 	display: block;
+	> .ct-wrapper {
+		max-width: 900px;
+		margin: 0 auto;
+	}
+	> .ct-wrapper .inner.-left p {
+		@media (min-width: 768px) {
+			padding-left: 25px;
+		}
+	}
+	> .ct-wrapper .inner.-right p {
+		padding-right: 25px;
+	}
 }
 
 .findus-content {

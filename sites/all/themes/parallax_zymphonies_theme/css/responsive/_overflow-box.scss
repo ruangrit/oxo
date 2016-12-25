@@ -8,6 +8,9 @@
     .overflow-box.-scrollright .mCustomScrollBox {
         padding-left: 0;
     }
+    .overflow-box.-scrollleft .mCSB_scrollTools {
+
+    }
     .overflow-box.-scrollleft .mCSB_scrollTools,
     .overflow-box.-scrollright .mCSB_scrollTools {
         left: auto;
@@ -28,5 +31,25 @@
 
     .overflow-box.-modalrooms {
         max-width: 100%;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .overflow-box.-scrollleft .mCSB_scrollTools {
+        left: 0;
+    }
+
+    .overflow-box.-scrollright .mCSB_scrollTools {
+        right: 0;
+    }
+}
+
+
+
+@media (max-width: 767px) {
+    .overflow-box.-scrollleft .mCSB_scrollTools {
+        left: auto;
     }
 }

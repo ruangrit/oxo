@@ -27,13 +27,17 @@
 
 .overflow-box {
 	.mCustomScrollBox {
-		padding-right: 12px;
+		@media (min-width: 768px) {
+			padding-right: 50px;
+		}
 	}
 }
 
 .overflow-box.-scrollleft {
 	.mCustomScrollBox {
-		padding-left: 12px;
+		@media (min-width: 768px) {
+			padding-left: 50px;
+		}
 	}
 	.mCSB_scrollTools {
 		left: -26px;
@@ -44,7 +48,9 @@
 		right: -26px;
 	}
 }
-
+.mCSB_outside + .mCSB_scrollTools {
+	right: 0;
+}
 .mCSB_scrollTools {
 	width: 25px;
 	top: 10px;

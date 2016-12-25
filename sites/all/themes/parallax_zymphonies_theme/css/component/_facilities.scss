@@ -9,8 +9,11 @@
 	}
 
 	h3 {
-		margin-bottom: 100px;
-		@media (max-width: 479px) {
+		@media (min-width: 641px) {
+			margin-bottom: 100px;
+		}
+
+		@media (max-width: 640px) {
 			margin-bottom: 15px;
 		}
 	}
@@ -30,7 +33,7 @@
 		margin-right: 0;
 		float: left;
 		text-align: center;
-		@media (max-width: 750px) {
+		@media (min-width: 641px) and (max-width: 750px) {
 			width: 33.33%;
 			&.-item4,
 			&.-item5 {
@@ -39,7 +42,7 @@
 				float: none;
 			}
 		}
-		@media (max-width: 479px) {
+		@media (max-width: 640px) {
 			width: 100%;
 			margin-top: 50px;
 			&.-item4,

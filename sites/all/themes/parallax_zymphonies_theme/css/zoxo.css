@@ -42,7 +42,7 @@
 ._text-center {
   text-align: center; }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   ._text-right {
     text-align: right; } }
 
@@ -84,7 +84,7 @@
       padding-right: 25px; } }
   @media (min-width: 992px) {
     .ct-wrapper > .inner.-left p {
-      padding-left: 200px; } }
+      padding-left: 1850px; } }
   @media (max-width: 767px) {
     .ct-wrapper > .inner.-right {
       float: left; } }
@@ -93,13 +93,17 @@
       padding-left: 25px; } }
   @media (min-width: 992px) {
     .ct-wrapper > .inner.-right p {
-      padding-right: 200px; } }
+      padding-right: 100px; } }
   .ct-wrapper > .inner.-center {
     width: 100%; }
   .ct-wrapper > .inner > h3 {
     margin-bottom: 20px; }
   .ct-wrapper > .inner > p {
     margin-bottom: 30px; }
+
+.-rooms .ct-wrapper {
+  max-width: 900px;
+  margin: 0 auto; }
 
 @media (min-width: 768px) {
   .inner-wrapper > .btn.-keepright {
@@ -144,9 +148,20 @@
             margin-right: 0 !important; }
           .desc-section.-findus .inner ._pull-left {
             float: none; } }
+    .desc-section.-findus .ct-wrapper {
+      max-width: 900px;
+      margin: 0 auto; }
 
 .reservation-content {
   display: block; }
+  .reservation-content > .ct-wrapper {
+    max-width: 900px;
+    margin: 0 auto; }
+  @media (min-width: 768px) {
+    .reservation-content > .ct-wrapper .inner.-left p {
+      padding-left: 25px; } }
+  .reservation-content > .ct-wrapper .inner.-right p {
+    padding-right: 25px; }
 
 .findus-content {
   min-height: 300px; }
@@ -554,11 +569,12 @@ ul.list-unstyled {
   @media (min-width: 768px) {
     .facilities-content {
       margin: 50px auto; } }
-  .facilities-content h3 {
-    margin-bottom: 100px; }
-    @media (max-width: 479px) {
-      .facilities-content h3 {
-        margin-bottom: 15px; } }
+  @media (min-width: 641px) {
+    .facilities-content h3 {
+      margin-bottom: 100px; } }
+  @media (max-width: 640px) {
+    .facilities-content h3 {
+      margin-bottom: 15px; } }
   @media (max-width: 768px) {
     .facilities-content {
       padding: 30px 0; } }
@@ -573,14 +589,14 @@ ul.list-unstyled {
     margin-right: 0;
     float: left;
     text-align: center; }
-    @media (max-width: 750px) {
+    @media (min-width: 641px) and (max-width: 750px) {
       .faciimg-wrapper .faciitem {
         width: 33.33%; }
         .faciimg-wrapper .faciitem.-item4, .faciimg-wrapper .faciitem.-item5 {
           width: 33.33%;
           margin-top: 50px;
           float: none; } }
-    @media (max-width: 479px) {
+    @media (max-width: 640px) {
       .faciimg-wrapper .faciitem {
         width: 100%;
         margin-top: 50px; }
@@ -908,16 +924,21 @@ button.close {
     height: 300px;
     margin-bottom: 0; }
 
-.overflow-box .mCustomScrollBox {
-  padding-right: 12px; }
+@media (min-width: 768px) {
+  .overflow-box .mCustomScrollBox {
+    padding-right: 50px; } }
 
-.overflow-box.-scrollleft .mCustomScrollBox {
-  padding-left: 12px; }
+@media (min-width: 768px) {
+  .overflow-box.-scrollleft .mCustomScrollBox {
+    padding-left: 50px; } }
 .overflow-box.-scrollleft .mCSB_scrollTools {
   left: -26px; }
 
 .overflow-box.-scrollright .mCSB_scrollTools {
   right: -26px; }
+
+.mCSB_outside + .mCSB_scrollTools {
+  right: 0; }
 
 .mCSB_scrollTools {
   width: 25px;
@@ -1173,6 +1194,10 @@ button.close {
 
   .modal-dialog {
     margin-top: 57px; } }
+@media screen and (max-width: 960px) {
+  .menu-wrap {
+    position: absolute;
+    padding: 8px 0; } }
 @media (max-width: 640px) {
   .modal .modal-dialog .modal-body {
     padding-top: 60px;
@@ -1376,6 +1401,15 @@ button.close {
 
   .overflow-box.-modalrooms {
     max-width: 100%; } }
+@media (max-width: 768px) {
+  .overflow-box.-scrollleft .mCSB_scrollTools {
+    left: 0; }
+
+  .overflow-box.-scrollright .mCSB_scrollTools {
+    right: 0; } }
+@media (max-width: 767px) {
+  .overflow-box.-scrollleft .mCSB_scrollTools {
+    left: auto; } }
 @media (max-width: 640px) {
   .footer p {
     padding: 0 30px; }
