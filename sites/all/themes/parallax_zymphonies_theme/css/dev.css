@@ -43,7 +43,7 @@ body {
 	padding: 50px;
 }
 body.modal-open {
-    overflow: visible;
+    overflow: hidden;
 }
 .webmaster-menu {
 	z-index: 99999999999;
