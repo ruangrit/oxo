@@ -177,7 +177,7 @@
             </hgroup>
         	<div class="headline__description -since text-imgsection">
 	            <div>
-					<a class="btn -movies btn-transparent -keepright _capital" data-toggle="modal" data-target="#videoModal" id="modal_click_video"><span class="play"></span>MOVIE</a>
+					<a class="btn -movies btn-transparent -keepright _capital" data-toggle="modal" data-target="#videoModal" id="modal_click_video" href="#" ><span class="play"></span>MOVIE</a>
 	            </div>
         		<!--HOSTEL • GARDEN • CAFE<br/>-->
         		<span class="small-text" style="color:#B4B4B4">oxotel hostel chiangmai thailand @ since 2015</span>
@@ -225,7 +225,7 @@
 						</p>
  					</div>
 
- 					<a class="btn btn-transparent -keepright _capital" data-toggle="modal" data-target="#aboutModal">ABOUT OXOTEL</a>
+ 					<a class="btn btn-transparent -keepright _capital" data-toggle="modal" data-target="#aboutModal" href="#" >ABOUT OXOTEL</a>
  				</div>
  				<!--
  				<div class="switch-content-sub" style="display:none">
@@ -280,7 +280,7 @@
 						-->
 					</div>
 
- 					<a id="modal_click_condition" class="btn btn-transparent _capital _pull-left _margin-right" data-toggle="modal" data-target="#conditionModal">Condition</a>
+ 					<a id="modal_click_condition" href="#" class="btn btn-transparent _capital _pull-left _margin-right" data-toggle="modal" data-target="#conditionModal">Condition</a>
  					<div class="bookingbtn-group">
  					    <!--
 	 					<a class="btn btn-transparent -booking -orange _capital" target="_blank" href="http://www.booking.com/hotel/th/oxotel.th.html?label=gen173nr-1FCAEoggJCAlhYSDNiBW5vcmVmaN0BiAEBmAEmwgEDYWJuyAEM2AEB6AEB-AELqAIE%3Bsid%3Da9c400783e4d0678a2911325b020d663%3Bdcid%3D1%3Bdest_id%3D-3247115%3Bdest_type%3Dcity%3Bdist%3D0%3Bgroup_adults%3D2%3Broom1%3DA%2CA%3Bsb_price_type%3Dtotal%3Bsrfid%3D261b6fd664759b8069fb61cd82d78f852dfca842X1%3Btype%3Dtotal%3Bucfs%3D1">Booking</a>
@@ -503,7 +503,7 @@
 			            </div>
 
 			            <div>
-				          	<button  id="modal_click_rooms" class="btn btn-transparent -darkbg _capital" type="button"  data-toggle="modal" data-target="#roomsModal">
+				          	<button  id="modal_click_rooms" class="btn btn-transparent -darkbg _capital" type="button"  data-toggle="modal" data-target="#roomsModal" href="#">
 								DETAILS
 							</button>
 			            </div>
@@ -596,7 +596,7 @@
 				</div>
 			</div>
 
-			<button  style="display:none" id="modal_click_facilities" class="btn -facilities btn-transparent -darkbg _capital" type="button"  data-toggle="modal" data-target="#facilitiesModal">
+			<button  style="display:none" id="modal_click_facilities" class="btn -facilities btn-transparent -darkbg _capital" type="button"  data-toggle="modal" data-target="#facilitiesModal" href="#">
 				EXPLORE
 			</button>
 		</div>
@@ -1111,7 +1111,7 @@ End Old Facility -->
 						<div class="facilities-switch-page">
 							<div class="lSAction">
 								<a class="lSPrev"></a>
-								<a class="lSNext" data-toggle="modal" data-target="#facilitiesContentModal" id="modal_click_facilities_content" data-dismiss="modal" aria-label="Close"></a>
+								<a class="lSNext" data-toggle="modal" data-target="#facilitiesContentModal" id="modal_click_facilities_content" data-dismiss="modal" aria-label="Close" href="#"></a>
 
 							</div>
 							<ul class="lSPager lSpg" style="margin-top: 5px;">
@@ -1755,9 +1755,22 @@ End Old Facility -->
 				theme:"light-thick",
 				scrollbarPosition:"outside",
 				mouseWheel:{enable:false},
-			});
+		});
 
-    	});
+		$("#facilitiesModal").on("hidden.bs.modal", function () {
+			window.location.hash = '#facilities';
+		});
+		$("#facilitiesModal").on("shown.bs.modal", function () {
+			window.location.hash = '';
+		});
+		$("#facilitiesContentModal").on("hidden.bs.modal", function () {
+			window.location.hash = '#facilities';
+		});
+		$("#facilitiesContentModal").on("shown.bs.modal", function () {
+			window.location.hash = '';
+		});
+
+    });
 
 </script>
 <!--
