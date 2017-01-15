@@ -930,6 +930,7 @@ button.close {
 
 @media (min-width: 768px) {
   .overflow-box.-scrollleft .mCustomScrollBox {
+    padding-right: 0;
     padding-left: 50px; } }
 .overflow-box.-scrollleft .mCSB_scrollTools {
   left: -26px; }

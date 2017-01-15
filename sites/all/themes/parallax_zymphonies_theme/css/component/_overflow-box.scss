@@ -36,6 +36,7 @@
 .overflow-box.-scrollleft {
 	.mCustomScrollBox {
 		@media (min-width: 768px) {
+			padding-right: 0;
 			padding-left: 50px;
 		}
 	}
