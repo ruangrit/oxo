@@ -583,7 +583,7 @@
 				<div class="faciitem">
 					<div class="faci-img -img06" onclick="$('#modal_click_facilities_content').trigger('click')">
 						<div class="image"></div>
-						<span class="text-tooltip textLightWhiteBg">FRER SERVICES</span>
+						<span class="text-tooltip textLightWhiteBg">FREE SERVICES</span>
 						<span class="explore-facilities">CLICK FOR EXPLORE</span>
 					</div>
 				</div>
@@ -724,9 +724,27 @@ End Old Facility -->
 	        </hgroup> -->
 			<div class="ct-wrapper">
 
-				<div class="inner -middle -center text-center text-bright">
+				<div class="inner -left -emptycell"></div>
+				<div class="inner -right text-left text-bright">
 					<div class="inner-wrapper">
-						<h2 class="text-huge text-floatmiddle text-bright">Coming Soon...</h2>
+			            <h3><a class="text-bright" href="#">Cafe</a></h3>
+			            <div class="overflow-box">
+			            	<p>
+			            	The first branch of Artisan cafe was found since 2015 and became well known about tastefully of design & coffee in Chaingmai
+In 2016 cafe got Chaingmai design award from creative Chiangmai organization
+Our cafe have choose various of quality coffee bean also artisan bread & allday brunch ingredients 
+The Artisan cafe @ oxotel is a part of hostel common area that have enough space for enjoy the day or working
+<br />
+
+			            	</p>
+
+			            </div>
+			            <div>
+				          	<button class="btn btn-transparent -darkbg _capital" type="button">
+				          		<a class="text-bright" target="_blank" href="https://www.facebook.com/Artisan-cafe-320893348061927/?fref=ts&__mref=message_bubble">Read more</a>
+							</button>
+			            </div>
+
 					</div>
 				</div>
 
