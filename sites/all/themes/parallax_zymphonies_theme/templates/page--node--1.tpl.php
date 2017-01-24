@@ -716,7 +716,7 @@ End Old Facility -->
 	</div>
 </header>
 -->
-<header id="post-740-title" class="article__header  article__header--page two-thirds-height">
+<header id="post-740-title" class="article__header -rooms article__header--page two-thirds-height">
  	<div class="flexbox">
       	<div class="flexbox__item">
 <!-- 	        <hgroup class="article__headline">
